@@ -1,0 +1,9 @@
+{
+  "id": "Minimal",
+  "resourceType": "Measure",
+  "library": [
+    {
+      "reference": "Library/Minimal"
+    }
+  ]
+}
