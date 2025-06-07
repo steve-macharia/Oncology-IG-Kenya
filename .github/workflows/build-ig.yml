@@ -20,7 +20,7 @@ jobs:
         java-version: '11'
 
     - name: Download IG Publisher
-      run: wget https://github.com/HL7/ig-publisher/raw/master/igpublisher.jar -O igpublisher.jar
+      run: wget https://downloads.hl7.org/ig/igpublisher.jar -O igpublisher.jar
 
     - name: Run IG Publisher
       run: java -jar igpublisher.jar -ig . -tx https://tx.fhir.org/r4
