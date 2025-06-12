@@ -1,0 +1,2135 @@
+{
+  "resourceType": "Bundle",
+  "id": "bundle-ersd-specification-example",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-04-15T18:26:27+00:00",
+    "source": "#8zRKOv2AelmrnTVL"
+  },
+  "type": "transaction",
+  "timestamp": "2022-04-05T14:06:42.482+00:00",
+  "entry": [
+    {
+      "fullUrl": "http://hl7.org/fhir/us/ecr/Library/SpecificationLibrary|1.0.0",
+      "resource": {
+        "resourceType": "Library",
+        "id": "SpecificationLibrary",
+        "meta": {
+          "versionId": "1.0.0",
+          "profile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-specification-library"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Library</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Library \"SpecificationLibrary\" Version \"1.0.0\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-ph-specification-library.html\">US Public Health Specification Library</a></p></div><p><b>url</b>: <code>http://hl7.org/fhir/us/ecr/Library/SpecificationLibrary</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: SpecificationLibrary</p><p><b>title</b>: Specification Library</p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>type</b>: Asset Collection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-library-type.html\">LibraryType</a>#asset-collection)</span></p><p><b>publisher</b>: eCR</p><p><b>description</b>: Defines the asset-collection library containing the US Public Health specification assets.</p></div>"
+        },
+        "url": "http://hl7.org/fhir/us/ecr/Library/SpecificationLibrary",
+        "version": "1.0.0",
+        "approvalDate": "1990-01-01",
+        "effectivePeriod": {
+          "start": "2023-01-01",
+          "end": "2023-12-01"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/artifact-releaseLabel",
+            "valueString": "Sample release label"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/artifact-releaseDescription",
+            "valueMarkdown": "Sample release description"
+          }
+        ],
+        "name": "SpecificationLibrary",
+        "title": "Specification Library",
+        "status": "active",
+        "experimental": true,
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/library-type",
+              "code": "asset-collection"
+            }
+          ]
+        },
+        "publisher": "eCR",
+        "description": "Defines the asset-collection library containing the US Public Health specification assets.",
+        "useContext": [
+          {
+            "code": {
+              "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context-type",
+              "code": "reporting"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                  "code": "triggering"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context-type",
+              "code": "specification-type"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                  "code": "program"
+                }
+              ]
+            }
+          }
+        ],
+        "relatedArtifact": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/artifact-isOwned",
+                "valueBoolean": true
+              }
+            ],
+            "type": "composed-of",
+            "resource": {
+              "reference": "http://hl7.org/fhir/us/ecr/PlanDefinition/plandefinition-ersd-instance-example|0.1"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/artifact-isOwned",
+                "valueBoolean": true
+              }
+            ],
+            "type": "composed-of",
+            "resource": {
+              "reference": "http://hl7.org/fhir/us/ecr/Library/library-rctc-example|2019-06-17"
+            }
+          },
+          {
+            "type": "composed-of",
+            "resource": {
+              "reference": "http://notOwnedTest.com/Library/notOwnedRoot|0.1.1"
+            }
+          },
+          {
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://hl7.org/fhir/us/ecr/PlanDefinition/plandefinition-ersd-instance-example|0.1"
+            }
+          },
+          {
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://hl7.org/fhir/us/ecr/Library/library-rctc-example|2019-06-17"
+            }
+          },
+          {
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://notOwnedTest.com/Library/notOwnedRoot|0.1.1"
+            }
+          },
+          {
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://notOwnedTest.com/Library/notOwnedLeaf|0.1.1"
+            }
+          },
+          {
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://hl7.org/fhir/us/ecr/ValueSet/dxtc|1.0.0"
+            }
+          },
+          {
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://hl7.org/fhir/us/ecr/ValueSet/ostc|1.0.0"
+            }
+          },
+          {
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://hl7.org/fhir/us/ecr/ValueSet/lotc|1.0.0"
+            }
+          },
+          {
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://hl7.org/fhir/us/ecr/ValueSet/lrtc|1.0.0"
+            }
+          },
+          {
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://hl7.org/fhir/us/ecr/ValueSet/mrtc|1.0.0"
+            }
+          },
+          {
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://hl7.org/fhir/us/ecr/ValueSet/sdtc|1.0.0"
+            }
+          },
+          {
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://notOwnedTest.com/Library/notOwnedLeaf1|0.1.1"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "49649001"
+                    }
+                  ],
+                  "text": "Infection caused by Acanthamoeba (disorder)"
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1506|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1505|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1508|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1507|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.6|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.528|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.408|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.409|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1469|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1468|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.480|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.481|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.761|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1223|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.762|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1182|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1181|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1184|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1601|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1600|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1603|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1602|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1082|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1439|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1436|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1435|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1446|1.0.0"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-condition",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "767146004"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "http://aphl.org/fhir/vsm/StructureDefinition/vsm-valueset-priority",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                      "code": "emergent"
+                    }
+                  ],
+                  "text": "Emergent"
+                }
+              }
+            ],
+            "type": "depends-on",
+            "resource": {
+              "reference": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1438|1.0.0"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Library/SpecificationLibrary"
+      }
+    },
+    {
+      "fullUrl": "http://hl7.org/fhir/us/ecr/ValueSet/dxtc|1.0.0",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "dxtc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-triggering-valueset"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ValueSet</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ValueSet \"dxtc\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-ph-triggering-valueset.html\">US Public Health Triggering ValueSet</a></p></div><p><b>author</b>: CSTE Author: </p><p><b>steward</b>: CSTE Steward: </p><p><b>url</b>: <code>http://hl7.org/fhir/us/ecr/ValueSet/dxtc</code></p><p><b>identifier</b>: id: urn:oid:2.16.840.1.113762.1.4.1146.627</p><p><b>version</b>: 1.0.0</p><p><b>name</b>: Diagnosis_ProblemTriggersforPublicHealthReporting</p><p><b>title</b>: Diagnosis_Problem Triggers for Public Health Reporting</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>publisher</b>: eCR</p><p><b>description</b>: Purpose: Clinical Focus - This set of values contains diagnoses or problems that represent that the patient may have a potentially reportable condition. For example, these may be diagnoses recorded in an EHR problem list and diagnosis codes used for billing for the encounter. Purpose: Data Element Scope - Diagnoses or problems documented in a clinical record. Purpose: Inclusion Criteria - See individual value sets. Purpose: Exclusion Criteria - See individual value sets. Note - Includes codes from selected value sets used in the Reportable Condition Knowledge Management System (RCKMS) reporting logic. RCKMS value sets in VSAC are for informational use only. When implementing trigger codes for electronic case reporting, use the Reportable Condition Trigger Codes (RCTC) file.</p><p><b>purpose</b>: Diagnoses or problems documented in a clinical record.</p><blockquote><p><b>compose</b></p><blockquote><p><b>include</b></p><p><b>valueSet</b>: <a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.1506/expansion\">Acanthamoeba Disease [Keratitis] (Disorders) (ICD10CM)</a></p></blockquote><blockquote><p><b>include</b></p><p><b>valueSet</b>: <a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.1505/expansion\">Acanthamoeba Disease [Keratitis] (Disorders) (SNOMED)</a></p></blockquote><blockquote><p><b>include</b></p><p><b>valueSet</b>: <a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.1508/expansion\">Arsenic Exposure and Toxicity (Disorders) (ICD10CM)</a></p></blockquote><blockquote><p><b>include</b></p><p><b>valueSet</b>: <a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.1507/expansion\">Arsenic Exposure and Toxicity (Disorders) (SNOMED)</a></p></blockquote><blockquote><p><b>include</b></p><p><b>valueSet</b>: <a href=\"https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1146.6/expansion\">Diphtheria (Disorders) (SNOMED)</a></p></blockquote></blockquote><blockquote><p><b>expansion</b></p><p><b>timestamp</b>: 2022-04-05 10:06:43-0400</p><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: B60.12</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: B60.13</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 127631000119105</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 15693201000119102</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 15693241000119100</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 15693281000119105</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 15698841000119105</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 15698881000119100</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 231896005</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 711645008</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 840444002</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 840484006</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: T57.0X</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: T57.0X1</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: T57.0X1A</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: T57.0X1D</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: T57.0X1S</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: T57.0X4</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: T57.0X4A</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: T57.0X4D</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: T57.0X4S</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 212516009</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 216792005</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 216794006</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 216795007</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 241770003</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 241771004</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 360406006</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 36730005</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403740003</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403741004</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403743001</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403744007</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403745008</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 418685002</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 62210001</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 72501006</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 767146004</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 871783000</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 89738003</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403742006</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 1086051000119107</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 1086061000119109</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 1086071000119103</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 1090211000119102</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 129667001</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 13596001</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 15682004</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 186347006</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 18901009</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 194945009</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 230596007</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 240422004</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 26117009</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 276197005</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 3419005</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 397428000</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 397430003</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 48278001</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 50215002</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 715659006</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 75589004</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 7773002</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 789005009</p></blockquote></blockquote></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+              "name": "CSTE Author"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-steward",
+            "valueContactDetail": {
+              "name": "CSTE Steward"
+            }
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/ecr/ValueSet/dxtc",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1146.627"
+          }
+        ],
+        "version": "1.0.0",
+        "name": "Diagnosis_ProblemTriggersforPublicHealthReporting",
+        "title": "Diagnosis_Problem Triggers for Public Health Reporting",
+        "status": "draft",
+        "experimental": true,
+        "publisher": "eCR",
+        "description": "Purpose: Clinical Focus - This set of values contains diagnoses or problems that represent that the patient may have a potentially reportable condition. For example, these may be diagnoses recorded in an EHR problem list and diagnosis codes used for billing for the encounter. Purpose: Data Element Scope - Diagnoses or problems documented in a clinical record. Purpose: Inclusion Criteria - See individual value sets. Purpose: Exclusion Criteria - See individual value sets. Note - Includes codes from selected value sets used in the Reportable Condition Knowledge Management System (RCKMS) reporting logic. RCKMS value sets in VSAC are for informational use only. When implementing trigger codes for electronic case reporting, use the Reportable Condition Trigger Codes (RCTC) file.",
+        "useContext": [
+          {
+            "code": {
+              "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+              "code": "program"
+            },
+            "valueReference": {
+              "reference": "http://hl7.org/fhir/us/ecr/PlanDefinition/plandefinition-ersd-instance-example"
+            }
+          },
+          {
+            "code": {
+              "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context-type",
+              "code": "reporting"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                  "code": "triggering"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context-type",
+              "code": "priority"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                  "code": "routine"
+                }
+              ]
+            }
+          }
+        ],
+        "purpose": "Diagnoses or problems documented in a clinical record.",
+        "compose": {
+          "include": [
+            {
+              "valueSet": [
+                "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1506"
+              ]
+            },
+            {
+              "valueSet": [
+                "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1505"
+              ]
+            },
+            {
+              "valueSet": [
+                "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1507"
+              ]
+            }
+          ]
+        },
+        "expansion": {
+          "timestamp": "2022-04-05T14:06:43+00:00",
+          "contains": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "B60.12"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "B60.13"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "127631000119105"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "15693201000119102"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "15693241000119100"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "15693281000119105"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "15698841000119105"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "15698881000119100"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "231896005"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "711645008"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "840444002"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "840484006"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "T57.0X"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "T57.0X1"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "T57.0X1A"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "T57.0X1D"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "T57.0X1S"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "T57.0X4"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "T57.0X4A"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "T57.0X4D"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "T57.0X4S"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "212516009"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "216792005"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "216794006"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "216795007"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "241770003"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "241771004"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "360406006"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "36730005"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403740003"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403741004"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403743001"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403744007"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403745008"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "418685002"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "62210001"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "72501006"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "767146004"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "871783000"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "89738003"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403742006"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "1086051000119107"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "1086061000119109"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "1086071000119103"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "1090211000119102"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "129667001"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "13596001"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "15682004"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "186347006"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "18901009"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "194945009"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "230596007"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "240422004"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "26117009"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "276197005"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "3419005"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "397428000"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "397430003"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "48278001"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "50215002"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "715659006"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "75589004"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "7773002"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "789005009"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ValueSet/dxtc"
+      }
+    },
+    {
+      "fullUrl": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1506",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "2.16.840.1.113762.1.4.1146.1506",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://aphl.org/fhir/vsm/CodeSystem/vsm-workflow-codes",
+              "code": "vsm-authored"
+            }
+          ],
+          "profile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-triggering-valueset"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ValueSet</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ValueSet \"2.16.840.1.113762.1.4.1146.1506\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-ph-triggering-valueset.html\">US Public Health Triggering ValueSet</a></p></div><p><b>author</b>: CSTE Author: </p><p><b>steward</b>: CSTE Steward: </p><p><b>url</b>: <code>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1506</code></p><p><b>identifier</b>: id: urn:oid:2.16.840.1.113762.1.4.1146.1506</p><p><b>version</b>: 1.0.0</p><p><b>name</b>: AcanthamoebaDiseaseKeratitisDisordersICD10CM</p><p><b>title</b>: Acanthamoeba Disease [Keratitis] (Disorders) (ICD10CM)</p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>publisher</b>: eCR</p><p><b>description</b>: Acanthamoeba Disease [Keratitis] (Disorders) (ICD10CM)</p><blockquote><p><b>compose</b></p><blockquote><p><b>include</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><blockquote><p><b>concept</b></p><p><b>code</b>: B60.12</p><p><b>display</b>: Conjunctivitis due to Acanthamoeba</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: B60.13</p><p><b>display</b>: Keratoconjunctivitis due to Acanthamoeba</p></blockquote></blockquote></blockquote><blockquote><p><b>expansion</b></p><p><b>timestamp</b>: 2022-04-05 10:06:43-0400</p><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: B60.12</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a></p><p><b>version</b>: Provisional_2022-01-12</p><p><b>code</b>: B60.13</p></blockquote></blockquote></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+              "name": "CSTE Author"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-steward",
+            "valueContactDetail": {
+              "name": "CSTE Steward"
+            }
+          }
+        ],
+        "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1506",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1146.1506"
+          }
+        ],
+        "version": "1.0.0",
+        "name": "AcanthamoebaDiseaseKeratitisDisordersICD10CM",
+        "title": "Acanthamoeba Disease [Keratitis] (Disorders) (ICD10CM)",
+        "status": "active",
+        "experimental": true,
+        "publisher": "eCR",
+        "description": "Acanthamoeba Disease [Keratitis] (Disorders) (ICD10CM)",
+        "useContext": [
+          {
+            "code": {
+              "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+              "code": "focus"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "49649001"
+                }
+              ],
+              "text": "Infection caused by Acanthamoeba (disorder)"
+            }
+          },
+          {
+            "code": {
+              "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context-type",
+              "code": "reporting"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                  "code": "triggering"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context-type",
+              "code": "priority"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                  "code": "routine"
+                }
+              ]
+            }
+          }
+        ],
+        "compose": {
+          "include": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "concept": [
+                {
+                  "code": "B60.12",
+                  "display": "Conjunctivitis due to Acanthamoeba"
+                },
+                {
+                  "code": "B60.13",
+                  "display": "Keratoconjunctivitis due to Acanthamoeba"
+                }
+              ]
+            }
+          ]
+        },
+        "expansion": {
+          "timestamp": "2022-04-05T14:06:43+00:00",
+          "contains": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "B60.12"
+            },
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "version": "Provisional_2022-01-12",
+              "code": "B60.13"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ValueSet/2.16.840.1.113762.1.4.1146.1506"
+      }
+    },
+    {
+      "fullUrl": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1505",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "2.16.840.1.113762.1.4.1146.1505",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://aphl.org/fhir/vsm/CodeSystem/vsm-workflow-codes",
+              "code": "vsm-authored"
+            }
+          ],
+          "profile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-triggering-valueset"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ValueSet</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ValueSet \"2.16.840.1.113762.1.4.1146.1505\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-ph-triggering-valueset.html\">US Public Health Triggering ValueSet</a></p></div><p><b>author</b>: CSTE Author: </p><p><b>steward</b>: CSTE Steward: </p><p><b>url</b>: <code>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1505</code></p><p><b>identifier</b>: id: urn:oid:2.16.840.1.113762.1.4.1146.1505</p><p><b>version</b>: 1.0.0</p><p><b>name</b>: AcanthamoebaDiseaseKeratitisDisordersSNOMED</p><p><b>title</b>: Acanthamoeba Disease [Keratitis] (Disorders) (SNOMED)</p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>publisher</b>: eCR</p><p><b>description</b>: Acanthamoeba Disease [Keratitis] (Disorders) (SNOMED)</p><blockquote><p><b>compose</b></p><blockquote><p><b>include</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><blockquote><p><b>concept</b></p><p><b>code</b>: 127631000119105</p><p><b>display</b>: Corneal ulcer due to acanthamoeba (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 15693201000119102</p><p><b>display</b>: Keratitis of bilateral eyes caused by Acanthamoeba (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 15693241000119100</p><p><b>display</b>: Keratitis of left eye caused by Acanthamoeba (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 15693281000119105</p><p><b>display</b>: Keratitis of right eye caused by Acanthamoeba (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 15698841000119105</p><p><b>display</b>: Ulcer of right cornea caused by Acanthamoeba (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 15698881000119100</p><p><b>display</b>: Ulcer of left cornea caused by Acanthamoeba (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 231896005</p><p><b>display</b>: Acanthamoeba keratitis (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 711645008</p><p><b>display</b>: Corneal ulcer caused by Acanthamoeba (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 840444002</p><p><b>display</b>: Dacryoadenitis due to Acanthamoeba keratitis (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 840484006</p><p><b>display</b>: Conjunctivitis caused by Acanthamoeba (disorder)</p></blockquote></blockquote></blockquote><blockquote><p><b>expansion</b></p><p><b>timestamp</b>: 2022-04-05 10:06:43-0400</p><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 127631000119105</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 15693201000119102</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 15693241000119100</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 15693281000119105</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 15698841000119105</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 15698881000119100</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 231896005</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 711645008</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 840444002</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 840484006</p></blockquote></blockquote></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+              "name": "CSTE Author"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-steward",
+            "valueContactDetail": {
+              "name": "CSTE Steward"
+            }
+          }
+        ],
+        "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1505",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1146.1505"
+          }
+        ],
+        "version": "1.0.0",
+        "name": "AcanthamoebaDiseaseKeratitisDisordersSNOMED",
+        "title": "Acanthamoeba Disease [Keratitis] (Disorders) (SNOMED)",
+        "status": "active",
+        "experimental": true,
+        "publisher": "eCR",
+        "description": "Acanthamoeba Disease [Keratitis] (Disorders) (SNOMED)",
+        "useContext": [
+          {
+            "code": {
+              "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+              "code": "focus"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "49649001"
+                }
+              ],
+              "text": "Infection caused by Acanthamoeba (disorder)"
+            }
+          },
+          {
+            "code": {
+              "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context-type",
+              "code": "reporting"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                  "code": "triggering"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context-type",
+              "code": "priority"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                  "code": "routine"
+                }
+              ]
+            }
+          }
+        ],
+        "compose": {
+          "include": [
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "concept": [
+                {
+                  "code": "127631000119105",
+                  "display": "Corneal ulcer due to acanthamoeba (disorder)"
+                },
+                {
+                  "code": "15693201000119102",
+                  "display": "Keratitis of bilateral eyes caused by Acanthamoeba (disorder)"
+                },
+                {
+                  "code": "15693241000119100",
+                  "display": "Keratitis of left eye caused by Acanthamoeba (disorder)"
+                },
+                {
+                  "code": "15693281000119105",
+                  "display": "Keratitis of right eye caused by Acanthamoeba (disorder)"
+                },
+                {
+                  "code": "15698841000119105",
+                  "display": "Ulcer of right cornea caused by Acanthamoeba (disorder)"
+                },
+                {
+                  "code": "15698881000119100",
+                  "display": "Ulcer of left cornea caused by Acanthamoeba (disorder)"
+                },
+                {
+                  "code": "231896005",
+                  "display": "Acanthamoeba keratitis (disorder)"
+                },
+                {
+                  "code": "711645008",
+                  "display": "Corneal ulcer caused by Acanthamoeba (disorder)"
+                },
+                {
+                  "code": "840444002",
+                  "display": "Dacryoadenitis due to Acanthamoeba keratitis (disorder)"
+                },
+                {
+                  "code": "840484006",
+                  "display": "Conjunctivitis caused by Acanthamoeba (disorder)"
+                }
+              ]
+            }
+          ]
+        },
+        "expansion": {
+          "timestamp": "2022-04-05T14:06:43+00:00",
+          "contains": [
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "127631000119105"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "15693201000119102"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "15693241000119100"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "15693281000119105"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "15698841000119105"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "15698881000119100"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "231896005"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "711645008"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "840444002"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "840484006"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ValueSet/2.16.840.1.113762.1.4.1146.1505"
+      }
+    },
+    {
+      "fullUrl": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1507",
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "2.16.840.1.113762.1.4.1146.1507",
+        "meta": {
+          "tag": [
+            {
+              "system": "http://aphl.org/fhir/vsm/CodeSystem/vsm-workflow-codes",
+              "code": "vsm-authored"
+            }
+          ],
+          "profile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-triggering-valueset"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ValueSet</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ValueSet \"2.16.840.1.113762.1.4.1146.1507\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-ph-triggering-valueset.html\">US Public Health Triggering ValueSet</a></p></div><p><b>author</b>: CSTE Author: </p><p><b>steward</b>: CSTE Steward: </p><p><b>url</b>: <code>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1507</code></p><p><b>identifier</b>: id: urn:oid:2.16.840.1.113762.1.4.1146.1507</p><p><b>version</b>: 1.0.0</p><p><b>name</b>: ArsenicExposureandToxicityDisordersSNOMED</p><p><b>title</b>: Arsenic Exposure and Toxicity (Disorders) (SNOMED)</p><p><b>status</b>: active</p><p><b>experimental</b>: true</p><p><b>publisher</b>: eCR</p><p><b>description</b>: Arsenic Exposure and Toxicity (Disorders) (SNOMED)</p><blockquote><p><b>compose</b></p><blockquote><p><b>include</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><blockquote><p><b>concept</b></p><p><b>code</b>: 212516009</p><p><b>display</b>: Arsenical anti-infective poisoning (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 216792005</p><p><b>display</b>: Accidental poisoning caused by arsenic and its compounds and fumes (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 216794006</p><p><b>display</b>: Accidental poisoning caused by arsenic compound (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 216795007</p><p><b>display</b>: Accidental poisoning caused by arsenic fumes (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 241770003</p><p><b>display</b>: Trivalent arsenic compound causing toxic effect (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 241771004</p><p><b>display</b>: Pentavalent arsenic compound causing toxic effect (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 360406006</p><p><b>display</b>: Arsenic-induced nail damage (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 36730005</p><p><b>display</b>: Arsenical tremor (finding)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 403740003</p><p><b>display</b>: Skin disease caused by arsenic (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 403741004</p><p><b>display</b>: Arsenical keratosis (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 403743001</p><p><b>display</b>: Arsenic-induced skin pigmentation (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 403744007</p><p><b>display</b>: Arsenic-induced \"rain-drop\" hypomelanosis (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 403745008</p><p><b>display</b>: Skin sign from acute arsenic toxicity (finding)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 418685002</p><p><b>display</b>: Poisoning caused by arsenic or its compounds of undetermined intent (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 62210001</p><p><b>display</b>: Inorganic arsenic poisoning (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 72501006</p><p><b>display</b>: Anemia caused by arsenic hydride (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 767146004</p><p><b>display</b>: Toxic effect of arsenic and its compounds (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 871783000</p><p><b>display</b>: Adverse reaction to arsenic and arsenic compound (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 89738003</p><p><b>display</b>: Organic arsenic poisoning (disorder)</p></blockquote><blockquote><p><b>concept</b></p><p><b>code</b>: 403742006</p><p><b>display</b>: Malignant neoplasm of skin caused by arsenic (disorder)</p></blockquote></blockquote></blockquote><blockquote><p><b>expansion</b></p><p><b>timestamp</b>: 2022-04-05 10:06:43-0400</p><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 212516009</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 216792005</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 216794006</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 216795007</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 241770003</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 241771004</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 360406006</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 36730005</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403740003</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403741004</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403743001</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403744007</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403745008</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 418685002</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 62210001</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 72501006</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 767146004</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 871783000</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 89738003</p></blockquote><blockquote><p><b>contains</b></p><p><b>system</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></p><p><b>version</b>: Provisional_2022-01-10</p><p><b>code</b>: 403742006</p></blockquote></blockquote></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+            "valueContactDetail": {
+              "name": "CSTE Author"
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-steward",
+            "valueContactDetail": {
+              "name": "CSTE Steward"
+            }
+          }
+        ],
+        "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1146.1507",
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1146.1507"
+          }
+        ],
+        "version": "1.0.0",
+        "name": "ArsenicExposureandToxicityDisordersSNOMED",
+        "title": "Arsenic Exposure and Toxicity (Disorders) (SNOMED)",
+        "status": "active",
+        "experimental": true,
+        "publisher": "eCR",
+        "description": "Arsenic Exposure and Toxicity (Disorders) (SNOMED)",
+        "useContext": [
+          {
+            "code": {
+              "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+              "code": "focus"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "767146004"
+                }
+              ],
+              "text": "Toxic effect of arsenic and its compounds (disorder)"
+            }
+          },
+          {
+            "code": {
+              "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context-type",
+              "code": "reporting"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                  "code": "triggering"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context-type",
+              "code": "priority"
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/ecr/CodeSystem/us-ph-usage-context",
+                  "code": "routine"
+                }
+              ]
+            }
+          }
+        ],
+        "compose": {
+          "include": [
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "concept": [
+                {
+                  "code": "212516009",
+                  "display": "Arsenical anti-infective poisoning (disorder)"
+                },
+                {
+                  "code": "216792005",
+                  "display": "Accidental poisoning caused by arsenic and its compounds and fumes (disorder)"
+                },
+                {
+                  "code": "216794006",
+                  "display": "Accidental poisoning caused by arsenic compound (disorder)"
+                },
+                {
+                  "code": "216795007",
+                  "display": "Accidental poisoning caused by arsenic fumes (disorder)"
+                },
+                {
+                  "code": "241770003",
+                  "display": "Trivalent arsenic compound causing toxic effect (disorder)"
+                },
+                {
+                  "code": "241771004",
+                  "display": "Pentavalent arsenic compound causing toxic effect (disorder)"
+                },
+                {
+                  "code": "360406006",
+                  "display": "Arsenic-induced nail damage (disorder)"
+                },
+                {
+                  "code": "36730005",
+                  "display": "Arsenical tremor (finding)"
+                },
+                {
+                  "code": "403740003",
+                  "display": "Skin disease caused by arsenic (disorder)"
+                },
+                {
+                  "code": "403741004",
+                  "display": "Arsenical keratosis (disorder)"
+                },
+                {
+                  "code": "403743001",
+                  "display": "Arsenic-induced skin pigmentation (disorder)"
+                },
+                {
+                  "code": "403744007",
+                  "display": "Arsenic-induced \"rain-drop\" hypomelanosis (disorder)"
+                },
+                {
+                  "code": "403745008",
+                  "display": "Skin sign from acute arsenic toxicity (finding)"
+                },
+                {
+                  "code": "418685002",
+                  "display": "Poisoning caused by arsenic or its compounds of undetermined intent (disorder)"
+                },
+                {
+                  "code": "62210001",
+                  "display": "Inorganic arsenic poisoning (disorder)"
+                },
+                {
+                  "code": "72501006",
+                  "display": "Anemia caused by arsenic hydride (disorder)"
+                },
+                {
+                  "code": "767146004",
+                  "display": "Toxic effect of arsenic and its compounds (disorder)"
+                },
+                {
+                  "code": "871783000",
+                  "display": "Adverse reaction to arsenic and arsenic compound (disorder)"
+                },
+                {
+                  "code": "89738003",
+                  "display": "Organic arsenic poisoning (disorder)"
+                },
+                {
+                  "code": "403742006",
+                  "display": "Malignant neoplasm of skin caused by arsenic (disorder)"
+                }
+              ]
+            }
+          ]
+        },
+        "expansion": {
+          "timestamp": "2022-04-05T14:06:43+00:00",
+          "contains": [
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "212516009"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "216792005"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "216794006"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "216795007"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "241770003"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "241771004"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "360406006"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "36730005"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403740003"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403741004"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403743001"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403744007"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403745008"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "418685002"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "62210001"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "72501006"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "767146004"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "871783000"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "89738003"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "version": "Provisional_2022-01-10",
+              "code": "403742006"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "ValueSet/2.16.840.1.113762.1.4.1146.1507"
+      }
+    }
+  ]
+}

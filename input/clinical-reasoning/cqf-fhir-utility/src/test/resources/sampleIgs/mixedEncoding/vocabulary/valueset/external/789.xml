@@ -1,0 +1,4 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="789" />
+  <url value="example.com/ValueSet/789" />
+</ValueSet>

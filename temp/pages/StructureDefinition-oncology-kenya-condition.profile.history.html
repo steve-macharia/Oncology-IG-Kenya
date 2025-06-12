@@ -1,0 +1,21 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='oncology-kenya-condition' %}
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='oncology-kenya-condition' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{modelType}}: OncologyKenyaCondition - Change History</h2>
+{% include fragment-simpletable.html %}
+  <p>Changes in the oncology-kenya-condition {{modelType | downcase}}.</p>
+
+  {%include StructureDefinition-oncology-kenya-condition-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}
