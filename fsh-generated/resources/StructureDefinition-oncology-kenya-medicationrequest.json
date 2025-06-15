@@ -1,0 +1,97 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-kenya-medicationrequest",
+  "url": "http://example.org/StructureDefinition/oncology-kenya-medicationrequest",
+  "name": "OncologyKenyaMedicationRequest",
+  "title": "Oncology Kenya MedicationRequest",
+  "status": "draft",
+  "description": "Oncology-specific medication request profile for Kenya, integrating with SHA, DHIS2, and Oncology Dispensing Tool (ODT).",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationRequest.status",
+        "path": "MedicationRequest.status",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.statusReason",
+        "path": "MedicationRequest.statusReason",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]",
+        "path": "MedicationRequest.medication[x]",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://who.org/essential-medicines"
+        }
+      },
+      {
+        "id": "MedicationRequest.reasonReference",
+        "path": "MedicationRequest.reasonReference",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction",
+        "path": "MedicationRequest.dosageInstruction",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing",
+        "path": "MedicationRequest.dosageInstruction.timing",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route",
+        "path": "MedicationRequest.dosageInstruction.route",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.method",
+        "path": "MedicationRequest.dosageInstruction.method",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.performer",
+        "path": "MedicationRequest.dispenseRequest.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.substitution.allowed[x]",
+        "path": "MedicationRequest.substitution.allowed[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationRequest.substitution.allowed[x]:allowedBoolean",
+        "path": "MedicationRequest.substitution.allowed[x]",
+        "sliceName": "allowedBoolean",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

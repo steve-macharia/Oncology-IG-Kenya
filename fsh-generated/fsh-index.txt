@@ -1,0 +1,8 @@
+Output File                                                Name                            Type     FSH File                            Lines
+StructureDefinition-oncology-kenya-condition.json          OncologyKenyaCondition          Profile  OncologyKenyaCondition.fsh          2 - 12
+StructureDefinition-oncology-kenya-coverage.json           OncologyKenyaCoverage           Profile  OncologyKenyaCoverage.fsh           2 - 26
+StructureDefinition-oncology-kenya-diagnosticreport.json   OncologyKenyaDiagnosticReport   Profile  OncologyKenyaDiagnosticReport.fsh   2 - 23
+StructureDefinition-oncology-kenya-medicationrequest.json  OncologyKenyaMedicationRequest  Profile  OncologyKenyaMedicationRequest.fsh  2 - 24
+StructureDefinition-oncology-kenya-observation.json        OncologyKenyaObservation        Profile  OncologyKenyaObservation.fsh        2 - 9
+StructureDefinition-oncology-kenya-patient.json            OncologyKenyaPatient            Profile  OncologyKenyaPatient.fsh            1 - 50
+StructureDefinition-oncology-kenya-registry-report.json    OncologyKenyaRegistryReport     Profile   OncologyKenyaRegistryReport.fsh    2 - 23

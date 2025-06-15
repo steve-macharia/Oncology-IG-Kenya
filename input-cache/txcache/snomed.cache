@@ -1,0 +1,73 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "24484000"
+      },
+      {
+        "code" : "6736007"
+      },
+      {
+        "code" : "255604002"
+      }]
+    }]
+  }
+}}####
+e: {
+  "source" : tx.fhir.org,
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:125bd030-f965-4374-a241-8b720142a773",
+    "timestamp" : "2025-06-10T10:23:45.526Z",
+    "total" : 3,
+    "offset" : 0,
+    "parameter" : [{
+      "name" : "displayLanguage",
+      "valueCode" : "en-US"
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "offset",
+      "valueInteger" : 0
+    },
+    {
+      "name" : "count",
+      "valueInteger" : 1000
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "24484000",
+      "display" : "Severe"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "6736007",
+      "display" : "Midgrade"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "255604002",
+      "display" : "Mild"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

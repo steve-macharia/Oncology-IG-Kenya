@@ -1,0 +1,212 @@
+{
+  "oncology-kenya-condition" : {
+    "index" : 0,
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-condition",
+    "name" : "OncologyKenyaCondition",
+    "title" : "oncology kenya condition",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-oncology-kenya-condition.html",
+    "kind" : "resource",
+    "type" : "Condition",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Condition",
+    "basename" : "Condition",
+    "basepath" : "http://hl7.org/fhir/R4/condition.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Tue Jun 10 13:49:52 EAT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "Medby_Tech",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "condition profile from oncology diagnoses in Kenya, ensuring structured documentation and national cancer registry reporting.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "oncology-kenya-coverage" : {
+    "index" : 1,
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-coverage",
+    "name" : "OncologyKenyaCoverage",
+    "title" : "Oncology Kenya Coverage",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-oncology-kenya-coverage.html",
+    "kind" : "resource",
+    "type" : "Coverage",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Coverage",
+    "basename" : "Coverage",
+    "basepath" : "http://hl7.org/fhir/R4/coverage.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Tue Jun 10 13:49:52 EAT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "Medby_Tech",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Defines insurance and reimbursement details under SHA in Kenya, ensuring financial tracking and integration with NCCP Data Systems.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "oncology-kenya-diagnosticreport" : {
+    "index" : 2,
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-diagnosticreport",
+    "name" : "OncologyKenyaDiagnosticReport",
+    "title" : "Oncology Kenya Diagnostic Report",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-oncology-kenya-diagnosticreport.html",
+    "kind" : "resource",
+    "type" : "DiagnosticReport",
+    "base" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+    "basename" : "DiagnosticReport",
+    "basepath" : "http://hl7.org/fhir/R4/diagnosticreport.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Tue Jun 10 13:49:52 EAT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "Medby_Tech",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Defines pathology and laboratory reports for oncology patients in Kenya, integrating with DHIS2 and cancer registries.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "oncology-kenya-medicationrequest" : {
+    "index" : 3,
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-medicationrequest",
+    "name" : "OncologyKenyaMedicationRequest",
+    "title" : "Oncology Kenya MedicationRequest",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-oncology-kenya-medicationrequest.html",
+    "kind" : "resource",
+    "type" : "MedicationRequest",
+    "base" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+    "basename" : "MedicationRequest",
+    "basepath" : "http://hl7.org/fhir/R4/medicationrequest.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Tue Jun 10 13:49:52 EAT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "Medby_Tech",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Oncology-specific medication request profile for Kenya, integrating with SHA, DHIS2, and Oncology Dispensing Tool (ODT).",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "oncology-kenya-observation" : {
+    "index" : 4,
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-observation",
+    "name" : "OncologyKenyaObservation",
+    "title" : "Oncology Kenya Observation",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-oncology-kenya-observation.html",
+    "kind" : "resource",
+    "type" : "Observation",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Observation",
+    "basename" : "Observation",
+    "basepath" : "http://hl7.org/fhir/R4/observation.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Tue Jun 10 13:49:52 EAT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "Medby_Tech",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Observations for oncology-specific diagnostic and laboratory tests in Kenya, integrating with DHIS2 and national cancer registries.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "oncology-kenya-patient" : {
+    "index" : 5,
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-patient",
+    "name" : "OncologyKenyaPatient",
+    "title" : "Oncology Kenya Patient",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-oncology-kenya-patient.html",
+    "kind" : "resource",
+    "type" : "Patient",
+    "base" : "http://hl7.org/fhir/StructureDefinition/Patient",
+    "basename" : "Patient",
+    "basepath" : "http://hl7.org/fhir/R4/patient.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Tue Jun 10 13:49:52 EAT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "Medby_Tech",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Customized patient profile for oncology care in Kenya, integrating with SHA, DHIS2, and national cancer registries.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  },
+  "oncology-kenya-registry-report" : {
+    "index" : 6,
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-registry-report",
+    "name" : "OncologyKenyaRegistryReport",
+    "title" : "Oncology Kenya Registry Report",
+    "uml" : false,
+    "titlelang" : {
+    },
+    "path" : "StructureDefinition-oncology-kenya-registry-report.html",
+    "kind" : "resource",
+    "type" : "DocumentReference",
+    "base" : "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+    "basename" : "DocumentReference",
+    "basepath" : "http://hl7.org/fhir/R4/documentreference.html",
+    "adl" : false,
+    "status" : "draft",
+    "date" : "Tue Jun 10 13:49:52 EAT 2025",
+    "abstract" : false,
+    "derivation" : "constraint",
+    "publisher" : "Medby_Tech",
+    "publisherlang" : {
+    },
+    "copyright" : null,
+    "copyrightlang" : {
+    },
+    "description" : "Defines structured cancer registry reporting format for Kenya, integrating with KEMRI Cancer Registry, Nairobi Cancer Registry, and DHIS2.",
+    "descriptionlang" : {
+    },
+    "obligations" : false
+  }
+}

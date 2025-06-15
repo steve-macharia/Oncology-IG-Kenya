@@ -1,0 +1,58 @@
+[
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-condition.json",
+    "fshName": "OncologyKenyaCondition",
+    "fshType": "Profile",
+    "fshFile": "OncologyKenyaCondition.fsh",
+    "startLine": 2,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-coverage.json",
+    "fshName": "OncologyKenyaCoverage",
+    "fshType": "Profile",
+    "fshFile": "OncologyKenyaCoverage.fsh",
+    "startLine": 2,
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-diagnosticreport.json",
+    "fshName": "OncologyKenyaDiagnosticReport",
+    "fshType": "Profile",
+    "fshFile": "OncologyKenyaDiagnosticReport.fsh",
+    "startLine": 2,
+    "endLine": 23
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-medicationrequest.json",
+    "fshName": "OncologyKenyaMedicationRequest",
+    "fshType": "Profile",
+    "fshFile": "OncologyKenyaMedicationRequest.fsh",
+    "startLine": 2,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-observation.json",
+    "fshName": "OncologyKenyaObservation",
+    "fshType": "Profile",
+    "fshFile": "OncologyKenyaObservation.fsh",
+    "startLine": 2,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-patient.json",
+    "fshName": "OncologyKenyaPatient",
+    "fshType": "Profile",
+    "fshFile": "OncologyKenyaPatient.fsh",
+    "startLine": 1,
+    "endLine": 50
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-registry-report.json",
+    "fshName": "OncologyKenyaRegistryReport",
+    "fshType": "Profile",
+    "fshFile": " OncologyKenyaRegistryReport.fsh",
+    "startLine": 2,
+    "endLine": 23
+  }
+]

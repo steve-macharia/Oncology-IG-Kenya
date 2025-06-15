@@ -1,0 +1,9 @@
+{
+  "http://who.org/essential-medicines" : null,
+  "http://hl7.org/fhir/sid/icd-10" : null,
+  "http://terminology.health.go.ke/ValueSet/coverage-type-kenya" : null,
+  "http://terminology.health.go.ke/ValueSet/condition-category-kenya" : null,
+  "http://loinc.org" : null,
+  "http://hl7.org/fhir/ValueSet/patient-contact-relationship" : null,
+  "http://terminology.health.go.ke/ValueSet/marital-status-kenya" : null
+}

@@ -1,0 +1,549 @@
+{
+  "date" : "Tue, 10 Jun, 2025 13:58:48 +0300",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-medby.json",
+      "size" : 3440,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 531,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 531,
+          "length" : 30
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 531,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 537,
+          "length" : 47
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 537,
+          "length" : 12691
+        },
+        {
+          "activity" : "validate",
+          "start" : 571,
+          "length" : 34869
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 606,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 611,
+          "length" : 452
+        },
+        {
+          "activity" : "generate2",
+          "start" : 621,
+          "length" : 305
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 1115,
+          "length" : 63
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 1145,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncology-kenya-condition.json",
+      "size" : 1842,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 531,
+          "length" : 75
+        },
+        {
+          "activity" : "load",
+          "start" : 531,
+          "length" : 65
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 531,
+          "length" : 549
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 537,
+          "length" : 1
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 537,
+          "length" : 19
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 549,
+          "length" : 4322
+        },
+        {
+          "activity" : "validate",
+          "start" : 566,
+          "length" : 2238
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 606,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 606,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 611,
+          "length" : 469
+        },
+        {
+          "activity" : "generate2",
+          "start" : 621,
+          "length" : 2021
+        },
+        {
+          "activity" : "generate2",
+          "start" : 633,
+          "length" : 45040
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 980,
+          "length" : 34
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 1115,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 1145,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncology-kenya-coverage.json",
+      "size" : 2280,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 531,
+          "length" : 21
+        },
+        {
+          "activity" : "load",
+          "start" : 531,
+          "length" : 22
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 532,
+          "length" : 93
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 554,
+          "length" : 1306
+        },
+        {
+          "activity" : "validate",
+          "start" : 568,
+          "length" : 458
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 606,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 612,
+          "length" : 484
+        },
+        {
+          "activity" : "generate2",
+          "start" : 623,
+          "length" : 750
+        },
+        {
+          "activity" : "generate2",
+          "start" : 678,
+          "length" : 441
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 1115,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 1145,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncology-kenya-diagnosticreport.json",
+      "size" : 2401,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 531,
+          "length" : 20
+        },
+        {
+          "activity" : "load",
+          "start" : 531,
+          "length" : 22
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 532,
+          "length" : 67
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 537,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 555,
+          "length" : 1286
+        },
+        {
+          "activity" : "validate",
+          "start" : 569,
+          "length" : 287
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 606,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 612,
+          "length" : 535
+        },
+        {
+          "activity" : "generate2",
+          "start" : 624,
+          "length" : 460
+        },
+        {
+          "activity" : "generate2",
+          "start" : 679,
+          "length" : 280
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 1115,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 1145,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncology-kenya-medicationrequest.json",
+      "size" : 2916,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 531,
+          "length" : 20
+        },
+        {
+          "activity" : "load",
+          "start" : 531,
+          "length" : 23
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 532,
+          "length" : 601
+        },
+        {
+          "activity" : "scan",
+          "start" : 537,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 537,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 556,
+          "length" : 5017
+        },
+        {
+          "activity" : "validate",
+          "start" : 569,
+          "length" : 794
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 606,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 606,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 613,
+          "length" : 625
+        },
+        {
+          "activity" : "generate2",
+          "start" : 624,
+          "length" : 6419
+        },
+        {
+          "activity" : "generate2",
+          "start" : 679,
+          "length" : 685
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 1115,
+          "length" : 19
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 1145,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 1145,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncology-kenya-observation.json",
+      "size" : 1331,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 531,
+          "length" : 18
+        },
+        {
+          "activity" : "load",
+          "start" : 531,
+          "length" : 21
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 532,
+          "length" : 457
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 561,
+          "length" : 1404
+        },
+        {
+          "activity" : "validate",
+          "start" : 570,
+          "length" : 361
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 606,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 613,
+          "length" : 535
+        },
+        {
+          "activity" : "generate2",
+          "start" : 631,
+          "length" : 822
+        },
+        {
+          "activity" : "generate2",
+          "start" : 680,
+          "length" : 3557
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 980,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 1115,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 1145,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncology-kenya-patient.json",
+      "size" : 5419,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 531,
+          "length" : 21
+        },
+        {
+          "activity" : "load",
+          "start" : 531,
+          "length" : 26
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 533,
+          "length" : 266
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 537,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 563,
+          "length" : 1510
+        },
+        {
+          "activity" : "validate",
+          "start" : 570,
+          "length" : 422
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 606,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 614,
+          "length" : 717
+        },
+        {
+          "activity" : "generate2",
+          "start" : 631,
+          "length" : 946
+        },
+        {
+          "activity" : "generate2",
+          "start" : 683,
+          "length" : 368
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 1115,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-oncology-kenya-registry-report.json",
+      "size" : 2597,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 531,
+          "length" : 19
+        },
+        {
+          "activity" : "load",
+          "start" : 531,
+          "length" : 22
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 533,
+          "length" : 140
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 537,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 564,
+          "length" : 2041
+        },
+        {
+          "activity" : "validate",
+          "start" : 571,
+          "length" : 419
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 606,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 615,
+          "length" : 519
+        },
+        {
+          "activity" : "generate2",
+          "start" : 632,
+          "length" : 1024
+        },
+        {
+          "activity" : "generate2",
+          "start" : 684,
+          "length" : 292
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 1115,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 1145,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2332 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>IP Review</title>
+    <link rel="stylesheet" href="fhir.css"/>
+  </head>
+  <body>
+    <h2>Unattributed Code Systems</h2>
+    <ul></ul>
+    <h2>Copyright Fragment</h2>
+    <p style="color: maroon">
+      <b>This fragment is not visible to the reader</b>
+    </p>
+    <div>
+      <p>This publication includes IP covered under the following statements.</p>
+
+      <ul>
+
+        <li>
+This material contains content from           <a href="http://loinc.org">LOINC</a>
+. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the           <a href="http://loinc.org/license">license</a>
+. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.          <div onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_1">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-loinc.html">LOINC</a>
+:                 <a href="StructureDefinition-oncology-kenya-registry-report.html">OncologyKenyaRegistryReport</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact           <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a>
+ or           <a href="mailto:info@snomed.org">info@snomed.org</a>
+.          <div onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}" id="ipp_2">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_2">
+
+            <ul>
+
+              <li>
+                <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>
+:                 <a href="StructureDefinition-oncology-kenya-condition.html">OncologyKenyaCondition</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see:           <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a>
+          <div onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}" id="ipp_3">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_3">
+
+            <ul>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.4.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>
+:                 <a href="StructureDefinition-oncology-kenya-condition.html">OncologyKenyaCondition</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v2-0074.html">diagnosticServiceSectionId</a>
+:                 <a href="StructureDefinition-oncology-kenya-diagnosticreport.html">OncologyKenyaDiagnosticReport</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>
+:                 <a href="StructureDefinition-oncology-kenya-observation.html">OncologyKenyaObservation</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+
+      </ul>
+
+
+    </div>
+    <h2>Copyright and Registered Trademark Uses</h2>
+    <ul>
+      <li>
+
+          IG &copy; 2025+ Medby_Tech.  Package medby#0.1.0 based on FHIR 4.0.1. Generated 2025-06-10 
+          
+          
+                      Links: Table of Contents |
+                 QA Report
+                 
+                
+           
+         (        <a href="toc.html">src</a>
+)
+      </li>
+      <li>
+
+          hl7.fhir.us.hai: Healthcare Associated Infection Implementation Guide   &reg;&copy; HL7 |
+             
+                CC0
+         (        <a href="searchform.html">src</a>
+)
+      </li>
+      <li>
+There are examples where a medication request may include the option of an oral dose or an Intravenous or Intramuscular dose.  For example, "Ondansetron 8mg orally or IV twice a day as needed for nausea" or "Compazine&reg; (prochlorperazine) 5-10mg PO or 25mg PR bid prn nausea or vomiting".  In these cases, two medication requests would be created that could be grouped together.  The decision on which dose and route of administration to use is based on the patient's condition at the time the dose is needed. (        <a href="StructureDefinition-oncology-kenya-medicationrequest-definitions.html">src</a>
+)
+      </li>
+      <li>
+oncologyfhirigkenya - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="toc.html">src</a>
+)
+      </li>
+    </ul>
+    <h2>External References</h2>
+    <table class="grid">
+      <tr>
+        <th>
+          <b>Type</b>
+        </th>
+        <th>
+          <b>Reference</b>
+        </th>
+        <th>
+          <b>Content</b>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/condition-category-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+          <span style="opacity: 0.5">problem-list-item | encounter-diagnosis</span>
+          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="http://terminology.health.go.ke/ValueSet/condition-category-kenya" class="binding">http://terminology.health.go.ke/ValueSet/condition-category-kenya</a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a>
+          <span title="null" class="binding">)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/coverage-type-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+          <span style="opacity: 0.5">Coverage category such as medical or accident</span>
+          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="http://terminology.health.go.ke/ValueSet/coverage-type-kenya" class="binding">http://terminology.health.go.ke/ValueSet/coverage-type-kenya</a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
+          <span title="null" class="binding">)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest.html">web</a>
+        </td>
+        <td>
+          <a href="http://who.org/essential-medicines">who.org</a>
+        </td>
+        <td>
+          <span style="opacity: 0.5">Medication to be taken</span>
+          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="http://who.org/essential-medicines" class="binding">http://who.org/essential-medicines</a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a>
+          <span title="null" class="binding">)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/marital-status-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+          <span style="opacity: 0.5">Marital (civil) status of a patient</span>
+          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="http://terminology.health.go.ke/ValueSet/marital-status-kenya" class="binding">http://terminology.health.go.ke/ValueSet/marital-status-kenya</a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a>
+          <span title="null" class="binding">)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/condition-category-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+Unless not suitable, these codes SHALL be taken from            <a href="http://terminology.health.go.ke/ValueSet/condition-category-kenya">http://terminology.health.go.ke/ValueSet/condition-category-kenya</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>http://terminology.health.go.ke/ValueSet/condition-category-kenya</code><button data-clipboard-text="http://terminology.health.go.ke/ValueSet/condition-category-kenya" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/condition-category-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+          <span style="color:DarkGray">Unless not suitable, these codes SHALL be taken from </span>
+           <a href="http://terminology.health.go.ke/ValueSet/condition-category-kenya">http://terminology.health.go.ke/ValueSet/condition-category-kenya</a>
+          <span style="color:DarkGray;text-decoration:line-through">http://hl7.org/fhir/ValueSet/condition-category</span>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>http://terminology.health.go.ke/ValueSet/condition-category-kenya</code><button data-clipboard-text="http://terminology.health.go.ke/ValueSet/condition-category-kenya" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l4706">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l306">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1821">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l328">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/condition-category-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+          <a style="opacity: 1.0" href="http://terminology.health.go.ke/ValueSet/condition-category-kenya">http://terminology.health.go.ke/ValueSet/condition-category-kenya</a>
+          <div>
+            <code>http://terminology.health.go.ke/ValueSet/condition-category-kenya</code>
+            <button data-clipboard-text="http://terminology.health.go.ke/ValueSet/condition-category-kenya" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/condition-category-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+problem-list-item | encounter-diagnosis          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="http://terminology.health.go.ke/ValueSet/condition-category-kenya" class="binding">http://terminology.health.go.ke/ValueSet/condition-category-kenya</a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a>
+          <span title="null" class="binding">)</span>
+          <br/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l6535">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l301">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l4168">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l7746">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-condition.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l7743">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/coverage-type-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+The codes SHALL be taken from            <a href="http://terminology.health.go.ke/ValueSet/coverage-type-kenya">http://terminology.health.go.ke/ValueSet/coverage-type-kenya</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#required">required</a>
+ to           <span class="copy-text-inline">
+<code>http://terminology.health.go.ke/ValueSet/coverage-type-kenya</code><button data-clipboard-text="http://terminology.health.go.ke/ValueSet/coverage-type-kenya" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/coverage-type-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+The codes SHALL be taken from           <span style="color:DarkGray;text-decoration:line-through">The codes SHOULD be taken from </span>
+           <a href="http://terminology.health.go.ke/ValueSet/coverage-type-kenya">http://terminology.health.go.ke/ValueSet/coverage-type-kenya</a>
+          <span style="color:DarkGray;text-decoration:line-through">http://hl7.org/fhir/ValueSet/coverage-type</span>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#required">required</a>
+ to           <span class="copy-text-inline">
+<code>http://terminology.health.go.ke/ValueSet/coverage-type-kenya</code><button data-clipboard-text="http://terminology.health.go.ke/ValueSet/coverage-type-kenya" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l6487">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l306">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l2175">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l328">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/coverage-type-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+          <a style="opacity: 1.0" href="http://terminology.health.go.ke/ValueSet/coverage-type-kenya">http://terminology.health.go.ke/ValueSet/coverage-type-kenya</a>
+          <div>
+            <code>http://terminology.health.go.ke/ValueSet/coverage-type-kenya</code>
+            <button data-clipboard-text="http://terminology.health.go.ke/ValueSet/coverage-type-kenya" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/coverage-type-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+Coverage category such as medical or accident          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="http://terminology.health.go.ke/ValueSet/coverage-type-kenya" class="binding">http://terminology.health.go.ke/ValueSet/coverage-type-kenya</a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
+          <span title="null" class="binding">)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l7093">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l301">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l4813">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l8964">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-coverage.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l8916">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-diagnosticreport-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l4763">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-diagnosticreport-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l306">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-diagnosticreport-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1338">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-diagnosticreport-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l328">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-diagnosticreport.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l5683">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-diagnosticreport.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l301">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-diagnosticreport.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l3607">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-diagnosticreport.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l6711">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-diagnosticreport.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l6774">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://who.org/essential-medicines">who.org</a>
+        </td>
+        <td>
+Unless not suitable, these codes SHALL be taken from            <a href="http://who.org/essential-medicines">http://who.org/essential-medicines</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>http://who.org/essential-medicines</code><button data-clipboard-text="http://who.org/essential-medicines" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://who.org/essential-medicines">who.org</a>
+        </td>
+        <td>
+Unless not suitable, these codes SHALL be taken from           <span style="color:DarkGray;text-decoration:line-through">For example codes, see </span>
+           <a href="http://who.org/essential-medicines">http://who.org/essential-medicines</a>
+          <span style="color:DarkGray;text-decoration:line-through">http://hl7.org/fhir/ValueSet/medication-codes</span>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>http://who.org/essential-medicines</code><button data-clipboard-text="http://who.org/essential-medicines" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l9425">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l306">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l3247">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l328">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest.html">web</a>
+        </td>
+        <td>
+          <a href="http://who.org/essential-medicines">who.org</a>
+        </td>
+        <td>
+          <a style="opacity: 1.0" href="http://who.org/essential-medicines">http://who.org/essential-medicines</a>
+          <div>
+            <code>http://who.org/essential-medicines</code>
+            <button data-clipboard-text="http://who.org/essential-medicines" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest.html">web</a>
+        </td>
+        <td>
+          <a href="http://who.org/essential-medicines">who.org</a>
+        </td>
+        <td>
+Medication to be taken          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="http://who.org/essential-medicines" class="binding">http://who.org/essential-medicines</a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a>
+          <span title="null" class="binding">)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10265">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l301">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l8209">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l15360">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-medicationrequest.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l15201">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-observation-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l5580">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-observation-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l306">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-observation-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l2306">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-observation-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l328">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-observation.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l7211">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-observation.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l301">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-observation.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l5506">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-observation.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10281">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-observation.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10317">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/marital-status-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+Unless not suitable, these codes SHALL be taken from            <a href="http://terminology.health.go.ke/ValueSet/marital-status-kenya">http://terminology.health.go.ke/ValueSet/marital-status-kenya</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>http://terminology.health.go.ke/ValueSet/marital-status-kenya</code><button data-clipboard-text="http://terminology.health.go.ke/ValueSet/marital-status-kenya" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/marital-status-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+          <span style="color:DarkGray">Unless not suitable, these codes SHALL be taken from </span>
+           <a href="http://terminology.health.go.ke/ValueSet/marital-status-kenya">http://terminology.health.go.ke/ValueSet/marital-status-kenya</a>
+          <span style="color:DarkGray;text-decoration:line-through">http://hl7.org/fhir/ValueSet/marital-status</span>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>http://terminology.health.go.ke/ValueSet/marital-status-kenya</code><button data-clipboard-text="http://terminology.health.go.ke/ValueSet/marital-status-kenya" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l9916">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l306">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l2594">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l328">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/marital-status-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+          <a style="opacity: 1.0" href="http://terminology.health.go.ke/ValueSet/marital-status-kenya">http://terminology.health.go.ke/ValueSet/marital-status-kenya</a>
+          <div>
+            <code>http://terminology.health.go.ke/ValueSet/marital-status-kenya</code>
+            <button data-clipboard-text="http://terminology.health.go.ke/ValueSet/marital-status-kenya" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient.html">web</a>
+        </td>
+        <td>
+          <a href="http://terminology.health.go.ke/ValueSet/marital-status-kenya">terminology.health.go.ke</a>
+        </td>
+        <td>
+Marital (civil) status of a patient          <br class="binding"/>
+          <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+          <a href="http://terminology.health.go.ke/ValueSet/marital-status-kenya" class="binding">http://terminology.health.go.ke/ValueSet/marital-status-kenya</a>
+          <span title="null" class="binding"> (</span>
+          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead." class="binding">extensible</a>
+          <span title="null" class="binding">)</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10521">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l301">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l6769">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l12690">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-patient.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l12657">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-registry-report-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l6700">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-registry-report-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l306">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-registry-report-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l2769">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-registry-report-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l328">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-registry-report.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l7769">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-registry-report.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l301">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-registry-report.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l5947">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-registry-report.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l11130">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-oncology-kenya-registry-report.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l11127">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="artifacts.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l398">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l305">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="toc.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l331">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>
+.  Package medby#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+    </table>
+    <h2>Internal Images</h2>
+    <table class="grid">
+      <tr>
+        <td>
+tree-filter.png          <br/>
+          <img src="tree-filter.png" alt="tree-filter.png" width="600px" height="auto"/>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
