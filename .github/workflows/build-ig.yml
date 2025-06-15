@@ -27,8 +27,8 @@ jobs:
     - name: Install SUSHI
       run: npm install -g fsh-sushi
 
-    - name: Download IG Publisher v2.0.5
-      run: wget https://github.com/HL7/fhir-ig-publisher/releases/download/v2.0.5/publisher.jar -O publisher.jar
+    - name: Download latest IG Publisher
+      run: wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -O publisher.jar
 
     - name: Run SUSHI to generate FHIR resources
       run: sushi .
