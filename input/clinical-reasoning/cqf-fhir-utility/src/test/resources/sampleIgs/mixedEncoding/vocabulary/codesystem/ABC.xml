@@ -1,0 +1,4 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ABC" />
+  <url value="example.com/CodeSystem/ABC" />
+</CodeSystem>

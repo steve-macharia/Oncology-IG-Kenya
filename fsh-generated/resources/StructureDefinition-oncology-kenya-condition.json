@@ -1,0 +1,63 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-kenya-condition",
+  "url": "http://example.org/StructureDefinition/oncology-kenya-condition",
+  "name": "OncologyKenyaCondition",
+  "title": "oncology kenya condition",
+  "status": "draft",
+  "description": "condition profile from oncology diagnoses in Kenya, ensuring structured documentation and national cancer registry reporting.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/condition-clinical"
+        }
+      },
+      {
+        "id": "Condition.category",
+        "path": "Condition.category",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.health.go.ke/ValueSet/condition-category-kenya"
+        }
+      },
+      {
+        "id": "Condition.severity",
+        "path": "Condition.severity",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/condition-severity"
+        }
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/sid/icd-10"
+        }
+      },
+      {
+        "id": "Condition.onset[x]",
+        "path": "Condition.onset[x]",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

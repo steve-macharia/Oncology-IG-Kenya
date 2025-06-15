@@ -1,0 +1,9 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-medby.json	3440	-	1	1	0	0	0	0	47	12691	0	0	0	0	0	0	0	1	0	0	452	305	0	0	0	63	0	1
+fsh-generated/resources/StructureDefinition-oncology-kenya-condition.json	1842	75	0	549	1	0	19	0	0	4322	0	0	1	0	0	0	0	2	0	0	469	2021	0	34	0	12	0	1
+fsh-generated/resources/StructureDefinition-oncology-kenya-coverage.json	2280	21	0	93	0	0	0	0	0	1306	0	0	0	0	0	0	0	3	0	0	484	750	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-oncology-kenya-diagnosticreport.json	2401	20	0	67	1	0	0	0	0	1286	0	0	0	0	0	0	0	1	0	0	535	460	0	0	0	10	0	1
+fsh-generated/resources/StructureDefinition-oncology-kenya-medicationrequest.json	2916	20	0	601	0	0	0	0	1	5017	0	0	1	0	0	0	0	3	0	0	625	6419	0	0	0	19	1	4
+fsh-generated/resources/StructureDefinition-oncology-kenya-observation.json	1331	18	0	457	0	0	0	0	0	1404	0	0	0	0	0	0	0	1	0	0	535	822	0	1	0	11	0	1
+fsh-generated/resources/StructureDefinition-oncology-kenya-patient.json	5419	21	0	266	1	0	0	0	0	1510	0	0	0	0	0	0	0	1	0	0	717	946	0	0	0	15	0	0
+fsh-generated/resources/StructureDefinition-oncology-kenya-registry-report.json	2597	19	0	140	0	0	1	0	0	2041	0	0	0	0	0	0	0	2	0	0	519	1024	0	0	0	10	0	1

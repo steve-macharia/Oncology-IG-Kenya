@@ -1,0 +1,702 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 66, errors = 17, warn = 20, info = 1-->
+<head>
+  <title>oncologyfhirigkenya : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    button { padding: 0px 8px; font-size: 12px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; background-color: #f0f0f0 }
+    button:hover { background-color: #e0e0e0; }
+    .code-value { display: inline; }
+    .code-hidden { display: none; }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+    function toggleCodes() {
+      const codes = document.getElementsByClassName('code-value');
+      for (let code of codes) {
+        code.classList.toggle('code-hidden');
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for oncologyfhirigkenya</h1>
+ <p>Generated Tue Jun 10 14:08:59 EAT 2025, FHIR version 4.0.1 for medby#0.1.0 (canonical = <a href="http://example.org">http://example.org</a> (<a href="http://example.org/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.0.6</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = medby, Canonical = http://example.org</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/medby/Desktop/Oncology-IG-Kenya/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> medby</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.org</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/medby/Desktop/Oncology-IG-Kenya/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACwSURBVDhP7ZLBDsIwCIaLZz34xG3f2cQYo5UfYalJoY07ePFL4GcbpZSVWmvJgwifG+njkLDACgfVIehAQ5ffdMDvxSS2Dmqty62UUmS1rIWD8UuWd9xxVt1AnoaSGx6Buap+0G80K3BTtbtwhLPZQL0CSIA9OwUXON7dZkBeASTAThb3bffMjnCHGy00ZgUeqi5f3YOcsw01vsqYMrMljwgLrBDOwP53xL+D3R2k9ALHsmr3Yu73+gAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.4.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.4.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/medby/Desktop/Oncology-IG-Kenya/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/medby/Desktop/Oncology-IG-Kenya/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+</table><para>Templates: fhir.base.template#0.8.1. Tools: 0.5.0</para></div></td></tr>
+ <tr><td>Related IGs:</td><td>n/a</td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-ver-status.html">ConditionVerificationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (12 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/clinicalimpression.html">ClinicalImpression</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">ManifestationAndSymptomCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-fm-status.html">FinancialResourceStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R4/valueset-subscriber-relationship.html">SubscriberRelationshipCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-coverage-class.html">CoverageClassCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-coverage-copay-type.html">CoverageCopayTypeCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-coverage-financial-exception.html">ExampleCoverageFinancialExceptionCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/contract.html">Contract</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/nutritionorder.html">NutritionOrder</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html">DiagnosticReportStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html">DiagnosticServiceSectionCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-report-codes.html">LOINCDiagnosticReportCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/media.html">Media</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status.html">medicationrequest Status</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html">medicationRequest Status Reason Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html">medicationRequest Intent</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-category.html">medicationRequest Category Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-performer-role.html">ProcedurePerformerRoleCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html">medicationRequest Course of Therapy Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html">SNOMEDCTAdditionalDosageInstructions</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-approach-site-codes.html">SNOMEDCTAnatomicalStructureForAdministrationSiteCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-route-codes.html">SNOMEDCTRouteCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-administration-method-codes.html">SNOMEDCTAdministrationMethodCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-dose-rate-type.html">DoseAndRateType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/detectedissue.html">DetectedIssue</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/devicemetric.html">DeviceMetric</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/molecularsequence.html">MolecularSequence</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+ (1 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.org (Problem #1 with package-list.json at http://example.org: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 17, warn = 20, info = 1, broken links = 66, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>67</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_ImplementationGuide-medby"><b>/home/medby/Desktop/Oncology-IG-Kenya/fsh-generated/resources/ImplementationGuide-medby</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-condition"><b>/home/medby/Desktop/Oncology-IG-Kenya/fsh-generated/resources/StructureDefinition-oncology-kenya-condition</b></a></td><td><b>4</b></td><td><b>3</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-coverage"><b>/home/medby/Desktop/Oncology-IG-Kenya/fsh-generated/resources/StructureDefinition-oncology-kenya-coverage</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-diagnosticreport"><b>/home/medby/Desktop/Oncology-IG-Kenya/fsh-generated/resources/StructureDefinition-oncology-kenya-diagnosticreport</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-medicationrequest"><b>/home/medby/Desktop/Oncology-IG-Kenya/fsh-generated/resources/StructureDefinition-oncology-kenya-medicationrequest</b></a></td><td><b>2</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-observation"><b>/home/medby/Desktop/Oncology-IG-Kenya/fsh-generated/resources/StructureDefinition-oncology-kenya-observation</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-patient"><b>/home/medby/Desktop/Oncology-IG-Kenya/fsh-generated/resources/StructureDefinition-oncology-kenya-patient</b></a></td><td><b>2</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-registry-report"><b>/home/medby/Desktop/Oncology-IG-Kenya/fsh-generated/resources/StructureDefinition-oncology-kenya-registry-report</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.contact.relationship</b></td><td><b>error</b></td><td><b>The reference http://hl7.org/fhir/ValueSet/patient-contact-relationship could not be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-condition-definitions.html#l4706">output&#8203;/StructureDefinition-oncology-kenya-condition-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 461, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-condition-examples.html#l306">output&#8203;/StructureDefinition-oncology-kenya-condition-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 230, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-condition-mappings.html#l1821">output&#8203;/StructureDefinition-oncology-kenya-condition-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 733, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-condition-testing.html#l328">output&#8203;/StructureDefinition-oncology-kenya-condition-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-condition.html#l6535">output&#8203;/StructureDefinition-oncology-kenya-condition&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1536, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-condition.profile.history.html#l301">output&#8203;/StructureDefinition-oncology-kenya-condition&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-condition.profile.json.html#l4168">output&#8203;/StructureDefinition-oncology-kenya-condition&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2240, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-condition.profile.ttl.html#l7746">output&#8203;/StructureDefinition-oncology-kenya-condition&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1711, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-condition.profile.xml.html#l7743">output&#8203;/StructureDefinition-oncology-kenya-condition&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2105, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-coverage-definitions.html#l6487">output&#8203;/StructureDefinition-oncology-kenya-coverage-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 598, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-coverage-examples.html#l306">output&#8203;/StructureDefinition-oncology-kenya-coverage-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 230, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-coverage-mappings.html#l2175">output&#8203;/StructureDefinition-oncology-kenya-coverage-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 854, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-coverage-testing.html#l328">output&#8203;/StructureDefinition-oncology-kenya-coverage-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-coverage.html#l7093">output&#8203;/StructureDefinition-oncology-kenya-coverage&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1694, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-coverage.profile.history.html#l301">output&#8203;/StructureDefinition-oncology-kenya-coverage&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-coverage.profile.json.html#l4813">output&#8203;/StructureDefinition-oncology-kenya-coverage&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2523, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-coverage.profile.ttl.html#l8964">output&#8203;/StructureDefinition-oncology-kenya-coverage&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1922, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-coverage.profile.xml.html#l8916">output&#8203;/StructureDefinition-oncology-kenya-coverage&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2345, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-diagnosticreport-definitions.html#l4763">output&#8203;/StructureDefinition-oncology-kenya-diagnosticreport-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 481, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-diagnosticreport-examples.html#l306">output&#8203;/StructureDefinition-oncology-kenya-diagnosticreport-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 230, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-diagnosticreport-mappings.html#l1338">output&#8203;/StructureDefinition-oncology-kenya-diagnosticreport-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 527, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-diagnosticreport-testing.html#l328">output&#8203;/StructureDefinition-oncology-kenya-diagnosticreport-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-diagnosticreport.html#l5683">output&#8203;/StructureDefinition-oncology-kenya-diagnosticreport&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1374, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-diagnosticreport.profile.history.html#l301">output&#8203;/StructureDefinition-oncology-kenya-diagnosticreport&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-diagnosticreport.profile.json.html#l3607">output&#8203;/StructureDefinition-oncology-kenya-diagnosticreport&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1956, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-diagnosticreport.profile.ttl.html#l6711">output&#8203;/StructureDefinition-oncology-kenya-diagnosticreport&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1481, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-diagnosticreport.profile.xml.html#l6774">output&#8203;/StructureDefinition-oncology-kenya-diagnosticreport&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1824, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-medicationrequest-definitions.html#l9425">output&#8203;/StructureDefinition-oncology-kenya-medicationrequest-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 729, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-medicationrequest-examples.html#l306">output&#8203;/StructureDefinition-oncology-kenya-medicationrequest-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 230, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-medicationrequest-mappings.html#l3247">output&#8203;/StructureDefinition-oncology-kenya-medicationrequest-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-medicationrequest-testing.html#l328">output&#8203;/StructureDefinition-oncology-kenya-medicationrequest-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-medicationrequest.html#l10265">output&#8203;/StructureDefinition-oncology-kenya-medicationrequest&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2290, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-medicationrequest.profile.history.html#l301">output&#8203;/StructureDefinition-oncology-kenya-medicationrequest&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-medicationrequest.profile.json.html#l8209">output&#8203;/StructureDefinition-oncology-kenya-medicationrequest&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 4283, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-medicationrequest.profile.ttl.html#l15360">output&#8203;/StructureDefinition-oncology-kenya-medicationrequest&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3205, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-medicationrequest.profile.xml.html#l15201">output&#8203;/StructureDefinition-oncology-kenya-medicationrequest&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3963, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-observation-definitions.html#l5580">output&#8203;/StructureDefinition-oncology-kenya-observation-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 523, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-observation-examples.html#l306">output&#8203;/StructureDefinition-oncology-kenya-observation-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 230, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-observation-mappings.html#l2306">output&#8203;/StructureDefinition-oncology-kenya-observation-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 904, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-observation-testing.html#l328">output&#8203;/StructureDefinition-oncology-kenya-observation-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-observation.html#l7211">output&#8203;/StructureDefinition-oncology-kenya-observation&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1748, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-observation.profile.history.html#l301">output&#8203;/StructureDefinition-oncology-kenya-observation&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-observation.profile.json.html#l5506">output&#8203;/StructureDefinition-oncology-kenya-observation&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2937, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-observation.profile.ttl.html#l10281">output&#8203;/StructureDefinition-oncology-kenya-observation&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2212, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-observation.profile.xml.html#l10317">output&#8203;/StructureDefinition-oncology-kenya-observation&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2777, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-patient-definitions.html#l9916">output&#8203;/StructureDefinition-oncology-kenya-patient-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 796, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-patient-examples.html#l306">output&#8203;/StructureDefinition-oncology-kenya-patient-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 230, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-patient-mappings.html#l2594">output&#8203;/StructureDefinition-oncology-kenya-patient-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 952, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-patient-testing.html#l328">output&#8203;/StructureDefinition-oncology-kenya-patient-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-patient.html#l10521">output&#8203;/StructureDefinition-oncology-kenya-patient&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2346, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-patient.profile.history.html#l301">output&#8203;/StructureDefinition-oncology-kenya-patient&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-patient.profile.json.html#l6769">output&#8203;/StructureDefinition-oncology-kenya-patient&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3545, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-patient.profile.ttl.html#l12690">output&#8203;/StructureDefinition-oncology-kenya-patient&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2629, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-patient.profile.xml.html#l12657">output&#8203;/StructureDefinition-oncology-kenya-patient&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3295, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-registry-report-definitions.html#l6700">output&#8203;/StructureDefinition-oncology-kenya-registry-report-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 599, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-registry-report-examples.html#l306">output&#8203;/StructureDefinition-oncology-kenya-registry-report-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 230, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-registry-report-mappings.html#l2769">output&#8203;/StructureDefinition-oncology-kenya-registry-report-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1076, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-registry-report-testing.html#l328">output&#8203;/StructureDefinition-oncology-kenya-registry-report-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-registry-report.html#l7769">output&#8203;/StructureDefinition-oncology-kenya-registry-report&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1746, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-registry-report.profile.history.html#l301">output&#8203;/StructureDefinition-oncology-kenya-registry-report&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-registry-report.profile.json.html#l5947">output&#8203;/StructureDefinition-oncology-kenya-registry-report&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3160, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-registry-report.profile.ttl.html#l11130">output&#8203;/StructureDefinition-oncology-kenya-registry-report&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2362, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-oncology-kenya-registry-report.profile.xml.html#l11127">output&#8203;/StructureDefinition-oncology-kenya-registry-report&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2946, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l398">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 226, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l305">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l331">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 139, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Medby_Tech&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_ImplementationGuide-medby"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-medby.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/medby: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide (l1/c14253)</b></td><td><b>warning</b></td><td><b>Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ImplementationGuide#ig-0</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-condition"> </a>
+<h2><a href="StructureDefinition-oncology-kenya-condition.html">fsh-generated/resources/StructureDefinition-oncology-kenya-condition.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c32296)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12]&#8203;.binding&#8203;.valueSet (l1&#8203;/c44893)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/condition-category-kenya'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.binding&#8203;.valueSet (l1&#8203;/c47039)</b></td><td><b>error</b></td><td><b>Canonical URL 'http://hl7.org/fhir/sid/icd-10' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.binding&#8203;.valueSet (l1&#8203;/c75156)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/condition-category-kenya'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding&#8203;.valueSet (l1&#8203;/c75434)</b></td><td><b>error</b></td><td><b>Canonical URL 'http://hl7.org/fhir/sid/icd-10' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding</b></td><td><b>error</b></td><td><b>The valueSet reference http://hl7.org/fhir/sid/icd-10 on element Condition.code points to something that is not a value set (CodeSystem)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_BIND_NOT_VS</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.binding</b></td><td><b>error</b></td><td><b>The valueSet reference http://hl7.org/fhir/sid/icd-10 on element Condition.code points to something that is not a value set (CodeSystem)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_BIND_NOT_VS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/oncology-kenya-condition')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-coverage"> </a>
+<h2><a href="StructureDefinition-oncology-kenya-coverage.html">fsh-generated/resources/StructureDefinition-oncology-kenya-coverage.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[11]&#8203;.binding&#8203;.valueSet (l1&#8203;/c53426)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/coverage-type-kenya'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.binding&#8203;.valueSet (l1&#8203;/c94451)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/coverage-type-kenya'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/oncology-kenya-coverage')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-diagnosticreport"> </a>
+<h2><a href="StructureDefinition-oncology-kenya-diagnosticreport.html">fsh-generated/resources/StructureDefinition-oncology-kenya-diagnosticreport.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30]&#8203;.binding&#8203;.valueSet (l1&#8203;/c74199)</b></td><td><b>error</b></td><td><b>Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.binding&#8203;.valueSet (l1&#8203;/c76514)</b></td><td><b>error</b></td><td><b>Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.binding</b></td><td><b>error</b></td><td><b>The valueSet reference http://loinc.org on element DiagnosticReport.conclusionCode points to something that is not a value set (CodeSystem)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_BIND_NOT_VS</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30]&#8203;.binding</b></td><td><b>error</b></td><td><b>The valueSet reference http://loinc.org on element DiagnosticReport.conclusionCode points to something that is not a value set (CodeSystem)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_BIND_NOT_VS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/oncology-kenya-diagnosticreport')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-medicationrequest"> </a>
+<h2><a href="StructureDefinition-oncology-kenya-medicationrequest.html">fsh-generated/resources/StructureDefinition-oncology-kenya-medicationrequest.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17]&#8203;.binding&#8203;.valueSet (l1&#8203;/c61534)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'http://who.org/essential-medicines'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3]&#8203;.binding&#8203;.valueSet (l1&#8203;/c145665)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'http://who.org/essential-medicines'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[77]</b></td><td><b>error</b></td><td><b>This element has a Binding but the types [boolean] do not make this kind of constraint relevant</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ILLEGAL_CHARACTERISTICS</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[77]&#8203;.binding</b></td><td><b>error</b></td><td><b>The element MedicationRequest.substitution.allowed[x] has a binding, but no bindable types are present [boolean]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_BIND_NO_BINDABLE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/oncology-kenya-medicationrequest')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-observation"> </a>
+<h2><a href="StructureDefinition-oncology-kenya-observation.html">fsh-generated/resources/StructureDefinition-oncology-kenya-observation.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.binding&#8203;.valueSet (l1&#8203;/c38519)</b></td><td><b>error</b></td><td><b>Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.binding&#8203;.valueSet (l1&#8203;/c91845)</b></td><td><b>error</b></td><td><b>Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.binding</b></td><td><b>error</b></td><td><b>The valueSet reference http://loinc.org on element Observation.code points to something that is not a value set (CodeSystem)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_BIND_NOT_VS</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.binding</b></td><td><b>error</b></td><td><b>The valueSet reference http://loinc.org on element Observation.code points to something that is not a value set (CodeSystem)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_ED_BIND_NOT_VS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/oncology-kenya-observation')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-patient"> </a>
+<h2><a href="StructureDefinition-oncology-kenya-patient.html">fsh-generated/resources/StructureDefinition-oncology-kenya-patient.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[34]&#8203;.binding&#8203;.valueSet (l1&#8203;/c109634)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/marital-status-kenya'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43]&#8203;.binding&#8203;.valueSet (l1&#8203;/c122388)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/ValueSet/patient-contact-relationship'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[12]&#8203;.binding&#8203;.valueSet (l1&#8203;/c149333)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/marital-status-kenya'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[18]&#8203;.binding&#8203;.valueSet (l1&#8203;/c150158)</b></td><td><b>error</b></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/ValueSet/patient-contact-relationship'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/oncology-kenya-patient')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_medby_Desktop_Oncology-IG-Kenya_fsh-generated_resources_StructureDefinition-oncology-kenya-registry-report"> </a>
+<h2><a href="StructureDefinition-oncology-kenya-registry-report.html">fsh-generated/resources/StructureDefinition-oncology-kenya-registry-report.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/oncology-kenya-registry-report')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-oncology-kenya-condition.html">fsh-generated/resources/StructureDefinition-oncology-kenya-condition.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_ED_BIND_NOT_VS"> </a>
+<h2>SD_ED_BIND_NOT_VS</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-condition.html">fsh-generated/resources/StructureDefinition-oncology-kenya-condition.json</a></td><td><b>The valueSet reference http://hl7.org/fhir/sid/icd-10 on element Condition.code points to something that is not a value set (CodeSystem)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-condition.html">fsh-generated/resources/StructureDefinition-oncology-kenya-condition.json</a></td><td><b>The valueSet reference http://hl7.org/fhir/sid/icd-10 on element Condition.code points to something that is not a value set (CodeSystem)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-diagnosticreport.html">fsh-generated/resources/StructureDefinition-oncology-kenya-diagnosticreport.json</a></td><td><b>The valueSet reference http://loinc.org on element DiagnosticReport.conclusionCode points to something that is not a value set (CodeSystem)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-diagnosticreport.html">fsh-generated/resources/StructureDefinition-oncology-kenya-diagnosticreport.json</a></td><td><b>The valueSet reference http://loinc.org on element DiagnosticReport.conclusionCode points to something that is not a value set (CodeSystem)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-observation.html">fsh-generated/resources/StructureDefinition-oncology-kenya-observation.json</a></td><td><b>The valueSet reference http://loinc.org on element Observation.code points to something that is not a value set (CodeSystem)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-observation.html">fsh-generated/resources/StructureDefinition-oncology-kenya-observation.json</a></td><td><b>The valueSet reference http://loinc.org on element Observation.code points to something that is not a value set (CodeSystem)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_ED_BIND_NO_BINDABLE"> </a>
+<h2>SD_ED_BIND_NO_BINDABLE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-medicationrequest.html">fsh-generated/resources/StructureDefinition-oncology-kenya-medicationrequest.json</a></td><td><b>The element MedicationRequest.substitution.allowed[x] has a binding, but no bindable types are present [boolean]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_ILLEGAL_CHARACTERISTICS"> </a>
+<h2>SD_ILLEGAL_CHARACTERISTICS</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-medicationrequest.html">fsh-generated/resources/StructureDefinition-oncology-kenya-medicationrequest.json</a></td><td><b>This element has a Binding but the types [boolean] do not make this kind of constraint relevant</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncology-kenya-condition.html">fsh-generated/resources/StructureDefinition-oncology-kenya-condition.json</a></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/condition-category-kenya'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncology-kenya-condition.html">fsh-generated/resources/StructureDefinition-oncology-kenya-condition.json</a></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/condition-category-kenya'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncology-kenya-coverage.html">fsh-generated/resources/StructureDefinition-oncology-kenya-coverage.json</a></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/coverage-type-kenya'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncology-kenya-coverage.html">fsh-generated/resources/StructureDefinition-oncology-kenya-coverage.json</a></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/coverage-type-kenya'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncology-kenya-medicationrequest.html">fsh-generated/resources/StructureDefinition-oncology-kenya-medicationrequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://who.org/essential-medicines'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncology-kenya-medicationrequest.html">fsh-generated/resources/StructureDefinition-oncology-kenya-medicationrequest.json</a></td><td><b>A definition could not be found for Canonical URL 'http://who.org/essential-medicines'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncology-kenya-patient.html">fsh-generated/resources/StructureDefinition-oncology-kenya-patient.json</a></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/marital-status-kenya'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-patient.html">fsh-generated/resources/StructureDefinition-oncology-kenya-patient.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/ValueSet/patient-contact-relationship'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-oncology-kenya-patient.html">fsh-generated/resources/StructureDefinition-oncology-kenya-patient.json</a></td><td><b>A definition could not be found for Canonical URL 'http://terminology.health.go.ke/ValueSet/marital-status-kenya'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-patient.html">fsh-generated/resources/StructureDefinition-oncology-kenya-patient.json</a></td><td><b>A definition could not be found for Canonical URL 'http://hl7.org/fhir/ValueSet/patient-contact-relationship'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_TYPE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-condition.html">fsh-generated/resources/StructureDefinition-oncology-kenya-condition.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/sid/icd-10' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-condition.html">fsh-generated/resources/StructureDefinition-oncology-kenya-condition.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/sid/icd-10' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-diagnosticreport.html">fsh-generated/resources/StructureDefinition-oncology-kenya-diagnosticreport.json</a></td><td><b>Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-diagnosticreport.html">fsh-generated/resources/StructureDefinition-oncology-kenya-diagnosticreport.json</a></td><td><b>Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-observation.html">fsh-generated/resources/StructureDefinition-oncology-kenya-observation.json</a></td><td><b>Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-oncology-kenya-observation.html">fsh-generated/resources/StructureDefinition-oncology-kenya-observation.json</a></td><td><b>Canonical URL 'http://loinc.org' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]</b></td>
+   </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,58 @@
+[
+  {
+    "id" : "medby",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/ImplementationGuide/medby",
+    "version" : "0.1.0",
+    "name" : "oncologyfhirigkenya"
+  },
+  {
+    "id" : "oncology-kenya-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-condition",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaCondition"
+  },
+  {
+    "id" : "oncology-kenya-coverage",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-coverage",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaCoverage"
+  },
+  {
+    "id" : "oncology-kenya-diagnosticreport",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-diagnosticreport",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaDiagnosticReport"
+  },
+  {
+    "id" : "oncology-kenya-medicationrequest",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-medicationrequest",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaMedicationRequest"
+  },
+  {
+    "id" : "oncology-kenya-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-observation",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaObservation"
+  },
+  {
+    "id" : "oncology-kenya-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-patient",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaPatient"
+  },
+  {
+    "id" : "oncology-kenya-registry-report",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-registry-report",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaRegistryReport"
+  }
+]

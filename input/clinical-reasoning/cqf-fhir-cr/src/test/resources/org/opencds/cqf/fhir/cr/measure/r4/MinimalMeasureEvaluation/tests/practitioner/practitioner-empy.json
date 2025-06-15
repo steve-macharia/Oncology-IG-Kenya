@@ -1,0 +1,15 @@
+{
+  "resourceType": "Practitioner",
+  "id": "empty",
+  "name": [
+    {
+      "family": "Dawg",
+      "given": [
+        "Jay"
+      ],
+      "prefix": [
+        "Dr"
+      ]
+    }
+  ]
+}

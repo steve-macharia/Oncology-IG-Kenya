@@ -1,0 +1,196 @@
+{
+  "ImplementationGuide/medby" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 0,
+    "source" : "/home/medby/Desktop/Oncology-IG-Kenya/fsh-generated/resources/ImplementationGuide-medby.json",
+    "sourceTail" : "ImplementationGuide-medby.json",
+    "path" : "index.html",
+    "url" : "http://example.org/ImplementationGuide/medby",
+    "version" : "0.1.0",
+    "name" : "oncologyfhirigkenya",
+    "date" : "2025-06-10T13:49:52+03:00",
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Medby_Tech",
+      "link" : "http://example.org/example-publisher",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/oncology-kenya-condition" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 1,
+    "source" : "fsh-generated/resources/StructureDefinition-oncology-kenya-condition.json",
+    "sourceTail" : "StructureDefinition-oncology-kenya-condition.json",
+    "path" : "StructureDefinition-oncology-kenya-condition.html",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-condition",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaCondition",
+    "title" : "oncology kenya condition",
+    "titlelang" : {
+    },
+    "date" : "2025-06-10T13:49:52+03:00",
+    "description" : "condition profile from oncology diagnoses in Kenya, ensuring structured documentation and national cancer registry reporting.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Medby_Tech",
+      "link" : "http://example.org/example-publisher",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/oncology-kenya-coverage" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 2,
+    "source" : "fsh-generated/resources/StructureDefinition-oncology-kenya-coverage.json",
+    "sourceTail" : "StructureDefinition-oncology-kenya-coverage.json",
+    "path" : "StructureDefinition-oncology-kenya-coverage.html",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-coverage",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaCoverage",
+    "title" : "Oncology Kenya Coverage",
+    "titlelang" : {
+    },
+    "date" : "2025-06-10T13:49:52+03:00",
+    "description" : "Defines insurance and reimbursement details under SHA in Kenya, ensuring financial tracking and integration with NCCP Data Systems.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Medby_Tech",
+      "link" : "http://example.org/example-publisher",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/oncology-kenya-diagnosticreport" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 3,
+    "source" : "fsh-generated/resources/StructureDefinition-oncology-kenya-diagnosticreport.json",
+    "sourceTail" : "StructureDefinition-oncology-kenya-diagnosticreport.json",
+    "path" : "StructureDefinition-oncology-kenya-diagnosticreport.html",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-diagnosticreport",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaDiagnosticReport",
+    "title" : "Oncology Kenya Diagnostic Report",
+    "titlelang" : {
+    },
+    "date" : "2025-06-10T13:49:52+03:00",
+    "description" : "Defines pathology and laboratory reports for oncology patients in Kenya, integrating with DHIS2 and cancer registries.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Medby_Tech",
+      "link" : "http://example.org/example-publisher",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/oncology-kenya-medicationrequest" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 4,
+    "source" : "fsh-generated/resources/StructureDefinition-oncology-kenya-medicationrequest.json",
+    "sourceTail" : "StructureDefinition-oncology-kenya-medicationrequest.json",
+    "path" : "StructureDefinition-oncology-kenya-medicationrequest.html",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-medicationrequest",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaMedicationRequest",
+    "title" : "Oncology Kenya MedicationRequest",
+    "titlelang" : {
+    },
+    "date" : "2025-06-10T13:49:52+03:00",
+    "description" : "Oncology-specific medication request profile for Kenya, integrating with SHA, DHIS2, and Oncology Dispensing Tool (ODT).",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Medby_Tech",
+      "link" : "http://example.org/example-publisher",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/oncology-kenya-observation" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 5,
+    "source" : "fsh-generated/resources/StructureDefinition-oncology-kenya-observation.json",
+    "sourceTail" : "StructureDefinition-oncology-kenya-observation.json",
+    "path" : "StructureDefinition-oncology-kenya-observation.html",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-observation",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaObservation",
+    "title" : "Oncology Kenya Observation",
+    "titlelang" : {
+    },
+    "date" : "2025-06-10T13:49:52+03:00",
+    "description" : "Observations for oncology-specific diagnostic and laboratory tests in Kenya, integrating with DHIS2 and national cancer registries.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Medby_Tech",
+      "link" : "http://example.org/example-publisher",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/oncology-kenya-patient" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 6,
+    "source" : "fsh-generated/resources/StructureDefinition-oncology-kenya-patient.json",
+    "sourceTail" : "StructureDefinition-oncology-kenya-patient.json",
+    "path" : "StructureDefinition-oncology-kenya-patient.html",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-patient",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaPatient",
+    "title" : "Oncology Kenya Patient",
+    "titlelang" : {
+    },
+    "date" : "2025-06-10T13:49:52+03:00",
+    "description" : "Customized patient profile for oncology care in Kenya, integrating with SHA, DHIS2, and national cancer registries.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Medby_Tech",
+      "link" : "http://example.org/example-publisher",
+      "status" : "Draft"
+    }
+  },
+  "StructureDefinition/oncology-kenya-registry-report" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 7,
+    "source" : "fsh-generated/resources/StructureDefinition-oncology-kenya-registry-report.json",
+    "sourceTail" : "StructureDefinition-oncology-kenya-registry-report.json",
+    "path" : "StructureDefinition-oncology-kenya-registry-report.html",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-registry-report",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaRegistryReport",
+    "title" : "Oncology Kenya Registry Report",
+    "titlelang" : {
+    },
+    "date" : "2025-06-10T13:49:52+03:00",
+    "description" : "Defines structured cancer registry reporting format for Kenya, integrating with KEMRI Cancer Registry, Nairobi Cancer Registry, and DHIS2.",
+    "descriptionlang" : {
+    },
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Medby_Tech",
+      "link" : "http://example.org/example-publisher",
+      "status" : "Draft"
+    }
+  }
+}

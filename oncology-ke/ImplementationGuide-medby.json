@@ -1,0 +1,58 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "medby",
+  "url": "http://example.org/ImplementationGuide/medby",
+  "version": "0.1.0",
+  "name": "oncologyfhirigkenya",
+  "status": "draft",
+  "publisher": "Medby_Tech",
+  "contact": [
+    {
+      "name": "Medby_Tech",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "medby",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-patient"
+        },
+        "name": "Oncology Kenya Patient",
+        "description": "Customized patient profile for oncology care in Kenya, integrating with SHA, DHIS2, and national cancer registries.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2025+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

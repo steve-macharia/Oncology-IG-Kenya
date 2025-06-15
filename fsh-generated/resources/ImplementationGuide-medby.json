@@ -1,0 +1,106 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "medby",
+  "url": "http://example.org/ImplementationGuide/medby",
+  "version": "0.1.0",
+  "name": "oncologyfhirigkenya",
+  "status": "draft",
+  "publisher": "Medby_Tech",
+  "contact": [
+    {
+      "name": "Medby_Tech",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "medby",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-condition"
+        },
+        "name": "oncology kenya condition",
+        "description": "condition profile from oncology diagnoses in Kenya, ensuring structured documentation and national cancer registry reporting.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-coverage"
+        },
+        "name": "Oncology Kenya Coverage",
+        "description": "Defines insurance and reimbursement details under SHA in Kenya, ensuring financial tracking and integration with NCCP Data Systems.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-diagnosticreport"
+        },
+        "name": "Oncology Kenya Diagnostic Report",
+        "description": "Defines pathology and laboratory reports for oncology patients in Kenya, integrating with DHIS2 and cancer registries.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-medicationrequest"
+        },
+        "name": "Oncology Kenya MedicationRequest",
+        "description": "Oncology-specific medication request profile for Kenya, integrating with SHA, DHIS2, and Oncology Dispensing Tool (ODT).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-observation"
+        },
+        "name": "Oncology Kenya Observation",
+        "description": "Observations for oncology-specific diagnostic and laboratory tests in Kenya, integrating with DHIS2 and national cancer registries.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-patient"
+        },
+        "name": "Oncology Kenya Patient",
+        "description": "Customized patient profile for oncology care in Kenya, integrating with SHA, DHIS2, and national cancer registries.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-registry-report"
+        },
+        "name": "Oncology Kenya Registry Report",
+        "description": "Defines structured cancer registry reporting format for Kenya, integrating with KEMRI Cancer Registry, Nairobi Cancer Registry, and DHIS2.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2025+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}
