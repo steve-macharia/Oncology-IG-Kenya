@@ -43,6 +43,7 @@ jobs:
       - name: Install SUSHI and add to PATH
         run: |
           npm install -g fsh-sushi
+          echo "SUSHI installed at $(npm bin -g)"
           echo "$(npm bin -g)" >> $GITHUB_PATH
 
       # Set up Ruby (Jekyll needs Ruby)
