@@ -108,11 +108,11 @@ jobs:
             exit 1
           fi
 
-      # Deploy to GitHub Pages
+      # Deploy to GitHub Pages using Personal Access Token
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./output
           publish_branch: gh-pages
           force_orphan: true
