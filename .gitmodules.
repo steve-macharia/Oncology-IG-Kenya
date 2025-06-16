@@ -1,0 +1,3 @@
+[submodule "ig-template-base"]
+  path = ig-template-base
+  url = https://github.com/HL7/ig-template-base.git
