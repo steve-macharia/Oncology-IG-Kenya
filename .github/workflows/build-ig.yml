@@ -27,8 +27,15 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install SUSHI
-        run: npm install -g fsh-sushi
+      - name: Install SUSHI and add to PATH
+        run: |
+          npm install -g fsh-sushi
+          echo "$(npm bin -g)" >> $GITHUB_PATH
+
+      - name: Verify Java and Sushi installation
+        run: |
+          java -version
+          sushi --version
 
       - name: Create input-cache and download IG Publisher
         run: |
