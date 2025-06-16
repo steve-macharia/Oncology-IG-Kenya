@@ -11,26 +11,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
+      # Checkout the repository and initialize submodules safely
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          submodules: true  # Ensures submodules like ig-template-base are pulled
+          submodules: recursive  # Ensures all nested submodules are cloned
 
-      # Set up Java (required by IG Publisher)
+      # Set up Java (IG Publisher requires Java 17)
       - name: Set up Java 17 (Temurin)
         uses: actions/setup-java@v3
         with:
           distribution: temurin
           java-version: '17'
 
-      # Set up Node.js for Sushi
+      # Set up Node.js for SUSHI
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      # Cache global npm (for faster builds)
+      # Cache global npm
       - name: Cache Node modules
         uses: actions/cache@v3
         with:
@@ -39,18 +39,21 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-npm-
 
-      # Install Sushi globally
-      - name: Install SUSHI
-        run: npm install -g fsh-sushi
+      # Install SUSHI globally and export its path
+      - name: Install SUSHI and add to PATH
+        run: |
+          npm install -g fsh-sushi
+          echo "$(npm bin -g)" >> $GITHUB_PATH
 
-      # Set up Ruby (required for Jekyll)
+      # Set up Ruby (Jekyll needs Ruby)
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
 
-      # Cache Ruby gems
+      # Cache Ruby gems (if Gemfile.lock exists)
       - name: Cache Ruby gems
+        if: hashFiles('**/Gemfile.lock') != ''
         uses: actions/cache@v3
         with:
           path: vendor/bundle
@@ -62,7 +65,7 @@ jobs:
       - name: Install Jekyll
         run: gem install jekyll bundler
 
-      # Verify installed tool versions
+      # Check tool versions
       - name: Verify tool versions
         run: |
           java -version
@@ -77,11 +80,11 @@ jobs:
           wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar \
             -O input-cache/org.hl7.fhir.publisher.jar
 
-      # Run Sushi to convert FSH to FHIR JSON
-      - name: Run Sushi
+      # Run SUSHI to generate FHIR JSON
+      - name: Run SUSHI
         run: sushi .
 
-      # Run IG Publisher (skip Sushi since already done)
+      # Run the IG Publisher (without running sushi again)
       - name: Run IG Publisher
         run: |
           java -jar input-cache/org.hl7.fhir.publisher.jar -ig . --no-sushi -tx https://tx.fhir.org/r4
