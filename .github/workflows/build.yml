@@ -100,10 +100,23 @@ jobs:
           echo "📁 Contents of ./output:"
           ls -l ./output || echo "⚠️ ./output directory does not exist!"
 
-      # Deploy to GitHub Pages (if output exists)
+      # Prevent deployment if output folder is missing
+      - name: 🧪 Check output directory before deploy
+        run: |
+          if [ ! -d "./output" ]; then
+            echo "❌ ERROR: ./output directory does not exist. Exiting."
+            exit 1
+          fi
+
+      # Deploy to GitHub Pages
       - name: 🚀 Deploy to GitHub Pages
-        if: success() && (hashFiles('output/index.html') != '')
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
+          publish_branch: gh-pages
+          force_orphan: true
+          enable_jekyll: false
+          exclude_assets: .github
+          user_name: GitHub Actions
+          user_email: actions@github.com
