@@ -88,6 +88,11 @@ jobs:
         run: |
           java -jar input-cache/org.hl7.fhir.publisher.jar -ig . -no-sushi -tx https://tx.fhir.org/r4
 
+      - name: 🔍 Debug: Check output folder contents
+        run: |
+          echo "Listing contents of ./output"
+          ls -l ./output || echo "⚠️ output directory does not exist"
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
