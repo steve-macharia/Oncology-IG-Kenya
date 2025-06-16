@@ -63,9 +63,9 @@ Each profile aligns with local workflows, national policy, and real constraints.
 
 Profiles support essential oncology tasks such as:
 
-- Tracking cancer staging, histopathology, and tumor markers
-- Capturing chemotherapy regimens and adverse effects
-- Monitoring follow-up schedules and financial distress
+- Tracking cancer staging, histopathology, and tumor markers  
+- Capturing chemotherapy regimens and adverse effects  
+- Monitoring follow-up schedules and financial distress  
 - Supporting referral coordination and treatment documentation
 
 ---
