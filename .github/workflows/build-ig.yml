@@ -86,10 +86,10 @@ jobs:
           export PATH="$(npm bin -g):$PATH"
           sushi .
 
-      - name: Run IG Publisher (with --no-sushi)
+      - name: Run IG Publisher (with -no-sushi)
         run: |
           export PATH="$(npm bin -g):$PATH"
-          java -jar input-cache/org.hl7.fhir.publisher.jar -ig . --no-sushi -tx https://tx.fhir.org/r4
+          java -jar input-cache/org.hl7.fhir.publisher.jar -ig . -no-sushi -tx https://tx.fhir.org/r4
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
