@@ -1,64 +1,92 @@
-name: Build FHIR IG
+name: Build and Deploy FHIR IG
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
           submodules: true  # Ensures submodules like ig-template-base are pulled
 
-      - name: Set up Java 17
+      # Set up Java (required by IG Publisher)
+      - name: Set up Java 17 (Temurin)
         uses: actions/setup-java@v3
         with:
           distribution: temurin
           java-version: '17'
 
+      # Set up Node.js for Sushi
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      - name: Set up Ruby (for Jekyll)
+      # Cache global npm (for faster builds)
+      - name: Cache Node modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
+      # Install Sushi globally
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi
+
+      # Set up Ruby (required for Jekyll)
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1  # Or a supported version
+          ruby-version: '3.1'
+
+      # Cache Ruby gems
+      - name: Cache Ruby gems
+        uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      # Install Jekyll
       - name: Install Jekyll
         run: gem install jekyll bundler
 
-      - name: Install SUSHI and add to PATH
-        run: |
-          npm install -g fsh-sushi
-          echo "$(npm bin -g)" >> $GITHUB_PATH
-
-      - name: Verify Tools
+      # Verify installed tool versions
+      - name: Verify tool versions
         run: |
           java -version
+          node -v
           sushi --version
           jekyll --version
 
-      - name: Create input-cache and download IG Publisher
+      # Download IG Publisher
+      - name: Download IG Publisher
         run: |
           mkdir -p input-cache
           wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar \
             -O input-cache/org.hl7.fhir.publisher.jar
 
-      - name: Run SUSHI
+      # Run Sushi to convert FSH to FHIR JSON
+      - name: Run Sushi
         run: sushi .
 
-      - name: Run IG Publisher (--no-sushi)
-        run: java -jar input-cache/org.hl7.fhir.publisher.jar -ig . -tx https://tx.fhir.org/r4 --no-sushi
+      # Run IG Publisher (skip Sushi since already done)
+      - name: Run IG Publisher
+        run: |
+          java -jar input-cache/org.hl7.fhir.publisher.jar -ig . --no-sushi -tx https://tx.fhir.org/r4
 
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
