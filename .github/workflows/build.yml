@@ -1,35 +1,108 @@
-name: Build FHIR IG
+name: Build and Deploy FHIR IG
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      # Checkout repo with submodules if any
+      - name: 📥 Checkout repository
         uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 1
 
-      - name: Set up Java
+      - name: 🔁 Initialize submodules (if any)
+        run: |
+          if [ -f .gitmodules ]; then
+            git submodule update --init --recursive
+          else
+            echo "⚠️ .gitmodules not found. Skipping submodule init."
+          fi
+
+      # Set up programming environments
+      - name: ☕ Set up Java 17
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
+          distribution: temurin
           java-version: '17'
 
-      - name: Download latest IG Publisher
+      - name: 🟩 Set up Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: 💎 Set up Ruby 3.1
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      # Cache dependencies
+      - name: 💾 Cache Node modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
+      - name: 💾 Cache Ruby gems
+        if: hashFiles('**/Gemfile.lock') != ''
+        uses: actions/cache@v3
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      # Install tooling
+      - name: 📦 Install SUSHI globally
+        run: |
+          npm install -g fsh-sushi
+          echo "$(npm bin -g)" >> $GITHUB_PATH
+
+      - name: 💎 Install Jekyll and Bundler
+        run: gem install jekyll bundler
+
+      # Check that versions are correctly installed
+      - name: ✅ Verify tool versions
+        run: |
+          java -version
+          node -v
+          sushi --version
+          jekyll --version
+
+      # Download IG Publisher JAR
+      - name: ⬇️ Download IG Publisher
         run: |
           mkdir -p input-cache
-          wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -O input-cache/org.hl7.fhir.publisher.jar
+          wget -q -O input-cache/org.hl7.fhir.publisher.jar \
+            https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
 
-      - name: Build IG
+      # Run SUSHI (FHIR Shorthand compiler)
+      - name: 🧪 Run SUSHI manually
+        run: sushi .
+
+      # Run FHIR IG Publisher (build IG site)
+      - name: 🛠️ Run IG Publisher with -no-sushi
         run: |
-          java -jar input-cache/org.hl7.fhir.publisher.jar -ig .
+          java -jar input-cache/org.hl7.fhir.publisher.jar -ig . -no-sushi -tx https://tx.fhir.org/r4
 
-      - name: Deploy to GitHub Pages
+      # Debug: Output folder contents
+      - name: 🔍 Check output folder contents
+        run: |
+          echo "📁 Contents of ./output:"
+          ls -l ./output || echo "⚠️ ./output directory does not exist!"
+
+      # Deploy to GitHub Pages (if output exists)
+      - name: 🚀 Deploy to GitHub Pages
+        if: success() && (hashFiles('output/index.html') != '')
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
