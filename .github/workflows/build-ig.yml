@@ -13,41 +13,57 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Step 2: Set up Java (required for IG Publisher)
       - name: Set up Java 17
         uses: actions/setup-java@v3
         with:
           distribution: temurin
           java-version: '17'
 
-      - name: Set up Node.js
+      # Step 3: Set up Node.js (required for SUSHI)
+      - name: Set up Node.js 18
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
+      # Step 4: Install SUSHI globally and add it to PATH
       - name: Install SUSHI and add to PATH
         run: |
           npm install -g fsh-sushi
           echo "$(npm bin -g)" >> $GITHUB_PATH
 
-      - name: Verify tools
+      # Step 5: Verify tool installation (Java and SUSHI)
+      - name: Verify Java and SUSHI versions
         run: |
           java -version
           sushi --version
 
-      - name: Create input-cache and download IG Publisher
+      # Step 6: Create input-cache directory and download IG Publisher
+      - name: Download IG Publisher
         run: |
           mkdir -p input-cache
-          wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -O input-cache/org.hl7.fhir.publisher.jar
+          wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar \
+            -O input-cache/org.hl7.fhir.publisher.jar
 
-      - name: Run SUSHI to generate FHIR resources
+      # Step 7: Run SUSHI to generate FHIR artifacts
+      - name: Run SUSHI
         run: sushi .
 
-      - name: Run IG Publisher (with --no-sushi)
-        run: java -jar input-cache/org.hl7.fhir.publisher.jar -ig . -tx https://tx.fhir.org/r4 --no-sushi
+      # Step 8: Run IG Publisher without internal SUSHI
+      - name: Run IG Publisher (--no-sushi)
+        run: |
+          java -jar input-cache/org.hl7.fhir.publisher.jar \
+            -ig . -tx https://tx.fhir.org/r4 --no-sushi
 
+      # Optional: List files in output for debugging
+      - name: List generated output files
+        run: ls -R output || echo "Output directory not found"
+
+      # Step 9: Deploy the IG output to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
