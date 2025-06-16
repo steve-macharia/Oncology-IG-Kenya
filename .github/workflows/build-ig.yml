@@ -62,7 +62,6 @@ jobs:
         run: |
           npm install -g fsh-sushi
           echo "$(npm bin -g)" >> $GITHUB_PATH
-          export PATH="$(npm bin -g):$PATH"
           sushi --version
 
       - name: Install Jekyll and Bundler
@@ -83,12 +82,10 @@ jobs:
 
       - name: Run SUSHI
         run: |
-          export PATH="$(npm bin -g):$PATH"
           sushi .
 
       - name: Run IG Publisher (with -no-sushi)
         run: |
-          export PATH="$(npm bin -g):$PATH"
           java -jar input-cache/org.hl7.fhir.publisher.jar -ig . -no-sushi -tx https://tx.fhir.org/r4
 
       - name: Deploy to GitHub Pages
