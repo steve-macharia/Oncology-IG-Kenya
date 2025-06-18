@@ -77,14 +77,6 @@ These components are designed to promote semantic interoperability, improve data
 
 ---
 
-## Visual Overview
-
-A simplified visual diagram of the oncology care workflow, highlighting stages and FHIR resource mappings:
-
-![Oncology Care Pathway Diagram](./assets/images/oncology-care-pathway.png)
-
----
-
 ## Contact & Repository
 
 - **Email:** medbyTech254@gmail.com  
