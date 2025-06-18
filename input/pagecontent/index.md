@@ -6,7 +6,7 @@ title: Oncology-IG-Kenya
 
 ### Transforming Cancer Care Through FHIR-Based Digital Innovation
 
-> "This Implementation Guide is a demonstration of how HL7® FHIR® can be leveraged to enhance the quality, continuity, and coordination of oncology care in Kenya. It is developed independently by a Kenyan health tech enthusiast, with a passion for improving cancer outcomes through open standards and interoperable digital solutions."
+> This Implementation Guide is a demonstration of how HL7® FHIR® can be leveraged to enhance the quality, continuity, and coordination of oncology care in Kenya. It is developed independently by a Kenyan health tech enthusiast, with a passion for improving cancer outcomes through open standards and interoperable digital solutions.
 
 ---
 
@@ -80,7 +80,8 @@ These components are designed to promote semantic interoperability, improve data
 ### Contact & Repository
 
 - **Email:** medbyTech254@gmail.com  
-- **GitHub:** [github.com/steve-macharia/Oncology-IG-Kenya](https://github.com/steve-macharia/Oncology-IG-Kenya)
+- **GitHub:** [![GitHub](https://img.shields.io/badge/github-steve--macharia--Oncology--IG--Kenya-blue?logo=github)](https://github.com/steve-macharia/Oncology-IG-Kenya)  
+- **Website:** [![Website](https://img.shields.io/badge/website-medby--tech.netlify.app-brightgreen?logo=netlify)](https://medby-tech.netlify.app/)
 
 ---
 
