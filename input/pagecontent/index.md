@@ -80,7 +80,7 @@ These components are designed to promote semantic interoperability, improve data
 ### Contact & Repository
 
 - **Email:** medbyTech254@gmail.com  
-- **GitHub:** [![GitHub](https://img.shields.io/badge/github-steve--macharia--Oncology--IG--Kenya-blue?logo=github)](https://github.com/steve-macharia)  
+- **GitHub:** [![GitHub](https://img.shields.io/badge/github-steve--macharia-blue?logo=github)](https://github.com/steve-macharia)  
 - **Website:** [![Website](https://img.shields.io/badge/website-medby--tech.netlify.app-brightgreen?logo=netlify)](https://medby-tech.netlify.app/)
 
 ---
