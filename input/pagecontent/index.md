@@ -2,15 +2,15 @@
 title: Oncology-IG-Kenya
 ---
 
-# Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)
+## Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)
 
-## Transforming Cancer Care Through FHIR-Based Digital Innovation
+### Transforming Cancer Care Through FHIR-Based Digital Innovation
 
 > "This Implementation Guide is a demonstration of how HL7® FHIR® can be leveraged to enhance the quality, continuity, and coordination of oncology care in Kenya. It is developed independently by a Kenyan health tech enthusiast, with a passion for improving cancer outcomes through open standards and interoperable digital solutions."
 
 ---
 
-## Home
+### Home
 
 - **Version:** 0.1.0  
 - **Status:** Draft as of 2025-06-16  
@@ -20,7 +20,7 @@ title: Oncology-IG-Kenya
 
 ---
 
-## Purpose & Background
+### Purpose & Background
 
 Kenya faces a growing cancer crisis. This FHIR Implementation Guide (IG) is designed to model a comprehensive, standards-based oncology care pathway. It reflects the realities of Kenya’s healthcare system while showcasing how HL7® FHIR® can be adapted to support every stage of oncology—from prevention and early detection, through diagnosis and treatment, to survivorship and palliative care.
 
@@ -28,7 +28,7 @@ Kenya faces a growing cancer crisis. This FHIR Implementation Guide (IG) is desi
 
 ---
 
-## Kenya’s Cancer Burden: A Snapshot
+### Kenya’s Cancer Burden: A Snapshot
 
 According to [World Bank data (2020)](https://documents1.worldbank.org/curated/en/964571592290457869/pdf/Economic-and-Social-Consequences-of-Cancer-in-Kenya-Case-Studies-of-Selected-Households.pdf), the cancer landscape in Kenya is defined by:
 
@@ -44,7 +44,7 @@ These statistics underscore the urgent need for scalable, interoperable digital 
 
 ---
 
-## Oncology Care Pathway (FHIR Mapping)
+### Oncology Care Pathway (FHIR Mapping)
 
 The table below outlines how core stages of oncology care map to HL7® FHIR® resources:
 
@@ -64,7 +64,7 @@ The table below outlines how core stages of oncology care map to HL7® FHIR® re
 
 ---
 
-## Implementation Notes
+### Implementation Notes
 
 This IG includes profiles that support key tasks across the oncology spectrum:
 
@@ -77,7 +77,15 @@ These components are designed to promote semantic interoperability, improve data
 
 ---
 
-## Contact & Repository
+### Visual Overview
+
+A simplified visual diagram of the oncology care workflow, highlighting stages and FHIR resource mappings:
+
+![Oncology Care Pathway Diagram](./assets/images/oncology-care-pathway.png)
+
+---
+
+### Contact & Repository
 
 - **Email:** medbyTech254@gmail.com  
 - **GitHub:** [github.com/steve-macharia/Oncology-IG-Kenya](https://github.com/steve-macharia/Oncology-IG-Kenya)
