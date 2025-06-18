@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "search-facility-upi",
+  "url": "https://oncology.ig.kenya/SearchParameter/search-facility-upi",
+  "description": "Allows filtering patients by Facility UPI",
+  "base": [
+    "Patient"
+  ],
+  "name": "facility-upi",
+  "code": "facility-upi",
+  "type": "token",
+  "status": "active",
+  "expression": "Patient.identifier.where(system = 'http://facility.health.go.ke/upi')",
+  "xpathUsage": "normal"
+}

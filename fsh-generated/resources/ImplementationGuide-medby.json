@@ -25,6 +25,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "ImplementationGuide/medby-ig"
+        },
+        "name": "Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)",
+        "description": "This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.\n\nIt is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/oncology-kenya-condition"
         },
         "name": "oncology kenya condition",
@@ -93,6 +101,46 @@
         },
         "name": "Patient Occupation",
         "description": "The current or most recent occupation of the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/search-county"
+        },
+        "name": "Search by County",
+        "description": "Allows filtering patients by County (address.state)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/search-education-level"
+        },
+        "name": "Search by Education Level",
+        "description": "Allows filtering patients by Education Level extension",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/search-facility-upi"
+        },
+        "name": "Search by Facility UPI",
+        "description": "Allows filtering patients by Facility UPI",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/search-occupation"
+        },
+        "name": "Search by Occupation",
+        "description": "Allows filtering patients by Occupation extension",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/search-sha-id"
+        },
+        "name": "Search by SHA ID",
+        "description": "Allows filtering patients by SHA ID",
         "exampleBoolean": false
       }
     ],

@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "search-occupation",
+  "url": "https://oncology.ig.kenya/SearchParameter/search-occupation",
+  "description": "Allows filtering patients by Occupation extension",
+  "base": [
+    "Patient"
+  ],
+  "name": "occupation",
+  "code": "occupation",
+  "type": "token",
+  "status": "active",
+  "expression": "Patient.extension.where(url = 'https://oncology.ig.kenya/StructureDefinition/patient-occupation').value",
+  "xpathUsage": "normal"
+}

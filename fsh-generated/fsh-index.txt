@@ -1,4 +1,10 @@
 Output File                                                Name                            Type       FSH File                            Lines
+ImplementationGuide-medby-ig.json                          medby-ig                        Instance   ImplementationGuide.fsh             1 - 60
+SearchParameter-search-county.json                         search-county                   Instance   SearchParameters.fsh                34 - 47
+SearchParameter-search-education-level.json                search-education-level          Instance   SearchParameters.fsh                50 - 63
+SearchParameter-search-facility-upi.json                   search-facility-upi             Instance   SearchParameters.fsh                18 - 31
+SearchParameter-search-occupation.json                     search-occupation               Instance   SearchParameters.fsh                66 - 79
+SearchParameter-search-sha-id.json                         search-sha-id                   Instance   SearchParameters.fsh                2 - 15
 StructureDefinition-oncology-kenya-condition.json          OncologyKenyaCondition          Profile    OncologyKenyaCondition.fsh          2 - 12
 StructureDefinition-oncology-kenya-coverage.json           OncologyKenyaCoverage           Profile    OncologyKenyaCoverage.fsh           2 - 26
 StructureDefinition-oncology-kenya-diagnosticreport.json   OncologyKenyaDiagnosticReport   Profile    OncologyKenyaDiagnosticReport.fsh   2 - 23

@@ -1,5 +1,53 @@
 [
   {
+    "outputFile": "ImplementationGuide-medby-ig.json",
+    "fshName": "medby-ig",
+    "fshType": "Instance",
+    "fshFile": "ImplementationGuide.fsh",
+    "startLine": 1,
+    "endLine": 60
+  },
+  {
+    "outputFile": "SearchParameter-search-county.json",
+    "fshName": "search-county",
+    "fshType": "Instance",
+    "fshFile": "SearchParameters.fsh",
+    "startLine": 34,
+    "endLine": 47
+  },
+  {
+    "outputFile": "SearchParameter-search-education-level.json",
+    "fshName": "search-education-level",
+    "fshType": "Instance",
+    "fshFile": "SearchParameters.fsh",
+    "startLine": 50,
+    "endLine": 63
+  },
+  {
+    "outputFile": "SearchParameter-search-facility-upi.json",
+    "fshName": "search-facility-upi",
+    "fshType": "Instance",
+    "fshFile": "SearchParameters.fsh",
+    "startLine": 18,
+    "endLine": 31
+  },
+  {
+    "outputFile": "SearchParameter-search-occupation.json",
+    "fshName": "search-occupation",
+    "fshType": "Instance",
+    "fshFile": "SearchParameters.fsh",
+    "startLine": 66,
+    "endLine": 79
+  },
+  {
+    "outputFile": "SearchParameter-search-sha-id.json",
+    "fshName": "search-sha-id",
+    "fshType": "Instance",
+    "fshFile": "SearchParameters.fsh",
+    "startLine": 2,
+    "endLine": 15
+  },
+  {
     "outputFile": "StructureDefinition-oncology-kenya-condition.json",
     "fshName": "OncologyKenyaCondition",
     "fshType": "Profile",

@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "search-sha-id",
+  "url": "https://oncology.ig.kenya/SearchParameter/search-sha-id",
+  "description": "Allows filtering patients by SHA ID",
+  "base": [
+    "Patient"
+  ],
+  "name": "sha-id",
+  "code": "sha-id",
+  "type": "token",
+  "status": "active",
+  "expression": "Patient.identifier.where(system = 'https://sha.go.ke/ids/patient')",
+  "xpathUsage": "normal"
+}

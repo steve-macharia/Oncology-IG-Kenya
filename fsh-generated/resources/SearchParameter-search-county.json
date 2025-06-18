@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "search-county",
+  "url": "https://oncology.ig.kenya/SearchParameter/search-county",
+  "description": "Allows filtering patients by County (address.state)",
+  "base": [
+    "Patient"
+  ],
+  "name": "county",
+  "code": "county",
+  "type": "string",
+  "status": "active",
+  "expression": "Patient.address.state",
+  "xpathUsage": "normal"
+}

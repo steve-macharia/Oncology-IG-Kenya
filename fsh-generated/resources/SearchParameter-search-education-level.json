@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "search-education-level",
+  "url": "https://oncology.ig.kenya/SearchParameter/search-education-level",
+  "description": "Allows filtering patients by Education Level extension",
+  "base": [
+    "Patient"
+  ],
+  "name": "education-level",
+  "code": "education-level",
+  "type": "token",
+  "status": "active",
+  "expression": "Patient.extension.where(url = 'https://oncology.ig.kenya/StructureDefinition/patient-educationLevel').value",
+  "xpathUsage": "normal"
+}

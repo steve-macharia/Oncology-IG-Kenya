@@ -1,3 +1,4 @@
+[medby-ig]: ImplementationGuide-medby-ig.html
 [OncologyKenyaCondition]: StructureDefinition-oncology-kenya-condition.html
 [OncologyKenyaCoverage]: StructureDefinition-oncology-kenya-coverage.html
 [OncologyKenyaDiagnosticReport]: StructureDefinition-oncology-kenya-diagnosticreport.html
@@ -7,3 +8,8 @@
 [OncologyKenyaRegistryReport]: StructureDefinition-oncology-kenya-registry-report.html
 [PatientEducationLevel]: StructureDefinition-patient-educationLevel.html
 [PatientOccupation]: StructureDefinition-patient-occupation.html
+[search-county]: SearchParameter-search-county.html
+[search-education-level]: SearchParameter-search-education-level.html
+[search-facility-upi]: SearchParameter-search-facility-upi.html
+[search-occupation]: SearchParameter-search-occupation.html
+[search-sha-id]: SearchParameter-search-sha-id.html
