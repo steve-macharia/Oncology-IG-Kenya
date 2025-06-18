@@ -1,0 +1,63 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "example-oncology-questionnaireresponse",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/oncology-kenya-questionnaireresponse"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ],
+      "linkId": "q1",
+      "text": "Have you felt a lump in your breast?"
+    },
+    {
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ],
+      "linkId": "q2",
+      "text": "Have you experienced nipple discharge?"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://example.org/StructureDefinition/questionnaire-context-county",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Kisumu",
+            "system": "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/questionnaire-referral-source",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "communityHealthWorker",
+            "system": "https://www.sha.go.ke/fhir/CodeSystem/referral-source"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/questionnaire-registry-flag",
+      "valueBoolean": true
+    }
+  ],
+  "status": "completed",
+  "questionnaire": "Questionnaire/breast-cancer-screening",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "authored": "2025-04-10T14:30:00+03:00"
+}

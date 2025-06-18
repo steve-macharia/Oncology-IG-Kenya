@@ -24,6 +24,14 @@
     "endLine": 63
   },
   {
+    "outputFile": "Encounter-example-oncology-encounter.json",
+    "fshName": "example-oncology-encounter",
+    "fshType": "Instance",
+    "fshFile": "OncologyKenyaEncounter.fsh",
+    "startLine": 55,
+    "endLine": 72
+  },
+  {
     "outputFile": "Goal-tumor-reduction-goal.json",
     "fshName": "tumor-reduction-goal",
     "fshType": "Instance",
@@ -40,12 +48,28 @@
     "endLine": 86
   },
   {
+    "outputFile": "MedicationRequest-example-oncology-medicationrequest.json",
+    "fshName": "example-oncology-medicationrequest",
+    "fshType": "Instance",
+    "fshFile": "OncologyKenyaMedicationRequest.fsh",
+    "startLine": 44,
+    "endLine": 58
+  },
+  {
     "outputFile": "Procedure-example-surgical-biopsy.json",
     "fshName": "example-surgical-biopsy",
     "fshType": "Instance",
     "fshFile": "OncologyKenyaProcedure.fsh",
     "startLine": 65,
     "endLine": 79
+  },
+  {
+    "outputFile": "QuestionnaireResponse-example-oncology-questionnaireresponse.json",
+    "fshName": "example-oncology-questionnaireresponse",
+    "fshType": "Instance",
+    "fshFile": "QuestionnaireResponse.fsh",
+    "startLine": 45,
+    "endLine": 61
   },
   {
     "outputFile": "SearchParameter-search-birthdate.json",
@@ -184,12 +208,52 @@
     "endLine": 8
   },
   {
+    "outputFile": "StructureDefinition-encounter-context-county.json",
+    "fshName": "EncounterContextCounty",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaEncounter.fsh",
+    "startLine": 37,
+    "endLine": 41
+  },
+  {
+    "outputFile": "StructureDefinition-encounter-referral-source.json",
+    "fshName": "EncounterReferralSource",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaEncounter.fsh",
+    "startLine": 43,
+    "endLine": 47
+  },
+  {
+    "outputFile": "StructureDefinition-encounter-registry-flag.json",
+    "fshName": "EncounterRegistryFlag",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaEncounter.fsh",
+    "startLine": 49,
+    "endLine": 52
+  },
+  {
     "outputFile": "StructureDefinition-icdo3-topography.json",
     "fshName": "Icdo3Topography",
     "fshType": "Extension",
     "fshFile": "Extension-icdo3Topography.fsh",
     "startLine": 1,
     "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-medicationrequest-prescribed-county.json",
+    "fshName": "MedicationRequestPrescribedCounty",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaMedicationRequest.fsh",
+    "startLine": 32,
+    "endLine": 36
+  },
+  {
+    "outputFile": "StructureDefinition-medicationrequest-registry-flag.json",
+    "fshName": "MedicationRequestRegistryFlag",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaMedicationRequest.fsh",
+    "startLine": 38,
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-oncology-kenya-careplan.json",
@@ -224,12 +288,20 @@
     "endLine": 23
   },
   {
+    "outputFile": "StructureDefinition-oncology-kenya-encounter.json",
+    "fshName": "OncologyKenyaEncounter",
+    "fshType": "Profile",
+    "fshFile": "OncologyKenyaEncounter.fsh",
+    "startLine": 1,
+    "endLine": 34
+  },
+  {
     "outputFile": "StructureDefinition-oncology-kenya-medicationrequest.json",
     "fshName": "OncologyKenyaMedicationRequest",
     "fshType": "Profile",
     "fshFile": "OncologyKenyaMedicationRequest.fsh",
-    "startLine": 2,
-    "endLine": 24
+    "startLine": 1,
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-oncology-kenya-patient.json",
@@ -246,6 +318,14 @@
     "fshFile": "OncologyKenyaProcedure.fsh",
     "startLine": 1,
     "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-questionnaireresponse.json",
+    "fshName": "OncologyKenyaQuestionnaireResponse",
+    "fshType": "Profile",
+    "fshFile": "QuestionnaireResponse.fsh",
+    "startLine": 1,
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-oncology-kenya-registry-report.json",
@@ -310,6 +390,30 @@
     "fshFile": "OncologyKenyaProcedure.fsh",
     "startLine": 59,
     "endLine": 62
+  },
+  {
+    "outputFile": "StructureDefinition-questionnaire-context-county.json",
+    "fshName": "QuestionnaireContextCounty",
+    "fshType": "Extension",
+    "fshFile": "QuestionnaireResponse.fsh",
+    "startLine": 27,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-questionnaire-referral-source.json",
+    "fshName": "QuestionnaireReferralSource",
+    "fshType": "Extension",
+    "fshFile": "QuestionnaireResponse.fsh",
+    "startLine": 33,
+    "endLine": 37
+  },
+  {
+    "outputFile": "StructureDefinition-questionnaire-registry-flag.json",
+    "fshName": "QuestionnaireRegistryFlag",
+    "fshType": "Extension",
+    "fshFile": "QuestionnaireResponse.fsh",
+    "startLine": 39,
+    "endLine": 42
   },
   {
     "outputFile": "ValueSet-cancer-icd10.json",

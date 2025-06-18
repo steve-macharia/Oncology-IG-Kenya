@@ -1,0 +1,158 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-kenya-encounter",
+  "url": "http://example.org/StructureDefinition/oncology-kenya-encounter",
+  "name": "OncologyKenyaEncounter",
+  "title": "Oncology Encounter Kenya",
+  "status": "draft",
+  "description": "A profile for documenting oncology-related patient encounters in Kenya, aligned with the Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), KEMRI registry data needs, and county-level cancer reporting workflows.\nSupports tracking of staging visits, diagnosis, treatment initiation, follow-ups, referrals, and palliative care within the Kenyan oncology ecosystem.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.extension",
+        "path": "Encounter.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Encounter.extension:county",
+        "path": "Encounter.extension",
+        "sliceName": "county",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/encounter-context-county"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.extension:referralSource",
+        "path": "Encounter.extension",
+        "sliceName": "referralSource",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/encounter-referral-source"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.extension:reportToRegistry",
+        "path": "Encounter.extension",
+        "sliceName": "reportToRegistry",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/encounter-registry-flag"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.status",
+        "path": "Encounter.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.type",
+        "path": "Encounter.type",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://id.who.int/icd10"
+        }
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant",
+        "path": "Encounter.participant",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.participant.individual",
+        "path": "Encounter.participant.individual",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.period",
+        "path": "Encounter.period",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.reasonCode",
+        "path": "Encounter.reasonCode",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://id.who.int/icd10"
+        }
+      },
+      {
+        "id": "Encounter.diagnosis",
+        "path": "Encounter.diagnosis",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.diagnosis.condition",
+        "path": "Encounter.diagnosis.condition",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.diagnosis.use",
+        "path": "Encounter.diagnosis.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.location",
+        "path": "Encounter.location",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.location.location",
+        "path": "Encounter.location.location",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.serviceProvider",
+        "path": "Encounter.serviceProvider",
+        "mustSupport": true
+      }
+    ]
+  }
+}

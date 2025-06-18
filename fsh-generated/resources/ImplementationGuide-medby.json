@@ -33,6 +33,14 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/example-oncology-questionnaireresponse"
+        },
+        "name": "Breast Cancer Screening Questionnaire Response",
+        "description": "Completed breast cancer screening response from a community health volunteer in Kisumu",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-questionnaireresponse"
+      },
+      {
+        "reference": {
           "reference": "CarePlan/example-oncology-careplan"
         },
         "name": "Breast Cancer Treatment Plan - Uasin Gishu",
@@ -71,9 +79,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/encounter-context-county"
+        },
+        "name": "County Where Encounter Took Place",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/medicationrequest-prescribed-county"
+        },
+        "name": "County Where Medication Was Prescribed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/procedure-context-county"
         },
         "name": "County Where Procedure Was Performed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/questionnaire-context-county"
+        },
+        "name": "County Where Questionnaire Response Occurred",
         "exampleBoolean": false
       },
       {
@@ -102,7 +131,29 @@
       },
       {
         "reference": {
+          "reference": "MedicationRequest/example-oncology-medicationrequest"
+        },
+        "name": "Example Oncology Medication Request",
+        "description": "Chemotherapy prescription for a 45-year-old breast cancer patient in Nyandarua",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-medicationrequest"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/careplan-registry-flag"
+        },
+        "name": "Flag for National Cancer Registry Reporting",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/encounter-registry-flag"
+        },
+        "name": "Flag for National Cancer Registry Reporting",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/questionnaire-registry-flag"
         },
         "name": "Flag for National Cancer Registry Reporting",
         "exampleBoolean": false
@@ -112,6 +163,13 @@
           "reference": "StructureDefinition/procedure-registry-report-flag"
         },
         "name": "Flag for National Registry Reporting",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/medicationrequest-registry-flag"
+        },
+        "name": "Flag for Reporting Medication Request to National Registry",
         "exampleBoolean": false
       },
       {
@@ -132,10 +190,26 @@
       },
       {
         "reference": {
+          "reference": "Encounter/example-oncology-encounter"
+        },
+        "name": "Initial Oncology Assessment - Nyandarua County",
+        "description": "First oncology clinic visit for staging and treatment planning",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-encounter"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/oncology-kenya-careplan"
         },
         "name": "Oncology Care Plan Kenya",
         "description": "A structured CarePlan profile for oncology management in Kenya. Aligns with the Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI and County Cancer Registries. Supports multidisciplinary cancer care coordination, treatment protocols, and reporting using ICD-10 exclusively.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-encounter"
+        },
+        "name": "Oncology Encounter Kenya",
+        "description": "A profile for documenting oncology-related patient encounters in Kenya, aligned with the Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), KEMRI registry data needs, and county-level cancer reporting workflows.\nSupports tracking of staging visits, diagnosis, treatment initiation, follow-ups, referrals, and palliative care within the Kenyan oncology ecosystem.",
         "exampleBoolean": false
       },
       {
@@ -172,14 +246,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/oncology-kenya-medicationrequest"
-        },
-        "name": "Oncology Kenya MedicationRequest",
-        "description": "Oncology-specific medication request profile for Kenya, integrating with SHA, DHIS2, and Oncology Dispensing Tool (ODT).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/oncology-kenya-patient"
         },
         "name": "Oncology Kenya Patient",
@@ -196,6 +262,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/oncology-kenya-medicationrequest"
+        },
+        "name": "Oncology Medication Request Kenya",
+        "description": "A profile for prescribing cancer-related medications in Kenya. Aligned with the Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), and reporting needs of KEMRI and county cancer registries. Supports chemotherapy, palliative care, and anti-cancer drugs with ICD-10 and Kenya EMR terminology support.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/oncology-observation-kenya"
         },
         "name": "Oncology Observation Kenya",
@@ -208,6 +282,14 @@
         },
         "name": "Oncology Procedure Kenya",
         "description": "Procedure profile tailored for oncology use in Kenya, supporting documentation of diagnostic, surgical, medical, radiotherapy, and palliative interventions. Aligned with Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI registry practices, and county-level reporting, using ICD-10 as the sole terminology for reporting procedures and conditions.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-questionnaireresponse"
+        },
+        "name": "Oncology Questionnaire Response Kenya",
+        "description": "Structured response to oncology-related questionnaires used in Kenyan cancer screening, diagnosis, treatment, palliative care, and national registry reporting workflows. Aligns with Kenya's National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI data elements, and county registry efforts.",
         "exampleBoolean": false
       },
       {
@@ -231,6 +313,20 @@
           "reference": "StructureDefinition/careplan-referral-source"
         },
         "name": "Referral Source for Oncology Care Plan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/encounter-referral-source"
+        },
+        "name": "Referral Source for Oncology Encounter",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/questionnaire-referral-source"
+        },
+        "name": "Referral Source for Oncology Questionnaire",
         "exampleBoolean": false
       },
       {
