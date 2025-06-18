@@ -1,0 +1,30 @@
+{
+  "resourceType": "Condition",
+  "id": "breast-cancer-condition",
+  "code": {
+    "coding": [
+      {
+        "code": "C50.2",
+        "system": "http://id.who.int/icd10",
+        "display": "Malignant neoplasm of upper-inner quadrant of breast"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed"
+      }
+    ]
+  }
+}

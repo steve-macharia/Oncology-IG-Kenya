@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "careplan-referral-source",
+  "url": "http://example.org/StructureDefinition/careplan-referral-source",
+  "name": "CarePlanReferralSource",
+  "title": "Referral Source for Oncology Care Plan",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Referral Source for Oncology Care Plan"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/StructureDefinition/careplan-referral-source"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.sha.go.ke/fhir/ValueSet/kenya-referral-sources"
+        }
+      }
+    ]
+  }
+}

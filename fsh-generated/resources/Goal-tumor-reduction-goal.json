@@ -1,0 +1,19 @@
+{
+  "resourceType": "Goal",
+  "id": "tumor-reduction-goal",
+  "description": {
+    "text": "Reduce tumor size before surgery"
+  },
+  "target": [
+    {
+      "measure": {
+        "text": "Tumor size"
+      },
+      "dueDate": "2025-06-01"
+    }
+  ],
+  "lifecycleStatus": "active",
+  "subject": {
+    "reference": "Patient/example"
+  }
+}

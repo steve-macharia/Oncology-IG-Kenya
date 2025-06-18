@@ -1,0 +1,80 @@
+{
+  "resourceType": "Procedure",
+  "id": "example-surgical-biopsy",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/oncology-kenya-procedure"
+    ]
+  },
+  "bodySite": [
+    {
+      "text": "Right breast"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://example.org/StructureDefinition/procedure-context-county",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "UasinGishu",
+            "system": "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/procedure-cancer-stage",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "C50.9",
+            "system": "http://id.who.int/icd10",
+            "display": "Breast cancer, unspecified"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/procedure-referral-source",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "subcounty-hospital",
+            "system": "https://www.sha.go.ke/fhir/CodeSystem/referral-source"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/procedure-registry-report-flag",
+      "valueBoolean": true
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "85.12",
+        "system": "http://id.who.int/icd10",
+        "display": "Open biopsy of breast"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "performedDateTime": "2025-03-15T08:30:00+03:00",
+  "outcome": {
+    "coding": [
+      {
+        "code": "Z09.0",
+        "system": "http://id.who.int/icd10",
+        "display": "Follow-up examination after surgery for malignant neoplasm"
+      }
+    ]
+  },
+  "location": {
+    "reference": "Location/moi-hospital"
+  }
+}

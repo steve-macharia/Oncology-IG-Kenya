@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "CarePlan-example-oncology-careplan.json",
+    "fshName": "example-oncology-careplan",
+    "fshType": "Instance",
+    "fshFile": "OncologyKenyaCareplan.fsh",
+    "startLine": 77,
+    "endLine": 97
+  },
+  {
     "outputFile": "CodeSystem-tumor-markers.json",
     "fshName": "TumorMarkers",
     "fshType": "CodeSystem",
@@ -8,12 +16,36 @@
     "endLine": 21
   },
   {
+    "outputFile": "Condition-breast-cancer-condition.json",
+    "fshName": "breast-cancer-condition",
+    "fshType": "Instance",
+    "fshFile": "OncologyKenyaCareplan.fsh",
+    "startLine": 56,
+    "endLine": 63
+  },
+  {
+    "outputFile": "Goal-tumor-reduction-goal.json",
+    "fshName": "tumor-reduction-goal",
+    "fshType": "Instance",
+    "fshFile": "OncologyKenyaCareplan.fsh",
+    "startLine": 66,
+    "endLine": 74
+  },
+  {
     "outputFile": "ImplementationGuide-medby-ig.json",
     "fshName": "medby-ig",
     "fshType": "Instance",
     "fshFile": "ImplementationGuide.fsh",
     "startLine": 1,
     "endLine": 86
+  },
+  {
+    "outputFile": "Procedure-example-surgical-biopsy.json",
+    "fshName": "example-surgical-biopsy",
+    "fshType": "Instance",
+    "fshFile": "OncologyKenyaProcedure.fsh",
+    "startLine": 65,
+    "endLine": 79
   },
   {
     "outputFile": "SearchParameter-search-birthdate.json",
@@ -120,6 +152,30 @@
     "endLine": 7
   },
   {
+    "outputFile": "StructureDefinition-careplan-context-county.json",
+    "fshName": "CarePlanContextCounty",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaCareplan.fsh",
+    "startLine": 38,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-careplan-referral-source.json",
+    "fshName": "CarePlanReferralSource",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaCareplan.fsh",
+    "startLine": 44,
+    "endLine": 48
+  },
+  {
+    "outputFile": "StructureDefinition-careplan-registry-flag.json",
+    "fshName": "CarePlanRegistryFlag",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaCareplan.fsh",
+    "startLine": 50,
+    "endLine": 53
+  },
+  {
     "outputFile": "StructureDefinition-ecogPerformanceStatus.json",
     "fshName": "EcogPerformanceStatus",
     "fshType": "Extension",
@@ -134,6 +190,14 @@
     "fshFile": "Extension-icdo3Topography.fsh",
     "startLine": 1,
     "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-careplan.json",
+    "fshName": "OncologyKenyaCarePlan",
+    "fshType": "Profile",
+    "fshFile": "OncologyKenyaCareplan.fsh",
+    "startLine": 1,
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-oncology-kenya-condition.json",
@@ -176,6 +240,14 @@
     "endLine": 82
   },
   {
+    "outputFile": "StructureDefinition-oncology-kenya-procedure.json",
+    "fshName": "OncologyKenyaProcedure",
+    "fshType": "Profile",
+    "fshFile": "OncologyKenyaProcedure.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
     "outputFile": "StructureDefinition-oncology-kenya-registry-report.json",
     "fshName": "OncologyKenyaRegistryReport",
     "fshType": "Profile",
@@ -206,6 +278,38 @@
     "fshFile": "PatientOccupation.fsh",
     "startLine": 1,
     "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-procedure-cancer-stage.json",
+    "fshName": "ProcedureCancerStage",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaProcedure.fsh",
+    "startLine": 47,
+    "endLine": 51
+  },
+  {
+    "outputFile": "StructureDefinition-procedure-context-county.json",
+    "fshName": "ProcedureContextCounty",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaProcedure.fsh",
+    "startLine": 41,
+    "endLine": 45
+  },
+  {
+    "outputFile": "StructureDefinition-procedure-referral-source.json",
+    "fshName": "ProcedureReferralSource",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaProcedure.fsh",
+    "startLine": 53,
+    "endLine": 57
+  },
+  {
+    "outputFile": "StructureDefinition-procedure-registry-report-flag.json",
+    "fshName": "ProcedureRegistryReportFlag",
+    "fshType": "Extension",
+    "fshFile": "OncologyKenyaProcedure.fsh",
+    "startLine": 59,
+    "endLine": 62
   },
   {
     "outputFile": "ValueSet-cancer-icd10.json",

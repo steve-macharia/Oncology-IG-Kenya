@@ -25,6 +25,22 @@
     "resource": [
       {
         "reference": {
+          "reference": "Condition/breast-cancer-condition"
+        },
+        "name": "Breast Cancer Condition",
+        "description": "Confirmed malignant neoplasm of upper-inner quadrant of breast",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/example-oncology-careplan"
+        },
+        "name": "Breast Cancer Treatment Plan - Uasin Gishu",
+        "description": "Multimodal care plan for a 45-year-old female with Stage II breast cancer",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-careplan"
+      },
+      {
+        "reference": {
           "reference": "ValueSet/cancer-observation-method-vs"
         },
         "name": "Cancer Observation Method ValueSet",
@@ -33,10 +49,31 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/procedure-cancer-stage"
+        },
+        "name": "Cancer Stage at Time of Procedure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/cancer-stage"
         },
         "name": "Cancer Stage ValueSet",
         "description": "ValueSet for cancer stages commonly used in Kenya, e.g., Stage I–IV or TNM classifications.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/careplan-context-county"
+        },
+        "name": "County Where Care Plan is Managed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/procedure-context-county"
+        },
+        "name": "County Where Procedure Was Performed",
         "exampleBoolean": false
       },
       {
@@ -65,6 +102,20 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/careplan-registry-flag"
+        },
+        "name": "Flag for National Cancer Registry Reporting",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/procedure-registry-report-flag"
+        },
+        "name": "Flag for National Registry Reporting",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/Icdo3Morphology"
         },
         "name": "ICD-O-3 Morphology",
@@ -77,6 +128,14 @@
         },
         "name": "ICD-O-3 Topography Code",
         "description": "ICD-O-3 topography code to describe the primary site of the tumor.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-careplan"
+        },
+        "name": "Oncology Care Plan Kenya",
+        "description": "A structured CarePlan profile for oncology management in Kenya. Aligns with the Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI and County Cancer Registries. Supports multidisciplinary cancer care coordination, treatment protocols, and reporting using ICD-10 exclusively.",
         "exampleBoolean": false
       },
       {
@@ -145,6 +204,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/oncology-kenya-procedure"
+        },
+        "name": "Oncology Procedure Kenya",
+        "description": "Procedure profile tailored for oncology use in Kenya, supporting documentation of diagnostic, surgical, medical, radiotherapy, and palliative interventions. Aligned with Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI registry practices, and county-level reporting, using ICD-10 as the sole terminology for reporting procedures and conditions.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/patient-educationLevel"
         },
         "name": "Patient Education Level",
@@ -157,6 +224,20 @@
         },
         "name": "Patient Occupation",
         "description": "The current or most recent occupation of the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/careplan-referral-source"
+        },
+        "name": "Referral Source for Oncology Care Plan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/procedure-referral-source"
+        },
+        "name": "Referral Source for Procedure",
         "exampleBoolean": false
       },
       {
@@ -257,6 +338,14 @@
       },
       {
         "reference": {
+          "reference": "Procedure/example-surgical-biopsy"
+        },
+        "name": "Surgical Biopsy at Moi Teaching and Referral Hospital",
+        "description": "Surgical biopsy performed for suspected breast cancer",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-procedure"
+      },
+      {
+        "reference": {
           "reference": "ValueSet/cancer-icd10"
         },
         "name": "Top Common Cancers in Kenya - ICD-10",
@@ -278,6 +367,14 @@
         "name": "Tumor Markers",
         "description": "Tumor markers commonly used in oncology diagnostics and monitoring in Kenya.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Goal/tumor-reduction-goal"
+        },
+        "name": "Tumor Reduction Goal",
+        "description": "Reduce tumor size prior to surgery",
+        "exampleBoolean": true
       }
     ],
     "page": {

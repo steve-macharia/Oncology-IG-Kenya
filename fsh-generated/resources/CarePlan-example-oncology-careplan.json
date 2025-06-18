@@ -1,0 +1,83 @@
+{
+  "resourceType": "CarePlan",
+  "id": "example-oncology-careplan",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/oncology-kenya-careplan"
+    ]
+  },
+  "period": {
+    "start": "2025-03-01",
+    "end": "2026-03-01"
+  },
+  "careTeam": [
+    {
+      "reference": "CareTeam/breast-cancer-multidisciplinary-team"
+    }
+  ],
+  "goal": [
+    {
+      "reference": "Goal/tumor-reduction-goal"
+    }
+  ],
+  "activity": [
+    {
+      "detail": {
+        "scheduledPeriod": {
+          "start": "2025-03-15",
+          "end": "2025-06-15"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "Z51.1",
+              "system": "http://id.who.int/icd10",
+              "display": "Chemotherapy session for neoplasm"
+            }
+          ]
+        },
+        "status": "scheduled"
+      }
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/breast-cancer-condition"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://example.org/StructureDefinition/careplan-context-county",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "UasinGishu",
+            "system": "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/careplan-referral-source",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "dispensary",
+            "system": "https://www.sha.go.ke/fhir/CodeSystem/referral-source"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/careplan-registry-flag",
+      "valueBoolean": true
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "title": "Breast Cancer Treatment Plan",
+  "description": "Includes chemotherapy, surgery, and radiotherapy"
+}
