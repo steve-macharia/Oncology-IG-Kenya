@@ -1,0 +1,135 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-diagnostic-report-kenya",
+  "url": "http://example.org/StructureDefinition/oncology-diagnostic-report-kenya",
+  "name": "OncologyDiagnosticReportKenya",
+  "title": "Oncology Diagnostic Report Kenya",
+  "status": "draft",
+  "description": "FHIR R4-based profile for diagnostic reports in oncology within the Kenyan healthcare context.\nSupports pathology, radiology, laboratory, and imaging reports aligned with:\n- Kenya National Cancer Control Strategy (2023–2027)\n- Kenya Cancer Policy (2020–2030)\n- KEMRI cancer registries\n- UHC and SHA reporting\n- National staging and reporting standards\n- County-based registry efforts (e.g., Nyandarua)",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.extension",
+        "path": "DiagnosticReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "DiagnosticReport.extension:cancerStage",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "cancerStage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/report-cancer-stage"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.extension:countyOfSpecimen",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "countyOfSpecimen",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/report-specimen-origin-county"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.extension:reportToCancerRegistry",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "reportToCancerRegistry",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/report-registry-flag"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.status",
+        "path": "DiagnosticReport.status",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category",
+        "path": "DiagnosticReport.category",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://terminology.hl7.org/CodeSystem/v2-0074"
+        }
+      },
+      {
+        "id": "DiagnosticReport.code",
+        "path": "DiagnosticReport.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.kenyacode.com/fhir/ValueSet/oncology-diagnostic-types"
+        }
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.effective[x]",
+        "path": "DiagnosticReport.effective[x]",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.performer",
+        "path": "DiagnosticReport.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.resultsInterpreter",
+        "path": "DiagnosticReport.resultsInterpreter",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "path": "DiagnosticReport.result",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.presentedForm",
+        "path": "DiagnosticReport.presentedForm",
+        "mustSupport": true
+      }
+    ]
+  }
+}

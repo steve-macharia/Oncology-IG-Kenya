@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-kenya-supplyrequest",
+  "url": "http://example.org/StructureDefinition/oncology-kenya-supplyrequest",
+  "name": "OncologyKenyaSupplyRequest",
+  "title": "Oncology Kenya Supply Request",
+  "status": "draft",
+  "description": "A FHIR R4-based SupplyRequest profile for cancer-specific medical supplies in Kenya.\nSupports drug procurement, diagnostic supply needs, and inventory tracking aligned with\nKenya’s National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), \nand practical needs of facilities reporting to the KEMRI registry and SHA ecosystem.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "SupplyRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/SupplyRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "SupplyRequest.status",
+        "path": "SupplyRequest.status",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "SupplyRequest.item[x]",
+        "path": "SupplyRequest.item[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "SupplyRequest.quantity",
+        "path": "SupplyRequest.quantity",
+        "mustSupport": true
+      },
+      {
+        "id": "SupplyRequest.authoredOn",
+        "path": "SupplyRequest.authoredOn",
+        "mustSupport": true
+      },
+      {
+        "id": "SupplyRequest.requester",
+        "path": "SupplyRequest.requester",
+        "mustSupport": true
+      },
+      {
+        "id": "SupplyRequest.supplier",
+        "path": "SupplyRequest.supplier",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "SupplyRequest.reasonCode",
+        "path": "SupplyRequest.reasonCode",
+        "max": "1"
+      }
+    ]
+  }
+}

@@ -8,6 +8,14 @@
     "endLine": 97
   },
   {
+    "outputFile": "Claim-example-oncology-claim-nyandarua.json",
+    "fshName": "example-oncology-claim-nyandarua",
+    "fshType": "Instance",
+    "fshFile": "Claim.fsh",
+    "startLine": 27,
+    "endLine": 60
+  },
+  {
     "outputFile": "CodeSystem-tumor-markers.json",
     "fshName": "TumorMarkers",
     "fshType": "CodeSystem",
@@ -22,6 +30,14 @@
     "fshFile": "OncologyKenyaCareplan.fsh",
     "startLine": 56,
     "endLine": 63
+  },
+  {
+    "outputFile": "DiagnosticReport-example-oncology-diagnostic-report.json",
+    "fshName": "example-oncology-diagnostic-report",
+    "fshType": "Instance",
+    "fshFile": "OncologyDiagnosticReport.fsh",
+    "startLine": 59,
+    "endLine": 77
   },
   {
     "outputFile": "Encounter-example-oncology-encounter.json",
@@ -48,12 +64,44 @@
     "endLine": 86
   },
   {
+    "outputFile": "Location-example-kenyatta-national-hospital-oncology.json",
+    "fshName": "example-kenyatta-national-hospital-oncology",
+    "fshType": "Instance",
+    "fshFile": "Location.fsh",
+    "startLine": 45,
+    "endLine": 61
+  },
+  {
+    "outputFile": "Location-example-nyandarua-cancer-center.json",
+    "fshName": "example-nyandarua-cancer-center",
+    "fshType": "Instance",
+    "fshFile": "Location.fsh",
+    "startLine": 25,
+    "endLine": 42
+  },
+  {
     "outputFile": "MedicationRequest-example-oncology-medicationrequest.json",
     "fshName": "example-oncology-medicationrequest",
     "fshType": "Instance",
     "fshFile": "OncologyKenyaMedicationRequest.fsh",
     "startLine": 44,
     "endLine": 58
+  },
+  {
+    "outputFile": "Practitioner-example-oncology-practitioner.json",
+    "fshName": "example-oncology-practitioner",
+    "fshType": "Instance",
+    "fshFile": "Practitioner.fsh",
+    "startLine": 53,
+    "endLine": 71
+  },
+  {
+    "outputFile": "PractitionerRole-example-oncology-practitioner-role.json",
+    "fshName": "example-oncology-practitioner-role",
+    "fshType": "Instance",
+    "fshFile": "PractitiotionerRoles.fsh",
+    "startLine": 42,
+    "endLine": 57
   },
   {
     "outputFile": "Procedure-example-surgical-biopsy.json",
@@ -160,6 +208,14 @@
     "endLine": 175
   },
   {
+    "outputFile": "ServiceRequest-example-oncology-service-request.json",
+    "fshName": "example-oncology-service-request",
+    "fshType": "Instance",
+    "fshFile": "OncologyServiceRequest.fsh",
+    "startLine": 53,
+    "endLine": 70
+  },
+  {
     "outputFile": "StructureDefinition-Icdo3Morphology.json",
     "fshName": "Icdo3Morphology",
     "fshType": "Extension",
@@ -256,12 +312,28 @@
     "endLine": 41
   },
   {
+    "outputFile": "StructureDefinition-oncology-diagnostic-report-kenya.json",
+    "fshName": "OncologyDiagnosticReportKenya",
+    "fshType": "Profile",
+    "fshFile": "OncologyDiagnosticReport.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
     "outputFile": "StructureDefinition-oncology-kenya-careplan.json",
     "fshName": "OncologyKenyaCarePlan",
     "fshType": "Profile",
     "fshFile": "OncologyKenyaCareplan.fsh",
     "startLine": 1,
     "endLine": 35
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-claim.json",
+    "fshName": "OncologyKenyaClaim",
+    "fshType": "Profile",
+    "fshFile": "Claim.fsh",
+    "startLine": 1,
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-oncology-kenya-condition.json",
@@ -296,6 +368,14 @@
     "endLine": 34
   },
   {
+    "outputFile": "StructureDefinition-oncology-kenya-location.json",
+    "fshName": "OncologyKenyaLocation",
+    "fshType": "Profile",
+    "fshFile": "Location.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
     "outputFile": "StructureDefinition-oncology-kenya-medicationrequest.json",
     "fshName": "OncologyKenyaMedicationRequest",
     "fshType": "Profile",
@@ -310,6 +390,22 @@
     "fshFile": "OncologyKenyaCancerPatient.fsh",
     "startLine": 1,
     "endLine": 82
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-practitioner-role.json",
+    "fshName": "OncologyKenyaPractitionerRole",
+    "fshType": "Profile",
+    "fshFile": "PractitiotionerRoles.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-practitioner.json",
+    "fshName": "OncologyKenyaPractitioner",
+    "fshType": "Profile",
+    "fshFile": "Practitioner.fsh",
+    "startLine": 1,
+    "endLine": 38
   },
   {
     "outputFile": "StructureDefinition-oncology-kenya-procedure.json",
@@ -336,12 +432,36 @@
     "endLine": 23
   },
   {
+    "outputFile": "StructureDefinition-oncology-kenya-service-request.json",
+    "fshName": "OncologyKenyaServiceRequest",
+    "fshType": "Profile",
+    "fshFile": "OncologyServiceRequest.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-kenya-supplyrequest.json",
+    "fshName": "OncologyKenyaSupplyRequest",
+    "fshType": "Profile",
+    "fshFile": "SupplyRequest.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
     "outputFile": "StructureDefinition-oncology-observation-kenya.json",
     "fshName": "OncologyObservationKenya",
     "fshType": "Profile",
     "fshFile": "OncologyKenyaObservation.fsh",
     "startLine": 1,
     "endLine": 61
+  },
+  {
+    "outputFile": "StructureDefinition-oncology-service-focus.json",
+    "fshName": "OncologyServiceFocus",
+    "fshType": "Extension",
+    "fshFile": "PractitiotionerRoles.fsh",
+    "startLine": 36,
+    "endLine": 40
   },
   {
     "outputFile": "StructureDefinition-patient-educationLevel.json",
@@ -358,6 +478,30 @@
     "fshFile": "PatientOccupation.fsh",
     "startLine": 1,
     "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-practitioner-cadre-code.json",
+    "fshName": "PractitionerCadreCode",
+    "fshType": "Extension",
+    "fshFile": "Practitioner.fsh",
+    "startLine": 46,
+    "endLine": 50
+  },
+  {
+    "outputFile": "StructureDefinition-practitioner-role-county.json",
+    "fshName": "PractitionerRoleCounty",
+    "fshType": "Extension",
+    "fshFile": "PractitiotionerRoles.fsh",
+    "startLine": 30,
+    "endLine": 34
+  },
+  {
+    "outputFile": "StructureDefinition-practitioner-work-county.json",
+    "fshName": "PractitionerWorkCounty",
+    "fshType": "Extension",
+    "fshFile": "Practitioner.fsh",
+    "startLine": 40,
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-procedure-cancer-stage.json",
@@ -413,6 +557,70 @@
     "fshType": "Extension",
     "fshFile": "QuestionnaireResponse.fsh",
     "startLine": 39,
+    "endLine": 42
+  },
+  {
+    "outputFile": "StructureDefinition-report-cancer-stage.json",
+    "fshName": "ReportCancerStage",
+    "fshType": "Extension",
+    "fshFile": "OncologyDiagnosticReport.fsh",
+    "startLine": 41,
+    "endLine": 45
+  },
+  {
+    "outputFile": "StructureDefinition-report-registry-flag.json",
+    "fshName": "ReportRegistryFlag",
+    "fshType": "Extension",
+    "fshFile": "OncologyDiagnosticReport.fsh",
+    "startLine": 53,
+    "endLine": 56
+  },
+  {
+    "outputFile": "StructureDefinition-report-specimen-origin-county.json",
+    "fshName": "ReportSpecimenOriginCounty",
+    "fshType": "Extension",
+    "fshFile": "OncologyDiagnosticReport.fsh",
+    "startLine": 47,
+    "endLine": 51
+  },
+  {
+    "outputFile": "StructureDefinition-service-request-context-county.json",
+    "fshName": "ServiceRequestContextCounty",
+    "fshType": "Extension",
+    "fshFile": "OncologyServiceRequest.fsh",
+    "startLine": 35,
+    "endLine": 39
+  },
+  {
+    "outputFile": "StructureDefinition-service-request-referral-type.json",
+    "fshName": "ServiceRequestReferralType",
+    "fshType": "Extension",
+    "fshFile": "OncologyServiceRequest.fsh",
+    "startLine": 46,
+    "endLine": 50
+  },
+  {
+    "outputFile": "StructureDefinition-service-request-registry-flag.json",
+    "fshName": "ServiceRequestRegistryFlag",
+    "fshType": "Extension",
+    "fshFile": "OncologyServiceRequest.fsh",
+    "startLine": 41,
+    "endLine": 44
+  },
+  {
+    "outputFile": "SupplyRequest-example-biopsy-needle-supply-request.json",
+    "fshName": "example-biopsy-needle-supply-request",
+    "fshType": "Instance",
+    "fshFile": "SupplyRequest.fsh",
+    "startLine": 47,
+    "endLine": 63
+  },
+  {
+    "outputFile": "SupplyRequest-example-chemotherapy-supply-request.json",
+    "fshName": "example-chemotherapy-supply-request",
+    "fshType": "Instance",
+    "fshFile": "SupplyRequest.fsh",
+    "startLine": 26,
     "endLine": 42
   },
   {

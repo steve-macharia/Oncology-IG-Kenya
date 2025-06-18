@@ -1,0 +1,46 @@
+{
+  "resourceType": "SupplyRequest",
+  "id": "example-chemotherapy-supply-request",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/oncology-kenya-supplyrequest"
+    ]
+  },
+  "itemCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.whocc.no/atc",
+        "code": "L01CD01",
+        "display": "Paclitaxel"
+      }
+    ]
+  },
+  "quantity": {
+    "value": 30,
+    "unit": "vial"
+  },
+  "supplier": [
+    {
+      "reference": "Organization/kemsa"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "367336001",
+          "display": "Chemotherapy"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "authoredOn": "2025-06-15",
+  "requester": {
+    "reference": "PractitionerRole/example-oncology-specialist-nyandarua"
+  },
+  "deliverTo": {
+    "reference": "Location/example-nyandarua-cancer-center"
+  }
+}

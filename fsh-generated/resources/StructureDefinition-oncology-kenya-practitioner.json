@@ -1,0 +1,151 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-kenya-practitioner",
+  "url": "http://example.org/StructureDefinition/oncology-kenya-practitioner",
+  "name": "OncologyKenyaPractitioner",
+  "title": "Oncology Practitioner Kenya",
+  "status": "draft",
+  "description": "FHIR R4 profile for practitioners involved in oncology care in Kenya.\nAligns with Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030),\nKEMRI Cancer Registry guidelines, and workforce tracking as emphasized in the KESHO and Nyandarua registry reports.\nSupports credentialing, role classification, and regional deployment for cancer care delivery.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.extension",
+        "path": "Practitioner.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Practitioner.extension:workCounty",
+        "path": "Practitioner.extension",
+        "sliceName": "workCounty",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/practitioner-work-county"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.extension:cadreCode",
+        "path": "Practitioner.extension",
+        "sliceName": "cadreCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/practitioner-cadre-code"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier.value",
+        "path": "Practitioner.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.family",
+        "path": "Practitioner.name.family",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name.given",
+        "path": "Practitioner.name.given",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.address.text",
+        "path": "Practitioner.address.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.gender",
+        "path": "Practitioner.gender",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.birthDate",
+        "path": "Practitioner.birthDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.identifier",
+        "path": "Practitioner.qualification.identifier",
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.qualification.code",
+        "path": "Practitioner.qualification.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.kenyacode.com/fhir/ValueSet/kenya-oncology-qualification-codes"
+        }
+      },
+      {
+        "id": "Practitioner.communication",
+        "path": "Practitioner.communication",
+        "mustSupport": true
+      }
+    ]
+  }
+}

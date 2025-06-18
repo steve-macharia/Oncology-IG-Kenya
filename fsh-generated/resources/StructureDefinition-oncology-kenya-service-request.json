@@ -1,0 +1,142 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-kenya-service-request",
+  "url": "http://example.org/StructureDefinition/oncology-kenya-service-request",
+  "name": "OncologyKenyaServiceRequest",
+  "title": "Oncology Service Request Kenya",
+  "status": "draft",
+  "description": "A specialized ServiceRequest profile for oncology-related referrals, diagnostics, and procedures in Kenya. Informed by the Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), and data practices from KEMRI and county cancer registries.\nSupports service ordering for biopsies, imaging, oncology specialist reviews, palliative care referrals, and tracking within a multidisciplinary care model.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.extension",
+        "path": "ServiceRequest.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ServiceRequest.extension:county",
+        "path": "ServiceRequest.extension",
+        "sliceName": "county",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/service-request-context-county"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:reportToRegistry",
+        "path": "ServiceRequest.extension",
+        "sliceName": "reportToRegistry",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/service-request-registry-flag"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:referralType",
+        "path": "ServiceRequest.extension",
+        "sliceName": "referralType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/service-request-referral-type"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.status",
+        "path": "ServiceRequest.status",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.intent",
+        "path": "ServiceRequest.intent",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.priority",
+        "path": "ServiceRequest.priority",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://id.who.int/icd10"
+        }
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.authoredOn",
+        "path": "ServiceRequest.authoredOn",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.requester",
+        "path": "ServiceRequest.requester",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.performer",
+        "path": "ServiceRequest.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.reasonCode",
+        "path": "ServiceRequest.reasonCode",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://id.who.int/icd10"
+        }
+      },
+      {
+        "id": "ServiceRequest.supportingInfo",
+        "path": "ServiceRequest.supportingInfo",
+        "mustSupport": true
+      }
+    ]
+  }
+}

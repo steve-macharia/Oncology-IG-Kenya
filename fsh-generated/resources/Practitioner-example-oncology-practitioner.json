@@ -1,0 +1,78 @@
+{
+  "resourceType": "Practitioner",
+  "id": "example-oncology-practitioner",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/oncology-kenya-practitioner"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://smarthealth.go.ke/practitioner-ids",
+      "value": "ONC-001256"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Grace"
+      ],
+      "family": "Wanjiku"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "grace.wanjiku@uon.ac.ke"
+    }
+  ],
+  "address": [
+    {
+      "text": "Kenyatta National Hospital, Nairobi",
+      "city": "Nairobi",
+      "country": "KE"
+    }
+  ],
+  "qualification": [
+    {
+      "issuer": {
+        "display": "Kenya Medical Practitioners and Dentists Council"
+      },
+      "code": {
+        "coding": [
+          {
+            "code": "CONS-ONC",
+            "system": "https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-qualification-codes",
+            "display": "Consultant Oncologist"
+          }
+        ]
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://example.org/StructureDefinition/practitioner-work-county",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Nairobi",
+            "system": "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/practitioner-cadre-code",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CONSULTANT",
+            "system": "https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-cadres"
+          }
+        ]
+      }
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1980-04-12"
+}

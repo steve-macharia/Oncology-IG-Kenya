@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "report-cancer-stage",
+  "url": "http://example.org/StructureDefinition/report-cancer-stage",
+  "name": "ReportCancerStage",
+  "title": "Cancer Stage Summary (e.g., TNM or Ann Arbor)",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Cancer Stage Summary (e.g., TNM or Ann Arbor)"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/StructureDefinition/report-cancer-stage"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.kenyacode.com/fhir/ValueSet/kenya-cancer-staging"
+        }
+      }
+    ]
+  }
+}

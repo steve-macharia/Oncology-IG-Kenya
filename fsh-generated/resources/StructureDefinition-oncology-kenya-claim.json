@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-kenya-claim",
+  "url": "http://example.org/StructureDefinition/oncology-kenya-claim",
+  "name": "OncologyKenyaClaim",
+  "title": "Oncology Kenya Claim",
+  "status": "draft",
+  "description": "A FHIR R4-based Claim profile tailored for cancer-related health financing in Kenya.\nSupports SHA (Social Health Authority) reimbursement workflows and aligns with:\n- Kenya National Cancer Control Strategy 2023–2027,\n- Kenya Cancer Policy 2020–2030,\n- KEMRI cancer reporting and financing infrastructure.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Claim",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Claim",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Claim.status",
+        "path": "Claim.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Claim.type",
+        "path": "Claim.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Claim.use",
+        "path": "Claim.use",
+        "mustSupport": true
+      },
+      {
+        "id": "Claim.patient",
+        "path": "Claim.patient",
+        "mustSupport": true
+      },
+      {
+        "id": "Claim.created",
+        "path": "Claim.created",
+        "mustSupport": true
+      },
+      {
+        "id": "Claim.insurer",
+        "path": "Claim.insurer",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Claim.provider",
+        "path": "Claim.provider",
+        "mustSupport": true
+      },
+      {
+        "id": "Claim.diagnosis",
+        "path": "Claim.diagnosis",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Claim.insurance",
+        "path": "Claim.insurance",
+        "mustSupport": true
+      },
+      {
+        "id": "Claim.item",
+        "path": "Claim.item",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

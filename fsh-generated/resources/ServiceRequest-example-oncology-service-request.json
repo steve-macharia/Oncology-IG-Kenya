@@ -1,0 +1,76 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "example-oncology-service-request",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/oncology-kenya-service-request"
+    ]
+  },
+  "performer": [
+    {
+      "reference": "Organization/kiambu-imaging-center"
+    }
+  ],
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "C50.9",
+          "system": "http://id.who.int/icd10",
+          "display": "Malignant neoplasm of breast, unspecified"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://example.org/StructureDefinition/service-request-context-county",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Kiambu",
+            "system": "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/service-request-referral-type",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "external",
+            "system": "https://www.sha.go.ke/fhir/CodeSystem/referral-type"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://example.org/StructureDefinition/service-request-registry-flag",
+      "valueBoolean": true
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "code": "Z01.6",
+        "system": "http://id.who.int/icd10",
+        "display": "Radiological examination, not elsewhere classified"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "occurrenceDateTime": "2025-07-01",
+  "requester": {
+    "reference": "Practitioner/oncologist-kiambu"
+  },
+  "authoredOn": "2025-06-25",
+  "priority": "urgent",
+  "encounter": {
+    "reference": "Encounter/example-oncology-encounter"
+  }
+}

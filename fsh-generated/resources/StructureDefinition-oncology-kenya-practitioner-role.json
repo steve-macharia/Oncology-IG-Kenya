@@ -1,0 +1,121 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-kenya-practitioner-role",
+  "url": "http://example.org/StructureDefinition/oncology-kenya-practitioner-role",
+  "name": "OncologyKenyaPractitionerRole",
+  "title": "Oncology Practitioner Role Kenya",
+  "status": "draft",
+  "description": "FHIR R4 profile for defining roles of healthcare professionals involved in oncology services in Kenya.\nSupports assignment of oncology roles, facility affiliations, cancer services scope, and geographic deployment.\nBased on Kenya Cancer Policy (2020–2030), National Cancer Control Strategy (2023–2027),\nKEMRI cancer registry requirements, and KESHO conference findings.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.extension",
+        "path": "PractitionerRole.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PractitionerRole.extension:countyOfService",
+        "path": "PractitionerRole.extension",
+        "sliceName": "countyOfService",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/practitioner-role-county"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.extension:oncologyServiceFocus",
+        "path": "PractitionerRole.extension",
+        "sliceName": "oncologyServiceFocus",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://example.org/StructureDefinition/oncology-service-focus"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.active",
+        "path": "PractitionerRole.active",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.period",
+        "path": "PractitionerRole.period",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.kenyacode.com/fhir/ValueSet/kenya-oncology-roles"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.kenyacode.com/fhir/ValueSet/kenya-oncology-specialties"
+        }
+      },
+      {
+        "id": "PractitionerRole.location",
+        "path": "PractitionerRole.location",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.healthcareService",
+        "path": "PractitionerRole.healthcareService",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.telecom",
+        "path": "PractitionerRole.telecom",
+        "mustSupport": true
+      }
+    ]
+  }
+}

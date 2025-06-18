@@ -1,0 +1,69 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "oncology-kenya-location",
+  "url": "http://example.org/StructureDefinition/oncology-kenya-location",
+  "name": "OncologyKenyaLocation",
+  "title": "Oncology Kenya Location",
+  "status": "draft",
+  "description": "FHIR Location profile tailored for cancer care delivery points in Kenya.\nSupports capture of facilities relevant to cancer diagnosis, treatment, and palliative care,\naligned with national cancer control strategies and KEMRI cancer registry reporting.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.status",
+        "path": "Location.status",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Location.name",
+        "path": "Location.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Location.mode",
+        "path": "Location.mode",
+        "fixedCode": "instance"
+      },
+      {
+        "id": "Location.type",
+        "path": "Location.type",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.telecom",
+        "path": "Location.telecom",
+        "max": "1"
+      },
+      {
+        "id": "Location.address",
+        "path": "Location.address",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Location.address.city",
+        "path": "Location.address.city",
+        "min": 1
+      },
+      {
+        "id": "Location.address.country",
+        "path": "Location.address.country",
+        "min": 1
+      },
+      {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "mustSupport": true
+      }
+    ]
+  }
+}

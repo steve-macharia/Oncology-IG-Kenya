@@ -64,10 +64,24 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/report-cancer-stage"
+        },
+        "name": "Cancer Stage Summary (e.g., TNM or Ann Arbor)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/cancer-stage"
         },
         "name": "Cancer Stage ValueSet",
         "description": "ValueSet for cancer stages commonly used in Kenya, e.g., Stage I–IV or TNM classifications.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-county"
+        },
+        "name": "County of Oncology Service",
         "exampleBoolean": false
       },
       {
@@ -93,6 +107,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/practitioner-work-county"
+        },
+        "name": "County Where Oncology Practitioner is Based",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/procedure-context-county"
         },
         "name": "County Where Procedure Was Performed",
@@ -104,6 +125,28 @@
         },
         "name": "County Where Questionnaire Response Occurred",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/service-request-context-county"
+        },
+        "name": "County Where Request Originated",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/report-specimen-origin-county"
+        },
+        "name": "County Where Specimen Was Collected",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/example-oncology-practitioner"
+        },
+        "name": "Dr. Grace Wanjiku – Consultant Oncologist",
+        "description": "Example oncology practitioner in Nairobi, Kenya",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-practitioner"
       },
       {
         "reference": {
@@ -131,6 +174,30 @@
       },
       {
         "reference": {
+          "reference": "SupplyRequest/example-biopsy-needle-supply-request"
+        },
+        "name": "Example Biopsy Needle Supply Request",
+        "description": "Urgent request for 15 biopsy needles for diagnostic services at KNH Oncology Centre",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-supplyrequest"
+      },
+      {
+        "reference": {
+          "reference": "SupplyRequest/example-chemotherapy-supply-request"
+        },
+        "name": "Example Chemotherapy Drug Supply Request",
+        "description": "Request for 30 vials of Paclitaxel for breast cancer treatment at Nyandarua County Hospital",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-supplyrequest"
+      },
+      {
+        "reference": {
+          "reference": "Claim/example-oncology-claim-nyandarua"
+        },
+        "name": "Example Oncology Claim - Nyandarua",
+        "description": "Claim for chemotherapy session reimbursement submitted to SHA by Nyandarua County Hospital",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-claim"
+      },
+      {
+        "reference": {
           "reference": "MedicationRequest/example-oncology-medicationrequest"
         },
         "name": "Example Oncology Medication Request",
@@ -147,6 +214,13 @@
       {
         "reference": {
           "reference": "StructureDefinition/encounter-registry-flag"
+        },
+        "name": "Flag for National Cancer Registry Reporting",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/service-request-registry-flag"
         },
         "name": "Flag for National Cancer Registry Reporting",
         "exampleBoolean": false
@@ -170,6 +244,13 @@
           "reference": "StructureDefinition/medicationrequest-registry-flag"
         },
         "name": "Flag for Reporting Medication Request to National Registry",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-service-focus"
+        },
+        "name": "Focus Area of Oncology Service",
         "exampleBoolean": false
       },
       {
@@ -198,10 +279,57 @@
       },
       {
         "reference": {
+          "reference": "Location/example-kenyatta-national-hospital-oncology"
+        },
+        "name": "KNH National Cancer Centre",
+        "description": "Kenyatta National Hospital's Oncology Centre, providing national-level cancer diagnosis and specialized care.",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-location"
+      },
+      {
+        "reference": {
+          "reference": "Location/example-nyandarua-cancer-center"
+        },
+        "name": "Nyandarua County Cancer Treatment Centre",
+        "description": "A representative oncology center supporting diagnosis, treatment and follow-up for Nyandarua County, aligned with the National Cancer Registry.",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-location"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/example-oncology-practitioner-role"
+        },
+        "name": "Oncologist Role at KNH",
+        "description": "Dr. Grace Wanjiku’s role as Consultant Oncologist at Kenyatta National Hospital",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-practitioner-role"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-cadre-code"
+        },
+        "name": "Oncology Cadre Classification",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/oncology-kenya-careplan"
         },
         "name": "Oncology Care Plan Kenya",
         "description": "A structured CarePlan profile for oncology management in Kenya. Aligns with the Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI and County Cancer Registries. Supports multidisciplinary cancer care coordination, treatment protocols, and reporting using ICD-10 exclusively.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/example-oncology-diagnostic-report"
+        },
+        "name": "Oncology Diagnostic Report - Biopsy for Cervical Cancer",
+        "description": "Pathology report for cervical biopsy indicating squamous cell carcinoma",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-diagnostic-report-kenya"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-diagnostic-report-kenya"
+        },
+        "name": "Oncology Diagnostic Report Kenya",
+        "description": "FHIR R4-based profile for diagnostic reports in oncology within the Kenyan healthcare context.\nSupports pathology, radiology, laboratory, and imaging reports aligned with:\n- Kenya National Cancer Control Strategy (2023–2027)\n- Kenya Cancer Policy (2020–2030)\n- KEMRI cancer registries\n- UHC and SHA reporting\n- National staging and reporting standards\n- County-based registry efforts (e.g., Nyandarua)",
         "exampleBoolean": false
       },
       {
@@ -218,6 +346,14 @@
         },
         "name": "Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)",
         "description": "This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient and OncologyObservationKenya, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.\n\nIt is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-claim"
+        },
+        "name": "Oncology Kenya Claim",
+        "description": "A FHIR R4-based Claim profile tailored for cancer-related health financing in Kenya.\nSupports SHA (Social Health Authority) reimbursement workflows and aligns with:\n- Kenya National Cancer Control Strategy 2023–2027,\n- Kenya Cancer Policy 2020–2030,\n- KEMRI cancer reporting and financing infrastructure.",
         "exampleBoolean": false
       },
       {
@@ -246,6 +382,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/oncology-kenya-location"
+        },
+        "name": "Oncology Kenya Location",
+        "description": "FHIR Location profile tailored for cancer care delivery points in Kenya.\nSupports capture of facilities relevant to cancer diagnosis, treatment, and palliative care,\naligned with national cancer control strategies and KEMRI cancer registry reporting.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/oncology-kenya-patient"
         },
         "name": "Oncology Kenya Patient",
@@ -258,6 +402,14 @@
         },
         "name": "Oncology Kenya Registry Report",
         "description": "Defines structured cancer registry reporting format for Kenya, integrating with KEMRI Cancer Registry, Nairobi Cancer Registry, and DHIS2.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-supplyrequest"
+        },
+        "name": "Oncology Kenya Supply Request",
+        "description": "A FHIR R4-based SupplyRequest profile for cancer-specific medical supplies in Kenya.\nSupports drug procurement, diagnostic supply needs, and inventory tracking aligned with\nKenya’s National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), \nand practical needs of facilities reporting to the KEMRI registry and SHA ecosystem.",
         "exampleBoolean": false
       },
       {
@@ -278,6 +430,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/oncology-kenya-practitioner"
+        },
+        "name": "Oncology Practitioner Kenya",
+        "description": "FHIR R4 profile for practitioners involved in oncology care in Kenya.\nAligns with Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030),\nKEMRI Cancer Registry guidelines, and workforce tracking as emphasized in the KESHO and Nyandarua registry reports.\nSupports credentialing, role classification, and regional deployment for cancer care delivery.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-practitioner-role"
+        },
+        "name": "Oncology Practitioner Role Kenya",
+        "description": "FHIR R4 profile for defining roles of healthcare professionals involved in oncology services in Kenya.\nSupports assignment of oncology roles, facility affiliations, cancer services scope, and geographic deployment.\nBased on Kenya Cancer Policy (2020–2030), National Cancer Control Strategy (2023–2027),\nKEMRI cancer registry requirements, and KESHO conference findings.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/oncology-kenya-procedure"
         },
         "name": "Oncology Procedure Kenya",
@@ -290,6 +458,14 @@
         },
         "name": "Oncology Questionnaire Response Kenya",
         "description": "Structured response to oncology-related questionnaires used in Kenyan cancer screening, diagnosis, treatment, palliative care, and national registry reporting workflows. Aligns with Kenya's National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI data elements, and county registry efforts.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-kenya-service-request"
+        },
+        "name": "Oncology Service Request Kenya",
+        "description": "A specialized ServiceRequest profile for oncology-related referrals, diagnostics, and procedures in Kenya. Informed by the Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), and data practices from KEMRI and county cancer registries.\nSupports service ordering for biopsies, imaging, oncology specialist reviews, palliative care referrals, and tracking within a multidisciplinary care model.",
         "exampleBoolean": false
       },
       {
@@ -307,6 +483,14 @@
         "name": "Patient Occupation",
         "description": "The current or most recent occupation of the patient.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/example-oncology-service-request"
+        },
+        "name": "Referral for Breast Ultrasound - Kiambu County",
+        "description": "Service request for breast ultrasound to evaluate palpable lump in patient",
+        "exampleCanonical": "http://example.org/StructureDefinition/oncology-kenya-service-request"
       },
       {
         "reference": {
@@ -334,6 +518,13 @@
           "reference": "StructureDefinition/procedure-referral-source"
         },
         "name": "Referral Source for Procedure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/service-request-referral-type"
+        },
+        "name": "Referral Type (Internal or External)",
         "exampleBoolean": false
       },
       {
@@ -430,6 +621,13 @@
         },
         "name": "Search by Sub-County",
         "description": "Filter patients by sub-county (address.district)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/report-registry-flag"
+        },
+        "name": "Send Report to National Cancer Registry",
         "exampleBoolean": false
       },
       {
