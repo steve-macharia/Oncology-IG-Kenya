@@ -5,7 +5,7 @@
   "name": "OncologyKenyaPatient",
   "title": "Oncology Kenya Patient",
   "status": "draft",
-  "description": "Customized patient profile for oncology care in Kenya, aligned with SHA, DHIS2, and national cancer registries. Ensures compliance with Kenyan Ministry of Health registration standards.",
+  "description": "Customized patient profile for oncology care in Kenya. This profile is part of the Oncology Implementation Guide for Kenya (Oncology-IG-Kenya) — a draft version (0.1.0) dated 2025-06-18. It models key patient elements aligned with Kenya’s national cancer registry, SHA (Smart Health Authority), DHIS2, and local care workflows. This guide demonstrates how HL7® FHIR® can be applied to transform cancer care, from screening to palliative support. It is a proof-of-concept created independently by a Kenyan digital health enthusiast, with no official endorsement, to inspire innovation using open health standards and locally relevant data modeling.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
