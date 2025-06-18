@@ -99,7 +99,7 @@
     "outputFile": "StructureDefinition-oncology-kenya-condition.json",
     "fshName": "OncologyKenyaCondition",
     "fshType": "Profile",
-    "fshFile": "OncologyKenyaCondition.fsh",
+    "fshFile": "OncologyCancerCondition.fsh",
     "startLine": 2,
     "endLine": 12
   },
@@ -139,7 +139,7 @@
     "outputFile": "StructureDefinition-oncology-kenya-patient.json",
     "fshName": "OncologyKenyaPatient",
     "fshType": "Profile",
-    "fshFile": "OncologyKenyaPatient.fsh",
+    "fshFile": "OncologyKenyaCancerPatient.fsh",
     "startLine": 1,
     "endLine": 82
   },
