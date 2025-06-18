@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "search-birthdate",
+  "url": "https://oncology.ig.kenya/SearchParameter/search-birthdate",
+  "description": "Filter patients by date of birth",
+  "base": [
+    "Patient"
+  ],
+  "name": "birthdate",
+  "code": "birthdate",
+  "type": "date",
+  "status": "active",
+  "expression": "Patient.birthDate",
+  "xpathUsage": "normal"
+}

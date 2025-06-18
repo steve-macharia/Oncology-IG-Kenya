@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "search-sub-county",
+  "url": "https://oncology.ig.kenya/SearchParameter/search-sub-county",
+  "description": "Filter patients by sub-county (address.district)",
+  "base": [
+    "Patient"
+  ],
+  "name": "sub-county",
+  "code": "sub-county",
+  "type": "string",
+  "status": "active",
+  "expression": "Patient.address.district",
+  "xpathUsage": "normal"
+}

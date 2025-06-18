@@ -8,8 +8,14 @@
 [OncologyKenyaRegistryReport]: StructureDefinition-oncology-kenya-registry-report.html
 [PatientEducationLevel]: StructureDefinition-patient-educationLevel.html
 [PatientOccupation]: StructureDefinition-patient-occupation.html
+[search-cancer-stage]: SearchParameter-search-cancer-stage.html
+[search-cancer-type]: SearchParameter-search-cancer-type.html
 [search-county]: SearchParameter-search-county.html
+[search-birthdate]: SearchParameter-search-birthdate.html
 [search-education-level]: SearchParameter-search-education-level.html
 [search-facility-upi]: SearchParameter-search-facility-upi.html
+[search-gender]: SearchParameter-search-gender.html
+[search-national-id]: SearchParameter-search-national-id.html
 [search-occupation]: SearchParameter-search-occupation.html
 [search-sha-id]: SearchParameter-search-sha-id.html
+[search-sub-county]: SearchParameter-search-sub-county.html

@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "search-national-id",
+  "url": "https://oncology.ig.kenya/SearchParameter/search-national-id",
+  "description": "Filter patients by Kenyan National ID",
+  "base": [
+    "Patient"
+  ],
+  "name": "national-id",
+  "code": "national-id",
+  "type": "token",
+  "status": "active",
+  "expression": "Patient.identifier.where(system = 'https://sha.go.ke/ids/national-id')",
+  "xpathUsage": "normal"
+}

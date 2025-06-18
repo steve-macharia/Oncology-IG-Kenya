@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "search-cancer-stage",
+  "url": "https://oncology.ig.kenya/SearchParameter/search-cancer-stage",
+  "description": "Filter patients by cancer staging captured in an Observation",
+  "base": [
+    "Observation"
+  ],
+  "name": "cancer-stage",
+  "code": "cancer-stage",
+  "type": "token",
+  "status": "active",
+  "expression": "Observation.code.where(coding.code = 'cancer-stage')",
+  "xpathUsage": "normal"
+}

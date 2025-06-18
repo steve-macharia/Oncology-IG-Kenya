@@ -24,7 +24,7 @@ title: Oncology-IG-Kenya
 
 Kenya faces a growing cancer crisis. This FHIR Implementation Guide (IG) aims to model a comprehensive, standards-based oncology care pathway, grounded in local realities, to demonstrate how HL7® FHIR® can support cancer prevention, diagnosis, treatment, and survivorship across the continuum of care.
 
-This is *not an official guide from the Ministry of Health or NHIF*, but rather a **proof-of-concept** created to stimulate innovation, collaboration, and alignment with national priorities.
+This is *not an official guide from the Ministry of Health or SHA*, but rather a **proof-of-concept** created to stimulate innovation, collaboration, and alignment with national priorities.
 
 ---
 
@@ -34,7 +34,7 @@ According to [World Bank data (2020)](https://documents1.worldbank.org/curated/e
 
 - 47,887 new cancer cases and 32,987 deaths were recorded in 2018.
 - 80% of patients are diagnosed at advanced stages (Stage III or IV).
-- Over 30% of affected households fall below the poverty line despite NHIF.
+- Over 30% of affected households fall below the poverty line despite SHA.
 - Fewer than 30% of public facilities offer screening; only 7 provide radiotherapy.
 - Only 36 oncologists serve a population of 50+ million.
 - Patients often travel more than 100 km for diagnosis or treatment.

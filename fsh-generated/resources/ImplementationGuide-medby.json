@@ -105,10 +105,34 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/search-cancer-stage"
+        },
+        "name": "Search by Cancer Stage",
+        "description": "Filter patients by cancer staging captured in an Observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/search-cancer-type"
+        },
+        "name": "Search by Cancer Type",
+        "description": "Filter patients by cancer diagnosis (Condition.code)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/search-county"
         },
         "name": "Search by County",
         "description": "Allows filtering patients by County (address.state)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/search-birthdate"
+        },
+        "name": "Search by Date of Birth",
+        "description": "Filter patients by date of birth",
         "exampleBoolean": false
       },
       {
@@ -129,6 +153,22 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/search-gender"
+        },
+        "name": "Search by Gender",
+        "description": "Filter patients by biological sex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/search-national-id"
+        },
+        "name": "Search by National ID",
+        "description": "Filter patients by Kenyan National ID",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/search-occupation"
         },
         "name": "Search by Occupation",
@@ -141,6 +181,14 @@
         },
         "name": "Search by SHA ID",
         "description": "Allows filtering patients by SHA ID",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/search-sub-county"
+        },
+        "name": "Search by Sub-County",
+        "description": "Filter patients by sub-county (address.district)",
         "exampleBoolean": false
       }
     ],

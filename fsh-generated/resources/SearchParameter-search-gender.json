@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "search-gender",
+  "url": "https://oncology.ig.kenya/SearchParameter/search-gender",
+  "description": "Filter patients by biological sex",
+  "base": [
+    "Patient"
+  ],
+  "name": "gender",
+  "code": "gender",
+  "type": "token",
+  "status": "active",
+  "expression": "Patient.gender",
+  "xpathUsage": "normal"
+}

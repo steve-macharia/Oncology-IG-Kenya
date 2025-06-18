@@ -1,0 +1,15 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "search-cancer-type",
+  "url": "https://oncology.ig.kenya/SearchParameter/search-cancer-type",
+  "description": "Filter patients by cancer diagnosis (Condition.code)",
+  "base": [
+    "Condition"
+  ],
+  "name": "cancer-type",
+  "code": "cancer-type",
+  "type": "token",
+  "status": "active",
+  "expression": "Condition.code",
+  "xpathUsage": "normal"
+}

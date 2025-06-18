@@ -8,6 +8,30 @@
     "endLine": 60
   },
   {
+    "outputFile": "SearchParameter-search-birthdate.json",
+    "fshName": "search-birthdate",
+    "fshType": "Instance",
+    "fshFile": "SearchParameters.fsh",
+    "startLine": 98,
+    "endLine": 111
+  },
+  {
+    "outputFile": "SearchParameter-search-cancer-stage.json",
+    "fshName": "search-cancer-stage",
+    "fshType": "Instance",
+    "fshFile": "SearchParameters.fsh",
+    "startLine": 146,
+    "endLine": 159
+  },
+  {
+    "outputFile": "SearchParameter-search-cancer-type.json",
+    "fshName": "search-cancer-type",
+    "fshType": "Instance",
+    "fshFile": "SearchParameters.fsh",
+    "startLine": 130,
+    "endLine": 143
+  },
+  {
     "outputFile": "SearchParameter-search-county.json",
     "fshName": "search-county",
     "fshType": "Instance",
@@ -32,6 +56,22 @@
     "endLine": 31
   },
   {
+    "outputFile": "SearchParameter-search-gender.json",
+    "fshName": "search-gender",
+    "fshType": "Instance",
+    "fshFile": "SearchParameters.fsh",
+    "startLine": 114,
+    "endLine": 127
+  },
+  {
+    "outputFile": "SearchParameter-search-national-id.json",
+    "fshName": "search-national-id",
+    "fshType": "Instance",
+    "fshFile": "SearchParameters.fsh",
+    "startLine": 82,
+    "endLine": 95
+  },
+  {
     "outputFile": "SearchParameter-search-occupation.json",
     "fshName": "search-occupation",
     "fshType": "Instance",
@@ -46,6 +86,14 @@
     "fshFile": "SearchParameters.fsh",
     "startLine": 2,
     "endLine": 15
+  },
+  {
+    "outputFile": "SearchParameter-search-sub-county.json",
+    "fshName": "search-sub-county",
+    "fshType": "Instance",
+    "fshFile": "SearchParameters.fsh",
+    "startLine": 162,
+    "endLine": 175
   },
   {
     "outputFile": "StructureDefinition-oncology-kenya-condition.json",
