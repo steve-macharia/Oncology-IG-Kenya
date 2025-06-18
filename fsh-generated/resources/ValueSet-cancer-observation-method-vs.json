@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CancerObservationMethodVS",
+  "id": "cancer-observation-method-vs",
+  "title": "Cancer Observation Method ValueSet",
+  "description": "Methods used to derive cancer observations such as histopathology, imaging, immunohistochemistry.",
+  "url": "http://example.org/ValueSet/cancer-observation-method-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/observation-methods"
+      }
+    ]
+  }
+}

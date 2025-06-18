@@ -25,10 +25,66 @@
     "resource": [
       {
         "reference": {
+          "reference": "ValueSet/cancer-observation-method-vs"
+        },
+        "name": "Cancer Observation Method ValueSet",
+        "description": "Methods used to derive cancer observations such as histopathology, imaging, immunohistochemistry.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cancer-stage"
+        },
+        "name": "Cancer Stage ValueSet",
+        "description": "ValueSet for cancer stages commonly used in Kenya, e.g., Stage I–IV or TNM classifications.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ecogPerformanceStatus"
+        },
+        "name": "ECOG Performance Status",
+        "description": "Eastern Cooperative Oncology Group (ECOG) performance status.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ecog-status-vs"
+        },
+        "name": "ECOG Performance Status",
+        "description": "Eastern Cooperative Oncology Group (ECOG) Performance Status codes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ecog-performance-status"
+        },
+        "name": "ECOG Performance Status",
+        "description": "Standard ECOG performance status codes used to assess patient functional status.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Icdo3Morphology"
+        },
+        "name": "ICD-O-3 Morphology",
+        "description": "Morphology code from ICD-O-3 to describe the tumor histology.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/icdo3-topography"
+        },
+        "name": "ICD-O-3 Topography Code",
+        "description": "ICD-O-3 topography code to describe the primary site of the tumor.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ImplementationGuide/medby-ig"
         },
         "name": "Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)",
-        "description": "This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.\n\nIt is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities.",
+        "description": "This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient and OncologyObservationKenya, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.\n\nIt is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities.",
         "exampleBoolean": false
       },
       {
@@ -65,14 +121,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/oncology-kenya-observation"
-        },
-        "name": "Oncology Kenya Observation",
-        "description": "Observations for oncology-specific diagnostic and laboratory tests in Kenya, integrating with DHIS2 and national cancer registries.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/oncology-kenya-patient"
         },
         "name": "Oncology Kenya Patient",
@@ -89,6 +137,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/oncology-observation-kenya"
+        },
+        "name": "Oncology Observation Kenya",
+        "description": "Observation profile for cancer-related data elements in Kenya's oncology care, supporting reporting, staging, diagnosis, and national registry alignment.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/patient-educationLevel"
         },
         "name": "Patient Education Level",
@@ -101,6 +157,14 @@
         },
         "name": "Patient Occupation",
         "description": "The current or most recent occupation of the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/RegistryReporting"
+        },
+        "name": "Registry Reporting",
+        "description": "Flag to indicate observation should be reported to the cancer registry.",
         "exampleBoolean": false
       },
       {
@@ -189,6 +253,30 @@
         },
         "name": "Search by Sub-County",
         "description": "Filter patients by sub-county (address.district)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cancer-icd10"
+        },
+        "name": "Top Common Cancers in Kenya - ICD-10",
+        "description": "ICD-10 codes for the most common cancers in Kenya as per national strategy.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tumor-markers"
+        },
+        "name": "Tumor Marker ValueSet",
+        "description": "Tumor markers used in Kenyan oncology diagnostics.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/tumor-markers"
+        },
+        "name": "Tumor Markers",
+        "description": "Tumor markers commonly used in oncology diagnostics and monitoring in Kenya.",
         "exampleBoolean": false
       }
     ],

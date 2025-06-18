@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ECOGStatusVS",
+  "id": "ecog-status-vs",
+  "title": "ECOG Performance Status",
+  "description": "Eastern Cooperative Oncology Group (ECOG) Performance Status codes.",
+  "url": "http://example.org/ValueSet/ecog-status-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/ecog-performance"
+      }
+    ]
+  }
+}

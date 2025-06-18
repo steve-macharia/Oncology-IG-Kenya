@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ecogPerformanceStatus",
+  "url": "http://example.org/StructureDefinition/ecogPerformanceStatus",
+  "name": "EcogPerformanceStatus",
+  "title": "ECOG Performance Status",
+  "status": "draft",
+  "description": "Eastern Cooperative Oncology Group (ECOG) performance status.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "ECOG Performance Status",
+        "definition": "Eastern Cooperative Oncology Group (ECOG) performance status."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://example.org/StructureDefinition/ecogPerformanceStatus"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x]:valueCodeableConcept",
+        "path": "Extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://fhir.org/guides/kenya/ValueSet/ecog-status"
+        }
+      }
+    ]
+  }
+}

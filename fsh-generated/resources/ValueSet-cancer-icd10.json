@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CancerICD10VS",
+  "id": "cancer-icd10",
+  "title": "Top Common Cancers in Kenya - ICD-10",
+  "description": "ICD-10 codes for the most common cancers in Kenya as per national strategy.",
+  "url": "http://example.org/fhir/ValueSet/cancer-icd10",
+  "version": "1.0.0",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10",
+        "concept": [
+          {
+            "code": "C50",
+            "display": "Breast cancer"
+          },
+          {
+            "code": "C53",
+            "display": "Cervical cancer"
+          },
+          {
+            "code": "C61",
+            "display": "Prostate cancer"
+          },
+          {
+            "code": "C34",
+            "display": "Lung cancer"
+          },
+          {
+            "code": "C18",
+            "display": "Colorectal cancer"
+          },
+          {
+            "code": "C15",
+            "display": "Esophageal cancer"
+          },
+          {
+            "code": "C92",
+            "display": "Leukemia"
+          }
+        ]
+      }
+    ]
+  }
+}

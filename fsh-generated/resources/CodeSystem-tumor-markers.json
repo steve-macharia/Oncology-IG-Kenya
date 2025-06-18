@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TumorMarkers",
+  "id": "tumor-markers",
+  "title": "Tumor Markers",
+  "description": "Tumor markers commonly used in oncology diagnostics and monitoring in Kenya.",
+  "url": "http://example.org/fhir/CodeSystem/tumor-markers",
+  "concept": [
+    {
+      "code": "CEA",
+      "display": "Carcinoembryonic Antigen"
+    },
+    {
+      "code": "AFP",
+      "display": "Alpha-fetoprotein"
+    },
+    {
+      "code": "PSA",
+      "display": "Prostate-Specific Antigen"
+    },
+    {
+      "code": "CA125",
+      "display": "Cancer Antigen 125"
+    },
+    {
+      "code": "CA15_3",
+      "display": "Cancer Antigen 15-3"
+    },
+    {
+      "code": "CA19_9",
+      "display": "Cancer Antigen 19-9"
+    },
+    {
+      "code": "LDH",
+      "display": "Lactate Dehydrogenase"
+    },
+    {
+      "code": "hCG",
+      "display": "Human Chorionic Gonadotropin"
+    },
+    {
+      "code": "B2M",
+      "display": "Beta-2 Microglobulin"
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": false,
+  "publisher": "Oncology Implementation Guide for Kenya",
+  "caseSensitive": true,
+  "count": 9
+}

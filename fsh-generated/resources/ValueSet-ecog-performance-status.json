@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EcogPerformanceStatusVS",
+  "id": "ecog-performance-status",
+  "title": "ECOG Performance Status",
+  "description": "Standard ECOG performance status codes used to assess patient functional status.",
+  "url": "http://example.org/fhir/ValueSet/ecog-performance-status",
+  "version": "1.0.0",
+  "compose": {
+    "include": [
+      {
+        "system": "http://example.org/fhir/CodeSystem/ecog-status"
+      },
+      {
+        "system": "http://example.org/fhir/CodeSystem/ecog-status",
+        "concept": [
+          {
+            "code": "0",
+            "display": "Fully active"
+          },
+          {
+            "code": "1",
+            "display": "Restricted in strenuous activity"
+          },
+          {
+            "code": "2",
+            "display": "Ambulatory, self-care only"
+          },
+          {
+            "code": "3",
+            "display": "Limited self-care"
+          },
+          {
+            "code": "4",
+            "display": "Completely disabled"
+          }
+        ]
+      }
+    ]
+  }
+}

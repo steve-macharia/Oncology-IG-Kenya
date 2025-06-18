@@ -3,7 +3,7 @@
   "id": "medby-ig",
   "url": "http://example.org/ImplementationGuide/medby",
   "title": "Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)",
-  "description": "This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.\n\nIt is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities.",
+  "description": "This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient and OncologyObservationKenya, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.\n\nIt is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities.",
   "contact": [
     {
       "telecom": [
@@ -26,6 +26,41 @@
         },
         "name": "OncologyKenyaPatient",
         "description": "Patient profile customized for oncology care in Kenya."
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/oncology-observation-kenya"
+        },
+        "name": "OncologyObservationKenya",
+        "description": "Observation profile for cancer data elements including staging, tumor markers, and performance status."
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cancer-stage"
+        },
+        "name": "CancerStageVS",
+        "description": "ValueSet for TNM and other staging codes relevant in Kenya."
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tumor-markers"
+        },
+        "name": "TumorMarkerVS",
+        "description": "ValueSet for tumor markers such as CA-125, CEA."
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/cancer-observation-method-vs"
+        },
+        "name": "CancerObservationMethodVS",
+        "description": "ValueSet for observation methods used in oncology diagnosis, such as histology or imaging."
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ecog-status-vs"
+        },
+        "name": "ECOGStatusVS",
+        "description": "ValueSet for ECOG performance status used in functional assessment of patients."
       },
       {
         "reference": {

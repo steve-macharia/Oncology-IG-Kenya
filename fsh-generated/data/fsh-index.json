@@ -1,11 +1,19 @@
 [
   {
+    "outputFile": "CodeSystem-tumor-markers.json",
+    "fshName": "TumorMarkers",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-tumor-markers.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
     "outputFile": "ImplementationGuide-medby-ig.json",
     "fshName": "medby-ig",
     "fshType": "Instance",
     "fshFile": "ImplementationGuide.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 86
   },
   {
     "outputFile": "SearchParameter-search-birthdate.json",
@@ -96,6 +104,38 @@
     "endLine": 175
   },
   {
+    "outputFile": "StructureDefinition-Icdo3Morphology.json",
+    "fshName": "Icdo3Morphology",
+    "fshType": "Extension",
+    "fshFile": "Extension-icdo3Morphology.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-RegistryReporting.json",
+    "fshName": "RegistryReporting",
+    "fshType": "Extension",
+    "fshFile": "Extension-registryReporting.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-ecogPerformanceStatus.json",
+    "fshName": "EcogPerformanceStatus",
+    "fshType": "Extension",
+    "fshFile": "Extension-ecogPerformanceStatus.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-icdo3-topography.json",
+    "fshName": "Icdo3Topography",
+    "fshType": "Extension",
+    "fshFile": "Extension-icdo3Topography.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
     "outputFile": "StructureDefinition-oncology-kenya-condition.json",
     "fshName": "OncologyKenyaCondition",
     "fshType": "Profile",
@@ -128,14 +168,6 @@
     "endLine": 24
   },
   {
-    "outputFile": "StructureDefinition-oncology-kenya-observation.json",
-    "fshName": "OncologyKenyaObservation",
-    "fshType": "Profile",
-    "fshFile": "OncologyKenyaObservation.fsh",
-    "startLine": 2,
-    "endLine": 9
-  },
-  {
     "outputFile": "StructureDefinition-oncology-kenya-patient.json",
     "fshName": "OncologyKenyaPatient",
     "fshType": "Profile",
@@ -152,6 +184,14 @@
     "endLine": 23
   },
   {
+    "outputFile": "StructureDefinition-oncology-observation-kenya.json",
+    "fshName": "OncologyObservationKenya",
+    "fshType": "Profile",
+    "fshFile": "OncologyKenyaObservation.fsh",
+    "startLine": 1,
+    "endLine": 61
+  },
+  {
     "outputFile": "StructureDefinition-patient-educationLevel.json",
     "fshName": "PatientEducationLevel",
     "fshType": "Extension",
@@ -166,5 +206,53 @@
     "fshFile": "PatientOccupation.fsh",
     "startLine": 1,
     "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-cancer-icd10.json",
+    "fshName": "CancerICD10VS",
+    "fshType": "ValueSet",
+    "fshFile": "CancerICD10VS.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-cancer-observation-method-vs.json",
+    "fshName": "CancerObservationMethodVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-CancerObservationMethod.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "ValueSet-cancer-stage.json",
+    "fshName": "CancerStageVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-CancerStage.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "ValueSet-ecog-performance-status.json",
+    "fshName": "EcogPerformanceStatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EcogPerformanceStatus.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-ecog-status-vs.json",
+    "fshName": "ECOGStatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ECOGStatus.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "ValueSet-tumor-markers.json",
+    "fshName": "TumorMarkerVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-TumorMarkers.fsh",
+    "startLine": 1,
+    "endLine": 5
   }
 ]

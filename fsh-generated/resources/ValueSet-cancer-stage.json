@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "CancerStageVS",
+  "id": "cancer-stage",
+  "title": "Cancer Stage ValueSet",
+  "description": "ValueSet for cancer stages commonly used in Kenya, e.g., Stage I–IV or TNM classifications.",
+  "url": "http://example.org/ValueSet/cancer-stage",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.org/guides/kenya/CodeSystem/icd10-cancer-stage"
+      }
+    ]
+  }
+}

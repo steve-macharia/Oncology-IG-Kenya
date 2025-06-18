@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "TumorMarkerVS",
+  "id": "tumor-markers",
+  "title": "Tumor Marker ValueSet",
+  "description": "Tumor markers used in Kenyan oncology diagnostics.",
+  "url": "http://example.org/ValueSet/tumor-markers",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.org/guides/kenya/CodeSystem/tumor-markers"
+      }
+    ]
+  }
+}
