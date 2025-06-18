@@ -22,59 +22,66 @@ title: Oncology-IG-Kenya
 
 ## Purpose & Background
 
-Kenya faces a growing cancer crisis. This FHIR Implementation Guide (IG) aims to model a comprehensive, standards-based oncology care pathway, grounded in local realities, to demonstrate how HL7® FHIR® can support cancer prevention, diagnosis, treatment, and survivorship across the continuum of care.
+Kenya faces a growing cancer crisis. This FHIR Implementation Guide (IG) is designed to model a comprehensive, standards-based oncology care pathway. It reflects the realities of Kenya’s healthcare system while showcasing how HL7® FHIR® can be adapted to support every stage of oncology—from prevention and early detection, through diagnosis and treatment, to survivorship and palliative care.
 
-This is *not an official guide from the Ministry of Health or SHA*, but rather a **proof-of-concept** created to stimulate innovation, collaboration, and alignment with national priorities.
+> **Note:** This guide is a **proof-of-concept** and not an official publication of the Ministry of Health or Social Health Authority (SHA). It is intended to catalyze innovation, inform national discussions, and serve as a resource for implementers aligned with Kenya's digital health goals.
 
 ---
 
 ## Kenya’s Cancer Burden: A Snapshot
 
-According to [World Bank data (2020)](https://documents1.worldbank.org/curated/en/964571592290457869/pdf/Economic-and-Social-Consequences-of-Cancer-in-Kenya-Case-Studies-of-Selected-Households.pdf):
+According to [World Bank data (2020)](https://documents1.worldbank.org/curated/en/964571592290457869/pdf/Economic-and-Social-Consequences-of-Cancer-in-Kenya-Case-Studies-of-Selected-Households.pdf), the cancer landscape in Kenya is defined by:
 
-- 47,887 new cancer cases and 32,987 deaths were recorded in 2018.
-- 80% of patients are diagnosed at advanced stages (Stage III or IV).
-- Over 30% of affected households fall below the poverty line despite SHA.
-- Fewer than 30% of public facilities offer screening; only 7 provide radiotherapy.
-- Only 36 oncologists serve a population of 50+ million.
-- Patients often travel more than 100 km for diagnosis or treatment.
+- **47,887** new cancer cases and **32,987** deaths in 2018  
+- **80%** of diagnoses occur at advanced stages (Stage III or IV)  
+- Over **30%** of households with a cancer patient fall below the poverty line, even with SHA coverage  
+- Fewer than **30%** of public health facilities offer cancer screening  
+- Only **7** public hospitals provide radiotherapy services  
+- Kenya has just **36 oncologists** for a population exceeding 50 million  
+- Many patients travel over **100 km** for access to diagnostic or treatment services  
+
+These statistics underscore the urgent need for scalable, interoperable digital health solutions to improve access, equity, and quality of care.
 
 ---
 
 ## Oncology Care Pathway (FHIR Mapping)
 
-| Care Stage                     | FHIR Coverage |
-|-------------------------------|---------------|
-| Screening & Early Detection   | Patient, Observation, ServiceRequest, Encounter |
-| Diagnosis (Imaging, Lab)      | Condition, Specimen, Procedure, DiagnosticReport, Observation |
-| Treatment Planning            | CarePlan, Consent, Encounter, PractitionerRole |
-| Chemotherapy & Radiotherapy   | MedicationRequest, MedicationAdministration, Procedure |
-| Monitoring & Side Effects     | Observation, QuestionnaireResponse, CarePlan |
-| Survivorship & Follow-Up      | Encounter, CarePlan, DocumentReference |
-| Palliative Care               | MedicationRequest, Observation, RelatedPerson |
-| Financial Coverage            | Claim, ExplanationOfBenefit, Coverage |
-| Referral & Logistics          | Task, Communication, Location, Organization |
+The table below outlines how core stages of oncology care map to HL7® FHIR® resources:
 
-Each profile aligns with local workflows, national policy, and real constraints.
+| Care Stage                   | FHIR Coverage |
+|-----------------------------|---------------|
+| Screening & Early Detection | `Patient`, `Observation`, `ServiceRequest`, `Encounter` |
+| Diagnosis (Imaging, Lab)    | `Condition`, `Specimen`, `Procedure`, `DiagnosticReport`, `Observation` |
+| Treatment Planning          | `CarePlan`, `Consent`, `Encounter`, `PractitionerRole` |
+| Chemotherapy & Radiotherapy | `MedicationRequest`, `MedicationAdministration`, `Procedure` |
+| Monitoring & Side Effects   | `Observation`, `QuestionnaireResponse`, `CarePlan` |
+| Survivorship & Follow-Up    | `Encounter`, `CarePlan`, `DocumentReference` |
+| Palliative Care             | `MedicationRequest`, `Observation`, `RelatedPerson` |
+| Financial Coverage          | `Claim`, `ExplanationOfBenefit`, `Coverage` |
+| Referral & Logistics        | `Task`, `Communication`, `Location`, `Organization` |
+
+> Each mapped profile is tailored to fit Kenya’s workflows, policy frameworks, and resource constraints, promoting better data capture and care continuity.
 
 ---
 
 ## Implementation Notes
 
-Profiles support essential oncology tasks such as:
+This IG includes profiles that support key tasks across the oncology spectrum:
 
-- Tracking cancer staging, histopathology, and tumor markers  
-- Capturing chemotherapy regimens and adverse effects  
-- Monitoring follow-up schedules and financial distress  
-- Supporting referral coordination and treatment documentation
+- Structured documentation of **cancer staging**, **histopathology**, and **tumor markers**
+- Capture and coordination of **chemotherapy regimens**, including administration and side effects
+- Tools for tracking **follow-up visits**, **treatment plans**, and **financial distress screening**
+- Support for managing **referrals**, **treatment locations**, and **documentation sharing**
+
+These components are designed to promote semantic interoperability, improve data quality for decision-making, and reduce fragmentation of cancer care services.
 
 ---
 
 ## Visual Overview
 
+A simplified visual diagram of the oncology care workflow, highlighting stages and FHIR resource mappings:
 
 ![Oncology Care Pathway Diagram](./assets/images/oncology-care-pathway.png)
-
 
 ---
 
@@ -85,4 +92,4 @@ Profiles support essential oncology tasks such as:
 
 ---
 
-This Implementation Guide is a personal initiative by a Kenyan digital health enthusiast. It reflects no official endorsement but aligns with national priorities to show what is possible when global standards meet local innovation.
+This Implementation Guide is a personal initiative by a Kenyan digital health enthusiast. While not officially endorsed, it aligns with national digital health priorities and demonstrates what is possible when global standards are contextualized to meet local needs.
