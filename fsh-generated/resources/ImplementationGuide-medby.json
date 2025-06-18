@@ -35,8 +35,8 @@
         "reference": {
           "reference": "StructureDefinition/oncology-kenya-condition"
         },
-        "name": "oncology kenya condition",
-        "description": "condition profile from oncology diagnoses in Kenya, ensuring structured documentation and national cancer registry reporting.",
+        "name": "Oncology Kenya Condition",
+        "description": "A Condition profile for structured oncology diagnosis documentation in Kenya, aligned with national cancer registry reporting and HL7® FHIR® standards.",
         "exampleBoolean": false
       },
       {

@@ -11,7 +11,7 @@ SearchParameter-search-national-id.json                    search-national-id   
 SearchParameter-search-occupation.json                     search-occupation               Instance   SearchParameters.fsh                66 - 79
 SearchParameter-search-sha-id.json                         search-sha-id                   Instance   SearchParameters.fsh                2 - 15
 SearchParameter-search-sub-county.json                     search-sub-county               Instance   SearchParameters.fsh                162 - 175
-StructureDefinition-oncology-kenya-condition.json          OncologyKenyaCondition          Profile    OncologyCancerCondition.fsh         2 - 12
+StructureDefinition-oncology-kenya-condition.json          OncologyKenyaCondition          Profile    OncologyCancerCondition.fsh         2 - 46
 StructureDefinition-oncology-kenya-coverage.json           OncologyKenyaCoverage           Profile    OncologyKenyaCoverage.fsh           2 - 26
 StructureDefinition-oncology-kenya-diagnosticreport.json   OncologyKenyaDiagnosticReport   Profile    OncologyKenyaDiagnosticReport.fsh   2 - 23
 StructureDefinition-oncology-kenya-medicationrequest.json  OncologyKenyaMedicationRequest  Profile    OncologyKenyaMedicationRequest.fsh  2 - 24

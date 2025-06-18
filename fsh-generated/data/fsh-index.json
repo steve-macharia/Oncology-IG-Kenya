@@ -101,7 +101,7 @@
     "fshType": "Profile",
     "fshFile": "OncologyCancerCondition.fsh",
     "startLine": 2,
-    "endLine": 12
+    "endLine": 46
   },
   {
     "outputFile": "StructureDefinition-oncology-kenya-coverage.json",

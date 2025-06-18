@@ -72,13 +72,8 @@ Profiles support essential oncology tasks such as:
 
 ## Visual Overview
 
-## Visual Overview
 
-![Oncology Care Pathway Diagram](images/oncology-care-pathway.png)
-
----
-
-## Visual Overview
+![Oncology Care Pathway Diagram](./assets/images/oncology-care-pathway.png)
 
 
 ---

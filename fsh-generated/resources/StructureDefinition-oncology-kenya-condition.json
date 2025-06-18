@@ -3,9 +3,31 @@
   "id": "oncology-kenya-condition",
   "url": "http://example.org/StructureDefinition/oncology-kenya-condition",
   "name": "OncologyKenyaCondition",
-  "title": "oncology kenya condition",
-  "status": "draft",
-  "description": "condition profile from oncology diagnoses in Kenya, ensuring structured documentation and national cancer registry reporting.",
+  "title": "Oncology Kenya Condition",
+  "status": "active",
+  "publisher": "Kenyan Digital Health Community",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "medbyTech254@gmail.com"
+        }
+      ]
+    }
+  ],
+  "description": "A Condition profile for structured oncology diagnosis documentation in Kenya, aligned with national cancer registry reporting and HL7® FHIR® standards.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "404",
+          "display": "Kenya"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -17,6 +39,10 @@
       {
         "id": "Condition.clinicalStatus",
         "path": "Condition.clinicalStatus",
+        "short": "Active, recurrence, remission, resolved",
+        "definition": "The clinical status of the condition, required for longitudinal tracking and outcomes.",
+        "min": 1,
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://hl7.org/fhir/ValueSet/condition-clinical"
@@ -25,6 +51,9 @@
       {
         "id": "Condition.category",
         "path": "Condition.category",
+        "short": "Kenya-specific condition categories",
+        "definition": "Clinical grouping of condition as defined in Kenyan clinical policy or registry definitions.",
+        "mustSupport": true,
         "binding": {
           "strength": "extensible",
           "valueSet": "http://terminology.health.go.ke/ValueSet/condition-category-kenya"
@@ -33,6 +62,9 @@
       {
         "id": "Condition.severity",
         "path": "Condition.severity",
+        "short": "Severity level (e.g., mild, moderate, severe)",
+        "definition": "Clinical severity of the cancer at diagnosis or during follow-up.",
+        "mustSupport": true,
         "binding": {
           "strength": "preferred",
           "valueSet": "http://hl7.org/fhir/ValueSet/condition-severity"
@@ -41,6 +73,10 @@
       {
         "id": "Condition.code",
         "path": "Condition.code",
+        "short": "ICD-10 diagnosis code",
+        "definition": "Diagnosis code for oncology condition using ICD-10 classification.",
+        "min": 1,
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://hl7.org/fhir/sid/icd-10"
@@ -49,12 +85,16 @@
       {
         "id": "Condition.onset[x]",
         "path": "Condition.onset[x]",
+        "short": "Onset date/time or period",
+        "definition": "Mandatory onset information for surveillance and clinical relevance.",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Condition.recordedDate",
         "path": "Condition.recordedDate",
+        "short": "Date of documentation",
+        "definition": "The date the condition was first recorded in the system.",
         "min": 1,
         "mustSupport": true
       }
