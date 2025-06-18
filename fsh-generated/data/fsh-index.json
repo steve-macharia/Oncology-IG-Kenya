@@ -45,7 +45,7 @@
     "fshType": "Profile",
     "fshFile": "OncologyKenyaPatient.fsh",
     "startLine": 1,
-    "endLine": 50
+    "endLine": 82
   },
   {
     "outputFile": "StructureDefinition-oncology-kenya-registry-report.json",
@@ -54,5 +54,21 @@
     "fshFile": " OncologyKenyaRegistryReport.fsh",
     "startLine": 2,
     "endLine": 23
+  },
+  {
+    "outputFile": "StructureDefinition-patient-educationLevel.json",
+    "fshName": "PatientEducationLevel",
+    "fshType": "Extension",
+    "fshFile": "PatientEducationLevel.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-patient-occupation.json",
+    "fshName": "PatientOccupation",
+    "fshType": "Extension",
+    "fshFile": "PatientOccupation.fsh",
+    "startLine": 1,
+    "endLine": 10
   }
 ]

@@ -68,7 +68,7 @@
           "reference": "StructureDefinition/oncology-kenya-patient"
         },
         "name": "Oncology Kenya Patient",
-        "description": "Customized patient profile for oncology care in Kenya, integrating with SHA, DHIS2, and national cancer registries.",
+        "description": "Customized patient profile for oncology care in Kenya, aligned with SHA, DHIS2, and national cancer registries. Ensures compliance with Kenyan Ministry of Health registration standards.",
         "exampleBoolean": false
       },
       {
@@ -77,6 +77,22 @@
         },
         "name": "Oncology Kenya Registry Report",
         "description": "Defines structured cancer registry reporting format for Kenya, integrating with KEMRI Cancer Registry, Nairobi Cancer Registry, and DHIS2.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-educationLevel"
+        },
+        "name": "Patient Education Level",
+        "description": "The highest level of education attained by the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/patient-occupation"
+        },
+        "name": "Patient Occupation",
+        "description": "The current or most recent occupation of the patient.",
         "exampleBoolean": false
       }
     ],

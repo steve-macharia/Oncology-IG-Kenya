@@ -5,3 +5,5 @@
 [OncologyKenyaObservation]: StructureDefinition-oncology-kenya-observation.html
 [OncologyKenyaPatient]: StructureDefinition-oncology-kenya-patient.html
 [OncologyKenyaRegistryReport]: StructureDefinition-oncology-kenya-registry-report.html
+[PatientEducationLevel]: StructureDefinition-patient-educationLevel.html
+[PatientOccupation]: StructureDefinition-patient-occupation.html

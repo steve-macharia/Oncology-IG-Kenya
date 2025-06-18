@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "patient-educationLevel",
+  "url": "https://oncology.ig.kenya/StructureDefinition/patient-educationLevel",
+  "name": "PatientEducationLevel",
+  "title": "Patient Education Level",
+  "status": "active",
+  "description": "The highest level of education attained by the patient.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Patient Education Level",
+        "definition": "The highest level of education attained by the patient."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://oncology.ig.kenya/StructureDefinition/patient-educationLevel"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].text",
+        "path": "Extension.value[x].text",
+        "min": 1
+      }
+    ]
+  }
+}

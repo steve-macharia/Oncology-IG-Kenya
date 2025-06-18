@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "patient-occupation",
+  "url": "https://oncology.ig.kenya/StructureDefinition/patient-occupation",
+  "name": "PatientOccupation",
+  "title": "Patient Occupation",
+  "status": "active",
+  "description": "The current or most recent occupation of the patient.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Patient Occupation",
+        "definition": "The current or most recent occupation of the patient."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://oncology.ig.kenya/StructureDefinition/patient-occupation"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].text",
+        "path": "Extension.value[x].text",
+        "min": 1
+      }
+    ]
+  }
+}
