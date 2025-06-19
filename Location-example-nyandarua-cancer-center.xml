@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="example-nyandarua-cancer-center"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/oncology-kenya-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location example-nyandarua-cancer-center</b></p><a name="example-nyandarua-cancer-center"> </a><a name="hcexample-nyandarua-cancer-center"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncology-kenya-location.html">Oncology Kenya Location</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Nyandarua County Referral Hospital - Oncology Unit</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode HOSP}">Hospital</span></p><p><b>telecom</b>: <a href="tel:+254712345678">+254712345678</a></p><p><b>address</b>: Nyahururu Road, Ol Kalou, Nyandarua County</p><p><b>physicalType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type bu}">Building</span></p><h3>Positions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style="display: none">*</td><td>36.3784</td><td>-0.3408</td></tr></table><p><b>managingOrganization</b>: <a href="Organization/nyandarua-county-health">Organization/nyandarua-county-health</a></p></div>
+  </text>
+  <status value="active"/>
+  <name value="Nyandarua County Referral Hospital - Oncology Unit"/>
+  <mode value="instance"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HOSP"/>
+      <display value="Hospital"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="+254712345678"/>
+  </telecom>
+  <address>
+    <text value="Nyahururu Road, Ol Kalou, Nyandarua County"/>
+    <city value="Ol Kalou"/>
+    <district value="Nyandarua"/>
+    <country value="KE"/>
+  </address>
+  <physicalType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+      <code value="bu"/>
+      <display value="Building"/>
+    </coding>
+  </physicalType>
+  <position>
+    <longitude value="36.3784"/>
+    <latitude value="-0.3408"/>
+  </position>
+  <managingOrganization>
+    <reference value="Organization/nyandarua-county-health"/>
+  </managingOrganization>
+</Location>

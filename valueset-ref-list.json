@@ -1,0 +1,214 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/cancer-observation-method-vs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CancerObservationMethodVS",
+      "title" : "Cancer Observation Method ValueSet",
+      "description" : "Methods used to derive cancer observations such as histopathology, imaging, immunohistochemistry.",
+      "systems" : ["http://example.org/fhir/CodeSystem/observation-methods"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/cancer-stage",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CancerStageVS",
+      "title" : "Cancer Stage ValueSet",
+      "description" : "ValueSet for cancer stages commonly used in Kenya, e.g., Stage I–IV or TNM classifications.",
+      "systems" : ["http://fhir.org/guides/kenya/CodeSystem/icd10-cancer-stage"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/ecog-status-vs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ECOGStatusVS",
+      "title" : "ECOG Performance Status",
+      "description" : "Eastern Cooperative Oncology Group (ECOG) Performance Status codes.",
+      "systems" : ["http://example.org/fhir/CodeSystem/ecog-performance"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/tumor-markers",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TumorMarkerVS",
+      "title" : "Tumor Marker ValueSet",
+      "description" : "Tumor markers used in Kenyan oncology diagnostics.",
+      "systems" : ["http://fhir.org/guides/kenya/CodeSystem/tumor-markers"]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/cancer-icd10",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CancerICD10VS",
+      "title" : "Top Common Cancers in Kenya - ICD-10",
+      "description" : "ICD-10 codes for the most common cancers in Kenya as per national strategy.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10"]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/ecog-performance-status",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EcogPerformanceStatusVS",
+      "title" : "ECOG Performance Status",
+      "description" : "Standard ECOG performance status codes used to assess patient functional status.",
+      "systems" : ["http://example.org/fhir/CodeSystem/ecog-status"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-kenya-patient.html" : "Oncology Kenya Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-observation-kenya.html" : "Oncology Observation Kenya"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-kenya-condition.html" : "Oncology Kenya Condition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-kenya-condition.html" : "Oncology Kenya Condition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticServiceSectionCodes",
+      "title" : "Diagnostic Service Section Codes",
+      "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+      "oids" : ["2.16.840.1.113883.4.642.3.234"],
+      "sources" : ["2.16.840.1.113883.4.642.3.234"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-kenya-diagnosticreport.html" : "Oncology Kenya Diagnostic Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentClassValueSet",
+      "title" : "Document Class Value Set",
+      "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-kenya-registry-report.html" : "Oncology Kenya Registry Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "systems" : ["http://hl7.org/fhir/document-reference-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.7"],
+      "sources" : ["2.16.840.1.113883.4.642.3.7"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-kenya-registry-report.html" : "Oncology Kenya Registry Report"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-kenya-patient.html" : "Oncology Kenya Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-observation-kenya.html" : "Oncology Observation Kenya"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-observation-kenya.html" : "Oncology Observation Kenya"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-observation-kenya.html" : "Oncology Observation Kenya"
+    }
+  ]
+}

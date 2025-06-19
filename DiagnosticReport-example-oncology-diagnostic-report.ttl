@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/DiagnosticReport/example-oncology-diagnostic-report> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-oncology-diagnostic-report"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/oncology-diagnostic-report-kenya"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/oncology-diagnostic-report-kenya>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport example-oncology-diagnostic-report</b></p><a name=\"example-oncology-diagnostic-report\"> </a><a name=\"hcexample-oncology-diagnostic-report\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-diagnostic-report-kenya.html\">Oncology Diagnostic Report Kenya</a></p></div><h2><span title=\"Codes:{https://www.kenyacode.com/fhir/CodeSystem/oncology-diagnostic-types cervix-biopsy}\">Cervical Biopsy Report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 PAT}\">Pathology</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2025-06-10</td></tr><tr><td>Reported</td><td>2025-06-12 10:00:00+0300</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner/example-pathologist\">Practitioner/example-pathologist</a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td colspan=\"2\"><i>The observation 'Observation/example-cervix-observation' could not be resolved</i></td></tr></table><p>Invasive squamous cell carcinoma, Stage IIA</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/report-cancer-stage"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.kenyacode.com/fhir/CodeSystem/kenya-cancer-staging"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "stage-iia" ] ;
+         fhir:display [ fhir:v "Stage IIA" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/report-specimen-origin-county"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Nyandarua" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/report-registry-flag"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PAT" ] ;
+       fhir:display [ fhir:v "Pathology" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.kenyacode.com/fhir/CodeSystem/oncology-diagnostic-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "cervix-biopsy" ] ;
+       fhir:display [ fhir:v "Cervical Biopsy Report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/example-kenya> ;
+     fhir:reference [ fhir:v "Patient/example-kenya" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2025-06-10"^^xsd:date
+  ] ; # 
+  fhir:issued [ fhir:v "2025-06-12T10:00:00+03:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://example.org/Practitioner/example-pathologist> ;
+     fhir:reference [ fhir:v "Practitioner/example-pathologist" ]
+  ] ) ; # 
+  fhir:resultsInterpreter ( [
+     fhir:link <http://example.org/Practitioner/example-oncologist> ;
+     fhir:reference [ fhir:v "Practitioner/example-oncologist" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:link <http://example.org/Observation/example-cervix-observation> ;
+     fhir:reference [ fhir:v "Observation/example-cervix-observation" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "Invasive squamous cell carcinoma, Stage IIA"] ; # 
+  fhir:presentedForm ( [
+     fhir:contentType [ fhir:v "application/pdf" ] ;
+     fhir:url [ fhir:v "https://kemri.go.ke/reports/example-cervix-biopsy.pdf"^^xsd:anyURI ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

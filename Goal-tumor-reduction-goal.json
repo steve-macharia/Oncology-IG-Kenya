@@ -1,0 +1,21 @@
+{
+  "resourceType" : "Goal",
+  "id" : "tumor-reduction-goal",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Goal tumor-reduction-goal</b></p><a name=\"tumor-reduction-goal\"> </a><a name=\"hctumor-reduction-goal\"> </a><p><b>lifecycleStatus</b>: Active</p><p><b>description</b>: <span title=\"Codes:\">Reduce tumor size before surgery</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><h3>Targets</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Measure</b></td><td><b>Due[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">Tumor size</span></td><td>2025-06-01</td></tr></table></div>"
+  },
+  "lifecycleStatus" : "active",
+  "description" : {
+    "text" : "Reduce tumor size before surgery"
+  },
+  "subject" : {
+    "reference" : "Patient/example"
+  },
+  "target" : [{
+    "measure" : {
+      "text" : "Tumor size"
+    },
+    "dueDate" : "2025-06-01"
+  }]
+}

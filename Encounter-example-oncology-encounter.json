@@ -1,0 +1,80 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "example-oncology-encounter",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/oncology-kenya-encounter"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter example-oncology-encounter</b></p><a name=\"example-oncology-encounter\"> </a><a name=\"hcexample-oncology-encounter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-kenya-encounter.html\">Oncology Encounter Kenya</a></p></div><p><b>County Where Encounter Took Place</b>: <span title=\"Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes Nyandarua}\">Nyandarua</span></p><p><b>Referral Source for Oncology Encounter</b>: <span title=\"Codes:{https://www.sha.go.ke/fhir/CodeSystem/referral-source healthCentre}\">healthCentre</span></p><p><b>Flag for National Cancer Registry Reporting</b>: true</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>type</b>: <span title=\"Codes:{http://id.who.int/icd10 Z01.7}\">Encounter for examination for suspected neoplasm</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>period</b>: 2025-02-01 --&gt; 2025-02-01</p><p><b>reasonCode</b>: <span title=\"Codes:{http://id.who.int/icd10 C18.0}\">Malignant neoplasm of cecum</span></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Condition</b></td><td><b>Use</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition/example-colon-cancer\">Condition/example-colon-cancer</a></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/diagnosis-role AD}\">Admission diagnosis</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location/nyandarua-oncology-clinic\">Location/nyandarua-oncology-clinic</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization/nyandarua-cancer-center\">Organization/nyandarua-cancer-center</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/StructureDefinition/encounter-context-county",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes",
+        "code" : "Nyandarua"
+      }]
+    }
+  },
+  {
+    "url" : "http://example.org/StructureDefinition/encounter-referral-source",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.sha.go.ke/fhir/CodeSystem/referral-source",
+        "code" : "healthCentre"
+      }]
+    }
+  },
+  {
+    "url" : "http://example.org/StructureDefinition/encounter-registry-flag",
+    "valueBoolean" : true
+  }],
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "AMB",
+    "display" : "ambulatory"
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "http://id.who.int/icd10",
+      "code" : "Z01.7",
+      "display" : "Encounter for examination for suspected neoplasm"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/example"
+  },
+  "period" : {
+    "start" : "2025-02-01",
+    "end" : "2025-02-01"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://id.who.int/icd10",
+      "code" : "C18.0",
+      "display" : "Malignant neoplasm of cecum"
+    }]
+  }],
+  "diagnosis" : [{
+    "condition" : {
+      "reference" : "Condition/example-colon-cancer"
+    },
+    "use" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+        "code" : "AD",
+        "display" : "Admission diagnosis"
+      }]
+    }
+  }],
+  "location" : [{
+    "location" : {
+      "reference" : "Location/nyandarua-oncology-clinic"
+    }
+  }],
+  "serviceProvider" : {
+    "reference" : "Organization/nyandarua-cancer-center"
+  }
+}

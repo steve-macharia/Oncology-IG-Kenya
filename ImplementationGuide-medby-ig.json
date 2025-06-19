@@ -1,0 +1,115 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "medby-ig",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide medby-ig</b></p><a name=\"medby-ig\"> </a><a name=\"hcmedby-ig\"> </a><h2>oncologyfhirigkenya</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/medby</pre><div><p>This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient and OncologyObservationKenya, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.</p>\n<p>It is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities.</p>\n</div></div>"
+  },
+  "url" : "http://example.org/ImplementationGuide/medby",
+  "version" : "0.1.0",
+  "name" : "oncologyfhirigkenya",
+  "title" : "Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-06-18",
+  "publisher" : "Medby_Tech",
+  "contact" : [{
+    "name" : "Medby_Tech",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient and OncologyObservationKenya, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.\n\nIt is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities.",
+  "packageId" : "ke.oncology.fhir.ig",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "definition" : {
+    "resource" : [{
+      "reference" : {
+        "reference" : "StructureDefinition/oncology-kenya-patient"
+      },
+      "name" : "OncologyKenyaPatient",
+      "description" : "Patient profile customized for oncology care in Kenya."
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/oncology-observation-kenya"
+      },
+      "name" : "OncologyObservationKenya",
+      "description" : "Observation profile for cancer data elements including staging, tumor markers, and performance status."
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/cancer-stage"
+      },
+      "name" : "CancerStageVS",
+      "description" : "ValueSet for TNM and other staging codes relevant in Kenya."
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/tumor-markers"
+      },
+      "name" : "TumorMarkerVS",
+      "description" : "ValueSet for tumor markers such as CA-125, CEA."
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/cancer-observation-method-vs"
+      },
+      "name" : "CancerObservationMethodVS",
+      "description" : "ValueSet for observation methods used in oncology diagnosis, such as histology or imaging."
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/ecog-status-vs"
+      },
+      "name" : "ECOGStatusVS",
+      "description" : "ValueSet for ECOG performance status used in functional assessment of patients."
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/search-sha-id"
+      },
+      "name" : "Search by SHA ID",
+      "description" : "Search patients by SHA ID"
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/search-facility-upi"
+      },
+      "name" : "Search by Facility UPI",
+      "description" : "Search patients by facility UPI"
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/search-county"
+      },
+      "name" : "Search by County",
+      "description" : "Search patients by county (address.state)"
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/search-education-level"
+      },
+      "name" : "Search by Education Level",
+      "description" : "Search patients by education level"
+    },
+    {
+      "reference" : {
+        "reference" : "SearchParameter/search-occupation"
+      },
+      "name" : "Search by Occupation",
+      "description" : "Search patients by occupation"
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "index.html"
+      }],
+      "nameUrl" : "index.html",
+      "title" : "Home",
+      "generation" : "html"
+    }
+  }
+}

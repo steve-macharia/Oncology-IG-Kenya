@@ -1,0 +1,56 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "example-oncology-medicationrequest",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/oncology-kenya-medicationrequest"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest example-oncology-medicationrequest</b></p><a name=\"example-oncology-medicationrequest\"> </a><a name=\"hcexample-oncology-medicationrequest\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-kenya-medicationrequest.html\">Oncology Medication Request Kenya</a></p></div><p><b>County Where Medication Was Prescribed</b>: <span title=\"Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes Nyandarua}\">Nyandarua</span></p><p><b>Flag for Reporting Medication Request to National Registry</b>: true</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{https://www.kemri.go.ke/fhir/CodeSystem/oncology-medication-category chemotherapy}\">chemotherapy</span></p><p><b>medication</b>: <span title=\"Codes:{http://id.who.int/icd10 Z51.1}\">Chemotherapy session for neoplasm</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>authoredOn</b>: 2025-03-01</p><p><b>requester</b>: <a href=\"Practitioner/example-oncologist\">Practitioner/example-oncologist</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://id.who.int/icd10 C50.2}\">Malignant neoplasm of upper-inner quadrant of breast</span></p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Administer 500mg/m2 intravenously every 21 days for 6 cycles</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/StructureDefinition/medicationrequest-prescribed-county",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes",
+        "code" : "Nyandarua"
+      }]
+    }
+  },
+  {
+    "url" : "http://example.org/StructureDefinition/medicationrequest-registry-flag",
+    "valueBoolean" : true
+  }],
+  "status" : "active",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "https://www.kemri.go.ke/fhir/CodeSystem/oncology-medication-category",
+      "code" : "chemotherapy"
+    }]
+  }],
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://id.who.int/icd10",
+      "code" : "Z51.1",
+      "display" : "Chemotherapy session for neoplasm"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/example"
+  },
+  "authoredOn" : "2025-03-01",
+  "requester" : {
+    "reference" : "Practitioner/example-oncologist"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://id.who.int/icd10",
+      "code" : "C50.2",
+      "display" : "Malignant neoplasm of upper-inner quadrant of breast"
+    }]
+  }],
+  "dosageInstruction" : [{
+    "text" : "Administer 500mg/m2 intravenously every 21 days for 6 cycles"
+  }]
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="example-surgical-biopsy"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/oncology-kenya-procedure"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure example-surgical-biopsy</b></p><a name="example-surgical-biopsy"> </a><a name="hcexample-surgical-biopsy"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncology-kenya-procedure.html">Oncology Procedure Kenya</a></p></div><p><b>County Where Procedure Was Performed</b>: <span title="Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes UasinGishu}">UasinGishu</span></p><p><b>Cancer Stage at Time of Procedure</b>: <span title="Codes:{http://id.who.int/icd10 C50.9}">Breast cancer, unspecified</span></p><p><b>Referral Source for Procedure</b>: <span title="Codes:{https://www.sha.go.ke/fhir/CodeSystem/referral-source subcounty-hospital}">subcounty-hospital</span></p><p><b>Flag for National Registry Reporting</b>: true</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{http://id.who.int/icd10 85.12}">Open biopsy of breast</span></p><p><b>subject</b>: <a href="Patient/example">Patient/example</a></p><p><b>performed</b>: 2025-03-15 08:30:00+0300</p><p><b>location</b>: <a href="Location/moi-hospital">Location/moi-hospital</a></p><p><b>bodySite</b>: <span title="Codes:">Right breast</span></p><p><b>outcome</b>: <span title="Codes:{http://id.who.int/icd10 Z09.0}">Follow-up examination after surgery for malignant neoplasm</span></p></div>
+  </text>
+  <extension url="http://example.org/StructureDefinition/procedure-context-county">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"/>
+        <code value="UasinGishu"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/procedure-cancer-stage">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://id.who.int/icd10"/>
+        <code value="C50.9"/>
+        <display value="Breast cancer, unspecified"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/procedure-referral-source">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.sha.go.ke/fhir/CodeSystem/referral-source"/>
+        <code value="subcounty-hospital"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/procedure-registry-report-flag">
+    <valueBoolean value="true"/>
+  </extension>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://id.who.int/icd10"/>
+      <code value="85.12"/>
+      <display value="Open biopsy of breast"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <performedDateTime value="2025-03-15T08:30:00+03:00"/>
+  <location>
+    <reference value="Location/moi-hospital"/>
+  </location>
+  <bodySite>
+    <text value="Right breast"/>
+  </bodySite>
+  <outcome>
+    <coding>
+      <system value="http://id.who.int/icd10"/>
+      <code value="Z09.0"/>
+      <display value="Follow-up examination after surgery for malignant neoplasm"/>
+    </coding>
+  </outcome>
+</Procedure>

@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ServiceRequest/example-oncology-service-request> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-oncology-service-request"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/oncology-kenya-service-request"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/oncology-kenya-service-request>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest example-oncology-service-request</b></p><a name=\"example-oncology-service-request\"> </a><a name=\"hcexample-oncology-service-request\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-kenya-service-request.html\">Oncology Service Request Kenya</a></p></div><p><b>County Where Request Originated</b>: <span title=\"Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes Kiambu}\">Kiambu</span></p><p><b>Referral Type (Internal or External)</b>: <span title=\"Codes:{https://www.sha.go.ke/fhir/CodeSystem/referral-type external}\">external</span></p><p><b>Flag for National Cancer Registry Reporting</b>: true</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>priority</b>: Urgent</p><p><b>code</b>: <span title=\"Codes:{http://id.who.int/icd10 Z01.6}\">Radiological examination, not elsewhere classified</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>encounter</b>: <a href=\"Encounter-example-oncology-encounter.html\">Encounter: extension = Nyandarua,healthCentre,true; status = finished; class = ambulatory (ActCode#AMB); type = Encounter for examination for suspected neoplasm; period = 2025-02-01 --&gt; 2025-02-01; reasonCode = Malignant neoplasm of cecum</a></p><p><b>occurrence</b>: 2025-07-01</p><p><b>authoredOn</b>: 2025-06-25</p><p><b>requester</b>: <a href=\"Practitioner/oncologist-kiambu\">Practitioner/oncologist-kiambu</a></p><p><b>performer</b>: <a href=\"Organization/kiambu-imaging-center\">Organization/kiambu-imaging-center</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://id.who.int/icd10 C50.9}\">Malignant neoplasm of breast, unspecified</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/service-request-context-county"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Kiambu" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/service-request-referral-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.sha.go.ke/fhir/CodeSystem/referral-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "external" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/service-request-registry-flag"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:priority [ fhir:v "urgent"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://id.who.int/icd10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Z01.6" ] ;
+       fhir:display [ fhir:v "Radiological examination, not elsewhere classified" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/example> ;
+     fhir:reference [ fhir:v "Patient/example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://example.org/Encounter/example-oncology-encounter> ;
+     fhir:reference [ fhir:v "Encounter/example-oncology-encounter" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2025-07-01"^^xsd:date
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2025-06-25"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://example.org/Practitioner/oncologist-kiambu> ;
+     fhir:reference [ fhir:v "Practitioner/oncologist-kiambu" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://example.org/Organization/kiambu-imaging-center> ;
+     fhir:reference [ fhir:v "Organization/kiambu-imaging-center" ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://id.who.int/icd10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C50.9" ] ;
+       fhir:display [ fhir:v "Malignant neoplasm of breast, unspecified" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

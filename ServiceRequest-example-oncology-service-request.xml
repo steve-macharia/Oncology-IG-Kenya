@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="example-oncology-service-request"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/oncology-kenya-service-request"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest example-oncology-service-request</b></p><a name="example-oncology-service-request"> </a><a name="hcexample-oncology-service-request"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncology-kenya-service-request.html">Oncology Service Request Kenya</a></p></div><p><b>County Where Request Originated</b>: <span title="Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes Kiambu}">Kiambu</span></p><p><b>Referral Type (Internal or External)</b>: <span title="Codes:{https://www.sha.go.ke/fhir/CodeSystem/referral-type external}">external</span></p><p><b>Flag for National Cancer Registry Reporting</b>: true</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>priority</b>: Urgent</p><p><b>code</b>: <span title="Codes:{http://id.who.int/icd10 Z01.6}">Radiological examination, not elsewhere classified</span></p><p><b>subject</b>: <a href="Patient/example">Patient/example</a></p><p><b>encounter</b>: <a href="Encounter-example-oncology-encounter.html">Encounter: extension = Nyandarua,healthCentre,true; status = finished; class = ambulatory (ActCode#AMB); type = Encounter for examination for suspected neoplasm; period = 2025-02-01 --&gt; 2025-02-01; reasonCode = Malignant neoplasm of cecum</a></p><p><b>occurrence</b>: 2025-07-01</p><p><b>authoredOn</b>: 2025-06-25</p><p><b>requester</b>: <a href="Practitioner/oncologist-kiambu">Practitioner/oncologist-kiambu</a></p><p><b>performer</b>: <a href="Organization/kiambu-imaging-center">Organization/kiambu-imaging-center</a></p><p><b>reasonCode</b>: <span title="Codes:{http://id.who.int/icd10 C50.9}">Malignant neoplasm of breast, unspecified</span></p></div>
+  </text>
+  <extension url="http://example.org/StructureDefinition/service-request-context-county">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"/>
+        <code value="Kiambu"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/service-request-referral-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.sha.go.ke/fhir/CodeSystem/referral-type"/>
+        <code value="external"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/service-request-registry-flag">
+    <valueBoolean value="true"/>
+  </extension>
+  <status value="active"/>
+  <intent value="order"/>
+  <priority value="urgent"/>
+  <code>
+    <coding>
+      <system value="http://id.who.int/icd10"/>
+      <code value="Z01.6"/>
+      <display value="Radiological examination, not elsewhere classified"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/example-oncology-encounter"/>
+  </encounter>
+  <occurrenceDateTime value="2025-07-01"/>
+  <authoredOn value="2025-06-25"/>
+  <requester>
+    <reference value="Practitioner/oncologist-kiambu"/>
+  </requester>
+  <performer>
+    <reference value="Organization/kiambu-imaging-center"/>
+  </performer>
+  <reasonCode>
+    <coding>
+      <system value="http://id.who.int/icd10"/>
+      <code value="C50.9"/>
+      <display value="Malignant neoplasm of breast, unspecified"/>
+    </coding>
+  </reasonCode>
+</ServiceRequest>
