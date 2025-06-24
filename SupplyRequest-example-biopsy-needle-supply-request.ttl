@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/SupplyRequest/example-biopsy-needle-supply-request> a fhir:SupplyRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-biopsy-needle-supply-request"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/oncology-kenya-supplyrequest"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/oncology-kenya-supplyrequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SupplyRequest example-biopsy-needle-supply-request</b></p><a name=\"example-biopsy-needle-supply-request\"> </a><a name=\"hcexample-biopsy-needle-supply-request\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-kenya-supplyrequest.html\">Oncology Kenya Supply Request</a></p></div><p><b>status</b>: Active</p><p><b>item</b>: <span title=\"Codes:{http://snomed.info/sct 3457005}\">Biopsy needle</span></p><p><b>quantity</b>: 15 unit</p><p><b>authoredOn</b>: 2025-06-10</p><p><b>requester</b>: <a href=\"PractitionerRole/example-oncology-nurse-knh\">PractitionerRole/example-oncology-nurse-knh</a></p><p><b>supplier</b>: <a href=\"Organization/kemsa\">Organization/kemsa</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 183807002}\">Diagnostic procedure</span></p><p><b>deliverTo</b>: <a href=\"Location-example-kenyatta-national-hospital-oncology.html\">Location Kenyatta National Hospital - Cancer Treatment Centre</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:item [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:3457005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3457005" ] ;
+       fhir:display [ fhir:v "Biopsy needle" ]
+     ] )
+  ] ; # 
+  fhir:quantity [
+     fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "unit" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2025-06-10"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://example.org/PractitionerRole/example-oncology-nurse-knh> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-oncology-nurse-knh" ]
+  ] ; # 
+  fhir:supplier ( [
+     fhir:link <http://example.org/Organization/kemsa> ;
+     fhir:reference [ fhir:v "Organization/kemsa" ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:183807002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "183807002" ] ;
+       fhir:display [ fhir:v "Diagnostic procedure" ]
+     ] )
+  ] ) ; # 
+  fhir:deliverTo [
+     fhir:link <http://example.org/Location/example-kenyatta-national-hospital-oncology> ;
+     fhir:reference [ fhir:v "Location/example-kenyatta-national-hospital-oncology" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

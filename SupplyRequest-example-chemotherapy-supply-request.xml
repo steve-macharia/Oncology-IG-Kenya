@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SupplyRequest xmlns="http://hl7.org/fhir">
+  <id value="example-chemotherapy-supply-request"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/oncology-kenya-supplyrequest"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SupplyRequest example-chemotherapy-supply-request</b></p><a name="example-chemotherapy-supply-request"> </a><a name="hcexample-chemotherapy-supply-request"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncology-kenya-supplyrequest.html">Oncology Kenya Supply Request</a></p></div><p><b>status</b>: Active</p><p><b>item</b>: <span title="Codes:{http://www.whocc.no/atc L01CD01}">Paclitaxel</span></p><p><b>quantity</b>: 30 vial</p><p><b>authoredOn</b>: 2025-06-15</p><p><b>requester</b>: <a href="PractitionerRole/example-oncology-specialist-nyandarua">PractitionerRole/example-oncology-specialist-nyandarua</a></p><p><b>supplier</b>: <a href="Organization/kemsa">Organization/kemsa</a></p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 367336001}">Chemotherapy</span></p><p><b>deliverTo</b>: <a href="Location-example-nyandarua-cancer-center.html">Location Nyandarua County Referral Hospital - Oncology Unit</a></p></div>
+  </text>
+  <status value="active"/>
+  <itemCodeableConcept>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="L01CD01"/>
+      <display value="Paclitaxel"/>
+    </coding>
+  </itemCodeableConcept>
+  <quantity>
+    <value value="30"/>
+    <unit value="vial"/>
+  </quantity>
+  <authoredOn value="2025-06-15"/>
+  <requester>
+    <reference value="PractitionerRole/example-oncology-specialist-nyandarua"/>
+  </requester>
+  <supplier>
+    <reference value="Organization/kemsa"/>
+  </supplier>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="367336001"/>
+      <display value="Chemotherapy"/>
+    </coding>
+  </reasonCode>
+  <deliverTo>
+    <reference value="Location/example-nyandarua-cancer-center"/>
+  </deliverTo>
+</SupplyRequest>

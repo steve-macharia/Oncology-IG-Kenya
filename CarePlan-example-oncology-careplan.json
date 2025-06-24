@@ -1,0 +1,69 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "example-oncology-careplan",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/oncology-kenya-careplan"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan example-oncology-careplan</b></p><a name=\"example-oncology-careplan\"> </a><a name=\"hcexample-oncology-careplan\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-kenya-careplan.html\">Oncology Care Plan Kenya</a></p></div><p><b>County Where Care Plan is Managed</b>: <span title=\"Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes UasinGishu}\">UasinGishu</span></p><p><b>Referral Source for Oncology Care Plan</b>: <span title=\"Codes:{https://www.sha.go.ke/fhir/CodeSystem/referral-source dispensary}\">dispensary</span></p><p><b>Flag for National Cancer Registry Reporting</b>: true</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Breast Cancer Treatment Plan</p><p><b>description</b>: Includes chemotherapy, surgery, and radiotherapy</p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>period</b>: 2025-03-01 --&gt; 2026-03-01</p><p><b>careTeam</b>: <a href=\"CareTeam/breast-cancer-multidisciplinary-team\">CareTeam/breast-cancer-multidisciplinary-team</a></p><p><b>addresses</b>: <a href=\"Condition-breast-cancer-condition.html\">Condition Malignant neoplasm of upper-inner quadrant of breast</a></p><p><b>goal</b>: <a href=\"Goal-tumor-reduction-goal.html\">Goal: lifecycleStatus = active; description = </a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://id.who.int/icd10 Z51.1}\">Chemotherapy session for neoplasm</span></td><td>Scheduled</td><td>2025-03-15 --&gt; 2025-06-15</td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/StructureDefinition/careplan-context-county",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes",
+        "code" : "UasinGishu"
+      }]
+    }
+  },
+  {
+    "url" : "http://example.org/StructureDefinition/careplan-referral-source",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://www.sha.go.ke/fhir/CodeSystem/referral-source",
+        "code" : "dispensary"
+      }]
+    }
+  },
+  {
+    "url" : "http://example.org/StructureDefinition/careplan-registry-flag",
+    "valueBoolean" : true
+  }],
+  "status" : "active",
+  "intent" : "plan",
+  "title" : "Breast Cancer Treatment Plan",
+  "description" : "Includes chemotherapy, surgery, and radiotherapy",
+  "subject" : {
+    "reference" : "Patient/example"
+  },
+  "period" : {
+    "start" : "2025-03-01",
+    "end" : "2026-03-01"
+  },
+  "careTeam" : [{
+    "reference" : "CareTeam/breast-cancer-multidisciplinary-team"
+  }],
+  "addresses" : [{
+    "reference" : "Condition/breast-cancer-condition"
+  }],
+  "goal" : [{
+    "reference" : "Goal/tumor-reduction-goal"
+  }],
+  "activity" : [{
+    "detail" : {
+      "code" : {
+        "coding" : [{
+          "system" : "http://id.who.int/icd10",
+          "code" : "Z51.1",
+          "display" : "Chemotherapy session for neoplasm"
+        }]
+      },
+      "status" : "scheduled",
+      "scheduledPeriod" : {
+        "start" : "2025-03-15",
+        "end" : "2025-06-15"
+      }
+    }
+  }]
+}

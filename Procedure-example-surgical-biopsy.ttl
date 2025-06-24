@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Procedure/example-surgical-biopsy> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-surgical-biopsy"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/oncology-kenya-procedure"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/oncology-kenya-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure example-surgical-biopsy</b></p><a name=\"example-surgical-biopsy\"> </a><a name=\"hcexample-surgical-biopsy\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-kenya-procedure.html\">Oncology Procedure Kenya</a></p></div><p><b>County Where Procedure Was Performed</b>: <span title=\"Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes UasinGishu}\">UasinGishu</span></p><p><b>Cancer Stage at Time of Procedure</b>: <span title=\"Codes:{http://id.who.int/icd10 C50.9}\">Breast cancer, unspecified</span></p><p><b>Referral Source for Procedure</b>: <span title=\"Codes:{https://www.sha.go.ke/fhir/CodeSystem/referral-source subcounty-hospital}\">subcounty-hospital</span></p><p><b>Flag for National Registry Reporting</b>: true</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://id.who.int/icd10 85.12}\">Open biopsy of breast</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>performed</b>: 2025-03-15 08:30:00+0300</p><p><b>location</b>: <a href=\"Location/moi-hospital\">Location/moi-hospital</a></p><p><b>bodySite</b>: <span title=\"Codes:\">Right breast</span></p><p><b>outcome</b>: <span title=\"Codes:{http://id.who.int/icd10 Z09.0}\">Follow-up examination after surgery for malignant neoplasm</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/procedure-context-county"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "UasinGishu" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/procedure-cancer-stage"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://id.who.int/icd10"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C50.9" ] ;
+         fhir:display [ fhir:v "Breast cancer, unspecified" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/procedure-referral-source"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.sha.go.ke/fhir/CodeSystem/referral-source"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "subcounty-hospital" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/procedure-registry-report-flag"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://id.who.int/icd10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85.12" ] ;
+       fhir:display [ fhir:v "Open biopsy of breast" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/example> ;
+     fhir:reference [ fhir:v "Patient/example" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:dateTime ;
+     fhir:v "2025-03-15T08:30:00+03:00"^^xsd:dateTime
+  ] ; # 
+  fhir:location [
+     fhir:link <http://example.org/Location/moi-hospital> ;
+     fhir:reference [ fhir:v "Location/moi-hospital" ]
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:text [ fhir:v "Right breast" ]
+  ] ) ; # 
+  fhir:outcome [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://id.who.int/icd10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Z09.0" ] ;
+       fhir:display [ fhir:v "Follow-up examination after surgery for malignant neoplasm" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

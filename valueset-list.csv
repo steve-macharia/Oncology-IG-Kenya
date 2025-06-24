@@ -1,0 +1,7 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://example.org/ValueSet/cancer-observation-method-vs,0.1.0,active,,CancerObservationMethodVS,Cancer Observation Method ValueSet,"Methods used to derive cancer observations such as histopathology, imaging, immunohistochemistry.",,"Other"
+http://example.org/ValueSet/cancer-stage,0.1.0,draft,,CancerStageVS,Cancer Stage ValueSet,"ValueSet for cancer stages commonly used in Kenya, e.g., Stage I–IV or TNM classifications.",,"Other"
+http://example.org/ValueSet/ecog-status-vs,0.1.0,active,,ECOGStatusVS,ECOG Performance Status,"Eastern Cooperative Oncology Group (ECOG) Performance Status codes.",,"Other"
+http://example.org/ValueSet/tumor-markers,0.1.0,draft,,TumorMarkerVS,Tumor Marker ValueSet,"Tumor markers used in Kenyan oncology diagnostics.",,"Other"
+http://example.org/fhir/ValueSet/cancer-icd10,0.1.0,active,,CancerICD10VS,Top Common Cancers in Kenya - ICD-10,"ICD-10 codes for the most common cancers in Kenya as per national strategy.",,"hl7.terminology.r4"
+http://example.org/fhir/ValueSet/ecog-performance-status,0.1.0,active,,EcogPerformanceStatusVS,ECOG Performance Status,"Standard ECOG performance status codes used to assess patient functional status.",,"Other"

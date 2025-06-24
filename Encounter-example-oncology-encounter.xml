@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="example-oncology-encounter"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/oncology-kenya-encounter"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter example-oncology-encounter</b></p><a name="example-oncology-encounter"> </a><a name="hcexample-oncology-encounter"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncology-kenya-encounter.html">Oncology Encounter Kenya</a></p></div><p><b>County Where Encounter Took Place</b>: <span title="Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes Nyandarua}">Nyandarua</span></p><p><b>Referral Source for Oncology Encounter</b>: <span title="Codes:{https://www.sha.go.ke/fhir/CodeSystem/referral-source healthCentre}">healthCentre</span></p><p><b>Flag for National Cancer Registry Reporting</b>: true</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">ActCode AMB</a>: ambulatory</p><p><b>type</b>: <span title="Codes:{http://id.who.int/icd10 Z01.7}">Encounter for examination for suspected neoplasm</span></p><p><b>subject</b>: <a href="Patient/example">Patient/example</a></p><p><b>period</b>: 2025-02-01 --&gt; 2025-02-01</p><p><b>reasonCode</b>: <span title="Codes:{http://id.who.int/icd10 C18.0}">Malignant neoplasm of cecum</span></p><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Condition</b></td><td><b>Use</b></td></tr><tr><td style="display: none">*</td><td><a href="Condition/example-colon-cancer">Condition/example-colon-cancer</a></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/diagnosis-role AD}">Admission diagnosis</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td></tr><tr><td style="display: none">*</td><td><a href="Location/nyandarua-oncology-clinic">Location/nyandarua-oncology-clinic</a></td></tr></table><p><b>serviceProvider</b>: <a href="Organization/nyandarua-cancer-center">Organization/nyandarua-cancer-center</a></p></div>
+  </text>
+  <extension url="http://example.org/StructureDefinition/encounter-context-county">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"/>
+        <code value="Nyandarua"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/encounter-referral-source">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.sha.go.ke/fhir/CodeSystem/referral-source"/>
+        <code value="healthCentre"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/encounter-registry-flag">
+    <valueBoolean value="true"/>
+  </extension>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+    <display value="ambulatory"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://id.who.int/icd10"/>
+      <code value="Z01.7"/>
+      <display value="Encounter for examination for suspected neoplasm"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <period>
+    <start value="2025-02-01"/>
+    <end value="2025-02-01"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://id.who.int/icd10"/>
+      <code value="C18.0"/>
+      <display value="Malignant neoplasm of cecum"/>
+    </coding>
+  </reasonCode>
+  <diagnosis>
+    <condition>
+      <reference value="Condition/example-colon-cancer"/>
+    </condition>
+    <use>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/diagnosis-role"/>
+        <code value="AD"/>
+        <display value="Admission diagnosis"/>
+      </coding>
+    </use>
+  </diagnosis>
+  <location>
+    <location>
+      <reference value="Location/nyandarua-oncology-clinic"/>
+    </location>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/nyandarua-cancer-center"/>
+  </serviceProvider>
+</Encounter>

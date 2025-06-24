@@ -1,0 +1,58 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/cancer-observation-method-vs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CancerObservationMethodVS",
+      "title" : "Cancer Observation Method ValueSet",
+      "description" : "Methods used to derive cancer observations such as histopathology, imaging, immunohistochemistry.",
+      "systems" : ["http://example.org/fhir/CodeSystem/observation-methods"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/cancer-stage",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CancerStageVS",
+      "title" : "Cancer Stage ValueSet",
+      "description" : "ValueSet for cancer stages commonly used in Kenya, e.g., Stage I–IV or TNM classifications.",
+      "systems" : ["http://fhir.org/guides/kenya/CodeSystem/icd10-cancer-stage"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/ecog-status-vs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ECOGStatusVS",
+      "title" : "ECOG Performance Status",
+      "description" : "Eastern Cooperative Oncology Group (ECOG) Performance Status codes.",
+      "systems" : ["http://example.org/fhir/CodeSystem/ecog-performance"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/tumor-markers",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TumorMarkerVS",
+      "title" : "Tumor Marker ValueSet",
+      "description" : "Tumor markers used in Kenyan oncology diagnostics.",
+      "systems" : ["http://fhir.org/guides/kenya/CodeSystem/tumor-markers"]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/cancer-icd10",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CancerICD10VS",
+      "title" : "Top Common Cancers in Kenya - ICD-10",
+      "description" : "ICD-10 codes for the most common cancers in Kenya as per national strategy.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10"]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/ecog-performance-status",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EcogPerformanceStatusVS",
+      "title" : "ECOG Performance Status",
+      "description" : "Standard ECOG performance status codes used to assess patient functional status.",
+      "systems" : ["http://example.org/fhir/CodeSystem/ecog-status"]
+    }
+  ]
+}

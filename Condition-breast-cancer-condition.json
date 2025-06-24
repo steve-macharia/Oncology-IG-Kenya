@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Condition",
+  "id" : "breast-cancer-condition",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition breast-cancer-condition</b></p><a name=\"breast-cancer-condition\"> </a><a name=\"hcbreast-cancer-condition\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:\">active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:\">confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://id.who.int/icd10 C50.2}\">Malignant neoplasm of upper-inner quadrant of breast</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "code" : "active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "code" : "confirmed"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://id.who.int/icd10",
+      "code" : "C50.2",
+      "display" : "Malignant neoplasm of upper-inner quadrant of breast"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/example"
+  }
+}

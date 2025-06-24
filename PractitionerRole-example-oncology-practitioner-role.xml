@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="example-oncology-practitioner-role"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/oncology-kenya-practitioner-role"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole example-oncology-practitioner-role</b></p><a name="example-oncology-practitioner-role"> </a><a name="hcexample-oncology-practitioner-role"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncology-kenya-practitioner-role.html">Oncology Practitioner Role Kenya</a></p></div><p><b>County of Oncology Service</b>: <span title="Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes Nairobi}">Nairobi</span></p><p><b>Focus Area of Oncology Service</b>: <span title="Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-service-areas chemo}">Chemotherapy</span></p><p><b>active</b>: true</p><p><b>period</b>: 2022-01-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <code>OncologyKenyaPractitioner/example-oncology-practitioner</code></p><p><b>organization</b>: <a href="Organization/uon-oncology-center">Organization/uon-oncology-center</a></p><p><b>code</b>: <span title="Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-roles CONSULTANT}">Consultant Oncologist</span></p><p><b>specialty</b>: <span title="Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-specialties medical-oncology}">Medical Oncology</span></p><p><b>location</b>: <a href="Location/nairobi-oncology-ward">Location/nairobi-oncology-ward</a></p><p><b>healthcareService</b>: <a href="HealthcareService/cancer-treatment">HealthcareService/cancer-treatment</a></p><p><b>telecom</b>: <a href="tel:+254712345678">+254712345678</a></p></div>
+  </text>
+  <extension url="http://example.org/StructureDefinition/practitioner-role-county">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"/>
+        <code value="Nairobi"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/oncology-service-focus">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-service-areas"/>
+        <code value="chemo"/>
+        <display value="Chemotherapy"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <active value="true"/>
+  <period>
+    <start value="2022-01-01"/>
+  </period>
+  <practitioner>
+    <reference value="OncologyKenyaPractitioner/example-oncology-practitioner"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/uon-oncology-center"/>
+  </organization>
+  <code>
+    <coding>
+      <system value="https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-roles"/>
+      <code value="CONSULTANT"/>
+      <display value="Consultant Oncologist"/>
+    </coding>
+  </code>
+  <specialty>
+    <coding>
+      <system value="https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-specialties"/>
+      <code value="medical-oncology"/>
+      <display value="Medical Oncology"/>
+    </coding>
+  </specialty>
+  <location>
+    <reference value="Location/nairobi-oncology-ward"/>
+  </location>
+  <healthcareService>
+    <reference value="HealthcareService/cancer-treatment"/>
+  </healthcareService>
+  <telecom>
+    <system value="phone"/>
+    <value value="+254712345678"/>
+  </telecom>
+</PractitionerRole>

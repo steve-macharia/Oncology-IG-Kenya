@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Claim xmlns="http://hl7.org/fhir">
+  <id value="example-oncology-claim-nyandarua"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/oncology-kenya-claim"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Claim example-oncology-claim-nyandarua</b></p><a name="example-oncology-claim-nyandarua"> </a><a name="hcexample-oncology-claim-nyandarua"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncology-kenya-claim.html">Oncology Kenya Claim</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/claim-type professional}">Professional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href="Patient/example-cancer-patient-nyandarua">Patient/example-cancer-patient-nyandarua</a></p><p><b>created</b>: 2025-06-17</p><p><b>insurer</b>: <a href="Organization/sha-kenya">Organization/sha-kenya</a></p><p><b>provider</b>: <a href="PractitionerRole/example-oncology-specialist-nyandarua">PractitionerRole/example-oncology-specialist-nyandarua</a></p><p><b>priority</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}">Normal</span></p><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td></tr><tr><td style="display: none">*</td><td>1</td><td><span title="Codes:{http://hl7.org/fhir/sid/icd-10 C50}">Malignant neoplasm of breast</span></td></tr></table><h3>Insurances</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style="display: none">*</td><td>1</td><td>true</td><td><a href="Coverage/example-sha-oncology-cover">Coverage/example-sha-oncology-cover</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>productOrService</b>: <span title="Codes:{http://snomed.info/sct 108241001}">Chemotherapy procedure</span></p><p><b>quantity</b>: 6</p><h3>UnitPrices</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style="display: none">*</td><td>5000</td><td>Kenyan shilling</td></tr></table><h3>Nets</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td style="display: none">*</td><td>30000</td><td>Kenyan shilling</td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+      <code value="professional"/>
+    </coding>
+  </type>
+  <use value="claim"/>
+  <patient>
+    <reference value="Patient/example-cancer-patient-nyandarua"/>
+  </patient>
+  <created value="2025-06-17"/>
+  <insurer>
+    <reference value="Organization/sha-kenya"/>
+  </insurer>
+  <provider>
+    <reference value="PractitionerRole/example-oncology-specialist-nyandarua"/>
+  </provider>
+  <priority>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+      <code value="normal"/>
+    </coding>
+  </priority>
+  <diagnosis>
+    <sequence value="1"/>
+    <diagnosisCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/sid/icd-10"/>
+        <code value="C50"/>
+        <display value="Malignant neoplasm of breast"/>
+      </coding>
+    </diagnosisCodeableConcept>
+  </diagnosis>
+  <insurance>
+    <sequence value="1"/>
+    <focal value="true"/>
+    <coverage>
+      <reference value="Coverage/example-sha-oncology-cover"/>
+    </coverage>
+  </insurance>
+  <item>
+    <sequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="108241001"/>
+        <display value="Chemotherapy procedure"/>
+      </coding>
+    </productOrService>
+    <quantity>
+      <value value="6"/>
+    </quantity>
+    <unitPrice>
+      <value value="5000"/>
+      <currency value="KES"/>
+    </unitPrice>
+    <net>
+      <value value="30000"/>
+      <currency value="KES"/>
+    </net>
+  </item>
+</Claim>

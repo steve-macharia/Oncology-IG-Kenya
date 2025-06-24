@@ -1,0 +1,485 @@
+[
+  {
+    "id" : "medby",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/ImplementationGuide/medby",
+    "version" : "0.1.0",
+    "name" : "oncologyfhirigkenya"
+  },
+  {
+    "id" : "medby-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/ImplementationGuide/medby",
+    "version" : "0.1.0",
+    "name" : "oncologyfhirigkenya"
+  },
+  {
+    "id" : "Icdo3Morphology",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/Icdo3Morphology",
+    "version" : "0.1.0",
+    "name" : "Icdo3Morphology"
+  },
+  {
+    "id" : "RegistryReporting",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/RegistryReporting",
+    "version" : "0.1.0",
+    "name" : "RegistryReporting"
+  },
+  {
+    "id" : "careplan-context-county",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/careplan-context-county",
+    "version" : "0.1.0",
+    "name" : "CarePlanContextCounty"
+  },
+  {
+    "id" : "careplan-referral-source",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/careplan-referral-source",
+    "version" : "0.1.0",
+    "name" : "CarePlanReferralSource"
+  },
+  {
+    "id" : "careplan-registry-flag",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/careplan-registry-flag",
+    "version" : "0.1.0",
+    "name" : "CarePlanRegistryFlag"
+  },
+  {
+    "id" : "ecogPerformanceStatus",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/ecogPerformanceStatus",
+    "version" : "0.1.0",
+    "name" : "EcogPerformanceStatus"
+  },
+  {
+    "id" : "encounter-context-county",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/encounter-context-county",
+    "version" : "0.1.0",
+    "name" : "EncounterContextCounty"
+  },
+  {
+    "id" : "encounter-referral-source",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/encounter-referral-source",
+    "version" : "0.1.0",
+    "name" : "EncounterReferralSource"
+  },
+  {
+    "id" : "encounter-registry-flag",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/encounter-registry-flag",
+    "version" : "0.1.0",
+    "name" : "EncounterRegistryFlag"
+  },
+  {
+    "id" : "icdo3-topography",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/icdo3-topography",
+    "version" : "0.1.0",
+    "name" : "Icdo3Topography"
+  },
+  {
+    "id" : "medicationrequest-prescribed-county",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/medicationrequest-prescribed-county",
+    "version" : "0.1.0",
+    "name" : "MedicationRequestPrescribedCounty"
+  },
+  {
+    "id" : "medicationrequest-registry-flag",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/medicationrequest-registry-flag",
+    "version" : "0.1.0",
+    "name" : "MedicationRequestRegistryFlag"
+  },
+  {
+    "id" : "oncology-diagnostic-report-kenya",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-diagnostic-report-kenya",
+    "version" : "0.1.0",
+    "name" : "OncologyDiagnosticReportKenya"
+  },
+  {
+    "id" : "oncology-kenya-careplan",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-careplan",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaCarePlan"
+  },
+  {
+    "id" : "oncology-kenya-claim",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-claim",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaClaim"
+  },
+  {
+    "id" : "oncology-kenya-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-condition",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaCondition"
+  },
+  {
+    "id" : "oncology-kenya-coverage",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-coverage",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaCoverage"
+  },
+  {
+    "id" : "oncology-kenya-diagnosticreport",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-diagnosticreport",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaDiagnosticReport"
+  },
+  {
+    "id" : "oncology-kenya-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-encounter",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaEncounter"
+  },
+  {
+    "id" : "oncology-kenya-location",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-location",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaLocation"
+  },
+  {
+    "id" : "oncology-kenya-medicationrequest",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-medicationrequest",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaMedicationRequest"
+  },
+  {
+    "id" : "oncology-kenya-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-patient",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaPatient"
+  },
+  {
+    "id" : "oncology-kenya-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-practitioner",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaPractitioner"
+  },
+  {
+    "id" : "oncology-kenya-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-practitioner-role",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaPractitionerRole"
+  },
+  {
+    "id" : "oncology-kenya-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-procedure",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaProcedure"
+  },
+  {
+    "id" : "oncology-kenya-questionnaireresponse",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-questionnaireresponse",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaQuestionnaireResponse"
+  },
+  {
+    "id" : "oncology-kenya-registry-report",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-registry-report",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaRegistryReport"
+  },
+  {
+    "id" : "oncology-kenya-service-request",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-service-request",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaServiceRequest"
+  },
+  {
+    "id" : "oncology-kenya-supplyrequest",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-kenya-supplyrequest",
+    "version" : "0.1.0",
+    "name" : "OncologyKenyaSupplyRequest"
+  },
+  {
+    "id" : "oncology-observation-kenya",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-observation-kenya",
+    "version" : "0.1.0",
+    "name" : "OncologyObservationKenya"
+  },
+  {
+    "id" : "oncology-service-focus",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/oncology-service-focus",
+    "version" : "0.1.0",
+    "name" : "OncologyServiceFocus"
+  },
+  {
+    "id" : "practitioner-cadre-code",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/practitioner-cadre-code",
+    "version" : "0.1.0",
+    "name" : "PractitionerCadreCode"
+  },
+  {
+    "id" : "practitioner-role-county",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/practitioner-role-county",
+    "version" : "0.1.0",
+    "name" : "PractitionerRoleCounty"
+  },
+  {
+    "id" : "practitioner-work-county",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/practitioner-work-county",
+    "version" : "0.1.0",
+    "name" : "PractitionerWorkCounty"
+  },
+  {
+    "id" : "procedure-cancer-stage",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/procedure-cancer-stage",
+    "version" : "0.1.0",
+    "name" : "ProcedureCancerStage"
+  },
+  {
+    "id" : "procedure-context-county",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/procedure-context-county",
+    "version" : "0.1.0",
+    "name" : "ProcedureContextCounty"
+  },
+  {
+    "id" : "procedure-referral-source",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/procedure-referral-source",
+    "version" : "0.1.0",
+    "name" : "ProcedureReferralSource"
+  },
+  {
+    "id" : "procedure-registry-report-flag",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/procedure-registry-report-flag",
+    "version" : "0.1.0",
+    "name" : "ProcedureRegistryReportFlag"
+  },
+  {
+    "id" : "questionnaire-context-county",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/questionnaire-context-county",
+    "version" : "0.1.0",
+    "name" : "QuestionnaireContextCounty"
+  },
+  {
+    "id" : "questionnaire-referral-source",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/questionnaire-referral-source",
+    "version" : "0.1.0",
+    "name" : "QuestionnaireReferralSource"
+  },
+  {
+    "id" : "questionnaire-registry-flag",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/questionnaire-registry-flag",
+    "version" : "0.1.0",
+    "name" : "QuestionnaireRegistryFlag"
+  },
+  {
+    "id" : "report-cancer-stage",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/report-cancer-stage",
+    "version" : "0.1.0",
+    "name" : "ReportCancerStage"
+  },
+  {
+    "id" : "report-registry-flag",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/report-registry-flag",
+    "version" : "0.1.0",
+    "name" : "ReportRegistryFlag"
+  },
+  {
+    "id" : "report-specimen-origin-county",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/report-specimen-origin-county",
+    "version" : "0.1.0",
+    "name" : "ReportSpecimenOriginCounty"
+  },
+  {
+    "id" : "service-request-context-county",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/service-request-context-county",
+    "version" : "0.1.0",
+    "name" : "ServiceRequestContextCounty"
+  },
+  {
+    "id" : "service-request-referral-type",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/service-request-referral-type",
+    "version" : "0.1.0",
+    "name" : "ServiceRequestReferralType"
+  },
+  {
+    "id" : "service-request-registry-flag",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/service-request-registry-flag",
+    "version" : "0.1.0",
+    "name" : "ServiceRequestRegistryFlag"
+  },
+  {
+    "id" : "cancer-observation-method-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/cancer-observation-method-vs",
+    "version" : "0.1.0",
+    "name" : "CancerObservationMethodVS"
+  },
+  {
+    "id" : "cancer-stage",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/cancer-stage",
+    "version" : "0.1.0",
+    "name" : "CancerStageVS"
+  },
+  {
+    "id" : "ecog-status-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/ecog-status-vs",
+    "version" : "0.1.0",
+    "name" : "ECOGStatusVS"
+  },
+  {
+    "id" : "tumor-markers",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/tumor-markers",
+    "version" : "0.1.0",
+    "name" : "TumorMarkerVS"
+  },
+  {
+    "id" : "tumor-markers",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/fhir/CodeSystem/tumor-markers",
+    "version" : "0.1.0",
+    "name" : "TumorMarkers"
+  },
+  {
+    "id" : "cancer-icd10",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/ValueSet/cancer-icd10",
+    "version" : "0.1.0",
+    "name" : "CancerICD10VS"
+  },
+  {
+    "id" : "ecog-performance-status",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/ValueSet/ecog-performance-status",
+    "version" : "0.1.0",
+    "name" : "EcogPerformanceStatusVS"
+  },
+  {
+    "id" : "search-birthdate",
+    "type" : "SearchParameter",
+    "url" : "https://oncology.ig.kenya/SearchParameter/search-birthdate",
+    "version" : "0.1.0",
+    "name" : "birthdate"
+  },
+  {
+    "id" : "search-cancer-stage",
+    "type" : "SearchParameter",
+    "url" : "https://oncology.ig.kenya/SearchParameter/search-cancer-stage",
+    "version" : "0.1.0",
+    "name" : "cancer-stage"
+  },
+  {
+    "id" : "search-cancer-type",
+    "type" : "SearchParameter",
+    "url" : "https://oncology.ig.kenya/SearchParameter/search-cancer-type",
+    "version" : "0.1.0",
+    "name" : "cancer-type"
+  },
+  {
+    "id" : "search-county",
+    "type" : "SearchParameter",
+    "url" : "https://oncology.ig.kenya/SearchParameter/search-county",
+    "version" : "0.1.0",
+    "name" : "county"
+  },
+  {
+    "id" : "search-education-level",
+    "type" : "SearchParameter",
+    "url" : "https://oncology.ig.kenya/SearchParameter/search-education-level",
+    "version" : "0.1.0",
+    "name" : "education-level"
+  },
+  {
+    "id" : "search-facility-upi",
+    "type" : "SearchParameter",
+    "url" : "https://oncology.ig.kenya/SearchParameter/search-facility-upi",
+    "version" : "0.1.0",
+    "name" : "facility-upi"
+  },
+  {
+    "id" : "search-gender",
+    "type" : "SearchParameter",
+    "url" : "https://oncology.ig.kenya/SearchParameter/search-gender",
+    "version" : "0.1.0",
+    "name" : "gender"
+  },
+  {
+    "id" : "search-national-id",
+    "type" : "SearchParameter",
+    "url" : "https://oncology.ig.kenya/SearchParameter/search-national-id",
+    "version" : "0.1.0",
+    "name" : "national-id"
+  },
+  {
+    "id" : "search-occupation",
+    "type" : "SearchParameter",
+    "url" : "https://oncology.ig.kenya/SearchParameter/search-occupation",
+    "version" : "0.1.0",
+    "name" : "occupation"
+  },
+  {
+    "id" : "search-sha-id",
+    "type" : "SearchParameter",
+    "url" : "https://oncology.ig.kenya/SearchParameter/search-sha-id",
+    "version" : "0.1.0",
+    "name" : "sha-id"
+  },
+  {
+    "id" : "search-sub-county",
+    "type" : "SearchParameter",
+    "url" : "https://oncology.ig.kenya/SearchParameter/search-sub-county",
+    "version" : "0.1.0",
+    "name" : "sub-county"
+  },
+  {
+    "id" : "patient-educationLevel",
+    "type" : "StructureDefinition",
+    "url" : "https://oncology.ig.kenya/StructureDefinition/patient-educationLevel",
+    "version" : "0.1.0",
+    "name" : "PatientEducationLevel"
+  },
+  {
+    "id" : "patient-occupation",
+    "type" : "StructureDefinition",
+    "url" : "https://oncology.ig.kenya/StructureDefinition/patient-occupation",
+    "version" : "0.1.0",
+    "name" : "PatientOccupation"
+  }
+]
