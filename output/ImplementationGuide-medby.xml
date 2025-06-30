@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="medby"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide medby</b></p><a name="medby"> </a><a name="hcmedby"> </a><a name="medby-en-US"> </a><h2>oncologyfhirigkenya</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/medby</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide medby</b></p><a name="medby"> </a><a name="hcmedby"> </a><h2>oncologyfhirigkenya</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/medby</pre></div>
   </text>
   <url value="http://example.org/ImplementationGuide/medby"/>
   <version value="0.1.0"/>
   <name value="oncologyfhirigkenya"/>
   <status value="draft"/>
-  <date value="2025-06-10T13:49:52+03:00"/>
+  <date value="2025-06-30T18:02:10+00:00"/>
   <publisher value="Medby_Tech"/>
   <contact>
     <name value="Medby_Tech"/>
@@ -443,13 +443,478 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/breast-cancer-condition"/>
+      </reference>
+      <name value="Breast Cancer Condition"/>
+      <description value="Confirmed malignant neoplasm of upper-inner quadrant of breast"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/example-oncology-questionnaireresponse"/>
+      </reference>
+      <name value="Breast Cancer Screening Questionnaire Response"/>
+      <description value="Completed breast cancer screening response from a community health volunteer in Kisumu"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-questionnaireresponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/example-oncology-careplan"/>
+      </reference>
+      <name value="Breast Cancer Treatment Plan - Uasin Gishu"/>
+      <description value="Multimodal care plan for a 45-year-old female with Stage II breast cancer"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-careplan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cancer-observation-method-vs"/>
+      </reference>
+      <name value="Cancer Observation Method ValueSet"/>
+      <description value="Methods used to derive cancer observations such as histopathology, imaging, immunohistochemistry."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/procedure-cancer-stage"/>
+      </reference>
+      <name value="Cancer Stage at Time of Procedure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/report-cancer-stage"/>
+      </reference>
+      <name value="Cancer Stage Summary (e.g., TNM or Ann Arbor)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cancer-stage"/>
+      </reference>
+      <name value="Cancer Stage ValueSet"/>
+      <description value="ValueSet for cancer stages commonly used in Kenya, e.g., Stage I–IV or TNM classifications."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/practitioner-role-county"/>
+      </reference>
+      <name value="County of Oncology Service"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careplan-context-county"/>
+      </reference>
+      <name value="County Where Care Plan is Managed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/encounter-context-county"/>
+      </reference>
+      <name value="County Where Encounter Took Place"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medicationrequest-prescribed-county"/>
+      </reference>
+      <name value="County Where Medication Was Prescribed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/practitioner-work-county"/>
+      </reference>
+      <name value="County Where Oncology Practitioner is Based"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/procedure-context-county"/>
+      </reference>
+      <name value="County Where Procedure Was Performed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/questionnaire-context-county"/>
+      </reference>
+      <name value="County Where Questionnaire Response Occurred"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/service-request-context-county"/>
+      </reference>
+      <name value="County Where Request Originated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/report-specimen-origin-county"/>
+      </reference>
+      <name value="County Where Specimen Was Collected"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/example-oncology-practitioner"/>
+      </reference>
+      <name value="Dr. Grace Wanjiku – Consultant Oncologist"/>
+      <description value="Example oncology practitioner in Nairobi, Kenya"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ecogPerformanceStatus"/>
+      </reference>
+      <name value="ECOG Performance Status"/>
+      <description value="Eastern Cooperative Oncology Group (ECOG) performance status."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ecog-status-vs"/>
+      </reference>
+      <name value="ECOG Performance Status"/>
+      <description value="Eastern Cooperative Oncology Group (ECOG) Performance Status codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ecog-performance-status"/>
+      </reference>
+      <name value="ECOG Performance Status"/>
+      <description value="Standard ECOG performance status codes used to assess patient functional status."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SupplyRequest"/>
+      </extension>
+      <reference>
+        <reference value="SupplyRequest/example-biopsy-needle-supply-request"/>
+      </reference>
+      <name value="Example Biopsy Needle Supply Request"/>
+      <description value="Urgent request for 15 biopsy needles for diagnostic services at KNH Oncology Centre"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-supplyrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SupplyRequest"/>
+      </extension>
+      <reference>
+        <reference value="SupplyRequest/example-chemotherapy-supply-request"/>
+      </reference>
+      <name value="Example Chemotherapy Drug Supply Request"/>
+      <description value="Request for 30 vials of Paclitaxel for breast cancer treatment at Nyandarua County Hospital"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-supplyrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Claim"/>
+      </extension>
+      <reference>
+        <reference value="Claim/example-oncology-claim-nyandarua"/>
+      </reference>
+      <name value="Example Oncology Claim - Nyandarua"/>
+      <description value="Claim for chemotherapy session reimbursement submitted to SHA by Nyandarua County Hospital"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-claim"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/example-oncology-medicationrequest"/>
+      </reference>
+      <name value="Example Oncology Medication Request"/>
+      <description value="Chemotherapy prescription for a 45-year-old breast cancer patient in Nyandarua"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-medicationrequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careplan-registry-flag"/>
+      </reference>
+      <name value="Flag for National Cancer Registry Reporting"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/encounter-registry-flag"/>
+      </reference>
+      <name value="Flag for National Cancer Registry Reporting"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/service-request-registry-flag"/>
+      </reference>
+      <name value="Flag for National Cancer Registry Reporting"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/questionnaire-registry-flag"/>
+      </reference>
+      <name value="Flag for National Cancer Registry Reporting"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/procedure-registry-report-flag"/>
+      </reference>
+      <name value="Flag for National Registry Reporting"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medicationrequest-registry-flag"/>
+      </reference>
+      <name value="Flag for Reporting Medication Request to National Registry"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-service-focus"/>
+      </reference>
+      <name value="Focus Area of Oncology Service"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Icdo3Morphology"/>
+      </reference>
+      <name value="ICD-O-3 Morphology"/>
+      <description value="Morphology code from ICD-O-3 to describe the tumor histology."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/icdo3-topography"/>
+      </reference>
+      <name value="ICD-O-3 Topography Code"/>
+      <description value="ICD-O-3 topography code to describe the primary site of the tumor."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/example-oncology-encounter"/>
+      </reference>
+      <name value="Initial Oncology Assessment - Nyandarua County"/>
+      <description value="First oncology clinic visit for staging and treatment planning"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/example-kenyatta-national-hospital-oncology"/>
+      </reference>
+      <name value="KNH National Cancer Centre"/>
+      <description value="Kenyatta National Hospital's Oncology Centre, providing national-level cancer diagnosis and specialized care."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/example-nyandarua-cancer-center"/>
+      </reference>
+      <name value="Nyandarua County Cancer Treatment Centre"/>
+      <description value="A representative oncology center supporting diagnosis, treatment and follow-up for Nyandarua County, aligned with the National Cancer Registry."/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/example-oncology-practitioner-role"/>
+      </reference>
+      <name value="Oncologist Role at KNH"/>
+      <description value="Dr. Grace Wanjiku’s role as Consultant Oncologist at Kenyatta National Hospital"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/practitioner-cadre-code"/>
+      </reference>
+      <name value="Oncology Cadre Classification"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-kenya-careplan"/>
+      </reference>
+      <name value="Oncology Care Plan Kenya"/>
+      <description value="A structured CarePlan profile for oncology management in Kenya. Aligns with the Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI and County Cancer Registries. Supports multidisciplinary cancer care coordination, treatment protocols, and reporting using ICD-10 exclusively."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/example-oncology-diagnostic-report"/>
+      </reference>
+      <name value="Oncology Diagnostic Report - Biopsy for Cervical Cancer"/>
+      <description value="Pathology report for cervical biopsy indicating squamous cell carcinoma"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-diagnostic-report-kenya"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-diagnostic-report-kenya"/>
+      </reference>
+      <name value="Oncology Diagnostic Report Kenya"/>
+      <description value="FHIR R4-based profile for diagnostic reports in oncology within the Kenyan healthcare context.&#xA;Supports pathology, radiology, laboratory, and imaging reports aligned with:&#xA;- Kenya National Cancer Control Strategy (2023–2027)&#xA;- Kenya Cancer Policy (2020–2030)&#xA;- KEMRI cancer registries&#xA;- UHC and SHA reporting&#xA;- National staging and reporting standards&#xA;- County-based registry efforts (e.g., Nyandarua)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-kenya-encounter"/>
+      </reference>
+      <name value="Oncology Encounter Kenya"/>
+      <description value="A profile for documenting oncology-related patient encounters in Kenya, aligned with the Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), KEMRI registry data needs, and county-level cancer reporting workflows.&#xA;Supports tracking of staging visits, diagnosis, treatment initiation, follow-ups, referrals, and palliative care within the Kenyan oncology ecosystem."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ImplementationGuide"/>
+      </extension>
+      <reference>
+        <reference value="ImplementationGuide/medby-ig"/>
+      </reference>
+      <name value="Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)"/>
+      <description value="This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient and OncologyObservationKenya, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.&#xA;&#xA;It is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-kenya-claim"/>
+      </reference>
+      <name value="Oncology Kenya Claim"/>
+      <description value="A FHIR R4-based Claim profile tailored for cancer-related health financing in Kenya.&#xA;Supports SHA (Social Health Authority) reimbursement workflows and aligns with:&#xA;- Kenya National Cancer Control Strategy 2023–2027,&#xA;- Kenya Cancer Policy 2020–2030,&#xA;- KEMRI cancer reporting and financing infrastructure."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/oncology-kenya-condition"/>
       </reference>
-      <name value="oncology kenya condition"/>
-      <description value="condition profile from oncology diagnoses in Kenya, ensuring structured documentation and national cancer registry reporting."/>
+      <name value="Oncology Kenya Condition"/>
+      <description value="A Condition profile for structured oncology diagnosis documentation in Kenya, aligned with national cancer registry reporting and HL7® FHIR® standards."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -476,13 +941,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/oncology-kenya-medicationrequest"/>
+        <reference value="CapabilityStatement/OncologyKenyaCapabilityStatement"/>
       </reference>
-      <name value="Oncology Kenya MedicationRequest"/>
-      <description value="Oncology-specific medication request profile for Kenya, integrating with SHA, DHIS2, and Oncology Dispensing Tool (ODT)."/>
+      <name value="Oncology Kenya FHIR Server Capability Statement"/>
+      <description value="Defines the capabilities of the Oncology Implementation Guide for Kenya conforming to national cancer care standards."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -490,10 +955,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/oncology-kenya-observation"/>
+        <reference value="StructureDefinition/oncology-kenya-location"/>
       </reference>
-      <name value="Oncology Kenya Observation"/>
-      <description value="Observations for oncology-specific diagnostic and laboratory tests in Kenya, integrating with DHIS2 and national cancer registries."/>
+      <name value="Oncology Kenya Location"/>
+      <description value="FHIR Location profile tailored for cancer care delivery points in Kenya.&#xA;Supports capture of facilities relevant to cancer diagnosis, treatment, and palliative care,&#xA;aligned with national cancer control strategies and KEMRI cancer registry reporting."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -504,7 +969,7 @@
         <reference value="StructureDefinition/oncology-kenya-patient"/>
       </reference>
       <name value="Oncology Kenya Patient"/>
-      <description value="Customized patient profile for oncology care in Kenya, integrating with SHA, DHIS2, and national cancer registries."/>
+      <description value="Customized patient profile for oncology care in Kenya. This profile is part of the Oncology Implementation Guide for Kenya (Oncology-IG-Kenya) — a draft version (0.1.0) dated 2025-06-18. It models key patient elements aligned with Kenya’s national cancer registry, SHA (Smart Health Authority), DHIS2, and local care workflows. This guide demonstrates how HL7® FHIR® can be applied to transform cancer care, from screening to palliative support. It is a proof-of-concept created independently by a Kenyan digital health enthusiast, with no official endorsement, to inspire innovation using open health standards and locally relevant data modeling."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -517,6 +982,374 @@
       <name value="Oncology Kenya Registry Report"/>
       <description value="Defines structured cancer registry reporting format for Kenya, integrating with KEMRI Cancer Registry, Nairobi Cancer Registry, and DHIS2."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-kenya-supplyrequest"/>
+      </reference>
+      <name value="Oncology Kenya Supply Request"/>
+      <description value="A FHIR R4-based SupplyRequest profile for cancer-specific medical supplies in Kenya.&#xA;Supports drug procurement, diagnostic supply needs, and inventory tracking aligned with&#xA;Kenya’s National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), &#xA;and practical needs of facilities reporting to the KEMRI registry and SHA ecosystem."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-kenya-medicationrequest"/>
+      </reference>
+      <name value="Oncology Medication Request Kenya"/>
+      <description value="A profile for prescribing cancer-related medications in Kenya. Aligned with the Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), and reporting needs of KEMRI and county cancer registries. Supports chemotherapy, palliative care, and anti-cancer drugs with ICD-10 and Kenya EMR terminology support."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-observation-kenya"/>
+      </reference>
+      <name value="Oncology Observation Kenya"/>
+      <description value="Observation profile for cancer-related data elements in Kenya's oncology care, supporting reporting, staging, diagnosis, and national registry alignment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-kenya-practitioner"/>
+      </reference>
+      <name value="Oncology Practitioner Kenya"/>
+      <description value="FHIR R4 profile for practitioners involved in oncology care in Kenya.&#xA;Aligns with Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030),&#xA;KEMRI Cancer Registry guidelines, and workforce tracking as emphasized in the KESHO and Nyandarua registry reports.&#xA;Supports credentialing, role classification, and regional deployment for cancer care delivery."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-kenya-practitioner-role"/>
+      </reference>
+      <name value="Oncology Practitioner Role Kenya"/>
+      <description value="FHIR R4 profile for defining roles of healthcare professionals involved in oncology services in Kenya.&#xA;Supports assignment of oncology roles, facility affiliations, cancer services scope, and geographic deployment.&#xA;Based on Kenya Cancer Policy (2020–2030), National Cancer Control Strategy (2023–2027),&#xA;KEMRI cancer registry requirements, and KESHO conference findings."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-kenya-procedure"/>
+      </reference>
+      <name value="Oncology Procedure Kenya"/>
+      <description value="Procedure profile tailored for oncology use in Kenya, supporting documentation of diagnostic, surgical, medical, radiotherapy, and palliative interventions. Aligned with Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI registry practices, and county-level reporting, using ICD-10 as the sole terminology for reporting procedures and conditions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-kenya-questionnaireresponse"/>
+      </reference>
+      <name value="Oncology Questionnaire Response Kenya"/>
+      <description value="Structured response to oncology-related questionnaires used in Kenyan cancer screening, diagnosis, treatment, palliative care, and national registry reporting workflows. Aligns with Kenya's National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI data elements, and county registry efforts."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oncology-kenya-service-request"/>
+      </reference>
+      <name value="Oncology Service Request Kenya"/>
+      <description value="A specialized ServiceRequest profile for oncology-related referrals, diagnostics, and procedures in Kenya. Informed by the Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), and data practices from KEMRI and county cancer registries.&#xA;Supports service ordering for biopsies, imaging, oncology specialist reviews, palliative care referrals, and tracking within a multidisciplinary care model."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-educationLevel"/>
+      </reference>
+      <name value="Patient Education Level"/>
+      <description value="Captures the highest level of formal education attained by a patient in Kenya. Supports cancer registry reporting, care planning, and socioeconomic assessment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-occupation"/>
+      </reference>
+      <name value="Patient Occupation"/>
+      <description value="The current or most recent occupation of the patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-oncology-service-request"/>
+      </reference>
+      <name value="Referral for Breast Ultrasound - Kiambu County"/>
+      <description value="Service request for breast ultrasound to evaluate palpable lump in patient"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/careplan-referral-source"/>
+      </reference>
+      <name value="Referral Source for Oncology Care Plan"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/encounter-referral-source"/>
+      </reference>
+      <name value="Referral Source for Oncology Encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/questionnaire-referral-source"/>
+      </reference>
+      <name value="Referral Source for Oncology Questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/procedure-referral-source"/>
+      </reference>
+      <name value="Referral Source for Procedure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/service-request-referral-type"/>
+      </reference>
+      <name value="Referral Type (Internal or External)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RegistryReporting"/>
+      </reference>
+      <name value="Registry Reporting"/>
+      <description value="Flag to indicate observation should be reported to the cancer registry."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/search-cancer-stage"/>
+      </reference>
+      <name value="Search by Cancer Stage"/>
+      <description value="Filter patients by cancer staging captured in an Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/search-cancer-type"/>
+      </reference>
+      <name value="Search by Cancer Type"/>
+      <description value="Filter patients by cancer diagnosis (Condition.code)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/search-county"/>
+      </reference>
+      <name value="Search by County"/>
+      <description value="Allows filtering patients by County (address.state)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/search-birthdate"/>
+      </reference>
+      <name value="Search by Date of Birth"/>
+      <description value="Filter patients by date of birth"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/search-education-level"/>
+      </reference>
+      <name value="Search by Education Level"/>
+      <description value="Allows filtering patients by Education Level extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/search-facility-upi"/>
+      </reference>
+      <name value="Search by Facility UPI"/>
+      <description value="Allows filtering patients by Facility UPI"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/search-gender"/>
+      </reference>
+      <name value="Search by Gender"/>
+      <description value="Filter patients by biological sex"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/search-national-id"/>
+      </reference>
+      <name value="Search by National ID"/>
+      <description value="Filter patients by Kenyan National ID"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/search-occupation"/>
+      </reference>
+      <name value="Search by Occupation"/>
+      <description value="Allows filtering patients by Occupation extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/search-sha-id"/>
+      </reference>
+      <name value="Search by SHA ID"/>
+      <description value="Allows filtering patients by SHA ID"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/search-sub-county"/>
+      </reference>
+      <name value="Search by Sub-County"/>
+      <description value="Filter patients by sub-county (address.district)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/report-registry-flag"/>
+      </reference>
+      <name value="Send Report to National Cancer Registry"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/example-surgical-biopsy"/>
+      </reference>
+      <name value="Surgical Biopsy at Moi Teaching and Referral Hospital"/>
+      <description value="Surgical biopsy performed for suspected breast cancer"/>
+      <exampleCanonical value="http://example.org/StructureDefinition/oncology-kenya-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/cancer-icd10"/>
+      </reference>
+      <name value="Top Common Cancers in Kenya - ICD-10"/>
+      <description value="ICD-10 codes for the most common cancers in Kenya as per national strategy."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tumor-markers"/>
+      </reference>
+      <name value="Tumor Marker ValueSet"/>
+      <description value="Tumor markers used in Kenyan oncology diagnostics."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/tumor-markers"/>
+      </reference>
+      <name value="Tumor Markers"/>
+      <description value="Tumor markers commonly used in oncology diagnostics and monitoring in Kenya."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Goal"/>
+      </extension>
+      <reference>
+        <reference value="Goal/tumor-reduction-goal"/>
+      </reference>
+      <name value="Tumor Reduction Goal"/>
+      <description value="Reduce tumor size prior to surgery"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ValueSet/cancer-icd10> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cancer-icd10"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet cancer-icd10</b></p><a name=\"cancer-icd10\"> </a><a name=\"hccancer-icd10\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.4.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.4.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C50</td><td>Breast cancer</td></tr><tr><td>C53</td><td>Cervical cancer</td></tr><tr><td>C61</td><td>Prostate cancer</td></tr><tr><td>C34</td><td>Lung cancer</td></tr><tr><td>C18</td><td>Colorectal cancer</td></tr><tr><td>C15</td><td>Esophageal cancer</td></tr><tr><td>C92</td><td>Leukemia</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/fhir/ValueSet/cancer-icd10"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CancerICD10VS"] ; # 
+  fhir:title [ fhir:v "Top Common Cancers in Kenya - ICD-10"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-06-30T18:02:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Medby_Tech"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Medby_Tech" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ICD-10 codes for the most common cancers in Kenya as per national strategy."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "C50" ] ;
+         fhir:display [ fhir:v "Breast cancer" ]
+       ] [
+         fhir:code [ fhir:v "C53" ] ;
+         fhir:display [ fhir:v "Cervical cancer" ]
+       ] [
+         fhir:code [ fhir:v "C61" ] ;
+         fhir:display [ fhir:v "Prostate cancer" ]
+       ] [
+         fhir:code [ fhir:v "C34" ] ;
+         fhir:display [ fhir:v "Lung cancer" ]
+       ] [
+         fhir:code [ fhir:v "C18" ] ;
+         fhir:display [ fhir:v "Colorectal cancer" ]
+       ] [
+         fhir:code [ fhir:v "C15" ] ;
+         fhir:display [ fhir:v "Esophageal cancer" ]
+       ] [
+         fhir:code [ fhir:v "C92" ] ;
+         fhir:display [ fhir:v "Leukemia" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Practitioner/example-oncology-practitioner> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-oncology-practitioner"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/oncology-kenya-practitioner"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/oncology-kenya-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner example-oncology-practitioner</b></p><a name=\"example-oncology-practitioner\"> </a><a name=\"hcexample-oncology-practitioner\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-kenya-practitioner.html\">Oncology Practitioner Kenya</a></p></div><p><b>County Where Oncology Practitioner is Based</b>: <span title=\"Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes Nairobi}\">Nairobi</span></p><p><b>Oncology Cadre Classification</b>: <span title=\"Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-cadres CONSULTANT}\">CONSULTANT</span></p><p><b>identifier</b>: <code>http://smarthealth.go.ke/practitioner-ids</code>/ONC-001256</p><p><b>name</b>: Grace Wanjiku </p><p><b>telecom</b>: <a href=\"mailto:grace.wanjiku@uon.ac.ke\">grace.wanjiku@uon.ac.ke</a></p><p><b>address</b>: Kenyatta National Hospital, Nairobi</p><p><b>gender</b>: Female</p><p><b>birthDate</b>: 1980-04-12</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-qualification-codes CONS-ONC}\">Consultant Oncologist</span></td><td>Kenya Medical Practitioners and Dentists Council</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/practitioner-work-county"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Nairobi" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/practitioner-cadre-code"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-cadres"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "CONSULTANT" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://smarthealth.go.ke/practitioner-ids"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ONC-001256" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Wanjiku" ] ;
+     fhir:given ( [ fhir:v "Grace" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "grace.wanjiku@uon.ac.ke" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:text [ fhir:v "Kenyatta National Hospital, Nairobi" ] ;
+     fhir:city [ fhir:v "Nairobi" ] ;
+     fhir:country [ fhir:v "KE" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1980-04-12"^^xsd:date] ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-qualification-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "CONS-ONC" ] ;
+         fhir:display [ fhir:v "Consultant Oncologist" ]
+       ] )
+     ] ;
+     fhir:issuer [
+       fhir:display [ fhir:v "Kenya Medical Practitioners and Dentists Council" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

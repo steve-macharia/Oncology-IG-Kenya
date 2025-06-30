@@ -11,13 +11,13 @@
   fhir:id [ fhir:v "medby"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide medby</b></p><a name=\"medby\"> </a><a name=\"hcmedby\"> </a><a name=\"medby-en-US\"> </a><h2>oncologyfhirigkenya</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/medby</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide medby</b></p><a name=\"medby\"> </a><a name=\"hcmedby\"> </a><h2>oncologyfhirigkenya</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/medby</pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://example.org/ImplementationGuide/medby"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "oncologyfhirigkenya"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-10T13:49:52+03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-30T18:02:10+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Medby_Tech"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Medby_Tech" ] ;
@@ -823,6 +823,791 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Condition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Condition/breast-cancer-condition> ;
+         fhir:reference [ fhir:v "Condition/breast-cancer-condition" ]
+       ] ;
+       fhir:name [ fhir:v "Breast Cancer Condition" ] ;
+       fhir:description [ fhir:v "Confirmed malignant neoplasm of upper-inner quadrant of breast" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "QuestionnaireResponse"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/example-oncology-questionnaireresponse> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/example-oncology-questionnaireresponse" ]
+       ] ;
+       fhir:name [ fhir:v "Breast Cancer Screening Questionnaire Response" ] ;
+       fhir:description [ fhir:v "Completed breast cancer screening response from a community health volunteer in Kisumu" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-questionnaireresponse"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-questionnaireresponse>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CarePlan"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/CarePlan/example-oncology-careplan> ;
+         fhir:reference [ fhir:v "CarePlan/example-oncology-careplan" ]
+       ] ;
+       fhir:name [ fhir:v "Breast Cancer Treatment Plan - Uasin Gishu" ] ;
+       fhir:description [ fhir:v "Multimodal care plan for a 45-year-old female with Stage II breast cancer" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-careplan"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-careplan>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/cancer-observation-method-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cancer-observation-method-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Cancer Observation Method ValueSet" ] ;
+       fhir:description [ fhir:v "Methods used to derive cancer observations such as histopathology, imaging, immunohistochemistry." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/procedure-cancer-stage> ;
+         fhir:reference [ fhir:v "StructureDefinition/procedure-cancer-stage" ]
+       ] ;
+       fhir:name [ fhir:v "Cancer Stage at Time of Procedure" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/report-cancer-stage> ;
+         fhir:reference [ fhir:v "StructureDefinition/report-cancer-stage" ]
+       ] ;
+       fhir:name [ fhir:v "Cancer Stage Summary (e.g., TNM or Ann Arbor)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/cancer-stage> ;
+         fhir:reference [ fhir:v "ValueSet/cancer-stage" ]
+       ] ;
+       fhir:name [ fhir:v "Cancer Stage ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet for cancer stages commonly used in Kenya, e.g., Stage I–IV or TNM classifications." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/practitioner-role-county> ;
+         fhir:reference [ fhir:v "StructureDefinition/practitioner-role-county" ]
+       ] ;
+       fhir:name [ fhir:v "County of Oncology Service" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/careplan-context-county> ;
+         fhir:reference [ fhir:v "StructureDefinition/careplan-context-county" ]
+       ] ;
+       fhir:name [ fhir:v "County Where Care Plan is Managed" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/encounter-context-county> ;
+         fhir:reference [ fhir:v "StructureDefinition/encounter-context-county" ]
+       ] ;
+       fhir:name [ fhir:v "County Where Encounter Took Place" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/medicationrequest-prescribed-county> ;
+         fhir:reference [ fhir:v "StructureDefinition/medicationrequest-prescribed-county" ]
+       ] ;
+       fhir:name [ fhir:v "County Where Medication Was Prescribed" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/practitioner-work-county> ;
+         fhir:reference [ fhir:v "StructureDefinition/practitioner-work-county" ]
+       ] ;
+       fhir:name [ fhir:v "County Where Oncology Practitioner is Based" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/procedure-context-county> ;
+         fhir:reference [ fhir:v "StructureDefinition/procedure-context-county" ]
+       ] ;
+       fhir:name [ fhir:v "County Where Procedure Was Performed" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/questionnaire-context-county> ;
+         fhir:reference [ fhir:v "StructureDefinition/questionnaire-context-county" ]
+       ] ;
+       fhir:name [ fhir:v "County Where Questionnaire Response Occurred" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/service-request-context-county> ;
+         fhir:reference [ fhir:v "StructureDefinition/service-request-context-county" ]
+       ] ;
+       fhir:name [ fhir:v "County Where Request Originated" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/report-specimen-origin-county> ;
+         fhir:reference [ fhir:v "StructureDefinition/report-specimen-origin-county" ]
+       ] ;
+       fhir:name [ fhir:v "County Where Specimen Was Collected" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Practitioner/example-oncology-practitioner> ;
+         fhir:reference [ fhir:v "Practitioner/example-oncology-practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "Dr. Grace Wanjiku – Consultant Oncologist" ] ;
+       fhir:description [ fhir:v "Example oncology practitioner in Nairobi, Kenya" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-practitioner"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/ecogPerformanceStatus> ;
+         fhir:reference [ fhir:v "StructureDefinition/ecogPerformanceStatus" ]
+       ] ;
+       fhir:name [ fhir:v "ECOG Performance Status" ] ;
+       fhir:description [ fhir:v "Eastern Cooperative Oncology Group (ECOG) performance status." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/ecog-status-vs> ;
+         fhir:reference [ fhir:v "ValueSet/ecog-status-vs" ]
+       ] ;
+       fhir:name [ fhir:v "ECOG Performance Status" ] ;
+       fhir:description [ fhir:v "Eastern Cooperative Oncology Group (ECOG) Performance Status codes." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/ecog-performance-status> ;
+         fhir:reference [ fhir:v "ValueSet/ecog-performance-status" ]
+       ] ;
+       fhir:name [ fhir:v "ECOG Performance Status" ] ;
+       fhir:description [ fhir:v "Standard ECOG performance status codes used to assess patient functional status." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SupplyRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SupplyRequest/example-biopsy-needle-supply-request> ;
+         fhir:reference [ fhir:v "SupplyRequest/example-biopsy-needle-supply-request" ]
+       ] ;
+       fhir:name [ fhir:v "Example Biopsy Needle Supply Request" ] ;
+       fhir:description [ fhir:v "Urgent request for 15 biopsy needles for diagnostic services at KNH Oncology Centre" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-supplyrequest"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-supplyrequest>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SupplyRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SupplyRequest/example-chemotherapy-supply-request> ;
+         fhir:reference [ fhir:v "SupplyRequest/example-chemotherapy-supply-request" ]
+       ] ;
+       fhir:name [ fhir:v "Example Chemotherapy Drug Supply Request" ] ;
+       fhir:description [ fhir:v "Request for 30 vials of Paclitaxel for breast cancer treatment at Nyandarua County Hospital" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-supplyrequest"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-supplyrequest>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Claim"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Claim/example-oncology-claim-nyandarua> ;
+         fhir:reference [ fhir:v "Claim/example-oncology-claim-nyandarua" ]
+       ] ;
+       fhir:name [ fhir:v "Example Oncology Claim - Nyandarua" ] ;
+       fhir:description [ fhir:v "Claim for chemotherapy session reimbursement submitted to SHA by Nyandarua County Hospital" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-claim"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-claim>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "MedicationRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/MedicationRequest/example-oncology-medicationrequest> ;
+         fhir:reference [ fhir:v "MedicationRequest/example-oncology-medicationrequest" ]
+       ] ;
+       fhir:name [ fhir:v "Example Oncology Medication Request" ] ;
+       fhir:description [ fhir:v "Chemotherapy prescription for a 45-year-old breast cancer patient in Nyandarua" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-medicationrequest"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-medicationrequest>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/careplan-registry-flag> ;
+         fhir:reference [ fhir:v "StructureDefinition/careplan-registry-flag" ]
+       ] ;
+       fhir:name [ fhir:v "Flag for National Cancer Registry Reporting" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/encounter-registry-flag> ;
+         fhir:reference [ fhir:v "StructureDefinition/encounter-registry-flag" ]
+       ] ;
+       fhir:name [ fhir:v "Flag for National Cancer Registry Reporting" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/service-request-registry-flag> ;
+         fhir:reference [ fhir:v "StructureDefinition/service-request-registry-flag" ]
+       ] ;
+       fhir:name [ fhir:v "Flag for National Cancer Registry Reporting" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/questionnaire-registry-flag> ;
+         fhir:reference [ fhir:v "StructureDefinition/questionnaire-registry-flag" ]
+       ] ;
+       fhir:name [ fhir:v "Flag for National Cancer Registry Reporting" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/procedure-registry-report-flag> ;
+         fhir:reference [ fhir:v "StructureDefinition/procedure-registry-report-flag" ]
+       ] ;
+       fhir:name [ fhir:v "Flag for National Registry Reporting" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/medicationrequest-registry-flag> ;
+         fhir:reference [ fhir:v "StructureDefinition/medicationrequest-registry-flag" ]
+       ] ;
+       fhir:name [ fhir:v "Flag for Reporting Medication Request to National Registry" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-service-focus> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-service-focus" ]
+       ] ;
+       fhir:name [ fhir:v "Focus Area of Oncology Service" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/Icdo3Morphology> ;
+         fhir:reference [ fhir:v "StructureDefinition/Icdo3Morphology" ]
+       ] ;
+       fhir:name [ fhir:v "ICD-O-3 Morphology" ] ;
+       fhir:description [ fhir:v "Morphology code from ICD-O-3 to describe the tumor histology." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/icdo3-topography> ;
+         fhir:reference [ fhir:v "StructureDefinition/icdo3-topography" ]
+       ] ;
+       fhir:name [ fhir:v "ICD-O-3 Topography Code" ] ;
+       fhir:description [ fhir:v "ICD-O-3 topography code to describe the primary site of the tumor." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Encounter/example-oncology-encounter> ;
+         fhir:reference [ fhir:v "Encounter/example-oncology-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Initial Oncology Assessment - Nyandarua County" ] ;
+       fhir:description [ fhir:v "First oncology clinic visit for staging and treatment planning" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-encounter"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Location/example-kenyatta-national-hospital-oncology> ;
+         fhir:reference [ fhir:v "Location/example-kenyatta-national-hospital-oncology" ]
+       ] ;
+       fhir:name [ fhir:v "KNH National Cancer Centre" ] ;
+       fhir:description [ fhir:v "Kenyatta National Hospital's Oncology Centre, providing national-level cancer diagnosis and specialized care." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-location"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Location/example-nyandarua-cancer-center> ;
+         fhir:reference [ fhir:v "Location/example-nyandarua-cancer-center" ]
+       ] ;
+       fhir:name [ fhir:v "Nyandarua County Cancer Treatment Centre" ] ;
+       fhir:description [ fhir:v "A representative oncology center supporting diagnosis, treatment and follow-up for Nyandarua County, aligned with the National Cancer Registry." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-location"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-location>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PractitionerRole"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/PractitionerRole/example-oncology-practitioner-role> ;
+         fhir:reference [ fhir:v "PractitionerRole/example-oncology-practitioner-role" ]
+       ] ;
+       fhir:name [ fhir:v "Oncologist Role at KNH" ] ;
+       fhir:description [ fhir:v "Dr. Grace Wanjiku’s role as Consultant Oncologist at Kenyatta National Hospital" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-practitioner-role"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-practitioner-role>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/practitioner-cadre-code> ;
+         fhir:reference [ fhir:v "StructureDefinition/practitioner-cadre-code" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Cadre Classification" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-careplan> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-careplan" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Care Plan Kenya" ] ;
+       fhir:description [ fhir:v "A structured CarePlan profile for oncology management in Kenya. Aligns with the Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI and County Cancer Registries. Supports multidisciplinary cancer care coordination, treatment protocols, and reporting using ICD-10 exclusively." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "DiagnosticReport"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/DiagnosticReport/example-oncology-diagnostic-report> ;
+         fhir:reference [ fhir:v "DiagnosticReport/example-oncology-diagnostic-report" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Diagnostic Report - Biopsy for Cervical Cancer" ] ;
+       fhir:description [ fhir:v "Pathology report for cervical biopsy indicating squamous cell carcinoma" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-diagnostic-report-kenya"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-diagnostic-report-kenya>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-diagnostic-report-kenya> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-diagnostic-report-kenya" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Diagnostic Report Kenya" ] ;
+       fhir:description [ fhir:v "FHIR R4-based profile for diagnostic reports in oncology within the Kenyan healthcare context.\nSupports pathology, radiology, laboratory, and imaging reports aligned with:\n- Kenya National Cancer Control Strategy (2023–2027)\n- Kenya Cancer Policy (2020–2030)\n- KEMRI cancer registries\n- UHC and SHA reporting\n- National staging and reporting standards\n- County-based registry efforts (e.g., Nyandarua)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Encounter Kenya" ] ;
+       fhir:description [ fhir:v "A profile for documenting oncology-related patient encounters in Kenya, aligned with the Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), KEMRI registry data needs, and county-level cancer reporting workflows.\nSupports tracking of staging visits, diagnosis, treatment initiation, follow-ups, referrals, and palliative care within the Kenyan oncology ecosystem." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ImplementationGuide"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ImplementationGuide/medby-ig> ;
+         fhir:reference [ fhir:v "ImplementationGuide/medby-ig" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)" ] ;
+       fhir:description [ fhir:v "This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient and OncologyObservationKenya, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.\n\nIt is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-claim> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-claim" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Kenya Claim" ] ;
+       fhir:description [ fhir:v "A FHIR R4-based Claim profile tailored for cancer-related health financing in Kenya.\nSupports SHA (Social Health Authority) reimbursement workflows and aligns with:\n- Kenya National Cancer Control Strategy 2023–2027,\n- Kenya Cancer Policy 2020–2030,\n- KEMRI cancer reporting and financing infrastructure." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -830,8 +1615,8 @@
          fhir:link <http://example.org/StructureDefinition/oncology-kenya-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-condition" ]
        ] ;
-       fhir:name [ fhir:v "oncology kenya condition" ] ;
-       fhir:description [ fhir:v "condition profile from oncology diagnoses in Kenya, ensuring structured documentation and national cancer registry reporting." ] ;
+       fhir:name [ fhir:v "Oncology Kenya Condition" ] ;
+       fhir:description [ fhir:v "A Condition profile for structured oncology diagnosis documentation in Kenya, aligned with national cancer registry reporting and HL7® FHIR® standards." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -877,15 +1662,15 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition:resource"
+           fhir:v "CapabilityStatement"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/oncology-kenya-medicationrequest> ;
-         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-medicationrequest" ]
+         fhir:link <http://example.org/CapabilityStatement/OncologyKenyaCapabilityStatement> ;
+         fhir:reference [ fhir:v "CapabilityStatement/OncologyKenyaCapabilityStatement" ]
        ] ;
-       fhir:name [ fhir:v "Oncology Kenya MedicationRequest" ] ;
-       fhir:description [ fhir:v "Oncology-specific medication request profile for Kenya, integrating with SHA, DHIS2, and Oncology Dispensing Tool (ODT)." ] ;
+       fhir:name [ fhir:v "Oncology Kenya FHIR Server Capability Statement" ] ;
+       fhir:description [ fhir:v "Defines the capabilities of the Oncology Implementation Guide for Kenya conforming to national cancer care standards." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -899,11 +1684,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/oncology-kenya-observation> ;
-         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-observation" ]
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-location" ]
        ] ;
-       fhir:name [ fhir:v "Oncology Kenya Observation" ] ;
-       fhir:description [ fhir:v "Observations for oncology-specific diagnostic and laboratory tests in Kenya, integrating with DHIS2 and national cancer registries." ] ;
+       fhir:name [ fhir:v "Oncology Kenya Location" ] ;
+       fhir:description [ fhir:v "FHIR Location profile tailored for cancer care delivery points in Kenya.\nSupports capture of facilities relevant to cancer diagnosis, treatment, and palliative care,\naligned with national cancer control strategies and KEMRI cancer registry reporting." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -921,7 +1706,7 @@
          fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-patient" ]
        ] ;
        fhir:name [ fhir:v "Oncology Kenya Patient" ] ;
-       fhir:description [ fhir:v "Customized patient profile for oncology care in Kenya, integrating with SHA, DHIS2, and national cancer registries." ] ;
+       fhir:description [ fhir:v "Customized patient profile for oncology care in Kenya. This profile is part of the Oncology Implementation Guide for Kenya (Oncology-IG-Kenya) — a draft version (0.1.0) dated 2025-06-18. It models key patient elements aligned with Kenya’s national cancer registry, SHA (Smart Health Authority), DHIS2, and local care workflows. This guide demonstrates how HL7® FHIR® can be applied to transform cancer care, from screening to palliative support. It is a proof-of-concept created independently by a Kenyan digital health enthusiast, with no official endorsement, to inspire innovation using open health standards and locally relevant data modeling." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -943,6 +1728,614 @@
        fhir:example [
          a fhir:boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-supplyrequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-supplyrequest" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Kenya Supply Request" ] ;
+       fhir:description [ fhir:v "A FHIR R4-based SupplyRequest profile for cancer-specific medical supplies in Kenya.\nSupports drug procurement, diagnostic supply needs, and inventory tracking aligned with\nKenya’s National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), \nand practical needs of facilities reporting to the KEMRI registry and SHA ecosystem." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-medicationrequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-medicationrequest" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Medication Request Kenya" ] ;
+       fhir:description [ fhir:v "A profile for prescribing cancer-related medications in Kenya. Aligned with the Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), and reporting needs of KEMRI and county cancer registries. Supports chemotherapy, palliative care, and anti-cancer drugs with ICD-10 and Kenya EMR terminology support." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-observation-kenya> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-observation-kenya" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Observation Kenya" ] ;
+       fhir:description [ fhir:v "Observation profile for cancer-related data elements in Kenya's oncology care, supporting reporting, staging, diagnosis, and national registry alignment." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Practitioner Kenya" ] ;
+       fhir:description [ fhir:v "FHIR R4 profile for practitioners involved in oncology care in Kenya.\nAligns with Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030),\nKEMRI Cancer Registry guidelines, and workforce tracking as emphasized in the KESHO and Nyandarua registry reports.\nSupports credentialing, role classification, and regional deployment for cancer care delivery." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-practitioner-role> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-practitioner-role" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Practitioner Role Kenya" ] ;
+       fhir:description [ fhir:v "FHIR R4 profile for defining roles of healthcare professionals involved in oncology services in Kenya.\nSupports assignment of oncology roles, facility affiliations, cancer services scope, and geographic deployment.\nBased on Kenya Cancer Policy (2020–2030), National Cancer Control Strategy (2023–2027),\nKEMRI cancer registry requirements, and KESHO conference findings." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Procedure Kenya" ] ;
+       fhir:description [ fhir:v "Procedure profile tailored for oncology use in Kenya, supporting documentation of diagnostic, surgical, medical, radiotherapy, and palliative interventions. Aligned with Kenya National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI registry practices, and county-level reporting, using ICD-10 as the sole terminology for reporting procedures and conditions." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-questionnaireresponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-questionnaireresponse" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Questionnaire Response Kenya" ] ;
+       fhir:description [ fhir:v "Structured response to oncology-related questionnaires used in Kenyan cancer screening, diagnosis, treatment, palliative care, and national registry reporting workflows. Aligns with Kenya's National Cancer Control Strategy (2023–2027), Cancer Policy (2020–2030), KEMRI data elements, and county registry efforts." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-service-request> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-service-request" ]
+       ] ;
+       fhir:name [ fhir:v "Oncology Service Request Kenya" ] ;
+       fhir:description [ fhir:v "A specialized ServiceRequest profile for oncology-related referrals, diagnostics, and procedures in Kenya. Informed by the Kenya National Cancer Control Strategy (2023–2027), Kenya Cancer Policy (2020–2030), and data practices from KEMRI and county cancer registries.\nSupports service ordering for biopsies, imaging, oncology specialist reviews, palliative care referrals, and tracking within a multidisciplinary care model." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/patient-educationLevel> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-educationLevel" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Education Level" ] ;
+       fhir:description [ fhir:v "Captures the highest level of formal education attained by a patient in Kenya. Supports cancer registry reporting, care planning, and socioeconomic assessment." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/patient-occupation> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-occupation" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Occupation" ] ;
+       fhir:description [ fhir:v "The current or most recent occupation of the patient." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ServiceRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ServiceRequest/example-oncology-service-request> ;
+         fhir:reference [ fhir:v "ServiceRequest/example-oncology-service-request" ]
+       ] ;
+       fhir:name [ fhir:v "Referral for Breast Ultrasound - Kiambu County" ] ;
+       fhir:description [ fhir:v "Service request for breast ultrasound to evaluate palpable lump in patient" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-service-request"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-service-request>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/careplan-referral-source> ;
+         fhir:reference [ fhir:v "StructureDefinition/careplan-referral-source" ]
+       ] ;
+       fhir:name [ fhir:v "Referral Source for Oncology Care Plan" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/encounter-referral-source> ;
+         fhir:reference [ fhir:v "StructureDefinition/encounter-referral-source" ]
+       ] ;
+       fhir:name [ fhir:v "Referral Source for Oncology Encounter" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/questionnaire-referral-source> ;
+         fhir:reference [ fhir:v "StructureDefinition/questionnaire-referral-source" ]
+       ] ;
+       fhir:name [ fhir:v "Referral Source for Oncology Questionnaire" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/procedure-referral-source> ;
+         fhir:reference [ fhir:v "StructureDefinition/procedure-referral-source" ]
+       ] ;
+       fhir:name [ fhir:v "Referral Source for Procedure" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/service-request-referral-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/service-request-referral-type" ]
+       ] ;
+       fhir:name [ fhir:v "Referral Type (Internal or External)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/RegistryReporting> ;
+         fhir:reference [ fhir:v "StructureDefinition/RegistryReporting" ]
+       ] ;
+       fhir:name [ fhir:v "Registry Reporting" ] ;
+       fhir:description [ fhir:v "Flag to indicate observation should be reported to the cancer registry." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-cancer-stage> ;
+         fhir:reference [ fhir:v "SearchParameter/search-cancer-stage" ]
+       ] ;
+       fhir:name [ fhir:v "Search by Cancer Stage" ] ;
+       fhir:description [ fhir:v "Filter patients by cancer staging captured in an Observation" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-cancer-type> ;
+         fhir:reference [ fhir:v "SearchParameter/search-cancer-type" ]
+       ] ;
+       fhir:name [ fhir:v "Search by Cancer Type" ] ;
+       fhir:description [ fhir:v "Filter patients by cancer diagnosis (Condition.code)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-county> ;
+         fhir:reference [ fhir:v "SearchParameter/search-county" ]
+       ] ;
+       fhir:name [ fhir:v "Search by County" ] ;
+       fhir:description [ fhir:v "Allows filtering patients by County (address.state)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-birthdate> ;
+         fhir:reference [ fhir:v "SearchParameter/search-birthdate" ]
+       ] ;
+       fhir:name [ fhir:v "Search by Date of Birth" ] ;
+       fhir:description [ fhir:v "Filter patients by date of birth" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-education-level> ;
+         fhir:reference [ fhir:v "SearchParameter/search-education-level" ]
+       ] ;
+       fhir:name [ fhir:v "Search by Education Level" ] ;
+       fhir:description [ fhir:v "Allows filtering patients by Education Level extension" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-facility-upi> ;
+         fhir:reference [ fhir:v "SearchParameter/search-facility-upi" ]
+       ] ;
+       fhir:name [ fhir:v "Search by Facility UPI" ] ;
+       fhir:description [ fhir:v "Allows filtering patients by Facility UPI" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-gender> ;
+         fhir:reference [ fhir:v "SearchParameter/search-gender" ]
+       ] ;
+       fhir:name [ fhir:v "Search by Gender" ] ;
+       fhir:description [ fhir:v "Filter patients by biological sex" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-national-id> ;
+         fhir:reference [ fhir:v "SearchParameter/search-national-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search by National ID" ] ;
+       fhir:description [ fhir:v "Filter patients by Kenyan National ID" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-occupation> ;
+         fhir:reference [ fhir:v "SearchParameter/search-occupation" ]
+       ] ;
+       fhir:name [ fhir:v "Search by Occupation" ] ;
+       fhir:description [ fhir:v "Allows filtering patients by Occupation extension" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-sha-id> ;
+         fhir:reference [ fhir:v "SearchParameter/search-sha-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search by SHA ID" ] ;
+       fhir:description [ fhir:v "Allows filtering patients by SHA ID" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-sub-county> ;
+         fhir:reference [ fhir:v "SearchParameter/search-sub-county" ]
+       ] ;
+       fhir:name [ fhir:v "Search by Sub-County" ] ;
+       fhir:description [ fhir:v "Filter patients by sub-county (address.district)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/report-registry-flag> ;
+         fhir:reference [ fhir:v "StructureDefinition/report-registry-flag" ]
+       ] ;
+       fhir:name [ fhir:v "Send Report to National Cancer Registry" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Procedure/example-surgical-biopsy> ;
+         fhir:reference [ fhir:v "Procedure/example-surgical-biopsy" ]
+       ] ;
+       fhir:name [ fhir:v "Surgical Biopsy at Moi Teaching and Referral Hospital" ] ;
+       fhir:description [ fhir:v "Surgical biopsy performed for suspected breast cancer" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://example.org/StructureDefinition/oncology-kenya-procedure"^^xsd:anyURI ;
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/cancer-icd10> ;
+         fhir:reference [ fhir:v "ValueSet/cancer-icd10" ]
+       ] ;
+       fhir:name [ fhir:v "Top Common Cancers in Kenya - ICD-10" ] ;
+       fhir:description [ fhir:v "ICD-10 codes for the most common cancers in Kenya as per national strategy." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/tumor-markers> ;
+         fhir:reference [ fhir:v "ValueSet/tumor-markers" ]
+       ] ;
+       fhir:name [ fhir:v "Tumor Marker ValueSet" ] ;
+       fhir:description [ fhir:v "Tumor markers used in Kenyan oncology diagnostics." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/CodeSystem/tumor-markers> ;
+         fhir:reference [ fhir:v "CodeSystem/tumor-markers" ]
+       ] ;
+       fhir:name [ fhir:v "Tumor Markers" ] ;
+       fhir:description [ fhir:v "Tumor markers commonly used in oncology diagnostics and monitoring in Kenya." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Goal"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Goal/tumor-reduction-goal> ;
+         fhir:reference [ fhir:v "Goal/tumor-reduction-goal" ]
+       ] ;
+       fhir:name [ fhir:v "Tumor Reduction Goal" ] ;
+       fhir:description [ fhir:v "Reduce tumor size prior to surgery" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
        ]
      ] ) ;
      fhir:page [

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ecog-performance-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ecog-performance-status</b></p><a name="ecog-performance-status"> </a><a name="hcecog-performance-status"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://example.org/fhir/CodeSystem/ecog-status</code></li><li>Include these codes as defined in <code>http://example.org/fhir/CodeSystem/ecog-status</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>Fully active</td></tr><tr><td>1</td><td>Restricted in strenuous activity</td></tr><tr><td>2</td><td>Ambulatory, self-care only</td></tr><tr><td>3</td><td>Limited self-care</td></tr><tr><td>4</td><td>Completely disabled</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/fhir/ValueSet/ecog-performance-status"/>
+  <version value="0.1.0"/>
+  <name value="EcogPerformanceStatusVS"/>
+  <title value="ECOG Performance Status"/>
+  <status value="active"/>
+  <date value="2025-06-30T18:02:10+00:00"/>
+  <publisher value="Medby_Tech"/>
+  <contact>
+    <name value="Medby_Tech"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Standard ECOG performance status codes used to assess patient functional status."/>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/CodeSystem/ecog-status"/>
+    </include>
+    <include>
+      <system value="http://example.org/fhir/CodeSystem/ecog-status"/>
+      <concept>
+        <code value="0"/>
+        <display value="Fully active"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="Restricted in strenuous activity"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Ambulatory, self-care only"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Limited self-care"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="Completely disabled"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

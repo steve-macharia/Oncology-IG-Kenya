@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Home -  v0.1.0</title>
+    <title>Oncology Implementation Guide for Kenya (Oncology-IG-Kenya) -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"1"}
-    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.85"}
+    h3,h4,h5,h6{--heading-prefix:"2.85"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -94,7 +94,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Home</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -115,7 +115,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">oncologyfhirigkenya - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="http://example.org/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  <h2>Home</h2>
+  <h2>Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)</h2>
   
 
 
@@ -145,7 +145,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2025-06-10
+            as of 2025-06-30
           
         
       </td>
@@ -169,12 +169,156 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
-</div>
-<h1 id="oncology-fhir-ig-kenya">oncology-fhir-ig-kenya</h1>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#oncology-implementation-guide-for-kenya-oncology-ig-kenya" id="markdown-toc-oncology-implementation-guide-for-kenya-oncology-ig-kenya">Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)</a>    <ul>
+      <li><a href="#transforming-cancer-care-through-fhir-based-digital-innovation" id="markdown-toc-transforming-cancer-care-through-fhir-based-digital-innovation">Transforming Cancer Care Through FHIR-Based Digital Innovation</a></li>
+      <li><a href="#home" id="markdown-toc-home">Home</a></li>
+      <li><a href="#purpose--background" id="markdown-toc-purpose--background">Purpose &amp; Background</a></li>
+      <li><a href="#kenyas-cancer-burden-a-snapshot" id="markdown-toc-kenyas-cancer-burden-a-snapshot">Kenya’s Cancer Burden: A Snapshot</a></li>
+      <li><a href="#oncology-care-pathway-fhir-mapping" id="markdown-toc-oncology-care-pathway-fhir-mapping">Oncology Care Pathway (FHIR Mapping)</a></li>
+      <li><a href="#implementation-notes" id="markdown-toc-implementation-notes">Implementation Notes</a></li>
+      <li><a href="#contact--repository" id="markdown-toc-contact--repository">Contact &amp; Repository</a></li>
+    </ul>
+  </li>
+</ul>
 
-<p>Feel free to modify this index page with your own awesome content!</p>
+</div>
+
+<h2 id="oncology-implementation-guide-for-kenya-oncology-ig-kenya">Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)</h2>
+
+<h3 id="transforming-cancer-care-through-fhir-based-digital-innovation">Transforming Cancer Care Through FHIR-Based Digital Innovation</h3>
+
+<blockquote>
+  <p>This Implementation Guide is a demonstration of how HL7&reg; FHIR&reg; can be leveraged to enhance the quality, continuity, and coordination of oncology care in Kenya. It is developed independently by a Kenyan health tech enthusiast, with a passion for improving cancer outcomes through open standards and interoperable digital solutions.</p>
+</blockquote>
+
+<hr/>
+
+<h3 id="home">Home</h3>
+
+<ul>
+  <li><strong>Version:</strong> 0.1.0</li>
+  <li><strong>Status:</strong> Draft as of 2025-06-16</li>
+  <li><strong>Canonical URL:</strong> <code class="language-plaintext highlighter-rouge">http://example.org/ImplementationGuide/medby</code></li>
+  <li><strong>Computable Name:</strong> <code class="language-plaintext highlighter-rouge">oncologyfhirigkenya</code></li>
+  <li><strong>Build Info:</strong> Local CI using HL7&reg; FHIR&reg; Build Tools</li>
+</ul>
+
+<hr/>
+
+<h3 id="purpose--background">Purpose &amp; Background</h3>
+
+<p>Kenya faces a growing cancer crisis. This FHIR Implementation Guide (IG) is designed to model a comprehensive, standards-based oncology care pathway. It reflects the realities of Kenya’s healthcare system while showcasing how HL7&reg; FHIR&reg; can be adapted to support every stage of oncology—from prevention and early detection, through diagnosis and treatment, to survivorship and palliative care.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> This guide is a <strong>proof-of-concept</strong> and not an official publication of the Ministry of Health or Social Health Authority (SHA). It is intended to catalyze innovation, inform national discussions, and serve as a resource for implementers aligned with Kenya’s digital health goals.</p>
+</blockquote>
+
+<hr/>
+
+<h3 id="kenyas-cancer-burden-a-snapshot">Kenya’s Cancer Burden: A Snapshot</h3>
+
+<p>According to <a href="https://documents1.worldbank.org/curated/en/964571592290457869/pdf/Economic-and-Social-Consequences-of-Cancer-in-Kenya-Case-Studies-of-Selected-Households.pdf">World Bank data (2020)</a>, the cancer landscape in Kenya is defined by:</p>
+
+<ul>
+  <li><strong>47,887</strong> new cancer cases and <strong>32,987</strong> deaths in 2018</li>
+  <li><strong>80%</strong> of diagnoses occur at advanced stages (Stage III or IV)</li>
+  <li>Over <strong>30%</strong> of households with a cancer patient fall below the poverty line, even with SHA coverage</li>
+  <li>Fewer than <strong>30%</strong> of public health facilities offer cancer screening</li>
+  <li>Only <strong>7</strong> public hospitals provide radiotherapy services</li>
+  <li>Kenya has just <strong>36 oncologists</strong> for a population exceeding 50 million</li>
+  <li>Many patients travel over <strong>100 km</strong> for access to diagnostic or treatment services</li>
+</ul>
+
+<p>These statistics underscore the urgent need for scalable, interoperable digital health solutions to improve access, equity, and quality of care.</p>
+
+<hr/>
+
+<h3 id="oncology-care-pathway-fhir-mapping">Oncology Care Pathway (FHIR Mapping)</h3>
+
+<p>The table below outlines how core stages of oncology care map to HL7&reg; FHIR&reg; resources:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Care Stage</th>
+      <th>FHIR Coverage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Screening &amp; Early Detection</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code>, <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">ServiceRequest</code>, <code class="language-plaintext highlighter-rouge">Encounter</code></td>
+    </tr>
+    <tr>
+      <td>Diagnosis (Imaging, Lab)</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">Specimen</code>, <code class="language-plaintext highlighter-rouge">Procedure</code>, <code class="language-plaintext highlighter-rouge">DiagnosticReport</code>, <code class="language-plaintext highlighter-rouge">Observation</code></td>
+    </tr>
+    <tr>
+      <td>Treatment Planning</td>
+      <td><code class="language-plaintext highlighter-rouge">CarePlan</code>, <code class="language-plaintext highlighter-rouge">Consent</code>, <code class="language-plaintext highlighter-rouge">Encounter</code>, <code class="language-plaintext highlighter-rouge">PractitionerRole</code></td>
+    </tr>
+    <tr>
+      <td>Chemotherapy &amp; Radiotherapy</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationRequest</code>, <code class="language-plaintext highlighter-rouge">MedicationAdministration</code>, <code class="language-plaintext highlighter-rouge">Procedure</code></td>
+    </tr>
+    <tr>
+      <td>Monitoring &amp; Side Effects</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code>, <code class="language-plaintext highlighter-rouge">CarePlan</code></td>
+    </tr>
+    <tr>
+      <td>Survivorship &amp; Follow-Up</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter</code>, <code class="language-plaintext highlighter-rouge">CarePlan</code>, <code class="language-plaintext highlighter-rouge">DocumentReference</code></td>
+    </tr>
+    <tr>
+      <td>Palliative Care</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationRequest</code>, <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">RelatedPerson</code></td>
+    </tr>
+    <tr>
+      <td>Financial Coverage</td>
+      <td><code class="language-plaintext highlighter-rouge">Claim</code>, <code class="language-plaintext highlighter-rouge">ExplanationOfBenefit</code>, <code class="language-plaintext highlighter-rouge">Coverage</code></td>
+    </tr>
+    <tr>
+      <td>Referral &amp; Logistics</td>
+      <td><code class="language-plaintext highlighter-rouge">Task</code>, <code class="language-plaintext highlighter-rouge">Communication</code>, <code class="language-plaintext highlighter-rouge">Location</code>, <code class="language-plaintext highlighter-rouge">Organization</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>Each mapped profile is tailored to fit Kenya’s workflows, policy frameworks, and resource constraints, promoting better data capture and care continuity.</p>
+</blockquote>
+
+<hr/>
+
+<h3 id="implementation-notes">Implementation Notes</h3>
+
+<p>This IG includes profiles that support key tasks across the oncology spectrum:</p>
+
+<ul>
+  <li>Structured documentation of <strong>cancer staging</strong>, <strong>histopathology</strong>, and <strong>tumor markers</strong></li>
+  <li>Capture and coordination of <strong>chemotherapy regimens</strong>, including administration and side effects</li>
+  <li>Tools for tracking <strong>follow-up visits</strong>, <strong>treatment plans</strong>, and <strong>financial distress screening</strong></li>
+  <li>Support for managing <strong>referrals</strong>, <strong>treatment locations</strong>, and <strong>documentation sharing</strong></li>
+</ul>
+
+<p>These components are designed to promote semantic interoperability, improve data quality for decision-making, and reduce fragmentation of cancer care services.</p>
+
+<hr/>
+
+<h3 id="contact--repository">Contact &amp; Repository</h3>
+
+<ul>
+  <li><strong>Email:</strong> medbyTech254@gmail.com</li>
+  <li><strong>GitHub:</strong> <a href="https://github.com/steve-macharia"><img src="https://img.shields.io/badge/github-steve--macharia-blue?logo=github" alt="GitHub"/></a></li>
+  <li><strong>Website:</strong> <a href="https://medby-tech.netlify.app/"><img src="https://img.shields.io/badge/website-medby--tech.netlify.app-brightgreen?logo=netlify" alt="Website"/></a></li>
+</ul>
+
+<hr/>
+
+<p>This Implementation Guide is a personal initiative by a Kenyan digital health enthusiast. While not officially endorsed, it aligns with national digital health priorities and demonstrates what is possible when global standards are contextualized to meet local needs.</p>
+
 
 
 
@@ -193,8 +337,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l305">​</a>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>.  Package medby#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 10, 2025 13:58+0300">2025-06-10</span>
+        <p><a name="l744">​</a>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">Medby_Tech</a>.  Package medby#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 30, 2025 18:02+0000">2025-06-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

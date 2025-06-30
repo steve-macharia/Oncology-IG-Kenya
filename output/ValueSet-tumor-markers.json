@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tumor-markers",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tumor-markers</b></p><a name=\"tumor-markers\"> </a><a name=\"hctumor-markers\"> </a><ul><li>Include all codes defined in <code>http://fhir.org/guides/kenya/CodeSystem/tumor-markers</code></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/tumor-markers",
+  "version" : "0.1.0",
+  "name" : "TumorMarkerVS",
+  "title" : "Tumor Marker ValueSet",
+  "status" : "draft",
+  "date" : "2025-06-30T18:02:10+00:00",
+  "publisher" : "Medby_Tech",
+  "contact" : [{
+    "name" : "Medby_Tech",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Tumor markers used in Kenyan oncology diagnostics.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/kenya/CodeSystem/tumor-markers"
+    }]
+  }
+}

@@ -1,0 +1,100 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Encounter/example-oncology-encounter> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-oncology-encounter"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/oncology-kenya-encounter"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/oncology-kenya-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter example-oncology-encounter</b></p><a name=\"example-oncology-encounter\"> </a><a name=\"hcexample-oncology-encounter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-kenya-encounter.html\">Oncology Encounter Kenya</a></p></div><p><b>County Where Encounter Took Place</b>: <span title=\"Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes Nyandarua}\">Nyandarua</span></p><p><b>Referral Source for Oncology Encounter</b>: <span title=\"Codes:{https://www.sha.go.ke/fhir/CodeSystem/referral-source healthCentre}\">healthCentre</span></p><p><b>Flag for National Cancer Registry Reporting</b>: true</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.4.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>type</b>: <span title=\"Codes:{http://id.who.int/icd10 Z01.7}\">Encounter for examination for suspected neoplasm</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>period</b>: 2025-02-01 --&gt; 2025-02-01</p><p><b>reasonCode</b>: <span title=\"Codes:{http://id.who.int/icd10 C18.0}\">Malignant neoplasm of cecum</span></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Condition</b></td><td><b>Use</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Condition/example-colon-cancer\">Condition/example-colon-cancer</a></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/diagnosis-role AD}\">Admission diagnosis</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location/nyandarua-oncology-clinic\">Location/nyandarua-oncology-clinic</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization/nyandarua-cancer-center\">Organization/nyandarua-cancer-center</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/encounter-context-county"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Nyandarua" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/encounter-referral-source"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.sha.go.ke/fhir/CodeSystem/referral-source"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "healthCentre" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/encounter-registry-flag"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ] ;
+     fhir:display [ fhir:v "ambulatory" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://id.who.int/icd10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Z01.7" ] ;
+       fhir:display [ fhir:v "Encounter for examination for suspected neoplasm" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/example> ;
+     fhir:reference [ fhir:v "Patient/example" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-02-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-02-01"^^xsd:date ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://id.who.int/icd10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C18.0" ] ;
+       fhir:display [ fhir:v "Malignant neoplasm of cecum" ]
+     ] )
+  ] ) ; # 
+  fhir:diagnosis ( [
+     fhir:condition [
+       fhir:link <http://example.org/Condition/example-colon-cancer> ;
+       fhir:reference [ fhir:v "Condition/example-colon-cancer" ]
+     ] ;
+     fhir:use [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/diagnosis-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AD" ] ;
+         fhir:display [ fhir:v "Admission diagnosis" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <http://example.org/Location/nyandarua-oncology-clinic> ;
+       fhir:reference [ fhir:v "Location/nyandarua-oncology-clinic" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <http://example.org/Organization/nyandarua-cancer-center> ;
+     fhir:reference [ fhir:v "Organization/nyandarua-cancer-center" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

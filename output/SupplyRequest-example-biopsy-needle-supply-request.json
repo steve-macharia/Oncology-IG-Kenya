@@ -1,0 +1,40 @@
+{
+  "resourceType" : "SupplyRequest",
+  "id" : "example-biopsy-needle-supply-request",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/oncology-kenya-supplyrequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SupplyRequest example-biopsy-needle-supply-request</b></p><a name=\"example-biopsy-needle-supply-request\"> </a><a name=\"hcexample-biopsy-needle-supply-request\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-kenya-supplyrequest.html\">Oncology Kenya Supply Request</a></p></div><p><b>status</b>: Active</p><p><b>item</b>: <span title=\"Codes:{http://snomed.info/sct 3457005}\">Biopsy needle</span></p><p><b>quantity</b>: 15 unit</p><p><b>authoredOn</b>: 2025-06-10</p><p><b>requester</b>: <a href=\"PractitionerRole/example-oncology-nurse-knh\">PractitionerRole/example-oncology-nurse-knh</a></p><p><b>supplier</b>: <a href=\"Organization/kemsa\">Organization/kemsa</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 183807002}\">Diagnostic procedure</span></p><p><b>deliverTo</b>: <a href=\"Location-example-kenyatta-national-hospital-oncology.html\">Location Kenyatta National Hospital - Cancer Treatment Centre</a></p></div>"
+  },
+  "status" : "active",
+  "itemCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "3457005",
+      "display" : "Biopsy needle"
+    }]
+  },
+  "quantity" : {
+    "value" : 15,
+    "unit" : "unit"
+  },
+  "authoredOn" : "2025-06-10",
+  "requester" : {
+    "reference" : "PractitionerRole/example-oncology-nurse-knh"
+  },
+  "supplier" : [{
+    "reference" : "Organization/kemsa"
+  }],
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "183807002",
+      "display" : "Diagnostic procedure"
+    }]
+  }],
+  "deliverTo" : {
+    "reference" : "Location/example-kenyatta-national-hospital-oncology"
+  }
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="medby-ig"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide medby-ig</b></p><a name="medby-ig"> </a><a name="hcmedby-ig"> </a><h2>oncologyfhirigkenya</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/medby</pre><div><p>This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient and OncologyObservationKenya, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.</p>
+<p>It is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities.</p>
+</div></div>
+  </text>
+  <url value="http://example.org/ImplementationGuide/medby"/>
+  <version value="0.1.0"/>
+  <name value="oncologyfhirigkenya"/>
+  <title value="Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-06-18"/>
+  <publisher value="Medby_Tech"/>
+  <contact>
+    <name value="Medby_Tech"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient and OncologyObservationKenya, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.&#xA;&#xA;It is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities."/>
+  <packageId value="ke.oncology.fhir.ig"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/oncology-kenya-patient"/>
+      </reference>
+      <name value="OncologyKenyaPatient"/>
+      <description value="Patient profile customized for oncology care in Kenya."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/oncology-observation-kenya"/>
+      </reference>
+      <name value="OncologyObservationKenya"/>
+      <description value="Observation profile for cancer data elements including staging, tumor markers, and performance status."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/cancer-stage"/>
+      </reference>
+      <name value="CancerStageVS"/>
+      <description value="ValueSet for TNM and other staging codes relevant in Kenya."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/tumor-markers"/>
+      </reference>
+      <name value="TumorMarkerVS"/>
+      <description value="ValueSet for tumor markers such as CA-125, CEA."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/cancer-observation-method-vs"/>
+      </reference>
+      <name value="CancerObservationMethodVS"/>
+      <description value="ValueSet for observation methods used in oncology diagnosis, such as histology or imaging."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ecog-status-vs"/>
+      </reference>
+      <name value="ECOGStatusVS"/>
+      <description value="ValueSet for ECOG performance status used in functional assessment of patients."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/search-sha-id"/>
+      </reference>
+      <name value="Search by SHA ID"/>
+      <description value="Search patients by SHA ID"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/search-facility-upi"/>
+      </reference>
+      <name value="Search by Facility UPI"/>
+      <description value="Search patients by facility UPI"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/search-county"/>
+      </reference>
+      <name value="Search by County"/>
+      <description value="Search patients by county (address.state)"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/search-education-level"/>
+      </reference>
+      <name value="Search by Education Level"/>
+      <description value="Search patients by education level"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/search-occupation"/>
+      </reference>
+      <name value="Search by Occupation"/>
+      <description value="Search patients by occupation"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="index.html"/>
+      </extension>
+      <nameUrl value="index.html"/>
+      <title value="Home"/>
+      <generation value="html"/>
+    </page>
+  </definition>
+</ImplementationGuide>

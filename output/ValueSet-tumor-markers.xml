@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tumor-markers"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet tumor-markers</b></p><a name="tumor-markers"> </a><a name="hctumor-markers"> </a><ul><li>Include all codes defined in <code>http://fhir.org/guides/kenya/CodeSystem/tumor-markers</code></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/tumor-markers"/>
+  <version value="0.1.0"/>
+  <name value="TumorMarkerVS"/>
+  <title value="Tumor Marker ValueSet"/>
+  <status value="draft"/>
+  <date value="2025-06-30T18:02:10+00:00"/>
+  <publisher value="Medby_Tech"/>
+  <contact>
+    <name value="Medby_Tech"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Tumor markers used in Kenyan oncology diagnostics."/>
+  <compose>
+    <include>
+      <system value="http://fhir.org/guides/kenya/CodeSystem/tumor-markers"/>
+    </include>
+  </compose>
+</ValueSet>

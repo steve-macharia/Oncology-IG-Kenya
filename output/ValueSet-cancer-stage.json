@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cancer-stage",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet cancer-stage</b></p><a name=\"cancer-stage\"> </a><a name=\"hccancer-stage\"> </a><ul><li>Include all codes defined in <code>http://fhir.org/guides/kenya/CodeSystem/icd10-cancer-stage</code></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/cancer-stage",
+  "version" : "0.1.0",
+  "name" : "CancerStageVS",
+  "title" : "Cancer Stage ValueSet",
+  "status" : "draft",
+  "date" : "2025-06-30T18:02:10+00:00",
+  "publisher" : "Medby_Tech",
+  "contact" : [{
+    "name" : "Medby_Tech",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "ValueSet for cancer stages commonly used in Kenya, e.g., Stage I–IV or TNM classifications.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/kenya/CodeSystem/icd10-cancer-stage"
+    }]
+  }
+}

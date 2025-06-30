@@ -49,6 +49,18 @@
       "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/sid/icd-10",
+      "version" : "2.1.1",
+      "status" : "retired",
+      "name" : "Icd10",
+      "title" : "ICD-10",
+      "description" : "International Classification of Diseases revision 10 (ICD 10)",
+      "oids" : ["2.16.840.1.113883.6.3"],
+      "uses" : {
+      },
+      "ValueSet-cancer-icd10.html" : "Top Common Cancers in Kenya - ICD-10"
+    },
+    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -70,7 +82,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity"
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -83,6 +96,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-condition-clinical.html" : "Condition Clinical Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",

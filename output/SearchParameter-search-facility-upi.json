@@ -1,0 +1,27 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "search-facility-upi",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter search-facility-upi</b></p><a name=\"search-facility-upi\"> </a><a name=\"hcsearch-facility-upi\"> </a><h2>facility-upi</h2><p>Parameter <code>facility-upi</code>:<code>token</code></p><div><p>Allows filtering patients by Facility UPI</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td></tr><tr><td>Expression</td><td><code>Patient.identifier.where(system = 'http://facility.health.go.ke/upi')</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  },
+  "url" : "https://oncology.ig.kenya/SearchParameter/search-facility-upi",
+  "version" : "0.1.0",
+  "name" : "facility-upi",
+  "status" : "active",
+  "date" : "2025-06-30T18:02:10+00:00",
+  "publisher" : "Medby_Tech",
+  "contact" : [{
+    "name" : "Medby_Tech",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Allows filtering patients by Facility UPI",
+  "code" : "facility-upi",
+  "base" : ["Patient"],
+  "type" : "token",
+  "expression" : "Patient.identifier.where(system = 'http://facility.health.go.ke/upi')",
+  "xpathUsage" : "normal"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cancer-observation-method-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet cancer-observation-method-vs</b></p><a name="cancer-observation-method-vs"> </a><a name="hccancer-observation-method-vs"> </a><ul><li>Include all codes defined in <code>http://example.org/fhir/CodeSystem/observation-methods</code></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/cancer-observation-method-vs"/>
+  <version value="0.1.0"/>
+  <name value="CancerObservationMethodVS"/>
+  <title value="Cancer Observation Method ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-06-30T18:02:10+00:00"/>
+  <publisher value="Medby_Tech"/>
+  <contact>
+    <name value="Medby_Tech"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Methods used to derive cancer observations such as histopathology, imaging, immunohistochemistry."/>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/CodeSystem/observation-methods"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cancer-icd10",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet cancer-icd10</b></p><a name=\"cancer-icd10\"> </a><a name=\"hccancer-icd10\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.4.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.4.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C50</td><td>Breast cancer</td></tr><tr><td>C53</td><td>Cervical cancer</td></tr><tr><td>C61</td><td>Prostate cancer</td></tr><tr><td>C34</td><td>Lung cancer</td></tr><tr><td>C18</td><td>Colorectal cancer</td></tr><tr><td>C15</td><td>Esophageal cancer</td></tr><tr><td>C92</td><td>Leukemia</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/fhir/ValueSet/cancer-icd10",
+  "version" : "0.1.0",
+  "name" : "CancerICD10VS",
+  "title" : "Top Common Cancers in Kenya - ICD-10",
+  "status" : "active",
+  "date" : "2025-06-30T18:02:10+00:00",
+  "publisher" : "Medby_Tech",
+  "contact" : [{
+    "name" : "Medby_Tech",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "ICD-10 codes for the most common cancers in Kenya as per national strategy.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "concept" : [{
+        "code" : "C50",
+        "display" : "Breast cancer"
+      },
+      {
+        "code" : "C53",
+        "display" : "Cervical cancer"
+      },
+      {
+        "code" : "C61",
+        "display" : "Prostate cancer"
+      },
+      {
+        "code" : "C34",
+        "display" : "Lung cancer"
+      },
+      {
+        "code" : "C18",
+        "display" : "Colorectal cancer"
+      },
+      {
+        "code" : "C15",
+        "display" : "Esophageal cancer"
+      },
+      {
+        "code" : "C92",
+        "display" : "Leukemia"
+      }]
+    }]
+  }
+}

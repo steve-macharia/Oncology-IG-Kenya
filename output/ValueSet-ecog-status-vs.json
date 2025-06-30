@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ecog-status-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ecog-status-vs</b></p><a name=\"ecog-status-vs\"> </a><a name=\"hcecog-status-vs\"> </a><ul><li>Include all codes defined in <code>http://example.org/fhir/CodeSystem/ecog-performance</code></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/ecog-status-vs",
+  "version" : "0.1.0",
+  "name" : "ECOGStatusVS",
+  "title" : "ECOG Performance Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-06-30T18:02:10+00:00",
+  "publisher" : "Medby_Tech",
+  "contact" : [{
+    "name" : "Medby_Tech",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Eastern Cooperative Oncology Group (ECOG) Performance Status codes.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/CodeSystem/ecog-performance"
+    }]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cancer-observation-method-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet cancer-observation-method-vs</b></p><a name=\"cancer-observation-method-vs\"> </a><a name=\"hccancer-observation-method-vs\"> </a><ul><li>Include all codes defined in <code>http://example.org/fhir/CodeSystem/observation-methods</code></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/cancer-observation-method-vs",
+  "version" : "0.1.0",
+  "name" : "CancerObservationMethodVS",
+  "title" : "Cancer Observation Method ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-06-30T18:02:10+00:00",
+  "publisher" : "Medby_Tech",
+  "contact" : [{
+    "name" : "Medby_Tech",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Methods used to derive cancer observations such as histopathology, imaging, immunohistochemistry.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/CodeSystem/observation-methods"
+    }]
+  }
+}

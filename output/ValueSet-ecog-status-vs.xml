@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ecog-status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ecog-status-vs</b></p><a name="ecog-status-vs"> </a><a name="hcecog-status-vs"> </a><ul><li>Include all codes defined in <code>http://example.org/fhir/CodeSystem/ecog-performance</code></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/ecog-status-vs"/>
+  <version value="0.1.0"/>
+  <name value="ECOGStatusVS"/>
+  <title value="ECOG Performance Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-06-30T18:02:10+00:00"/>
+  <publisher value="Medby_Tech"/>
+  <contact>
+    <name value="Medby_Tech"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Eastern Cooperative Oncology Group (ECOG) Performance Status codes."/>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/CodeSystem/ecog-performance"/>
+    </include>
+  </compose>
+</ValueSet>

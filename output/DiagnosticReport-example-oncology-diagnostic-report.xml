@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="example-oncology-diagnostic-report"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/oncology-diagnostic-report-kenya"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport example-oncology-diagnostic-report</b></p><a name="example-oncology-diagnostic-report"> </a><a name="hcexample-oncology-diagnostic-report"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-oncology-diagnostic-report-kenya.html">Oncology Diagnostic Report Kenya</a></p></div><h2><span title="Codes:{https://www.kenyacode.com/fhir/CodeSystem/oncology-diagnostic-types cervix-biopsy}">Cervical Biopsy Report</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 PAT}">Pathology</span>) </h2><table class="grid"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>When For</td><td>2025-06-10</td></tr><tr><td>Reported</td><td>2025-06-12 10:00:00+0300</td></tr><tr><td>Performer</td><td> <a href="Practitioner/example-pathologist">Practitioner/example-pathologist</a></td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td colspan="2"><i>The observation 'Observation/example-cervix-observation' could not be resolved</i></td></tr></table><p>Invasive squamous cell carcinoma, Stage IIA</p></div>
+  </text>
+  <extension url="http://example.org/StructureDefinition/report-cancer-stage">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.kenyacode.com/fhir/CodeSystem/kenya-cancer-staging"/>
+        <code value="stage-iia"/>
+        <display value="Stage IIA"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/report-specimen-origin-county">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"/>
+        <code value="Nyandarua"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://example.org/StructureDefinition/report-registry-flag">
+    <valueBoolean value="true"/>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="PAT"/>
+      <display value="Pathology"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://www.kenyacode.com/fhir/CodeSystem/oncology-diagnostic-types"/>
+      <code value="cervix-biopsy"/>
+      <display value="Cervical Biopsy Report"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-kenya"/>
+  </subject>
+  <effectiveDateTime value="2025-06-10"/>
+  <issued value="2025-06-12T10:00:00+03:00"/>
+  <performer>
+    <reference value="Practitioner/example-pathologist"/>
+  </performer>
+  <resultsInterpreter>
+    <reference value="Practitioner/example-oncologist"/>
+  </resultsInterpreter>
+  <result>
+    <reference value="Observation/example-cervix-observation"/>
+  </result>
+  <conclusion value="Invasive squamous cell carcinoma, Stage IIA"/>
+  <presentedForm>
+    <contentType value="application/pdf"/>
+    <url value="https://kemri.go.ke/reports/example-cervix-biopsy.pdf"/>
+  </presentedForm>
+</DiagnosticReport>

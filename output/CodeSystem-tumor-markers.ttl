@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/CodeSystem/tumor-markers> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tumor-markers"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tumor-markers</b></p><a name=\"tumor-markers\"> </a><a name=\"hctumor-markers\"> </a><p>This case-sensitive code system <code>http://example.org/fhir/CodeSystem/tumor-markers</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CEA<a name=\"tumor-markers-CEA\"> </a></td><td>Carcinoembryonic Antigen</td></tr><tr><td style=\"white-space:nowrap\">AFP<a name=\"tumor-markers-AFP\"> </a></td><td>Alpha-fetoprotein</td></tr><tr><td style=\"white-space:nowrap\">PSA<a name=\"tumor-markers-PSA\"> </a></td><td>Prostate-Specific Antigen</td></tr><tr><td style=\"white-space:nowrap\">CA125<a name=\"tumor-markers-CA125\"> </a></td><td>Cancer Antigen 125</td></tr><tr><td style=\"white-space:nowrap\">CA15_3<a name=\"tumor-markers-CA15_3\"> </a></td><td>Cancer Antigen 15-3</td></tr><tr><td style=\"white-space:nowrap\">CA19_9<a name=\"tumor-markers-CA19_9\"> </a></td><td>Cancer Antigen 19-9</td></tr><tr><td style=\"white-space:nowrap\">LDH<a name=\"tumor-markers-LDH\"> </a></td><td>Lactate Dehydrogenase</td></tr><tr><td style=\"white-space:nowrap\">hCG<a name=\"tumor-markers-hCG\"> </a></td><td>Human Chorionic Gonadotropin</td></tr><tr><td style=\"white-space:nowrap\">B2M<a name=\"tumor-markers-B2M\"> </a></td><td>Beta-2 Microglobulin</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/fhir/CodeSystem/tumor-markers"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TumorMarkers"] ; # 
+  fhir:title [ fhir:v "Tumor Markers"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-06-30T18:02:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Medby_Tech"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Medby_Tech" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tumor markers commonly used in oncology diagnostics and monitoring in Kenya."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "CEA" ] ;
+     fhir:display [ fhir:v "Carcinoembryonic Antigen" ]
+  ] [
+     fhir:code [ fhir:v "AFP" ] ;
+     fhir:display [ fhir:v "Alpha-fetoprotein" ]
+  ] [
+     fhir:code [ fhir:v "PSA" ] ;
+     fhir:display [ fhir:v "Prostate-Specific Antigen" ]
+  ] [
+     fhir:code [ fhir:v "CA125" ] ;
+     fhir:display [ fhir:v "Cancer Antigen 125" ]
+  ] [
+     fhir:code [ fhir:v "CA15_3" ] ;
+     fhir:display [ fhir:v "Cancer Antigen 15-3" ]
+  ] [
+     fhir:code [ fhir:v "CA19_9" ] ;
+     fhir:display [ fhir:v "Cancer Antigen 19-9" ]
+  ] [
+     fhir:code [ fhir:v "LDH" ] ;
+     fhir:display [ fhir:v "Lactate Dehydrogenase" ]
+  ] [
+     fhir:code [ fhir:v "hCG" ] ;
+     fhir:display [ fhir:v "Human Chorionic Gonadotropin" ]
+  ] [
+     fhir:code [ fhir:v "B2M" ] ;
+     fhir:display [ fhir:v "Beta-2 Microglobulin" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

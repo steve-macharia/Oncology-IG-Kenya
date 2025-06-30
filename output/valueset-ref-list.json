@@ -1,6 +1,60 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://example.org/ValueSet/cancer-observation-method-vs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CancerObservationMethodVS",
+      "title" : "Cancer Observation Method ValueSet",
+      "description" : "Methods used to derive cancer observations such as histopathology, imaging, immunohistochemistry.",
+      "systems" : ["http://example.org/fhir/CodeSystem/observation-methods"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/cancer-stage",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CancerStageVS",
+      "title" : "Cancer Stage ValueSet",
+      "description" : "ValueSet for cancer stages commonly used in Kenya, e.g., Stage I–IV or TNM classifications.",
+      "systems" : ["http://fhir.org/guides/kenya/CodeSystem/icd10-cancer-stage"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/ecog-status-vs",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ECOGStatusVS",
+      "title" : "ECOG Performance Status",
+      "description" : "Eastern Cooperative Oncology Group (ECOG) Performance Status codes.",
+      "systems" : ["http://example.org/fhir/CodeSystem/ecog-performance"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/tumor-markers",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TumorMarkerVS",
+      "title" : "Tumor Marker ValueSet",
+      "description" : "Tumor markers used in Kenyan oncology diagnostics.",
+      "systems" : ["http://fhir.org/guides/kenya/CodeSystem/tumor-markers"]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/cancer-icd10",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CancerICD10VS",
+      "title" : "Top Common Cancers in Kenya - ICD-10",
+      "description" : "ICD-10 codes for the most common cancers in Kenya as per national strategy.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10"]
+    },
+    {
+      "url" : "http://example.org/fhir/ValueSet/ecog-performance-status",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EcogPerformanceStatusVS",
+      "title" : "ECOG Performance Status",
+      "description" : "Standard ECOG performance status codes used to assess patient functional status.",
+      "systems" : ["http://example.org/fhir/CodeSystem/ecog-status"]
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
       "version" : "4.0.1",
       "status" : "active",
@@ -15,6 +69,20 @@
       "StructureDefinition-oncology-kenya-patient.html" : "Oncology Kenya Patient"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-observation-kenya.html" : "Oncology Observation Kenya"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
       "version" : "4.0.1",
       "status" : "draft",
@@ -26,7 +94,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.164"],
       "uses" : {
       },
-      "StructureDefinition-oncology-kenya-condition.html" : "oncology kenya condition"
+      "StructureDefinition-oncology-kenya-condition.html" : "Oncology Kenya Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -40,7 +108,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.168"],
       "uses" : {
       },
-      "StructureDefinition-oncology-kenya-condition.html" : "oncology kenya condition"
+      "StructureDefinition-oncology-kenya-condition.html" : "Oncology Kenya Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
@@ -99,6 +167,20 @@
       "StructureDefinition-oncology-kenya-patient.html" : "Oncology Kenya Patient"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-oncology-observation-kenya.html" : "Oncology Observation Kenya"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
       "version" : "4.0.1",
       "status" : "active",
@@ -112,7 +194,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-oncology-kenya-observation.html" : "Oncology Kenya Observation"
+      "StructureDefinition-oncology-observation-kenya.html" : "Oncology Observation Kenya"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -126,7 +208,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-oncology-kenya-observation.html" : "Oncology Kenya Observation"
+      "StructureDefinition-oncology-observation-kenya.html" : "Oncology Observation Kenya"
     }
   ]
 }
