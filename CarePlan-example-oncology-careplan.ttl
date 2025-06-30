@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/CarePlan/example-oncology-careplan> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-oncology-careplan"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/oncology-kenya-careplan"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/oncology-kenya-careplan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan example-oncology-careplan</b></p><a name=\"example-oncology-careplan\"> </a><a name=\"hcexample-oncology-careplan\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-kenya-careplan.html\">Oncology Care Plan Kenya</a></p></div><p><b>County Where Care Plan is Managed</b>: <span title=\"Codes:{https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes UasinGishu}\">UasinGishu</span></p><p><b>Referral Source for Oncology Care Plan</b>: <span title=\"Codes:{https://www.sha.go.ke/fhir/CodeSystem/referral-source dispensary}\">dispensary</span></p><p><b>Flag for National Cancer Registry Reporting</b>: true</p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Breast Cancer Treatment Plan</p><p><b>description</b>: Includes chemotherapy, surgery, and radiotherapy</p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>period</b>: 2025-03-01 --&gt; 2026-03-01</p><p><b>careTeam</b>: <a href=\"CareTeam/breast-cancer-multidisciplinary-team\">CareTeam/breast-cancer-multidisciplinary-team</a></p><p><b>addresses</b>: <a href=\"Condition-breast-cancer-condition.html\">Condition Malignant neoplasm of upper-inner quadrant of breast</a></p><p><b>goal</b>: <a href=\"Goal-tumor-reduction-goal.html\">Goal: lifecycleStatus = active; description = </a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Scheduled[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://id.who.int/icd10 Z51.1}\">Chemotherapy session for neoplasm</span></td><td>Scheduled</td><td>2025-03-15 --&gt; 2025-06-15</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/careplan-context-county"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "UasinGishu" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/careplan-referral-source"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://www.sha.go.ke/fhir/CodeSystem/referral-source"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "dispensary" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://example.org/StructureDefinition/careplan-registry-flag"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v true
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "plan"] ; # 
+  fhir:title [ fhir:v "Breast Cancer Treatment Plan"] ; # 
+  fhir:description [ fhir:v "Includes chemotherapy, surgery, and radiotherapy"] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/example> ;
+     fhir:reference [ fhir:v "Patient/example" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2025-03-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2026-03-01"^^xsd:date ]
+  ] ; # 
+  fhir:careTeam ( [
+     fhir:link <http://example.org/CareTeam/breast-cancer-multidisciplinary-team> ;
+     fhir:reference [ fhir:v "CareTeam/breast-cancer-multidisciplinary-team" ]
+  ] ) ; # 
+  fhir:addresses ( [
+     fhir:link <http://example.org/Condition/breast-cancer-condition> ;
+     fhir:reference [ fhir:v "Condition/breast-cancer-condition" ]
+  ] ) ; # 
+  fhir:goal ( [
+     fhir:link <http://example.org/Goal/tumor-reduction-goal> ;
+     fhir:reference [ fhir:v "Goal/tumor-reduction-goal" ]
+  ] ) ; # 
+  fhir:activity ( [
+     fhir:detail [
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://id.who.int/icd10"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Z51.1" ] ;
+           fhir:display [ fhir:v "Chemotherapy session for neoplasm" ]
+         ] )
+       ] ;
+       fhir:status [ fhir:v "scheduled" ] ;
+       fhir:scheduled [
+         a fhir:Period ;
+         fhir:start [ fhir:v "2025-03-15"^^xsd:date ] ;
+         fhir:end [ fhir:v "2025-06-15"^^xsd:date ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

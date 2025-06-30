@@ -1,0 +1,585 @@
+{
+  "package": "medby",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://example.org/StructureDefinition/Icdo3Morphology",
+      "title": "ICD-O-3 Morphology",
+      "types": [
+        "Coding",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/RegistryReporting",
+      "title": "Registry Reporting",
+      "types": [
+        "boolean",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/careplan-context-county",
+      "title": "County Where Care Plan is Managed",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/careplan-referral-source",
+      "title": "Referral Source for Oncology Care Plan",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/careplan-registry-flag",
+      "title": "Flag for National Cancer Registry Reporting",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/ecogPerformanceStatus",
+      "title": "ECOG Performance Status",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/encounter-context-county",
+      "title": "County Where Encounter Took Place",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/encounter-referral-source",
+      "title": "Referral Source for Oncology Encounter",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/encounter-registry-flag",
+      "title": "Flag for National Cancer Registry Reporting",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/icdo3-topography",
+      "title": "ICD-O-3 Topography Code",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/medicationrequest-prescribed-county",
+      "title": "County Where Medication Was Prescribed",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/medicationrequest-registry-flag",
+      "title": "Flag for Reporting Medication Request to National Registry",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/oncology-service-focus",
+      "title": "Focus Area of Oncology Service",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/practitioner-cadre-code",
+      "title": "Oncology Cadre Classification",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/practitioner-role-county",
+      "title": "County of Oncology Service",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/practitioner-work-county",
+      "title": "County Where Oncology Practitioner is Based",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/procedure-cancer-stage",
+      "title": "Cancer Stage at Time of Procedure",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/procedure-context-county",
+      "title": "County Where Procedure Was Performed",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/procedure-referral-source",
+      "title": "Referral Source for Procedure",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/procedure-registry-report-flag",
+      "title": "Flag for National Registry Reporting",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/questionnaire-context-county",
+      "title": "County Where Questionnaire Response Occurred",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/questionnaire-referral-source",
+      "title": "Referral Source for Oncology Questionnaire",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/questionnaire-registry-flag",
+      "title": "Flag for National Cancer Registry Reporting",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/report-cancer-stage",
+      "title": "Cancer Stage Summary (e.g., TNM or Ann Arbor)",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/report-registry-flag",
+      "title": "Send Report to National Cancer Registry",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/report-specimen-origin-county",
+      "title": "County Where Specimen Was Collected",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/service-request-context-county",
+      "title": "County Where Request Originated",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/service-request-referral-type",
+      "title": "Referral Type (Internal or External)",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/service-request-registry-flag",
+      "title": "Flag for National Cancer Registry Reporting",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://oncology.ig.kenya/StructureDefinition/patient-educationLevel",
+      "title": "Patient Education Level",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://oncology.ig.kenya/StructureDefinition/patient-occupation",
+      "title": "Patient Occupation",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "DiagnosticReport": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-diagnosticreport",
+        "title": "Oncology Kenya Diagnostic Report"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-careplan",
+        "title": "Oncology Care Plan Kenya"
+      }
+    ],
+    "Claim": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-claim",
+        "title": "Oncology Kenya Claim"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-condition",
+        "title": "Oncology Kenya Condition"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-coverage",
+        "title": "Oncology Kenya Coverage"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-encounter",
+        "title": "Oncology Encounter Kenya"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-location",
+        "title": "Oncology Kenya Location"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-medicationrequest",
+        "title": "Oncology Medication Request Kenya"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-patient",
+        "title": "Oncology Kenya Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-practitioner",
+        "title": "Oncology Practitioner Kenya"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-practitioner-role",
+        "title": "Oncology Practitioner Role Kenya"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-procedure",
+        "title": "Oncology Procedure Kenya"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-questionnaireresponse",
+        "title": "Oncology Questionnaire Response Kenya"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-registry-report",
+        "title": "Oncology Kenya Registry Report"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-service-request",
+        "title": "Oncology Service Request Kenya"
+      }
+    ],
+    "SupplyRequest": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-kenya-supplyrequest",
+        "title": "Oncology Kenya Supply Request"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://example.org/StructureDefinition/oncology-observation-kenya",
+        "title": "Oncology Observation Kenya"
+      }
+    ]
+  },
+  "usage": {
+    "http://example.org/StructureDefinition/Icdo3Morphology": [
+      "Observation"
+    ],
+    "http://example.org/StructureDefinition/RegistryReporting": [
+      "Observation"
+    ],
+    "http://example.org/StructureDefinition/careplan-context-county": [
+      "CarePlan"
+    ],
+    "http://example.org/StructureDefinition/careplan-referral-source": [
+      "CarePlan"
+    ],
+    "http://example.org/StructureDefinition/careplan-registry-flag": [
+      "CarePlan"
+    ],
+    "http://example.org/StructureDefinition/ecogPerformanceStatus": [
+      "Observation"
+    ],
+    "http://example.org/StructureDefinition/encounter-context-county": [
+      "Encounter"
+    ],
+    "http://example.org/StructureDefinition/encounter-referral-source": [
+      "Encounter"
+    ],
+    "http://example.org/StructureDefinition/encounter-registry-flag": [
+      "Encounter"
+    ],
+    "http://example.org/StructureDefinition/icdo3-topography": [
+      "Observation"
+    ],
+    "http://example.org/StructureDefinition/medicationrequest-prescribed-county": [
+      "MedicationRequest"
+    ],
+    "http://example.org/StructureDefinition/medicationrequest-registry-flag": [
+      "MedicationRequest"
+    ],
+    "http://example.org/StructureDefinition/oncology-service-focus": [
+      "PractitionerRole"
+    ],
+    "http://example.org/StructureDefinition/practitioner-cadre-code": [
+      "Practitioner"
+    ],
+    "http://example.org/StructureDefinition/practitioner-role-county": [
+      "PractitionerRole"
+    ],
+    "http://example.org/StructureDefinition/practitioner-work-county": [
+      "Practitioner"
+    ],
+    "http://example.org/StructureDefinition/procedure-cancer-stage": [
+      "Procedure"
+    ],
+    "http://example.org/StructureDefinition/procedure-context-county": [
+      "Procedure"
+    ],
+    "http://example.org/StructureDefinition/procedure-referral-source": [
+      "Procedure"
+    ],
+    "http://example.org/StructureDefinition/procedure-registry-report-flag": [
+      "Procedure"
+    ],
+    "http://example.org/StructureDefinition/questionnaire-context-county": [
+      "QuestionnaireResponse"
+    ],
+    "http://example.org/StructureDefinition/questionnaire-referral-source": [
+      "QuestionnaireResponse"
+    ],
+    "http://example.org/StructureDefinition/questionnaire-registry-flag": [
+      "QuestionnaireResponse"
+    ],
+    "http://example.org/StructureDefinition/report-cancer-stage": [
+      "DiagnosticReport"
+    ],
+    "http://example.org/StructureDefinition/report-registry-flag": [
+      "DiagnosticReport"
+    ],
+    "http://example.org/StructureDefinition/report-specimen-origin-county": [
+      "DiagnosticReport"
+    ],
+    "http://example.org/StructureDefinition/service-request-context-county": [
+      "ServiceRequest"
+    ],
+    "http://example.org/StructureDefinition/service-request-referral-type": [
+      "ServiceRequest"
+    ],
+    "http://example.org/StructureDefinition/service-request-registry-flag": [
+      "ServiceRequest"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://oncology.ig.kenya/StructureDefinition/patient-educationLevel": [
+      "Patient"
+    ],
+    "https://oncology.ig.kenya/StructureDefinition/patient-occupation": [
+      "Patient"
+    ]
+  }
+}

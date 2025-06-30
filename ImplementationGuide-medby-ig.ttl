@@ -1,0 +1,132 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ImplementationGuide/medby-ig> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medby-ig"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide medby-ig</b></p><a name=\"medby-ig\"> </a><a name=\"hcmedby-ig\"> </a><h2>oncologyfhirigkenya</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/medby</pre><div><p>This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient and OncologyObservationKenya, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.</p>\n<p>It is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities.</p>\n</div></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/ImplementationGuide/medby"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "oncologyfhirigkenya"] ; # 
+  fhir:title [ fhir:v "Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-06-18"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Medby_Tech"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Medby_Tech" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This Implementation Guide demonstrates how HL7® FHIR® can be leveraged to enhance oncology care in Kenya. It includes standardized profiles such as OncologyKenyaPatient and OncologyObservationKenya, tailored search parameters, and extensions reflecting Kenya's SHA and health system realities.\n\nIt is developed independently by a Kenyan health tech enthusiast to stimulate innovation, interoperability, and alignment with national cancer priorities."] ; # 
+  fhir:packageId [ fhir:v "ke.oncology.fhir.ig"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:definition [
+     fhir:resource ( [
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-kenya-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-kenya-patient" ]
+       ] ;
+       fhir:name [ fhir:v "OncologyKenyaPatient" ] ;
+       fhir:description [ fhir:v "Patient profile customized for oncology care in Kenya." ]
+     ] [
+       fhir:reference [
+         fhir:link <http://example.org/StructureDefinition/oncology-observation-kenya> ;
+         fhir:reference [ fhir:v "StructureDefinition/oncology-observation-kenya" ]
+       ] ;
+       fhir:name [ fhir:v "OncologyObservationKenya" ] ;
+       fhir:description [ fhir:v "Observation profile for cancer data elements including staging, tumor markers, and performance status." ]
+     ] [
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/cancer-stage> ;
+         fhir:reference [ fhir:v "ValueSet/cancer-stage" ]
+       ] ;
+       fhir:name [ fhir:v "CancerStageVS" ] ;
+       fhir:description [ fhir:v "ValueSet for TNM and other staging codes relevant in Kenya." ]
+     ] [
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/tumor-markers> ;
+         fhir:reference [ fhir:v "ValueSet/tumor-markers" ]
+       ] ;
+       fhir:name [ fhir:v "TumorMarkerVS" ] ;
+       fhir:description [ fhir:v "ValueSet for tumor markers such as CA-125, CEA." ]
+     ] [
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/cancer-observation-method-vs> ;
+         fhir:reference [ fhir:v "ValueSet/cancer-observation-method-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CancerObservationMethodVS" ] ;
+       fhir:description [ fhir:v "ValueSet for observation methods used in oncology diagnosis, such as histology or imaging." ]
+     ] [
+       fhir:reference [
+         fhir:link <http://example.org/ValueSet/ecog-status-vs> ;
+         fhir:reference [ fhir:v "ValueSet/ecog-status-vs" ]
+       ] ;
+       fhir:name [ fhir:v "ECOGStatusVS" ] ;
+       fhir:description [ fhir:v "ValueSet for ECOG performance status used in functional assessment of patients." ]
+     ] [
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-sha-id> ;
+         fhir:reference [ fhir:v "SearchParameter/search-sha-id" ]
+       ] ;
+       fhir:name [ fhir:v "Search by SHA ID" ] ;
+       fhir:description [ fhir:v "Search patients by SHA ID" ]
+     ] [
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-facility-upi> ;
+         fhir:reference [ fhir:v "SearchParameter/search-facility-upi" ]
+       ] ;
+       fhir:name [ fhir:v "Search by Facility UPI" ] ;
+       fhir:description [ fhir:v "Search patients by facility UPI" ]
+     ] [
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-county> ;
+         fhir:reference [ fhir:v "SearchParameter/search-county" ]
+       ] ;
+       fhir:name [ fhir:v "Search by County" ] ;
+       fhir:description [ fhir:v "Search patients by county (address.state)" ]
+     ] [
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-education-level> ;
+         fhir:reference [ fhir:v "SearchParameter/search-education-level" ]
+       ] ;
+       fhir:name [ fhir:v "Search by Education Level" ] ;
+       fhir:description [ fhir:v "Search patients by education level" ]
+     ] [
+       fhir:reference [
+         fhir:link <http://example.org/SearchParameter/search-occupation> ;
+         fhir:reference [ fhir:v "SearchParameter/search-occupation" ]
+       ] ;
+       fhir:name [ fhir:v "Search by Occupation" ] ;
+       fhir:description [ fhir:v "Search patients by occupation" ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:url ;
+           fhir:v "index.html"^^xsd:anyURI
+         ]
+       ] ) ;
+       fhir:name [
+         a fhir:url ;
+         fhir:v "index.html"^^xsd:anyURI
+       ] ;
+       fhir:title [ fhir:v "Home" ] ;
+       fhir:generation [ fhir:v "html" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

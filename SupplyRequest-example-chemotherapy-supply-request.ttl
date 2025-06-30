@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/SupplyRequest/example-chemotherapy-supply-request> a fhir:SupplyRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-chemotherapy-supply-request"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/oncology-kenya-supplyrequest"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/oncology-kenya-supplyrequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SupplyRequest example-chemotherapy-supply-request</b></p><a name=\"example-chemotherapy-supply-request\"> </a><a name=\"hcexample-chemotherapy-supply-request\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-oncology-kenya-supplyrequest.html\">Oncology Kenya Supply Request</a></p></div><p><b>status</b>: Active</p><p><b>item</b>: <span title=\"Codes:{http://www.whocc.no/atc L01CD01}\">Paclitaxel</span></p><p><b>quantity</b>: 30 vial</p><p><b>authoredOn</b>: 2025-06-15</p><p><b>requester</b>: <a href=\"PractitionerRole/example-oncology-specialist-nyandarua\">PractitionerRole/example-oncology-specialist-nyandarua</a></p><p><b>supplier</b>: <a href=\"Organization/kemsa\">Organization/kemsa</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 367336001}\">Chemotherapy</span></p><p><b>deliverTo</b>: <a href=\"Location-example-nyandarua-cancer-center.html\">Location Nyandarua County Referral Hospital - Oncology Unit</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:item [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "L01CD01" ] ;
+       fhir:display [ fhir:v "Paclitaxel" ]
+     ] )
+  ] ; # 
+  fhir:quantity [
+     fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "vial" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2025-06-15"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://example.org/PractitionerRole/example-oncology-specialist-nyandarua> ;
+     fhir:reference [ fhir:v "PractitionerRole/example-oncology-specialist-nyandarua" ]
+  ] ; # 
+  fhir:supplier ( [
+     fhir:link <http://example.org/Organization/kemsa> ;
+     fhir:reference [ fhir:v "Organization/kemsa" ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:367336001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "367336001" ] ;
+       fhir:display [ fhir:v "Chemotherapy" ]
+     ] )
+  ] ) ; # 
+  fhir:deliverTo [
+     fhir:link <http://example.org/Location/example-nyandarua-cancer-center> ;
+     fhir:reference [ fhir:v "Location/example-nyandarua-cancer-center" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
