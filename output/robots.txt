@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://steve-macharia.github.io/Oncology-IG-Kenya/sitemap.xml
