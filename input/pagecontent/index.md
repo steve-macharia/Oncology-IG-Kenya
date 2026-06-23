@@ -1,88 +1,143 @@
 ---
-title: Oncology-IG-Kenya
+title: Oncology FHIR Implementation Guide (Demo / Proof of Concept)
 ---
 
-## Oncology Implementation Guide for Kenya (Oncology-IG-Kenya)
+## Oncology FHIR Implementation Guide
 
-### Transforming Cancer Care Through FHIR-Based Digital Innovation
+### Demonstrating Interoperable Oncology Care Using HL7® FHIR®, HL7 v2, OpenEMR, and Mirth Connect
 
-> This Implementation Guide is a demonstration of how HL7® FHIR® can be leveraged to enhance the quality, continuity, and coordination of oncology care in Kenya. It is developed independently by a Kenyan health tech enthusiast, with a passion for improving cancer outcomes through open standards and interoperable digital solutions.
+> This Implementation Guide (IG) is a **proof-of-concept demonstration** showing how modern healthcare interoperability standards can be combined to improve oncology care workflows. It is not an official production system, but a technical demonstration of how **HL7® FHIR®, HL7 v2 messaging, OpenEMR, and Mirth Connect integration engine** can work together to enable practical, data-driven cancer care.
 
 ---
 
 ### Home
 
 - **Version:** 0.1.0  
-- **Status:** Draft as of 2025-06-16  
-- **Canonical URL:** `http://example.org/ImplementationGuide/medby`  
-- **Computable Name:** `oncologyfhirigkenya`  
-- **Build Info:** Local CI using HL7® FHIR® Build Tools
+- **Status:** Proof of Concept / Demonstration  
+- **FHIR Version:** R4  
+- **Architecture:** OpenEMR + Mirth Connect + HL7 v2 + FHIR R4  
+- **Computable Name:** `oncology-fhir-poc`
+- **Build Info:** Local IG Publisher + SUSHI-generated artifacts
 
 ---
 
 ### Purpose & Background
 
-Kenya faces a growing cancer crisis. This FHIR Implementation Guide (IG) is designed to model a comprehensive, standards-based oncology care pathway. It reflects the realities of Kenya’s healthcare system while showcasing how HL7® FHIR® can be adapted to support every stage of oncology—from prevention and early detection, through diagnosis and treatment, to survivorship and palliative care.
+Cancer care requires coordinated, longitudinal, and data-driven workflows across multiple systems—laboratory, imaging, pharmacy, clinical documentation, and billing systems.
 
-> **Note:** This guide is a **proof-of-concept** and not an official publication of the Ministry of Health or Social Health Authority (SHA). It is intended to catalyze innovation, inform national discussions, and serve as a resource for implementers aligned with Kenya's digital health goals.
+This Implementation Guide demonstrates how interoperability can be achieved using:
 
----
+- **OpenEMR** as the core Electronic Health Record (EHR)
+- **Mirth Connect** as the integration engine for message routing and transformation
+- **HL7 v2 messaging** for legacy hospital system integration
+- **HL7® FHIR® R4** for modern, structured clinical data exchange
+- **Clinical Quality Measures (CQM)** for evidence-based care tracking and outcome measurement
 
-### Kenya’s Cancer Burden: A Snapshot
+The goal is to demonstrate how these technologies can be combined to make oncology care **more practical, connected, and measurable** across the patient journey.
 
-According to [World Bank data (2020)](https://documents1.worldbank.org/curated/en/964571592290457869/pdf/Economic-and-Social-Consequences-of-Cancer-in-Kenya-Case-Studies-of-Selected-Households.pdf), the cancer landscape in Kenya is defined by:
-
-- **47,887** new cancer cases and **32,987** deaths in 2018  
-- **80%** of diagnoses occur at advanced stages (Stage III or IV)  
-- Over **30%** of households with a cancer patient fall below the poverty line, even with SHA coverage  
-- Fewer than **30%** of public health facilities offer cancer screening  
-- Only **7** public hospitals provide radiotherapy services  
-- Kenya has just **36 oncologists** for a population exceeding 50 million  
-- Many patients travel over **100 km** for access to diagnostic or treatment services  
-
-These statistics underscore the urgent need for scalable, interoperable digital health solutions to improve access, equity, and quality of care.
+> **Note:** This is a **technical demonstration project** intended for learning, prototyping, and innovation. It is not a certified clinical system.
 
 ---
 
-### Oncology Care Pathway (FHIR Mapping)
+### Why This Matters
 
-The table below outlines how core stages of oncology care map to HL7® FHIR® resources:
+Oncology care is complex, fragmented, and data-intensive. Many healthcare environments still rely on disconnected systems that limit continuity of care.
 
-| Care Stage                   | FHIR Coverage |
-|-----------------------------|---------------|
-| Screening & Early Detection | `Patient`, `Observation`, `ServiceRequest`, `Encounter` |
-| Diagnosis (Imaging, Lab)    | `Condition`, `Specimen`, `Procedure`, `DiagnosticReport`, `Observation` |
-| Treatment Planning          | `CarePlan`, `Consent`, `Encounter`, `PractitionerRole` |
-| Chemotherapy & Radiotherapy | `MedicationRequest`, `MedicationAdministration`, `Procedure` |
-| Monitoring & Side Effects   | `Observation`, `QuestionnaireResponse`, `CarePlan` |
-| Survivorship & Follow-Up    | `Encounter`, `CarePlan`, `DocumentReference` |
-| Palliative Care             | `MedicationRequest`, `Observation`, `RelatedPerson` |
-| Financial Coverage          | `Claim`, `ExplanationOfBenefit`, `Coverage` |
-| Referral & Logistics        | `Task`, `Communication`, `Location`, `Organization` |
+This Proof of Concept demonstrates how interoperability can solve key challenges:
 
-> Each mapped profile is tailored to fit Kenya’s workflows, policy frameworks, and resource constraints, promoting better data capture and care continuity.
+- Fragmented patient records across departments
+- Lack of standardized oncology data models
+- Limited integration between lab, imaging, and clinical systems
+- Difficulty tracking outcomes and quality metrics
+- Weak support for longitudinal cancer care pathways
+
+By combining **FHIR + HL7 v2 + OpenEMR + Mirth Connect**, this project demonstrates a unified digital ecosystem for oncology workflows.
+
+---
+
+### System Architecture Overview
+
+| Component | Role |
+|----------|------|
+| OpenEMR | Primary EHR system for patient records and clinical workflows |
+| Mirth Connect | Integration engine for HL7 v2 ↔ FHIR transformation |
+| HL7 v2 | Messaging standard for labs, radiology, and legacy systems |
+| HL7® FHIR® | Modern API-based interoperability layer |
+| CQM Engine | Quality measurement and evidence-based oncology tracking |
+
+---
+
+### Oncology Care Workflow (Interoperability Mapping)
+
+| Care Stage | Data Standards Used |
+|------------|--------------------|
+| Patient Registration | OpenEMR + FHIR `Patient` |
+| Screening & Risk Assessment | FHIR `Observation`, CQM metrics |
+| Diagnosis (Lab/Imaging) | HL7 v2 ORU messages → Mirth → FHIR `DiagnosticReport` |
+| Tumor Classification | FHIR `Condition`, `Observation` |
+| Treatment Planning | FHIR `CarePlan`, OpenEMR workflows |
+| Chemotherapy Administration | FHIR `MedicationRequest`, `MedicationAdministration` |
+| Radiology & Procedures | HL7 v2 ORM → FHIR `Procedure` |
+| Follow-up Monitoring | FHIR `Observation`, CQM tracking |
+| Outcomes Measurement | Clinical Quality Measures (CQM) |
+| Reporting & Analytics | FHIR + aggregated CQM datasets |
+
+---
+
+### Clinical Quality Measures (CQM) Integration
+
+This IG demonstrates how oncology outcomes can be measured using structured data:
+
+Examples include:
+
+- Time from diagnosis → treatment initiation
+- Stage at diagnosis distribution
+- Treatment adherence rates
+- Survival follow-up tracking
+- Chemotherapy adverse event monitoring
+- Screening coverage rates
+
+These metrics support **evidence-based oncology care improvement**.
+
+---
+
+### Interoperability Flow (HL7 v2 → FHIR)
+
+1. Lab system sends **HL7 v2 ORU message**
+2. Mirth Connect receives and transforms message
+3. Data is mapped into **FHIR DiagnosticReport + Observation**
+4. OpenEMR stores and displays structured clinical data
+5. CQM engine evaluates outcomes and quality indicators
+
+This enables real-time transformation of legacy data into modern interoperable formats.
 
 ---
 
 ### Implementation Notes
 
-This IG includes profiles that support key tasks across the oncology spectrum:
+This IG includes conceptual models and profiles supporting:
 
-- Structured documentation of **cancer staging**, **histopathology**, and **tumor markers**
-- Capture and coordination of **chemotherapy regimens**, including administration and side effects
-- Tools for tracking **follow-up visits**, **treatment plans**, and **financial distress screening**
-- Support for managing **referrals**, **treatment locations**, and **documentation sharing**
+- Oncology patient lifecycle management
+- Laboratory and imaging integration workflows
+- Chemotherapy and treatment tracking
+- Structured clinical documentation in OpenEMR
+- Data transformation pipelines using Mirth Connect
+- Evidence-based oncology performance measurement
 
-These components are designed to promote semantic interoperability, improve data quality for decision-making, and reduce fragmentation of cancer care services.
+It demonstrates how interoperability standards can reduce fragmentation and improve clinical decision support in oncology environments.
 
 ---
 
 ### Contact & Repository
 
 - **Email:** medbyTech254@gmail.com  
-- **GitHub:** [![GitHub](https://img.shields.io/badge/github-steve--macharia-blue?logo=github)](https://github.com/steve-macharia)  
-- **Website:** [![Website](https://img.shields.io/badge/website-medby--tech.netlify.app-brightgreen?logo=netlify)](https://medby-tech.netlify.app/)
+- **GitHub:** https://github.com/steve-macharia  
+- **Project Type:** Open Demonstration / Proof of Concept
 
 ---
 
-This Implementation Guide is a personal initiative by a Kenyan digital health enthusiast. While not officially endorsed, it aligns with national digital health priorities and demonstrates what is possible when global standards are contextualized to meet local needs.
+### Disclaimer
+
+This Implementation Guide is a **non-production, educational and experimental system design**. It is intended to demonstrate how interoperability standards (FHIR, HL7 v2), healthcare systems (OpenEMR), and integration engines (Mirth Connect) can be combined to support oncology care workflows and clinical quality measurement.
+
+It is not an approved medical system and should not be used for clinical decision-making in production environments.
