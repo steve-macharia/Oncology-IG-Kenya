@@ -1,7 +1,0 @@
-{
-  "id": "LibraryMissingContent",
-  "resourceType": "Measure",
-  "library": [
-    "http://example.com/Library/MissingContent"
-  ]
-}

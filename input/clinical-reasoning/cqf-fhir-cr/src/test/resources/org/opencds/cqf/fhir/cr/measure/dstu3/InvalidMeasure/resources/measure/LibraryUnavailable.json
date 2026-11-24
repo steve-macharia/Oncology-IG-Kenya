@@ -1,9 +1,0 @@
-{
-  "id": "LibraryUnavailable",
-  "resourceType": "Measure",
-  "library": [
-    {
-      "reference": "Library/Unavailable"
-    }
-  ]
-}
