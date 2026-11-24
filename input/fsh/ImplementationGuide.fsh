@@ -8,7 +8,7 @@ It is developed independently by a Kenyan health tech enthusiast to stimulate in
 """
 Usage: #definition
 
-* url = "http://example.org/ImplementationGuide/medby"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/ImplementationGuide/medby"
 * version = "0.1.0"
 * name = "oncologyfhirigkenya"
 * status = #draft

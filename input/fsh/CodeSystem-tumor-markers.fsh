@@ -2,7 +2,7 @@ CodeSystem: TumorMarkers
 Id: tumor-markers
 Title: "Tumor Markers"
 Description: "Tumor markers commonly used in oncology diagnostics and monitoring in Kenya."
-* ^url = "http://example.org/fhir/CodeSystem/tumor-markers"
+* ^url = "https://steve-macharia.github.io/Oncology-IG-Kenya/CodeSystem/tumor-markers"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false

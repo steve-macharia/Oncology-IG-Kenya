@@ -1,7 +1,0 @@
-{
-  "resourceType": "Patient",
-  "id": "WrongVersion",
-  "meta": {
-    "versionId": "2"
-  }
-}

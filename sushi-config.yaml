@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: medby
-canonical: http://example.org
+canonical: https://steve-macharia.github.io/Oncology-IG-Kenya
 name: oncology-fhir-ig-kenya
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
@@ -17,7 +17,7 @@ releaseLabel: ci-build
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: Medby_Tech
-  url: http://example.org/example-publisher
+  url: https://github.com/steve-macharia
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
