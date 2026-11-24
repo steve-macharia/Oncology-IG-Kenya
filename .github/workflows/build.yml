@@ -5,6 +5,11 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 # Required for GitHub Pages deployment
 permissions:
@@ -70,8 +75,7 @@ jobs:
       # Install tooling
       - name: 📦 Install SUSHI globally
         run: |
-          npm install -g fsh-sushi
-          echo "$(npm bin -g)" >> $GITHUB_PATH
+          npm install -g fsh-sushi@3.16.3
 
       - name: 💎 Install Jekyll and Bundler
         run: gem install jekyll bundler
@@ -123,6 +127,7 @@ jobs:
 
   deploy:
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
 
     environment:
