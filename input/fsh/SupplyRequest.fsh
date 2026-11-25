@@ -36,8 +36,8 @@ Description: "Request for 30 vials of Paclitaxel for breast cancer treatment at 
 * authoredOn = "2025-06-15"
 * requester = Reference(PractitionerRole/example-oncology-specialist-nyandarua)
 * supplier = Reference(Organization/kemsa)
-* reasonCode.coding[0].system = "http://snomed.info/sct"
-* reasonCode.coding[0].code = #367336001
+* reasonCode.coding[0].system = "https://steve-macharia.github.io/Oncology-IG-Kenya/CodeSystem/oncology-service-codes"
+* reasonCode.coding[0].code = #chemotherapy
 * reasonCode.coding[0].display = "Chemotherapy"
 * deliverTo = Reference(Location/example-nyandarua-cancer-center)
 
@@ -49,15 +49,15 @@ InstanceOf: OncologyKenyaSupplyRequest
 Title: "Example Biopsy Needle Supply Request"
 Description: "Urgent request for 15 biopsy needles for diagnostic services at KNH Oncology Centre"
 * status = #active
-* itemCodeableConcept.coding[0].system = "http://snomed.info/sct"
-* itemCodeableConcept.coding[0].code = #3457005
+* itemCodeableConcept.coding[0].system = "https://steve-macharia.github.io/Oncology-IG-Kenya/CodeSystem/oncology-service-codes"
+* itemCodeableConcept.coding[0].code = #biopsy-needle
 * itemCodeableConcept.coding[0].display = "Biopsy needle"
 * quantity.value = 15
 * quantity.unit = "unit"
 * authoredOn = "2025-06-10"
 * requester = Reference(PractitionerRole/example-oncology-nurse-knh)
 * supplier = Reference(Organization/kemsa)
-* reasonCode.coding[0].system = "http://snomed.info/sct"
-* reasonCode.coding[0].code = #183807002
+* reasonCode.coding[0].system = "https://steve-macharia.github.io/Oncology-IG-Kenya/CodeSystem/oncology-service-codes"
+* reasonCode.coding[0].code = #diagnostic-procedure
 * reasonCode.coding[0].display = "Diagnostic procedure"
 * deliverTo = Reference(Location/example-kenyatta-national-hospital-oncology)
