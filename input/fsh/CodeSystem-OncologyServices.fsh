@@ -6,3 +6,5 @@ Description: "Local placeholder codes for oncology services and supplies used in
 * #chemotherapy "Chemotherapy"
 * #biopsy-needle "Biopsy needle"
 * #diagnostic-procedure "Diagnostic procedure"
+* #open-breast-biopsy "Open biopsy of breast"
+* #radiological-examination "Radiological examination"

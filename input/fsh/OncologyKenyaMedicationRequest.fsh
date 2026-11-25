@@ -20,8 +20,7 @@ A profile for prescribing cancer-related medications in Kenya. Aligned with the 
 
 // Bindings
 * medication[x] only CodeableConcept
-* medicationCodeableConcept from http://id.who.int/icd10 (extensible)
-* reasonCode from http://id.who.int/icd10 (extensible)
+* reasonCode from https://steve-macharia.github.io/Oncology-IG-Kenya/ValueSet/cancer-icd10 (extensible)
 * category from https://www.kemri.go.ke/fhir/ValueSet/oncology-medication-category (example)
 
 // Custom Kenyan Extensions
@@ -48,11 +47,12 @@ Description: "Chemotherapy prescription for a 45-year-old breast cancer patient 
 * status = #active
 * intent = #order
 * subject = Reference(Patient/example)
-* medicationCodeableConcept = http://id.who.int/icd10#Z51.1 "Chemotherapy session for neoplasm"
+* medicationCodeableConcept = http://www.whocc.no/atc#L01CD01 "Paclitaxel"
 * authoredOn = "2025-03-01"
 * requester = Reference(Practitioner/example-oncologist)
 * dosageInstruction[0].text = "Administer 500mg/m2 intravenously every 21 days for 6 cycles"
-* reasonCode[0] = http://id.who.int/icd10#C50.2 "Malignant neoplasm of upper-inner quadrant of breast"
+* reasonCode[0] = http://hl7.org/fhir/sid/icd-10#C50.2
+* reasonCode[0].text = "Malignant neoplasm of upper-inner quadrant of breast"
 * category[0] = https://www.kemri.go.ke/fhir/CodeSystem/oncology-medication-category#chemotherapy
 * extension[county].valueCodeableConcept = https://www.kenyacode.com/fhir/CodeSystem/kenya-county-codes#Nyandarua
 * extension[reportToRegistry].valueBoolean = true

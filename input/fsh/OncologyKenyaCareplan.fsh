@@ -25,8 +25,7 @@ A structured CarePlan profile for oncology management in Kenya. Aligns with the 
 * category 0..* MS
 
 // ICD-10 Terminology bindings
-* activity.detail.code from http://id.who.int/icd10 (required)
-* category from http://id.who.int/icd10 (extensible)
+* activity.detail.code from https://steve-macharia.github.io/Oncology-IG-Kenya/ValueSet/oncology-service-codes-vs (extensible)
 
 // Kenyan-specific extensions
 * extension contains
@@ -57,10 +56,11 @@ Instance: breast-cancer-condition
 InstanceOf: Condition
 Title: "Breast Cancer Condition"
 Description: "Confirmed malignant neoplasm of upper-inner quadrant of breast"
-* code = http://id.who.int/icd10#C50.2 "Malignant neoplasm of upper-inner quadrant of breast"
+* code = http://hl7.org/fhir/sid/icd-10#C50.2
+* code.text = "Malignant neoplasm of upper-inner quadrant of breast"
 * subject = Reference(Patient/example)
-* clinicalStatus = #active
-* verificationStatus = #confirmed
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 
 // Example Goal referenced in goal[0]
 Instance: tumor-reduction-goal
@@ -87,7 +87,7 @@ Description: "Multimodal care plan for a 45-year-old female with Stage II breast
 * description = "Includes chemotherapy, surgery, and radiotherapy"
 * careTeam[0] = Reference(CareTeam/breast-cancer-multidisciplinary-team)
 * goal[0] = Reference(Goal/tumor-reduction-goal)
-* activity[0].detail.code = http://id.who.int/icd10#Z51.1 "Chemotherapy session for neoplasm"
+* activity[0].detail.code = https://steve-macharia.github.io/Oncology-IG-Kenya/CodeSystem/oncology-service-codes#chemotherapy "Chemotherapy"
 * activity[0].detail.status = #scheduled
 * activity[0].detail.scheduledPeriod.start = "2025-03-15"
 * activity[0].detail.scheduledPeriod.end = "2025-06-15"

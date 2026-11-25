@@ -47,7 +47,7 @@ InstanceOf: OncologyKenyaQuestionnaireResponse
 Title: "Breast Cancer Screening Questionnaire Response"
 Description: "Completed breast cancer screening response from a community health volunteer in Kisumu"
 * status = #completed
-* questionnaire = "Questionnaire/breast-cancer-screening"
+* questionnaire = "https://steve-macharia.github.io/Oncology-IG-Kenya/Questionnaire/breast-cancer-screening"
 * subject = Reference(Patient/example)
 * authored = "2025-04-10T14:30:00+03:00"
 * item[0].linkId = "q1"

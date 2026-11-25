@@ -170,3 +170,13 @@ Title: "Breast cancer multidisciplinary team (example)"
 * name = "Breast cancer multidisciplinary team (example)"
 * subject = Reference(Patient/example)
 * participant.member = Reference(Practitioner/example-oncologist)
+
+Instance: example-cervix-observation
+InstanceOf: Observation
+Usage: #example
+Title: "Cervical screening result (example)"
+* status = #final
+* code.text = "Cervical screening result (example)"
+* subject = Reference(Patient/example)
+* valueString = "Example result (synthetic)"
+

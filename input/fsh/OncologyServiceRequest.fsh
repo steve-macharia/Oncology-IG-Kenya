@@ -22,8 +22,8 @@ Supports service ordering for biopsies, imaging, oncology specialist reviews, pa
 * encounter 0..1 MS
 
 // ICD-10 Bindings
-* code from http://id.who.int/icd10 (required)
-* reasonCode from http://id.who.int/icd10 (extensible)
+* code from https://steve-macharia.github.io/Oncology-IG-Kenya/ValueSet/oncology-service-codes-vs (extensible)
+* reasonCode from https://steve-macharia.github.io/Oncology-IG-Kenya/ValueSet/cancer-icd10 (extensible)
 
 // Kenyan-Specific Extensions
 * extension contains
@@ -56,12 +56,13 @@ Title: "Referral for Breast Ultrasound - Kiambu County"
 Description: "Service request for breast ultrasound to evaluate palpable lump in patient"
 * status = #active
 * intent = #order
-* code = http://id.who.int/icd10#Z01.6 "Radiological examination, not elsewhere classified"
+* code = https://steve-macharia.github.io/Oncology-IG-Kenya/CodeSystem/oncology-service-codes#radiological-examination "Radiological examination"
 * subject = Reference(Patient/example)
 * occurrenceDateTime = "2025-07-01"
 * requester = Reference(Practitioner/oncologist-kiambu)
 * performer[0] = Reference(Organization/kiambu-imaging-center)
-* reasonCode[0] = http://id.who.int/icd10#C50.9 "Malignant neoplasm of breast, unspecified"
+* reasonCode[0] = http://hl7.org/fhir/sid/icd-10#C50.9
+* reasonCode[0].text = "Malignant neoplasm of breast, unspecified"
 * authoredOn = "2025-06-25"
 * priority = #urgent
 * encounter = Reference(Encounter/example-oncology-encounter)
