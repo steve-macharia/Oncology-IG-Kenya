@@ -12,7 +12,7 @@ Usage: #definition
 * status = #active
 * expression = "Patient.identifier.where(system = 'https://sha.go.ke/ids/patient')"
 * xpathUsage = #normal
-* url = "https://oncology.ig.kenya/SearchParameter/search-sha-id"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/SearchParameter/search-sha-id"
 
 // ===== SearchParameter: Facility UPI =====
 Instance: search-facility-upi
@@ -28,7 +28,7 @@ Usage: #definition
 * status = #active
 * expression = "Patient.identifier.where(system = 'http://facility.health.go.ke/upi')"
 * xpathUsage = #normal
-* url = "https://oncology.ig.kenya/SearchParameter/search-facility-upi"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/SearchParameter/search-facility-upi"
 
 // ===== SearchParameter: County (Address.state) =====
 Instance: search-county
@@ -44,7 +44,7 @@ Usage: #definition
 * status = #active
 * expression = "Patient.address.state"
 * xpathUsage = #normal
-* url = "https://oncology.ig.kenya/SearchParameter/search-county"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/SearchParameter/search-county"
 
 // ===== SearchParameter: Education Level (Extension) =====
 Instance: search-education-level
@@ -58,9 +58,9 @@ Usage: #definition
 * base = #Patient
 * type = #token
 * status = #active
-* expression = "Patient.extension.where(url = 'https://oncology.ig.kenya/StructureDefinition/patient-educationLevel').value"
+* expression = "Patient.extension.where(url = 'https://steve-macharia.github.io/Oncology-IG-Kenya/StructureDefinition/patient-educationLevel').value"
 * xpathUsage = #normal
-* url = "https://oncology.ig.kenya/SearchParameter/search-education-level"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/SearchParameter/search-education-level"
 
 // ===== SearchParameter: Occupation (Extension) =====
 Instance: search-occupation
@@ -74,9 +74,9 @@ Usage: #definition
 * base = #Patient
 * type = #token
 * status = #active
-* expression = "Patient.extension.where(url = 'https://oncology.ig.kenya/StructureDefinition/patient-occupation').value"
+* expression = "Patient.extension.where(url = 'https://steve-macharia.github.io/Oncology-IG-Kenya/StructureDefinition/patient-occupation').value"
 * xpathUsage = #normal
-* url = "https://oncology.ig.kenya/SearchParameter/search-occupation"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/SearchParameter/search-occupation"
 
 // ===== SearchParameter: National ID (Kenya) =====
 Instance: search-national-id
@@ -92,7 +92,7 @@ Usage: #definition
 * status = #active
 * expression = "Patient.identifier.where(system = 'https://sha.go.ke/ids/national-id')"
 * xpathUsage = #normal
-* url = "https://oncology.ig.kenya/SearchParameter/search-national-id"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/SearchParameter/search-national-id"
 
 // ===== SearchParameter: Date of Birth =====
 Instance: search-birthdate
@@ -108,7 +108,7 @@ Usage: #definition
 * status = #active
 * expression = "Patient.birthDate"
 * xpathUsage = #normal
-* url = "https://oncology.ig.kenya/SearchParameter/search-birthdate"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/SearchParameter/search-birthdate"
 
 // ===== SearchParameter: Gender =====
 Instance: search-gender
@@ -124,7 +124,7 @@ Usage: #definition
 * status = #active
 * expression = "Patient.gender"
 * xpathUsage = #normal
-* url = "https://oncology.ig.kenya/SearchParameter/search-gender"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/SearchParameter/search-gender"
 
 // ===== SearchParameter: Cancer Type =====
 Instance: search-cancer-type
@@ -140,7 +140,7 @@ Usage: #definition
 * status = #active
 * expression = "Condition.code"
 * xpathUsage = #normal
-* url = "https://oncology.ig.kenya/SearchParameter/search-cancer-type"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/SearchParameter/search-cancer-type"
 
 // ===== SearchParameter: Cancer Stage =====
 Instance: search-cancer-stage
@@ -156,7 +156,7 @@ Usage: #definition
 * status = #active
 * expression = "Observation.code.where(coding.code = 'cancer-stage')"
 * xpathUsage = #normal
-* url = "https://oncology.ig.kenya/SearchParameter/search-cancer-stage"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/SearchParameter/search-cancer-stage"
 
 // ===== SearchParameter: Sub-County =====
 Instance: search-sub-county
@@ -172,4 +172,4 @@ Usage: #definition
 * status = #active
 * expression = "Patient.address.district"
 * xpathUsage = #normal
-* url = "https://oncology.ig.kenya/SearchParameter/search-sub-county"
+* url = "https://steve-macharia.github.io/Oncology-IG-Kenya/SearchParameter/search-sub-county"

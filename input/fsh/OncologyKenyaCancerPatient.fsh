@@ -52,7 +52,7 @@ Description: "Customized patient profile for oncology care in Kenya. This profil
 
 * contact 1..1 MS
   * relationship 1..* MS
-  * relationship from http://hl7.org/fhir/ValueSet/patient-contact-relationship (extensible)
+  * relationship from http://hl7.org/fhir/ValueSet/patient-contactrelationship (extensible)
   * name 1..1 MS
   * telecom 1..1 MS
   * address 0..1
@@ -63,8 +63,8 @@ Description: "Customized patient profile for oncology care in Kenya. This profil
 // ===== Kenya-Specific Extensions =====
 * extension contains
     http://hl7.org/fhir/StructureDefinition/patient-nationality named nationality 0..1 and
-    https://oncology.ig.kenya/StructureDefinition/patient-educationLevel named educationLevel 0..1 and
-    https://oncology.ig.kenya/StructureDefinition/patient-occupation named occupation 0..1
+    https://steve-macharia.github.io/Oncology-IG-Kenya/StructureDefinition/patient-educationLevel named educationLevel 0..1 and
+    https://steve-macharia.github.io/Oncology-IG-Kenya/StructureDefinition/patient-occupation named occupation 0..1
 
 // ===== Oncology-Specific Data =====
 * multipleBirthBoolean 0..1
