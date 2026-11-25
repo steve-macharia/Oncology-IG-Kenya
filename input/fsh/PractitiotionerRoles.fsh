@@ -43,7 +43,7 @@ Instance: example-oncology-practitioner-role
 InstanceOf: OncologyKenyaPractitionerRole
 Title: "Oncologist Role at KNH"
 Description: "Dr. Grace Wanjiku’s role as Consultant Oncologist at Kenyatta National Hospital"
-* practitioner = Reference(OncologyKenyaPractitioner/example-oncology-practitioner)
+* practitioner = Reference(example-oncology-practitioner)
 * organization = Reference(Organization/uon-oncology-center)
 * code = https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-roles#CONSULTANT "Consultant Oncologist"
 * specialty = https://www.kenyacode.com/fhir/CodeSystem/kenya-oncology-specialties#medical-oncology "Medical Oncology"

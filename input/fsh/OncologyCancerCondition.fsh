@@ -18,7 +18,7 @@ Description: "A Condition profile for structured oncology diagnosis documentatio
 ////////////////////////////////////////////////////////////////////////////////
 
 * code 1..1 MS
-* code from http://hl7.org/fhir/sid/icd-10 (required)
+* code from https://steve-macharia.github.io/Oncology-IG-Kenya/ValueSet/cancer-icd10 (required)
 * code ^short = "ICD-10 diagnosis code"
 * code ^definition = "Diagnosis code for oncology condition using ICD-10 classification."
 

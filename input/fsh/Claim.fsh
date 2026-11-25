@@ -45,9 +45,9 @@ Description: "Claim for chemotherapy session reimbursement submitted to SHA by N
 
 // Service Item - Chemotherapy session
 * item[0].sequence = 1
-* item[0].productOrService.coding[0].system = "http://snomed.info/sct"
-* item[0].productOrService.coding[0].code = #108241001
-* item[0].productOrService.coding[0].display = "Chemotherapy procedure"
+* item[0].productOrService.coding[0].system = "https://steve-macharia.github.io/Oncology-IG-Kenya/CodeSystem/oncology-service-codes"
+* item[0].productOrService.coding[0].code = #chemotherapy
+* item[0].productOrService.coding[0].display = "Chemotherapy"
 * item[0].unitPrice.value = 5000
 * item[0].unitPrice.currency = #KES
 * item[0].quantity.value = 6

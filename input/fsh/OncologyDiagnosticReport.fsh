@@ -34,7 +34,7 @@ Supports pathology, radiology, laboratory, and imaging reports aligned with:
 
 // Bindings
 * code from https://www.kenyacode.com/fhir/ValueSet/oncology-diagnostic-types (extensible)
-* category from http://terminology.hl7.org/CodeSystem/v2-0074 (example)
+* category from http://hl7.org/fhir/ValueSet/diagnostic-service-sections (example)
 * result only Reference(Observation)
 
 // Define Extensions
@@ -61,9 +61,9 @@ InstanceOf: OncologyDiagnosticReportKenya
 Title: "Oncology Diagnostic Report - Biopsy for Cervical Cancer"
 Description: "Pathology report for cervical biopsy indicating squamous cell carcinoma"
 * status = #final
-* category[0] = http://terminology.hl7.org/CodeSystem/v2-0074#PAT "Pathology"
+* category[0] = http://terminology.hl7.org/CodeSystem/v2-0074#PAT "Pathology (gross & histopath, not surgical)"
 * code = https://www.kenyacode.com/fhir/CodeSystem/oncology-diagnostic-types#cervix-biopsy "Cervical Biopsy Report"
-* subject = Reference(Patient/example-kenya)
+* subject = Reference(Patient/example)
 * effectiveDateTime = "2025-06-10"
 * issued = "2025-06-12T10:00:00+03:00"
 * performer[0] = Reference(Practitioner/example-pathologist)

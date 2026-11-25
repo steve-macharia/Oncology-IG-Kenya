@@ -21,12 +21,12 @@ Description: "Observation profile for cancer-related data elements in Kenya's on
 * value[x] 0..1 MS
 
 // Cancer staging
-* code from http://fhir.org/guides/kenya/ValueSet/cancer-stage (extensible)
-* value[x] from http://fhir.org/guides/kenya/ValueSet/cancer-stage-values (extensible)
+* code from https://steve-macharia.github.io/Oncology-IG-Kenya/ValueSet/cancer-stage (extensible)
+* value[x] from https://steve-macharia.github.io/Oncology-IG-Kenya/ValueSet/cancer-stage (extensible)
 
 // Tumor markers
 * component 0..* MS
-* component.code from http://fhir.org/guides/kenya/ValueSet/tumor-marker (example)
+* component.code from https://steve-macharia.github.io/Oncology-IG-Kenya/ValueSet/tumor-markers (example)
 * component.value[x] 0..1
 
 // ICD-O-3 Morphology extension
@@ -55,7 +55,7 @@ Description: "Observation profile for cancer-related data elements in Kenya's on
 
 // Method of observation
 * method 0..1 MS
-* method from http://fhir.org/guides/kenya/ValueSet/cancer-observation-method (example)
+* method from https://steve-macharia.github.io/Oncology-IG-Kenya/ValueSet/cancer-observation-method-vs (example)
 
 // Reference range
 * referenceRange 0..* MS

@@ -24,8 +24,7 @@ Supports tracking of staging visits, diagnosis, treatment initiation, follow-ups
 * location.location MS
 
 // Terminology Bindings (ICD-10 used for coded elements only)
-* reasonCode from http://id.who.int/icd10 (extensible)
-* type from http://id.who.int/icd10 (extensible)
+* reasonCode from https://steve-macharia.github.io/Oncology-IG-Kenya/ValueSet/cancer-icd10 (extensible)
 
 // Kenyan-specific Extensions
 * extension contains
@@ -58,11 +57,12 @@ Title: "Initial Oncology Assessment - Nyandarua County"
 Description: "First oncology clinic visit for staging and treatment planning"
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
-* type[0] = http://id.who.int/icd10#Z01.7 "Encounter for examination for suspected neoplasm"
+* type[0].text = "Examination for suspected neoplasm"
 * subject = Reference(Patient/example)
 * period.start = "2025-02-01"
 * period.end = "2025-02-01"
-* reasonCode[0] = http://id.who.int/icd10#C18.0 "Malignant neoplasm of cecum"
+* reasonCode[0] = http://hl7.org/fhir/sid/icd-10#C18.0
+* reasonCode[0].text = "Malignant neoplasm of cecum"
 * serviceProvider = Reference(Organization/nyandarua-cancer-center)
 * diagnosis[0].condition = Reference(Condition/example-colon-cancer)
 * diagnosis[0].use = http://terminology.hl7.org/CodeSystem/diagnosis-role#AD "Admission diagnosis"

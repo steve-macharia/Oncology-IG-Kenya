@@ -3,7 +3,7 @@ Id: patient-educationLevel
 Title: "Patient Education Level"
 Description: "Captures the highest level of formal education attained by a patient in Kenya. Supports cancer registry reporting, care planning, and socioeconomic assessment."
 
-* ^url = "https://oncology.ig.kenya/StructureDefinition/patient-educationLevel"
+* ^url = "https://steve-macharia.github.io/Oncology-IG-Kenya/StructureDefinition/patient-educationLevel"
 * ^version = "0.1.0"
 * ^status = #active
 * ^date = "2025-06-18"

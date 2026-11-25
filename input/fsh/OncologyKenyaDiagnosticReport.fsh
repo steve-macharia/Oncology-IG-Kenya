@@ -7,7 +7,7 @@ Description: "Defines pathology and laboratory reports for oncology patients in 
 
 // Category and Conclusion Code
 * category from http://hl7.org/fhir/ValueSet/diagnostic-service-sections (required)
-* conclusionCode from http://loinc.org (required)
+* conclusionCode from http://hl7.org/fhir/ValueSet/clinical-findings (example)
 
 // Report Metadata
 * status 1..1 MS
